@@ -1,0 +1,181 @@
+version = 1
+
+# 評価ローダーに必要な既存の参照文書。下のlabeled評価には含まれない。
+[[document]]
+id = "calibration-human-001"
+path = "corpus/suiko-fixtures/natural.md"
+label = "human"
+genre = "essay"
+source = "bundled calibration fixture"
+license = "MIT; see THIRD_PARTY_NOTICES.md"
+sha256 = "7ca4ea87c19d581755feee3051e48408f4ff71d899363f81b90c741c20f2b5a0"
+
+# 自作の確認前後の文を使う設計用サンプル。
+# 同じ文書を複数カテゴリで評価する。項目数は独立文書数や母集団の精度を表さない。
+[[sample]]
+id = "technical-wording-fire"
+path = "corpus/suiko-fixtures/technical-wording-before.md"
+category = "technical_jargon_metaphor"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "technical-wording-silent"
+path = "corpus/suiko-fixtures/technical-wording-after.md"
+category = "technical_jargon_metaphor"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "technical-role-fire"
+path = "corpus/suiko-fixtures/technical-wording-before.md"
+category = "abstract_metaphor"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "technical-role-silent"
+path = "corpus/suiko-fixtures/technical-wording-after.md"
+category = "abstract_metaphor"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "technical-distinction-fire"
+path = "corpus/suiko-fixtures/technical-wording-before.md"
+category = "repeated_distinction"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "technical-distinction-silent"
+path = "corpus/suiko-fixtures/technical-wording-after.md"
+category = "repeated_distinction"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "technical-dash-fire"
+path = "corpus/suiko-fixtures/technical-wording-before.md"
+category = "repeated_em_dash"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "technical-dash-silent"
+path = "corpus/suiko-fixtures/technical-wording-after.md"
+category = "repeated_em_dash"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "distinction-dense"
+path = "corpus/suiko-fixtures/repetition-dense.md"
+category = "repeated_distinction"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "dash-dense"
+path = "corpus/suiko-fixtures/repetition-dense.md"
+category = "repeated_em_dash"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "distinction-emphasis"
+path = "corpus/suiko-fixtures/repetition-emphasis.md"
+category = "repeated_distinction"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "dash-emphasis"
+path = "corpus/suiko-fixtures/repetition-emphasis.md"
+category = "repeated_em_dash"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "distinction-window"
+path = "corpus/suiko-fixtures/repetition-window.md"
+category = "repeated_distinction"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "dash-window"
+path = "corpus/suiko-fixtures/repetition-window.md"
+category = "repeated_em_dash"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "distinction-code-gap"
+path = "corpus/suiko-fixtures/repetition-code-gap.md"
+category = "repeated_distinction"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "dash-code-gap"
+path = "corpus/suiko-fixtures/repetition-code-gap.md"
+category = "repeated_em_dash"
+expect = "fire"
+genre = "tech"
+
+[[sample]]
+id = "distinction-distant"
+path = "corpus/suiko-fixtures/repetition-distant.md"
+category = "repeated_distinction"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "dash-distant"
+path = "corpus/suiko-fixtures/repetition-distant.md"
+category = "repeated_em_dash"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "distinction-sections"
+path = "corpus/suiko-fixtures/repetition-sections.md"
+category = "repeated_distinction"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "dash-sections"
+path = "corpus/suiko-fixtures/repetition-sections.md"
+category = "repeated_em_dash"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "distinction-quoted"
+path = "corpus/suiko-fixtures/repetition-quoted.md"
+category = "repeated_distinction"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "dash-quoted"
+path = "corpus/suiko-fixtures/repetition-quoted.md"
+category = "repeated_em_dash"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "distinction-literal"
+path = "corpus/suiko-fixtures/repetition-literal.md"
+category = "repeated_distinction"
+expect = "silent"
+genre = "tech"
+
+[[sample]]
+id = "dash-literal"
+path = "corpus/suiko-fixtures/repetition-literal.md"
+category = "repeated_em_dash"
+expect = "silent"
+genre = "tech"

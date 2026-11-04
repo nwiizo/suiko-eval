@@ -1,0 +1,4 @@
+/target/
+# 著作権のあるweb文書の本文はコミットしない。eval/corpus/external-lock.json のSHA-256で照合する。
+/eval/corpus/external/*
+!/eval/corpus/external/README.md
