@@ -372,9 +372,17 @@ fn labeled_reports_detection_and_fpr_per_category() {
         .stdout(predicate::str::contains(
             "category=declared_item_count_mismatch\tfire=10/10 detection=1.000 ci95=0.722-1.000\tsilent_fired=0/10 fpr=0.000 ci95=0.000-0.278",
         ))
-        // 2026-11-04の評価専用標本で外れた13件（calibration.md）と、既知のTTRの1件。
-        .stdout(predicate::str::contains("mismatches: 14"))
-        .stdout(predicate::str::contains("mismatch id=calque-phrase-silent-003"))
+        // 2026-11-04の評価専用標本で外れた13件のうち、2026-11-06に4規則を直した後も残る2件
+        // （calibration.md）と、既知のTTRの1件。
+        .stdout(predicate::str::contains(
+            "category=explanatory_metaphor\tfire=5/5 detection=1.000",
+        ))
+        .stdout(predicate::str::contains(
+            "category=calque_phrase\tfire=6/6 detection=1.000 ci95=0.610-1.000\tsilent_fired=0/6",
+        ))
+        .stdout(predicate::str::contains("mismatches: 3"))
+        .stdout(predicate::str::contains("mismatch id=thin-evaluation-fire-004"))
+        .stdout(predicate::str::contains("mismatch id=compressed-relation-fire-001"))
         .stdout(predicate::str::contains("mismatch id=low-ttr-silent-002"));
 }
 
