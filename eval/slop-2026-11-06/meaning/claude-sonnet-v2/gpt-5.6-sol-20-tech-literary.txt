@@ -1,0 +1,1 @@
+{"items":[{"text":"終電を逃れた車の灯が、遠い川のように流れていた","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"車は終電に乗る対象ではなく、「終電を逃れた車」が何を指すのか（終電を逃した人の車か、終電後も走る車か）が一つに定まらない。"}]}

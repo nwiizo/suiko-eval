@@ -1,0 +1,5 @@
+{"items":[{"text":"情報は預かりものとして扱う。","kind":"over_compression","pattern":null,"reason":"x"}]}
+
+Wait — I should output only confident items. Correcting:
+
+{"items":[]}

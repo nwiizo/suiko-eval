@@ -1,0 +1,5 @@
+{"items":[{"text":"全部止めるようにと言われていたので、脚立を運んで電池を抜いた","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"対象のない「全部」の指示と電池を抜く動作が結びつくが、これは字義どおりの文であり該当しない"}]}
+
+Correction: this item does not qualify. The final output is:
+
+{"items":[]}

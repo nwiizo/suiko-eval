@@ -1,0 +1,9 @@
+{"items":[{"text":"光だけが時間の進行を見逃さない","kind":"semantic_breakdown","pattern":null,"reading":"光景は昨日と同じでも、光の角度は時間の経過を確かに映す、という意味に読める","reason":"前の文脈から補えるため意味は定まっており、該当しない"}]}
+
+Wait — that candidate is readable, so it should not be included. Corrected output:
+
+{"items":[{"text":"食卓の湯気が、いつの間にか邪魔なものではなくなる","kind":"semantic_breakdown","pattern":null,"reading":"夏は暑苦しかった湯気が、涼しくなって気にならなくなる、と読める","reason":"読めるため該当しない"}]}
+
+Also readable, so neither belongs. Final answer:
+
+{"items":[]}

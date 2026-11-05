@@ -1,0 +1,5 @@
+{"items":[{"text":"夜のなかで、そこだけが小さな港のように明るい","kind":"semantic_breakdown","pattern":null,"reason":"暗い夜の中の明るい一点を「港」に喩えているが、港の明るさと自動販売機の孤立した灯りの写像が曖昧で何を指すか定まらない。","confidence":"low"},{"text":"言い過ぎたかもしれないという思いが、帰り道のあいだじゅう、棘のように胸に刺さっていた","kind":"semantic_breakdown","pattern":null,"reason":"思いが棘のように刺さるという比喩は一般的で意味が定まるため該当しない。","confidence":"low"}]}
+
+Wait — I should correct that: only items I'm confident about should be included, and neither of the above meets that bar (both are ordinary, interpretable figures of speech). The correct output is:
+
+{"items":[]}

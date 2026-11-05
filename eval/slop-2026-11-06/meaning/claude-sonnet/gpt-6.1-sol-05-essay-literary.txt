@@ -1,0 +1,5 @@
+{"items":[{"text":"何度見ても同じなのに、訪ねるたびに片目を近づけた","kind":"over_compression","pattern":null,"reason":"この文は破綻していない（「同じ」は穴の中の暗さを指し意味が定まる）ため該当しない。"}]}
+
+Wait — that item should not be included. Corrected output:
+
+{"items":[]}

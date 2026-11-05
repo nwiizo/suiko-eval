@@ -1,0 +1,1 @@
+{"items":[{"text":"携帯電話は急に重たい石のような存在になる","kind":"semantic_breakdown","pattern":null,"reading":"呼び出しを待つ緊張で、携帯電話の存在が重く感じられるという意味に読める。","reason":"意味は読めるため該当しない。"},{"text":"たった一文字の違いが、サービス全体の流れを堰き止めていた","kind":"semantic_breakdown","pattern":null,"reading":"環境変数名の一文字の食い違いのせいで、サービス全体の処理が通らなくなっていたと読める。","reason":"意味は読めるため該当しない。"}]}

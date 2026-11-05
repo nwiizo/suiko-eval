@@ -1,0 +1,22 @@
+{
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "sonnet",
+    "--tools",
+    "",
+    "--disable-slash-commands"
+  ],
+  "deterministic": false,
+  "discarded": [
+    {
+      "reason": "LLMが意味を一つに読めた",
+      "text": "個人の一挙一動は寒天のような濃厚な媒質を透して伝播するのである"
+    }
+  ],
+  "file": "/Users/nwiizo/ghq/github.com/nwiizo/suiko-eval/eval/corpus/aozora/terada-denen-zakkan.txt",
+  "findings": [],
+  "prompt_version": 2,
+  "suiko_version": "0.4.1"
+}

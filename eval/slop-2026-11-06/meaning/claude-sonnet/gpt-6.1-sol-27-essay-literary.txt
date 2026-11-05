@@ -1,0 +1,1 @@
+{"items":[{"text":"その顔を待つ癖が、父よりも長くこの家に残った","kind":"semantic_breakdown","pattern":null,"reason":"癖は父より長く家に残るという動作や居場所を持てず、何が残ったのか定まらない。"},{"text":"書斎の静けさがようやく私に教えていた","kind":"semantic_breakdown","pattern":null,"reason":"静けさが教えるという動作が、何を通じてどう分かったのかを定めない。"}]}

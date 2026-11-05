@@ -1,0 +1,1 @@
+{"items":[{"text":"ドアの蝶番がきしむ音は、長く閉ざされていた時間の、かすかな咳払いのように響いた","kind":"semantic_breakdown","pattern":null,"reason":"時間は咳払いをせず、閉ざされた時間と蝶番の音の対応が定まらない。","reason_note":null},{"text":"その積み重ねが、いつの間にか家族の間に静かな屋根を作っていた","kind":"semantic_breakdown","pattern":null,"reason":"言葉の積み重ねが屋根になるという写像が、安心・庇護のどれを指すのか定まらない。","reason_note":null}]}

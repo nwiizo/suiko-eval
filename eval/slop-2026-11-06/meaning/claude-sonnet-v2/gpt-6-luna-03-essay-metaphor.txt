@@ -1,0 +1,1 @@
+{"items":[{"text":"床は足の裏から体温を少しずつ手紙のように奪い","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"体温を奪う動作を「手紙のように」と例えているが、手紙と奪う動作の共通点が読み取れず、何を言いたいのか定まらない。"}]}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "sonnet",
+    "--tools",
+    "",
+    "--disable-slash-commands"
+  ],
+  "deterministic": false,
+  "discarded": [],
+  "file": "/Users/nwiizo/ghq/github.com/nwiizo/suiko-eval/eval/corpus/aozora/sakaguchi-kyogo-ron.txt",
+  "findings": [],
+  "prompt_version": 2,
+  "suiko_version": "0.4.1"
+}

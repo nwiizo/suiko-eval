@@ -1,0 +1,5 @@
+{"items":[{"text":"モニターの青白い光だけが、私たちの顔を淡く照らしていた","kind":"semantic_breakdown","pattern":null,"reason":"「だけ」と「淡く」が噛み合う程度で写像は成り立つが、確信が持てないため実際には該当しない","_note":"除外対象"},{"text":"夜の静けさは、小さな変更をまるで大きな岩のように感じさせる","kind":"semantic_breakdown","pattern":null,"reason":"静けさが変更の大きさの感じ方を変える因果は読み取れるが比喩としては成立するため除外対象"}]}
+
+Correction: the above draft contains entries I flagged as non-qualifying, so here is the final answer.
+
+{"items":[{"text":"たった一文字の違いが、夜を長くしていた","kind":"semantic_breakdown","pattern":null,"reason":"一文字の打ち間違いが「夜を長くする」のは、作業時間が延びたことなのか体感なのか、何が長くなったのか一つに定まらない。"},{"text":"小さな変更ほど、夜の闇で大きく見える","kind":"semantic_breakdown","pattern":null,"reason":"「夜の闇」が見え方を変える写像が定まらず、冒頭の「静けさ」とも整合せず、変更の何が大きく見えるのかが確定しない。"},{"text":"確認の灯りを少し多めに用意しておこう","kind":"over_compression","pattern":"動詞の独自用法","reason":"「灯りを用意する」が、チェックリスト・レビュー・監視など具体的に何を増やすのか文書から復元できない。"}]}

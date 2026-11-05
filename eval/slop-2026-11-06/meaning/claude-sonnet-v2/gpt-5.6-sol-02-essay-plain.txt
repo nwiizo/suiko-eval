@@ -1,0 +1,5 @@
+{"items":[{"text":"引っ越しは荷物を運ぶ一日ではなく、知らない町に小さな習慣を根づかせる数日間なのだろう","kind":"semantic_breakdown","pattern":null,"reading":"引っ越しとは荷物運びの一日で終わるものではなく、新しい町で小さな習慣を少しずつ定着させていく数日間だ、という感想。","reason":"字義どおりの感想として読め、意味は一つに定まっているため該当しない。"}]}
+
+Wait — that candidate is a plain reflective sentence and should not be selected. Corrected output:
+
+{"items":[]}

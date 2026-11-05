@@ -1,0 +1,5 @@
+{"items":[{"text":"役割は、最初に決める。","kind":"over_compression","pattern":"省きすぎ","reason":"「役割」を誰がどの単位で何のために決めるのかが省かれているが、直後の文で補えるため確信度は低い。"},{"text":"記録だけが、正確な過去を教えてくれる。","kind":"semantic_breakdown","pattern":null,"reason":"記録が「教える」主体として擬人化されているが、一般的な表現として意味は一つに定まる。"}]}
+
+Wait — I must correct that: both candidates above are ones I should not select under the stated criteria, since each can be understood from context. 
+
+{"items":[]}

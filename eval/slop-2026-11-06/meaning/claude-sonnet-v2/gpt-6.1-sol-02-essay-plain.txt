@@ -1,0 +1,5 @@
+{"items":[{"text":"空いた床に座って食べた夕飯は、なぜかよく覚えている","kind":"semantic_breakdown","pattern":null,"reading":"家具を動かして空いた床で食べた夕飯が印象に残っているという、字義どおりの感想として読める","reason":"字義どおりの感想であり、意味は一つに定まる。"}]}
+
+Wait — that candidate is literal and should not be selected. Corrected output:
+
+{"items":[]}

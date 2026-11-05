@@ -70,6 +70,15 @@ enum Command {
         /// 文書idの正規表現。調整に使った文書と評価用の文書を分けて測る
         #[arg(long)]
         documents: Option<String>,
+        /// lintの指摘を使わず、LLMの指摘（suiko meaning）だけを測る
+        #[arg(long)]
+        no_lint: bool,
+        /// suiko meaningの返答を文書idごとに保存・再利用するディレクトリ
+        #[arg(long)]
+        meaning_cache: Option<PathBuf>,
+        /// suiko meaningに渡すLLMのコマンド（`--` の後に指定）。キャッシュにない文書だけ実行する
+        #[arg(last = true, value_name = "COMMAND")]
+        meaning_command: Vec<String>,
     },
     /// 規則ごとの品質表と、既定・実験の扱いの判定（降格候補・昇格候補・正例不足）を出す
     Quality {
@@ -145,7 +154,31 @@ fn execute(cli: Cli) -> Result<String, evaluation::EvaluationError> {
             experimental,
             ignore,
             documents,
-        } => evaluation::spans(&annotations, experimental, &ignore, documents.as_deref()),
+            no_lint,
+            meaning_cache,
+            meaning_command,
+        } => {
+            let enabled = meaning_cache.is_some() || !meaning_command.is_empty();
+            let meaning = enabled.then_some(evaluation::MeaningSource {
+                cache: meaning_cache,
+                command: meaning_command,
+            });
+            if no_lint && meaning.is_none() {
+                return Err(evaluation::EvaluationError::Invalid(
+                    "--no-lintには--meaning-cacheか`--`の後のコマンドが必要です".to_owned(),
+                ));
+            }
+            evaluation::spans(
+                &annotations,
+                &evaluation::SpansOptions {
+                    experimental,
+                    ignore,
+                    documents,
+                    lint: !no_lint,
+                    meaning,
+                },
+            )
+        }
         Command::Quality {
             manifest,
             external,

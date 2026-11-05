@@ -1,0 +1,5 @@
+{"items":[{"text":"歩くたびに今日という文章が少しずつ終わっていく","kind":"semantic_breakdown","pattern":null,"reading":"下駄の音が句点のように一日の区切りを打ち、一日が終わりへ向かうという読みは前の比喩から取れる","reason":"前の句点の比喩から読み取れるため、意味は定まっている"}]}
+
+Wait — that candidate has a readable meaning, so it should not be selected. Corrected output:
+
+{"items":[]}

@@ -1,0 +1,9 @@
+{"items":[{"text":"朝は、まだ誰のものでもない。","kind":"over_compression","pattern":"主題と述語の不一致","reading":"朝という時間帯はまだ誰も使っていない、静かな時間だという意味に読める。","reason":"文書冒頭の導入として、前後から意味を補える。"}]}
+
+Wait — that candidate has a reading and is not ambiguous, so it should not be listed. Corrected output:
+
+{"items":[{"text":"世界は、誰にも報告せず更新されている","kind":"semantic_breakdown","pattern":null,"reading":"誰に知らせることもなく、世界が少しずつ変わり続けているという意味に読める。","reason":"読み取れる擬人化であり、意味は定まっているため本来は該当しない。"}]}
+
+Correction again — both candidates are readable, so none qualify:
+
+{"items":[]}

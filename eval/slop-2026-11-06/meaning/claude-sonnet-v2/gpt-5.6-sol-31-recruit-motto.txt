@@ -1,0 +1,1 @@
+{"items":[{"text":"判断を次の仕事へ残す。","kind":"over_compression","pattern":"省きすぎ","reading":null,"reason":"「判断」を残す対象・方法（理由の記録か、決定事項の引き継ぎか）が前後の文から一つに復元できない。"},{"text":"デザインを特別な部屋に閉じ込めない。","kind":"over_compression","pattern":null,"reading":"デザインを一部の専門家だけのものにせず、顧客・技術・事業にも開く、という意味に読める。","reason":"直後の見出しと文で補えるため意味は定まっている。"}]}

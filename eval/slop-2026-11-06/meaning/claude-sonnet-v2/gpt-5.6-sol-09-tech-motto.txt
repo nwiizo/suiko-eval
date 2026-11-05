@@ -1,0 +1,5 @@
+{"items":[{"text":"変化を測れ。勘で成功を決めない。","kind":"over_compression","pattern":"省きすぎ","reading":"操作の前後で決めた観測点の値を比べ、変化を確認したうえで成功かどうかを判断せよ、という意味に読める。","reason":"前の文の「観測点を決める」から補えるため、意味は定まっている。"}]}
+
+Wait — that candidate has a readable meaning, so it should not be selected. Corrected output:
+
+{"items":[]}

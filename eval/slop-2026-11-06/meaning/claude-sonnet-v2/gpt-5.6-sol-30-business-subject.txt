@@ -1,0 +1,5 @@
+{"items":[{"text":"人材ポートフォリオは、現在の配置と将来必要な専門性の差を可視化します","kind":"over_compression","pattern":null,"reading":null,"reason":"該当なし"}]}
+
+Correction: 上記は誤り。該当なしが正しいので、以下を出力します。
+
+{"items":[]}

@@ -1,0 +1,5 @@
+{"items":[{"text":"甘さの去った木の感触が、夢から抜け落ちた小さな骨のようだった","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"棒の木の感触を「夢から抜け落ちた小さな骨」に例えているが、夢が骨を持つ・抜け落ちるという対応が何を指すのか前後からも読み取れない。"},{"text":"もう少しだけ、終わった時間の取っ手を握って歩きたかった","kind":"semantic_breakdown","pattern":null,"reading":"りんご飴の棒を握ることで、終わった祭りの時間にまだつながっていたかった。","reason":"棒を持つ前文の流れから「取っ手」は棒を指し、余韻を手放したくない気持ちと読める。"}]}
+
+Wait — the second item has a reading, so it is not ambiguous and should not be listed. Corrected output:
+
+{"items":[{"text":"甘さの去った木の感触が、夢から抜け落ちた小さな骨のようだった","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"棒の木の感触を「夢から抜け落ちた小さな骨」に例えているが、夢が骨を持つ・抜け落ちるという対応が何を指すのか前後からも読み取れない。"}]}

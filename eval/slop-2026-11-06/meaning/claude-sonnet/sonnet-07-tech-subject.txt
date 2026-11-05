@@ -1,0 +1,1 @@
+{"items":[{"text":"検索の層は必要なときだけ立ち上がり、使い終わると縮む","kind":"semantic_breakdown","pattern":null,"reason":"「層」が立ち上がったり縮んだりする主体として何を指すか（検索処理のリソースか、構成要素自体か）が定まらない。","confidence":"low"},{"text":"一か所の負荷が全体を巻き込まなくなった","kind":"semantic_breakdown","pattern":null,"reason":"負荷が「巻き込む」という動作の対象と意味（影響が波及する、の言い換えか）が定まらない。","confidence":"low"}]}

@@ -1,0 +1,34 @@
+{
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "sonnet",
+    "--tools",
+    "",
+    "--disable-slash-commands"
+  ],
+  "deterministic": false,
+  "discarded": [],
+  "file": "/Users/nwiizo/ghq/github.com/nwiizo/suiko-eval/eval/corpus/aozora/terada-radio-zakkan.txt",
+  "findings": [
+    {
+      "category": "semantic_breakdown",
+      "detail": "LLMによる確認候補: 機械を東京市会議員に例えているが、どの性質が似ているのかが前後の文から読み取れず、意味が一つに定まらない。 精読して意味が一つに定まるなら残してください。実行ごとに結果が変わり得ます。",
+      "excerpt": "東京市会議員のような機械になってしまったのは無残である",
+      "line": 25,
+      "related_lines": null,
+      "severity": "info",
+      "span": {
+        "end_byte": 1179,
+        "end_column": 394,
+        "end_line": 25,
+        "start_byte": 1098,
+        "start_column": 367,
+        "start_line": 25
+      }
+    }
+  ],
+  "prompt_version": 2,
+  "suiko_version": "0.4.1"
+}

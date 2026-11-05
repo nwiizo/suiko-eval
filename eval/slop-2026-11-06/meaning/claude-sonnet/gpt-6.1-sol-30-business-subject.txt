@@ -1,0 +1,9 @@
+{"items":[{"text":"すでに使った費用は、継続を正当化する理由にはなりません。残る期間の見通しが、継続、縮小、終了の判断を支えます。","kind":"semantic_breakdown","pattern":null,"reason":"該当なし"}]}
+
+Wait — I should correct that. Re-reading carefully, that item is a clear, well-defined statement (sunk cost reasoning) and should not be selected.
+
+{"items":[{"text":"月次の確認は異常の早期発見を担い、四半期ごとのレビューは資源配分の見直しを担います","kind":"over_compression","pattern":"動詞の独自用法","reason":"「確認」が「担う」という役割分担の表現は通常の用法から外れるが、文脈から役割は一つに定まるため確信が持てない"}]}
+
+I'm not confident in that either, so the final answer:
+
+{"items":[]}

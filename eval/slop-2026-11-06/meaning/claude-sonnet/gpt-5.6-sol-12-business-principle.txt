@@ -1,0 +1,5 @@
+{"items":[{"text":"感情を受け止め、対立を増やさない。強い言葉の背後には、損失や不安があると考える。","kind":"semantic_breakdown","pattern":null,"reason":"該当なし"}]}
+
+Wait — that entry is not confident. Correcting:
+
+{"items":[{"text":"正確さと透明性を、短期的な安心より優先する","kind":"over_compression","pattern":"省きすぎ","reason":"何を優先対象とする際の比較なのか（安心を誰に与えるのか）が文書から一意に復元できない"},{"text":"届け、直し、結果を返す","kind":"over_compression","pattern":"省きすぎ","reason":"何を誰に届け、何を直し、誰に結果を返すのかが省かれていて復元できない"}]}

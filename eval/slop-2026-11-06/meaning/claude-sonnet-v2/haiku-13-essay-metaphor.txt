@@ -1,0 +1,1 @@
+{"items":[{"text":"雨の日の図書館は、街が息を潜めた場所のように思える","kind":"semantic_breakdown","pattern":null,"reading":"静かな図書館の様子を、街が息を潜めている場所に例えたと読める","reason":"静けさの比喩と読めるため意味は定まっており、選ばない候補だが破綻はない"},{"text":"雨音は、図書館という一冊の本の、最も柔らかな前書きなのかもしれない","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"雨音が前書きに例えられる理由が文脈から読み取れず、何を言いたいのか一つに定まらない"}]}

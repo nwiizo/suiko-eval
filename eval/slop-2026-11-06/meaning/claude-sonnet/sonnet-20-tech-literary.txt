@@ -1,0 +1,1 @@
+{"items":[{"text":"午前一時を過ぎたオフィスは、水底のように静まり返っていた","kind":"semantic_breakdown","pattern":null,"reason":"「水底のように」は静けさの比喩として成立するが、これは精読しても意味が定まるため該当しない可能性が高く、確信が持てない。","skip":true},{"text":"キーボードを叩く音だけが、夜の底で乾いて響いた","kind":"semantic_breakdown","pattern":null,"reason":"「夜の底」という場所が指すものが定まらず、音が「乾いて」響くという性質の対応も不明確である。","skip":true}]}

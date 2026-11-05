@@ -1,0 +1,5 @@
+{"items":[{"text":"迷ったら、人を守る","kind":"over_compression","pattern":null,"reason":"この文書に該当の文はなく誤り"}]}
+
+Correction: that output was wrong. The document contains no such sentence. Correct output:
+
+{"items":[{"text":"報告は失敗ではなく、お客様を守るための基本的な行動である","kind":"over_compression","pattern":"主題と述語の不一致","reason":"「報告は失敗ではなく」と「基本的な行動」が対比として噛み合っておらず、何が失敗でないのかが定まらない。"}]}

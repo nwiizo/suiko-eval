@@ -1,0 +1,1 @@
+{"items":[{"text":"会ったことのない人の咳払いが、壁の向こうから聞こえたような気がした","kind":"semantic_breakdown","pattern":null,"reading":"時を打つ低い音が、会ったことのない祖父の咳払いのように聞こえた、という見立てとして読める","reason":"読めるため該当なし"},{"text":"家は深い息を一つ吐いた","kind":"semantic_breakdown","pattern":null,"reading":"止まっていた時計が動き出し、家に音と気配が戻って静けさが解けた様子","reason":"読めるため該当なし"}]}

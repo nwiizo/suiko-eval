@@ -1,0 +1,50 @@
+{
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "sonnet",
+    "--tools",
+    "",
+    "--disable-slash-commands"
+  ],
+  "deterministic": false,
+  "discarded": [],
+  "file": "/Users/nwiizo/ghq/github.com/nwiizo/suiko-eval/eval/corpus/darakuron.txt",
+  "findings": [
+    {
+      "category": "semantic_breakdown",
+      "detail": "LLMによる確認候補: 歴史が人間を嗅ぎだすとは何を指すのか、嗅覚の比喩が何を意味するか前後からも一つに定まらない。 精読して意味が一つに定まるなら残してください。実行ごとに結果が変わり得ます。",
+      "excerpt": "歴史は常に人間を嗅ぎだしている",
+      "line": 11,
+      "related_lines": null,
+      "severity": "info",
+      "span": {
+        "end_byte": 1326,
+        "end_column": 443,
+        "end_line": 11,
+        "start_byte": 1281,
+        "start_column": 428,
+        "start_line": 11
+      }
+    },
+    {
+      "category": "semantic_breakdown",
+      "detail": "LLMによる確認候補: 波の如くに「歩く」という動作と主体が釣り合わず、何を言いたいのか一つに定まらない。 精読して意味が一つに定まるなら残してください。実行ごとに結果が変わり得ます。",
+      "excerpt": "大海の波の如くに歩いて行く",
+      "line": 11,
+      "related_lines": null,
+      "severity": "info",
+      "span": {
+        "end_byte": 1173,
+        "end_column": 392,
+        "end_line": 11,
+        "start_byte": 1134,
+        "start_column": 379,
+        "start_line": 11
+      }
+    }
+  ],
+  "prompt_version": 2,
+  "suiko_version": "0.4.1"
+}

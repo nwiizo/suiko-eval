@@ -1,0 +1,5 @@
+{"items":[{"text":"鉄の手すりは冷たく、手のひらの熱をすべて吸い取っていく","kind":"semantic_breakdown","pattern":null,"reading":"冷たい金属が手の熱を奪う様子で、字義どおりに読める","reason":"字義どおりの文で意味は定まっている"}]}
+
+Wait — that candidate has a reading and is literal, so it should not be selected. Correcting:
+
+{"items":[]}

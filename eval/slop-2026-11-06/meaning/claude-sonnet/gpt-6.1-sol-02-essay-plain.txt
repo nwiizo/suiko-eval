@@ -1,0 +1,5 @@
+{"items":[{"text":"空いた床に座って食べた夕飯は、なぜかよく覚えている","kind":"over_compression","pattern":null,"reason":"これは意味が定まらない表現ではなく自然な記述なので該当なし","_skip":true}]}
+
+Correction: the above item is not valid. Final answer:
+
+{"items":[]}

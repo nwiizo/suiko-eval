@@ -1,0 +1,1 @@
+{"items":[{"text":"空の戸を誰かがそっと閉めるように響いた","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"遅れて届く花火の音が戸を閉める音に例えられているが、空の戸という像と、閉める動作が音の性質とどう結びつくのかが定まらない。"},{"text":"約束は夜空に結ぶ細い糸だ。見えなくても、忘れたころに手のひらへ戻ってくる","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"夜空に結んだ糸が手のひらへ戻るという像が、約束が果たされる、あるいは思い出されるのどちらを指すのか一つに定まらない。"}]}

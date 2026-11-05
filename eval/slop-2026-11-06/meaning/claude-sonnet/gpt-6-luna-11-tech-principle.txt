@@ -1,0 +1,5 @@
+{"items":[{"text":"命名や整形の指摘で重大な問題を埋もれさせない","kind":"semantic_breakdown","pattern":null,"reason":"指摘が問題を「埋もれさせる」は、指摘の量が重要な指摘を目立たなくする意図と読めるが、指摘自体が問題を埋めるという動作の写像が定まらない。","confidence":"low"}]}
+
+Wait — the output format specified only text, kind, pattern, reason. Corrected output:
+
+{"items":[]}

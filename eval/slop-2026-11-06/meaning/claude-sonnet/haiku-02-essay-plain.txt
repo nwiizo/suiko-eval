@@ -1,0 +1,1 @@
+{"items":[{"text":"店の人の顔を覚えるくらい通ったのは、久しぶりのことだった","kind":"semantic_breakdown","pattern":null,"reason":"「店の人の顔を覚えるくらい通った」のは三回だけで、直前の数と食い違い、誰が誰の顔を覚えたのかも定まらない。","pattern":null},{"text":"自分の生活の置き場所を少しずつ決めていく時間","kind":"semantic_breakdown","pattern":null,"reason":"「生活の置き場所」は荷物の置き場所なのか暮らし方の拠り所なのか定まらず、比喩の写像が成り立たない。"}]}

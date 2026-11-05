@@ -1,0 +1,1 @@
+{"items":[{"text":"顧客の課題を捉える仕組みは、開発と営業の連携を促します","kind":"semantic_breakdown","pattern":null,"reason":"「仕組み」が「連携を促す」主体として働くが、課題把握の仕組みがどう連携を促すのか写像が定まらない。","confidence":"low"},{"text":"データ基盤は、部門ごとに異なる判断材料をそろえ、事実に基づく議論を促します","kind":"semantic_breakdown","pattern":null,"reason":"データ基盤が判断材料をそろえて議論を促すという主体の働きが、何をどうする機能なのか定まらない。","confidence":"low"}]}

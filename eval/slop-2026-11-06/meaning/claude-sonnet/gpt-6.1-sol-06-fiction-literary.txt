@@ -1,0 +1,1 @@
+{"items":[{"text":"靴の中のつま先だけが冷えていた","kind":"semantic_breakdown","pattern":null,"reason":"両手で温かい茶を包んでいる場面で「つま先だけ」冷えるという限定が、何と対比されているのか定まらず比喩的な意味も読み取れない。","confidence":"low"},{"text":"水の流れる向きが、ようやく見えるようになっていた","kind":"semantic_breakdown","pattern":null,"reason":"川向こうの空はまだ暗いと直前に述べられており、暗い中で水の流れる向きが見えるようになったのが実際の視認なのか心情の比喩なのか定まらない。","confidence":"low"}]}

@@ -1,0 +1,5 @@
+{"items":[{"text":"この構成が、負荷の偏りを局所化した。","kind":"semantic_breakdown","pattern":null,"reading":"責務を分離した構成により、負荷が特定の部分に偏っても影響がその部分に限られるようになった、と読める。","reason":"「偏りを局所化」は偏りの影響を封じ込める意味と読めるため、意味は定まっている。"}]}
+
+Wait — that candidate has a readable meaning, so it should not be listed. Corrected output:
+
+{"items":[]}

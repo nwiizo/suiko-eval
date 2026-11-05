@@ -1,0 +1,9 @@
+{"items":[{"text":"窓際の床には、西日が長い長方形を置いていた","kind":"semantic_breakdown","pattern":null,"reading":"西日が窓から差し込み、床に長方形の光の跡をつくっていた様子と読める","reason":"読めるため実際には破綻していない"}]}
+
+Wait — correcting that: a candidate I can read should not be listed. Final output:
+
+{"items":[{"text":"歌は梁へ昇り、古い窓ガラスを揺らした","kind":"semantic_breakdown","pattern":null,"reading":"歌声が体育館の高い梁まで響き上がり、窓ガラスを震わせた","reason":"読めるので該当しない"}]}
+
+Both of those are readable, so neither qualifies. The document contains no expressions that remain ambiguous after close reading.
+
+{"items":[]}

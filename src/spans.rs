@@ -4,7 +4,7 @@
 
 use std::collections::BTreeMap;
 use std::ops::Range;
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use serde::Deserialize;
 use suiko::lint::{self, Span};
@@ -148,15 +148,59 @@ fn tally_lines(output: &mut String, label: &str, tallies: &BTreeMap<String, Tall
     }
 }
 
-/// `ignore`の規則は集計から外す。「〜は、」の読点のように、注釈と偶然重なるだけで
-/// 意味の破綻を指していない規則を外した検出率を見るために使う。
-/// `documents`はidの正規表現で、規則の調整に使った文書と評価用の文書を分けて測るために使う。
-pub fn spans(
-    path: &Path,
-    experimental: bool,
-    ignore: &[String],
-    documents: Option<&str>,
+/// `suiko meaning`（LLMによる確認）の返答の取り方。
+pub struct MeaningSource {
+    /// 文書idごとの返答を保存するディレクトリ。あれば読み、なければコマンドを実行して保存する。
+    pub cache: Option<PathBuf>,
+    /// 依頼を受け取るLLMのコマンド。空ならキャッシュだけを使う。
+    pub command: Vec<String>,
+}
+
+pub struct SpansOptions {
+    pub experimental: bool,
+    /// 集計から外す規則。「〜は、」の読点のように、注釈と偶然重なるだけで
+    /// 意味の破綻を指していない規則を外した検出率を見るために使う。
+    pub ignore: Vec<String>,
+    /// 文書idの正規表現。規則の調整に使った文書と評価用の文書を分けて測るために使う。
+    pub documents: Option<String>,
+    /// falseならlintの指摘を使わず、LLMの指摘だけを測る。
+    pub lint: bool,
+    pub meaning: Option<MeaningSource>,
+}
+
+fn meaning_response(
+    source: &MeaningSource,
+    id: &str,
+    body: &str,
 ) -> Result<String, EvaluationError> {
+    let cached = source
+        .cache
+        .as_ref()
+        .map(|dir| dir.join(format!("{id}.txt")));
+    if let Some(path) = cached.as_ref().filter(|path| path.exists()) {
+        return utf8(path, read(path)?);
+    }
+    if source.command.is_empty() {
+        return Err(EvaluationError::Invalid(format!(
+            "{id}: LLMの返答のキャッシュがなく、コマンドも指定されていません"
+        )));
+    }
+    let raw = suiko::meaning::request(body, &source.command)?;
+    if let Some(path) = cached {
+        let write = |source| EvaluationError::Write {
+            path: path.display().to_string(),
+            source,
+        };
+        std::fs::create_dir_all(path.parent().expect("cache file has a parent")).map_err(write)?;
+        std::fs::write(&path, &raw).map_err(write)?;
+    }
+    Ok(raw)
+}
+
+pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationError> {
+    let experimental = options.experimental;
+    let ignore = options.ignore.as_slice();
+    let documents = options.documents.as_deref();
     let mut set: SpanSet = read_toml(path)?;
     if set.schema_version != 1 {
         return Err(EvaluationError::Invalid(
@@ -180,15 +224,31 @@ pub fn spans(
     let mut categories = BTreeMap::<String, CategoryCount>::new();
     let mut styles = BTreeMap::<String, StyleCount>::new();
     let (mut spanned, mut overlapping, mut unspanned, mut rejected, mut accepted) = (0, 0, 0, 0, 0);
+    let mut discarded = 0;
+    let mut unparsed = Vec::new();
     let mut details = String::new();
 
     for document in &set.document {
         let file = base.join(&document.path);
         let body = utf8(&file, read(&file)?)?;
-        let report = lint::analyze(&body, &morphology, document.genre.as_deref(), experimental)?;
+        let mut all = if options.lint {
+            lint::analyze(&body, &morphology, document.genre.as_deref(), experimental)?.findings
+        } else {
+            Vec::new()
+        };
+        if let Some(source) = &options.meaning {
+            let raw = meaning_response(source, &document.id, &body)?;
+            // 返答を読めない文書は指摘なしとして数え、評価全体は止めない。件数とidを出力に残す。
+            match suiko::meaning::findings(&body, &raw) {
+                Ok(report) => {
+                    discarded += report.discarded.len();
+                    all.extend(report.findings);
+                }
+                Err(_) => unparsed.push(document.id.clone()),
+            }
+        }
         let starts = line_starts(&body);
-        let kept = report
-            .findings
+        let kept = all
             .iter()
             .filter(|finding| !ignore.contains(&finding.category))
             .collect::<Vec<_>>();
@@ -285,6 +345,29 @@ pub fn spans(
     ));
     if let Some(pattern) = documents {
         output.push_str(&format!("documents_filter={pattern}\n"));
+    }
+    if !options.lint {
+        output.push_str("lint=off\n");
+    }
+    if let Some(source) = &options.meaning {
+        output.push_str(&format!(
+            "meaning: command={} cache={} discarded={discarded} unparsed={}{}\n",
+            if source.command.is_empty() {
+                "-".to_owned()
+            } else {
+                source.command.join(" ")
+            },
+            source
+                .cache
+                .as_ref()
+                .map_or_else(|| "-".to_owned(), |dir| dir.display().to_string()),
+            unparsed.len(),
+            if unparsed.is_empty() {
+                String::new()
+            } else {
+                format!(" ({})", unparsed.join(","))
+            },
+        ));
     }
     if !ignore.is_empty() {
         output.push_str(&format!("ignored_categories={}\n", ignore.join(",")));

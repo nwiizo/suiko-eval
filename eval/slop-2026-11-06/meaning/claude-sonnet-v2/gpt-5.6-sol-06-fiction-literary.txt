@@ -1,0 +1,1 @@
+{"items":[{"text":"そのどれもが人間の不在を慎ましく守っていた","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"「不在」は守る対象にならず、シャッターやビールケースや信号が何をしている様子なのか、「慎ましく守る」という動作が一つに定まらない。"}]}

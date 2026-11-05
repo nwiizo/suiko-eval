@@ -1,0 +1,5 @@
+{"items":[{"text":"夕暮れが海に黒いインクをこぼすころ","kind":"semantic_breakdown","pattern":null,"reading":"夕暮れに海が暗くなっていく様子をインクがこぼれて広がる様子に例えたと読める","reason":"意味は読み取れるため該当しないが、比喩として成立している"}]}
+
+Wait — that candidate is readable, so it should not be listed. Corrected output:
+
+{"items":[{"text":"夜の肩を規則正しく撫でてゆく","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"光が夜の「肩」を撫でるという比喩は、光の回転が闇を掃くことと読めなくもないが、何を肩に見立てたのかが定まらず、主語と動作の釣り合いが取れない。"},{"text":"その背骨は長い後悔の柱にも見えた","kind":"semantic_breakdown","pattern":null,"reading":null,"reason":"「背骨」は前文で支えを意味すると説明されているが、「後悔の柱」が何を指すのか（支えが重荷になった／後悔を立てる記念碑など）一つに定まらない。"}]}

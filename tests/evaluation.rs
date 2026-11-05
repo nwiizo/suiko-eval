@@ -640,3 +640,45 @@ fn spans_reports_detection_with_and_without_incidental_rules() {
         ))
         .stdout(predicate::str::contains("overall\tdetected=0/7"));
 }
+
+// suiko meaning（LLMによる確認）の返答を保存したキャッシュだけで照合を再実行する。LLMは呼ばない。
+// 依頼文の版1（claude-sonnet）と版2（claude-sonnet-v2）の値は slop-2026-11-06/README.md と合わせる。
+#[test]
+fn spans_replays_cached_meaning_responses_without_calling_the_llm() {
+    for (cache, detected, extra) in [
+        (
+            "eval/slop-2026-11-06/meaning/claude-sonnet",
+            "overall\tdetected=36/50",
+            "unparsed=1 (sonnet-14-fiction-metaphor)",
+        ),
+        (
+            "eval/slop-2026-11-06/meaning/claude-sonnet-v2",
+            "overall\tdetected=13/50",
+            "discarded=91 unparsed=0",
+        ),
+    ] {
+        eval_command()
+            .args([
+                "spans",
+                "eval/slop-2026-11-06/annotations.toml",
+                "--no-lint",
+                "--meaning-cache",
+                cache,
+            ])
+            .assert()
+            .success()
+            .stdout(predicate::str::contains("lint=off"))
+            .stdout(predicate::str::contains(detected))
+            .stdout(predicate::str::contains(extra));
+    }
+    // キャッシュもコマンドもない--no-lintは、測る指摘がないので失敗する。
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--no-lint",
+        ])
+        .assert()
+        .failure()
+        .stderr(predicate::str::contains("--no-lint"));
+}

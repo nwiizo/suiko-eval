@@ -1,0 +1,5 @@
+{"items":[{"text":"画面の前でログを読み込みたくなる気持ちは、よくわかる","kind":"semantic_breakdown","pattern":null,"reason":"「画面の前でログを読み込む」は自然だが、これは問題のない通常表現であり選ぶべきでない","skip":true}]}
+
+訂正します。
+
+{"items":[{"text":"この区別が効いてくる","kind":"over_compression","pattern":"省きすぎ","reason":"何に対してどう効くのかが明示されず、振り返りでの効果が一つに定まらない"},{"text":"問いは、いつも仕組みに向ける","kind":"over_compression","pattern":"動詞の独自用法","reason":"「問いを仕組みに向ける」は、仕組みを対象に問うのか、仕組みに答えを求めるのかが定まらない"}]}
