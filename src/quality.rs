@@ -91,10 +91,16 @@ pub(crate) fn fixtures(counts: Option<&LabeledCounts>) -> Fixtures {
     let detection = counts.fire_hit as f64 / counts.fire_total as f64;
     let fpr_upper =
         wilson_ci(counts.silent_fired, counts.silent_total).map_or(1.0, |(_, upper)| upper);
-    if detection >= MIN_FIXTURE_DETECTION && fpr_upper <= MAX_FIXTURE_FPR_UPPER {
-        Fixtures::Passed
-    } else {
+    if detection < MIN_FIXTURE_DETECTION
+        || counts.silent_fired > 0 && fpr_upper > MAX_FIXTURE_FPR_UPPER
+    {
         Fixtures::Failed
+    } else if fpr_upper > MAX_FIXTURE_FPR_UPPER {
+        // 反例で一度も誤検知していないが、件数が少なく上限が下がらない（0/5の上限は0.434）。
+        // 規則の誤りではなく反例の不足として扱う。0/9で上限0.299になる。
+        Fixtures::Insufficient
+    } else {
+        Fixtures::Passed
     }
 }
 
@@ -247,6 +253,10 @@ mod tests {
         assert_eq!(fixtures(Some(&counts(10, 10, 0, 10))), Fixtures::Passed);
         assert_eq!(fixtures(Some(&counts(3, 5, 0, 10))), Fixtures::Failed);
         assert_eq!(fixtures(Some(&counts(10, 10, 3, 10))), Fixtures::Failed);
+        // 誤検知0件でも反例5件では上限が0.30を下回らないため、不足とする。
+        assert_eq!(fixtures(Some(&counts(5, 5, 0, 5))), Fixtures::Insufficient);
+        assert_eq!(fixtures(Some(&counts(5, 5, 0, 9))), Fixtures::Passed);
+        assert_eq!(fixtures(Some(&counts(6, 6, 1, 6))), Fixtures::Failed);
 
         assert_eq!(
             action(false, Noise::Noisy, Fixtures::Passed),

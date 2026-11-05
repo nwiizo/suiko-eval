@@ -2170,3 +2170,1144 @@ category = "copy_fragment"
 expect = "silent"
 genre = "business"
 note = "疑問符で終わる"
+
+[[sample]]
+id = "thin-evaluation-fire-001"
+path = "labeled/thin_evaluation/fire-001.md"
+category = "thin_evaluation"
+expect = "fire"
+note = "性質名詞と評価語だけで中身がない（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-fire-002"
+path = "labeled/thin_evaluation/fire-002.md"
+category = "thin_evaluation"
+expect = "fire"
+note = "「心地」の性質名詞と副詞＋評価語（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-fire-003"
+path = "labeled/thin_evaluation/fire-003.md"
+category = "thin_evaluation"
+expect = "fire"
+note = "「触り」の性質名詞（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-fire-004"
+path = "labeled/thin_evaluation/fire-004.md"
+category = "thin_evaluation"
+expect = "fire"
+note = "「性」の性質名詞（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-fire-005"
+path = "labeled/thin_evaluation/fire-005.md"
+category = "thin_evaluation"
+expect = "fire"
+note = "「性」の性質名詞と評価語（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-001"
+path = "labeled/thin_evaluation/silent-001.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "読点で条件が続く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-002"
+path = "labeled/thin_evaluation/silent-002.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "評価語ではない述語（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-003"
+path = "labeled/thin_evaluation/silent-003.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "変化の結果（なった）（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-004"
+path = "labeled/thin_evaluation/silent-004.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "否定（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-005"
+path = "labeled/thin_evaluation/silent-005.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "数詞と目的語を含む（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-fire-001"
+path = "labeled/calque_phrase/fire-001.md"
+category = "calque_phrase"
+expect = "fire"
+note = "「インパクトを持つ」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-fire-002"
+path = "labeled/calque_phrase/fire-002.md"
+category = "calque_phrase"
+expect = "fire"
+note = "「価値を足す」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-fire-003"
+path = "labeled/calque_phrase/fire-003.md"
+category = "calque_phrase"
+expect = "fire"
+note = "「テーブルにある」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-fire-004"
+path = "labeled/calque_phrase/fire-004.md"
+category = "calque_phrase"
+expect = "fire"
+note = "「ステップを取る」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-fire-005"
+path = "labeled/calque_phrase/fire-005.md"
+category = "calque_phrase"
+expect = "fire"
+note = "「水を試す」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-fire-006"
+path = "labeled/calque_phrase/fire-006.md"
+category = "calque_phrase"
+expect = "fire"
+note = "「同じページにいる」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-silent-001"
+path = "labeled/calque_phrase/silent-001.md"
+category = "calque_phrase"
+expect = "silent"
+note = "字義どおりの絵（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-silent-002"
+path = "labeled/calque_phrase/silent-002.md"
+category = "calque_phrase"
+expect = "silent"
+note = "字義どおりのテーブル（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-silent-003"
+path = "labeled/calque_phrase/silent-003.md"
+category = "calque_phrase"
+expect = "silent"
+note = "「水を試しに」は試行の副詞（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-silent-004"
+path = "labeled/calque_phrase/silent-004.md"
+category = "calque_phrase"
+expect = "silent"
+note = "「真剣に受け止める」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-silent-005"
+path = "labeled/calque_phrase/silent-005.md"
+category = "calque_phrase"
+expect = "silent"
+note = "「違い」を説明する（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "calque-phrase-silent-006"
+path = "labeled/calque_phrase/silent-006.md"
+category = "calque_phrase"
+expect = "silent"
+note = "字義どおりに手を伸ばす（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-fire-001"
+path = "labeled/short_concession/fire-001.md"
+category = "short_concession"
+expect = "fire"
+note = "前の文に続く短い譲歩（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-fire-002"
+path = "labeled/short_concession/fire-002.md"
+category = "short_concession"
+expect = "fire"
+note = "単独の短い譲歩（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-fire-003"
+path = "labeled/short_concession/fire-003.md"
+category = "short_concession"
+expect = "fire"
+note = "漢字表記（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-fire-004"
+path = "labeled/short_concession/fire-004.md"
+category = "short_concession"
+expect = "fire"
+note = "体言止め（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-fire-005"
+path = "labeled/short_concession/fire-005.md"
+category = "short_concession"
+expect = "fire"
+note = "感嘆符（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-001"
+path = "labeled/short_concession/silent-001.md"
+category = "short_concession"
+expect = "silent"
+note = "直前が質問（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-002"
+path = "labeled/short_concession/silent-002.md"
+category = "short_concession"
+expect = "silent"
+note = "許可への応答（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-003"
+path = "labeled/short_concession/silent-003.md"
+category = "short_concession"
+expect = "silent"
+note = "主題を持つ文（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-004"
+path = "labeled/short_concession/silent-004.md"
+category = "short_concession"
+expect = "silent"
+note = "「も」を含む（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-005"
+path = "labeled/short_concession/silent-005.md"
+category = "short_concession"
+expect = "silent"
+note = "読点が続く長い文（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-fire-001"
+path = "labeled/te_nominal_stop/fire-001.md"
+category = "te_nominal_stop"
+expect = "fire"
+note = "て形の後に漢語で止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-fire-002"
+path = "labeled/te_nominal_stop/fire-002.md"
+category = "te_nominal_stop"
+expect = "fire"
+note = "て形の後に漢語で止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-fire-003"
+path = "labeled/te_nominal_stop/fire-003.md"
+category = "te_nominal_stop"
+expect = "fire"
+note = "て形の後に漢語で止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-fire-004"
+path = "labeled/te_nominal_stop/fire-004.md"
+category = "te_nominal_stop"
+expect = "fire"
+note = "で形の後に漢語で止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-fire-005"
+path = "labeled/te_nominal_stop/fire-005.md"
+category = "te_nominal_stop"
+expect = "fire"
+note = "て形の後に漢語で止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-001"
+path = "labeled/te_nominal_stop/silent-001.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "述語まで書く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-002"
+path = "labeled/te_nominal_stop/silent-002.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "箇条書き（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-003"
+path = "labeled/te_nominal_stop/silent-003.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "読点がない（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-004"
+path = "labeled/te_nominal_stop/silent-004.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "敬体で終える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-005"
+path = "labeled/te_nominal_stop/silent-005.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "「こと」で終える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-fire-001"
+path = "labeled/cleft_list_ending/fire-001.md"
+category = "cleft_list_ending"
+expect = "fire"
+note = "分裂文の後に名詞を3つ並べて止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-fire-002"
+path = "labeled/cleft_list_ending/fire-002.md"
+category = "cleft_list_ending"
+expect = "fire"
+note = "分裂文の後に名詞を3つ並べて止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-fire-003"
+path = "labeled/cleft_list_ending/fire-003.md"
+category = "cleft_list_ending"
+expect = "fire"
+note = "分裂文の後に名詞を3つ並べて止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-fire-004"
+path = "labeled/cleft_list_ending/fire-004.md"
+category = "cleft_list_ending"
+expect = "fire"
+note = "分裂文の後に名詞を3つ並べて止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-fire-005"
+path = "labeled/cleft_list_ending/fire-005.md"
+category = "cleft_list_ending"
+expect = "fire"
+note = "分裂文の後に名詞を3つ並べて止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-001"
+path = "labeled/cleft_list_ending/silent-001.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "直前の問いに答える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-002"
+path = "labeled/cleft_list_ending/silent-002.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "2項目だけ（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-003"
+path = "labeled/cleft_list_ending/silent-003.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "述語で終える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-004"
+path = "labeled/cleft_list_ending/silent-004.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "読点がない（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-005"
+path = "labeled/cleft_list_ending/silent-005.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "動詞句を含む（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-fire-001"
+path = "labeled/heading_colon/fire-001.md"
+category = "heading_colon"
+expect = "fire"
+note = "「とは：」の見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-fire-002"
+path = "labeled/heading_colon/fire-002.md"
+category = "heading_colon"
+expect = "fire"
+note = "半角コロン（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-fire-003"
+path = "labeled/heading_colon/fire-003.md"
+category = "heading_colon"
+expect = "fire"
+note = "英字の用語（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-fire-004"
+path = "labeled/heading_colon/fire-004.md"
+category = "heading_colon"
+expect = "fire"
+note = "「とは：」の見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-fire-005"
+path = "labeled/heading_colon/fire-005.md"
+category = "heading_colon"
+expect = "fire"
+note = "「とは：」の見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-001"
+path = "labeled/heading_colon/silent-001.md"
+category = "heading_colon"
+expect = "silent"
+note = "普通の見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-002"
+path = "labeled/heading_colon/silent-002.md"
+category = "heading_colon"
+expect = "silent"
+note = "問いの見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-003"
+path = "labeled/heading_colon/silent-003.md"
+category = "heading_colon"
+expect = "silent"
+note = "本文の中の表記（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-004"
+path = "labeled/heading_colon/silent-004.md"
+category = "heading_colon"
+expect = "silent"
+note = "項目名とコロン（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-005"
+path = "labeled/heading_colon/silent-005.md"
+category = "heading_colon"
+expect = "silent"
+note = "用語の見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-fire-001"
+path = "labeled/redundant_heading_bracket/fire-001.md"
+category = "redundant_heading_bracket"
+expect = "fire"
+note = "（概要）（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-fire-002"
+path = "labeled/redundant_heading_bracket/fire-002.md"
+category = "redundant_heading_bracket"
+expect = "fire"
+note = "（詳細）（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-fire-003"
+path = "labeled/redundant_heading_bracket/fire-003.md"
+category = "redundant_heading_bracket"
+expect = "fire"
+note = "（補足）（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-fire-004"
+path = "labeled/redundant_heading_bracket/fire-004.md"
+category = "redundant_heading_bracket"
+expect = "fire"
+note = "（解説）（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-fire-005"
+path = "labeled/redundant_heading_bracket/fire-005.md"
+category = "redundant_heading_bracket"
+expect = "fire"
+note = "（まとめ）（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-001"
+path = "labeled/redundant_heading_bracket/silent-001.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "版の括弧（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-002"
+path = "labeled/redundant_heading_bracket/silent-002.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "条件の括弧（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-003"
+path = "labeled/redundant_heading_bracket/silent-003.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "対象読者の括弧（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-004"
+path = "labeled/redundant_heading_bracket/silent-004.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "括弧のない「概要」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-005"
+path = "labeled/redundant_heading_bracket/silent-005.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "括弧のない「補足」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-fire-001"
+path = "labeled/explanatory_metaphor/fire-001.md"
+category = "explanatory_metaphor"
+expect = "fire"
+note = "家具が人を待つ（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-fire-002"
+path = "labeled/explanatory_metaphor/fire-002.md"
+category = "explanatory_metaphor"
+expect = "fire"
+note = "家具が人を見送る（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-fire-003"
+path = "labeled/explanatory_metaphor/fire-003.md"
+category = "explanatory_metaphor"
+expect = "fire"
+note = "器が静けさを抱える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-fire-004"
+path = "labeled/explanatory_metaphor/fire-004.md"
+category = "explanatory_metaphor"
+expect = "fire"
+note = "器が受け止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-fire-005"
+path = "labeled/explanatory_metaphor/fire-005.md"
+category = "explanatory_metaphor"
+expect = "fire"
+note = "家具が首を振る（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-silent-001"
+path = "labeled/explanatory_metaphor/silent-001.md"
+category = "explanatory_metaphor"
+expect = "silent"
+note = "人が待つ（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-silent-002"
+path = "labeled/explanatory_metaphor/silent-002.md"
+category = "explanatory_metaphor"
+expect = "silent"
+note = "人が見送る（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-silent-003"
+path = "labeled/explanatory_metaphor/silent-003.md"
+category = "explanatory_metaphor"
+expect = "silent"
+note = "人が鍋を抱える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-silent-004"
+path = "labeled/explanatory_metaphor/silent-004.md"
+category = "explanatory_metaphor"
+expect = "silent"
+note = "家具が揺れる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "explanatory-metaphor-silent-005"
+path = "labeled/explanatory_metaphor/silent-005.md"
+category = "explanatory_metaphor"
+expect = "silent"
+note = "人が首を振る（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-fire-001"
+path = "labeled/sensory_role_mismatch/fire-001.md"
+category = "sensory_role_mismatch"
+expect = "fire"
+note = "音が床を叩く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-fire-002"
+path = "labeled/sensory_role_mismatch/fire-002.md"
+category = "sensory_role_mismatch"
+expect = "fire"
+note = "匂いを見つめる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-fire-003"
+path = "labeled/sensory_role_mismatch/fire-003.md"
+category = "sensory_role_mismatch"
+expect = "fire"
+note = "静寂が鳴る（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-fire-004"
+path = "labeled/sensory_role_mismatch/fire-004.md"
+category = "sensory_role_mismatch"
+expect = "fire"
+note = "冷たさが這い上がる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-fire-005"
+path = "labeled/sensory_role_mismatch/fire-005.md"
+category = "sensory_role_mismatch"
+expect = "fire"
+note = "埃をかぶった音（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-001"
+path = "labeled/sensory_role_mismatch/silent-001.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "雨粒が窓を叩く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-002"
+path = "labeled/sensory_role_mismatch/silent-002.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "花を見つめる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-003"
+path = "labeled/sensory_role_mismatch/silent-003.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "電話が鳴る（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-004"
+path = "labeled/sensory_role_mismatch/silent-004.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "足首が冷える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-005"
+path = "labeled/sensory_role_mismatch/silent-005.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "埃をかぶった本（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-fire-001"
+path = "labeled/compressed_relation/fire-001.md"
+category = "compressed_relation"
+expect = "fire"
+note = "条件の後に名詞句を挟む標語（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-fire-002"
+path = "labeled/compressed_relation/fire-002.md"
+category = "compressed_relation"
+expect = "fire"
+note = "「データで〜する」だけの短文（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-fire-003"
+path = "labeled/compressed_relation/fire-003.md"
+category = "compressed_relation"
+expect = "fire"
+note = "「仕組みで〜する」だけの短文（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-fire-004"
+path = "labeled/compressed_relation/fire-004.md"
+category = "compressed_relation"
+expect = "fire"
+note = "目的語も主題もなく「持つ」で終える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-fire-005"
+path = "labeled/compressed_relation/fire-005.md"
+category = "compressed_relation"
+expect = "fire"
+note = "動詞だけを読点で並べる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-fire-006"
+path = "labeled/compressed_relation/fire-006.md"
+category = "compressed_relation"
+expect = "fire"
+note = "「〜は責めず」型の標語（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-001"
+path = "labeled/compressed_relation/silent-001.md"
+category = "compressed_relation"
+expect = "silent"
+note = "相手と行為を書いた条件文（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-002"
+path = "labeled/compressed_relation/silent-002.md"
+category = "compressed_relation"
+expect = "silent"
+note = "手段を具体的に書く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-003"
+path = "labeled/compressed_relation/silent-003.md"
+category = "compressed_relation"
+expect = "silent"
+note = "目的語がある（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-004"
+path = "labeled/compressed_relation/silent-004.md"
+category = "compressed_relation"
+expect = "silent"
+note = "主題と場所がある（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-005"
+path = "labeled/compressed_relation/silent-005.md"
+category = "compressed_relation"
+expect = "silent"
+note = "目的語のある動詞の列（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-fire-001"
+path = "labeled/quantity_predicate_mismatch/fire-001.md"
+category = "quantity_predicate_mismatch"
+expect = "fire"
+note = "疲れを「枚」で数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-fire-002"
+path = "labeled/quantity_predicate_mismatch/fire-002.md"
+category = "quantity_predicate_mismatch"
+expect = "fire"
+note = "眠気を「粒」で数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-fire-003"
+path = "labeled/quantity_predicate_mismatch/fire-003.md"
+category = "quantity_predicate_mismatch"
+expect = "fire"
+note = "緊張を「本」で数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-fire-004"
+path = "labeled/quantity_predicate_mismatch/fire-004.md"
+category = "quantity_predicate_mismatch"
+expect = "fire"
+note = "不安を「滴」で数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-fire-005"
+path = "labeled/quantity_predicate_mismatch/fire-005.md"
+category = "quantity_predicate_mismatch"
+expect = "fire"
+note = "機嫌を「枚」で数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-silent-001"
+path = "labeled/quantity_predicate_mismatch/silent-001.md"
+category = "quantity_predicate_mismatch"
+expect = "silent"
+note = "「つ」で数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-silent-002"
+path = "labeled/quantity_predicate_mismatch/silent-002.md"
+category = "quantity_predicate_mismatch"
+expect = "silent"
+note = "衣服を「枚」で数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-silent-003"
+path = "labeled/quantity_predicate_mismatch/silent-003.md"
+category = "quantity_predicate_mismatch"
+expect = "silent"
+note = "期間を数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-silent-004"
+path = "labeled/quantity_predicate_mismatch/silent-004.md"
+category = "quantity_predicate_mismatch"
+expect = "silent"
+note = "薬を「粒」で数える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "quantity-predicate-mismatch-silent-005"
+path = "labeled/quantity_predicate_mismatch/silent-005.md"
+category = "quantity_predicate_mismatch"
+expect = "silent"
+note = "数えない（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-fire-001"
+path = "labeled/universal_exception_conflict/fire-001.md"
+category = "universal_exception_conflict"
+expect = "fire"
+note = "全称の直後に反対の状態を「だけ」で足す（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-fire-002"
+path = "labeled/universal_exception_conflict/fire-002.md"
+category = "universal_exception_conflict"
+expect = "fire"
+note = "全称の直後に反対の状態を「だけ」で足す（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-fire-003"
+path = "labeled/universal_exception_conflict/fire-003.md"
+category = "universal_exception_conflict"
+expect = "fire"
+note = "接続詞なし（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-fire-004"
+path = "labeled/universal_exception_conflict/fire-004.md"
+category = "universal_exception_conflict"
+expect = "fire"
+note = "人の全称（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-fire-005"
+path = "labeled/universal_exception_conflict/fire-005.md"
+category = "universal_exception_conflict"
+expect = "fire"
+note = "開閉の反対（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-silent-001"
+path = "labeled/universal_exception_conflict/silent-001.md"
+category = "universal_exception_conflict"
+expect = "silent"
+note = "別の性質を述べる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-silent-002"
+path = "labeled/universal_exception_conflict/silent-002.md"
+category = "universal_exception_conflict"
+expect = "silent"
+note = "状態ではない補足（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-silent-003"
+path = "labeled/universal_exception_conflict/silent-003.md"
+category = "universal_exception_conflict"
+expect = "silent"
+note = "時間が離れる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-silent-004"
+path = "labeled/universal_exception_conflict/silent-004.md"
+category = "universal_exception_conflict"
+expect = "silent"
+note = "全称がない（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "universal-exception-conflict-silent-005"
+path = "labeled/universal_exception_conflict/silent-005.md"
+category = "universal_exception_conflict"
+expect = "silent"
+note = "同じ状態を足す（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-006"
+path = "labeled/thin_evaluation/silent-006.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "具体的な比較を含む（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-007"
+path = "labeled/thin_evaluation/silent-007.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "理由が続く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-008"
+path = "labeled/thin_evaluation/silent-008.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "人の評価を引用する（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-009"
+path = "labeled/thin_evaluation/silent-009.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "疑問（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "thin-evaluation-silent-010"
+path = "labeled/thin_evaluation/silent-010.md"
+category = "thin_evaluation"
+expect = "silent"
+note = "性質名詞ではない主語（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-006"
+path = "labeled/compressed_relation/silent-006.md"
+category = "compressed_relation"
+expect = "silent"
+note = "条件と行為を書いた手順（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-007"
+path = "labeled/compressed_relation/silent-007.md"
+category = "compressed_relation"
+expect = "silent"
+note = "誰が何をするかを書く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-008"
+path = "labeled/compressed_relation/silent-008.md"
+category = "compressed_relation"
+expect = "silent"
+note = "目的語のある短文（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-009"
+path = "labeled/compressed_relation/silent-009.md"
+category = "compressed_relation"
+expect = "silent"
+note = "理由を述べる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "compressed-relation-silent-010"
+path = "labeled/compressed_relation/silent-010.md"
+category = "compressed_relation"
+expect = "silent"
+note = "物語の動作（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-006"
+path = "labeled/cleft_list_ending/silent-006.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "述語で終える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-007"
+path = "labeled/cleft_list_ending/silent-007.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "「は」の後に読点がない（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-008"
+path = "labeled/cleft_list_ending/silent-008.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "箇条書きで示す（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-009"
+path = "labeled/cleft_list_ending/silent-009.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "列挙の後に説明が続く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "cleft-list-ending-silent-010"
+path = "labeled/cleft_list_ending/silent-010.md"
+category = "cleft_list_ending"
+expect = "silent"
+note = "質問（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-006"
+path = "labeled/heading_colon/silent-006.md"
+category = "heading_colon"
+expect = "silent"
+note = "見出しではない本文（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-007"
+path = "labeled/heading_colon/silent-007.md"
+category = "heading_colon"
+expect = "silent"
+note = "時刻を含む見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-008"
+path = "labeled/heading_colon/silent-008.md"
+category = "heading_colon"
+expect = "silent"
+note = "「とは」で終わる見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-009"
+path = "labeled/heading_colon/silent-009.md"
+category = "heading_colon"
+expect = "silent"
+note = "コードの中（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "heading-colon-silent-010"
+path = "labeled/heading_colon/silent-010.md"
+category = "heading_colon"
+expect = "silent"
+note = "引用の中（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-006"
+path = "labeled/redundant_heading_bracket/silent-006.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "英語の補記（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-007"
+path = "labeled/redundant_heading_bracket/silent-007.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "期間の補記（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-008"
+path = "labeled/redundant_heading_bracket/silent-008.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "本文の括弧（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-009"
+path = "labeled/redundant_heading_bracket/silent-009.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "番号の補記（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "redundant-heading-bracket-silent-010"
+path = "labeled/redundant_heading_bracket/silent-010.md"
+category = "redundant_heading_bracket"
+expect = "silent"
+note = "略語の補記（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-006"
+path = "labeled/sensory_role_mismatch/silent-006.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "人が匂いを嗅ぐ（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-007"
+path = "labeled/sensory_role_mismatch/silent-007.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "光が床を照らす（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-008"
+path = "labeled/sensory_role_mismatch/silent-008.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "音が響く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-009"
+path = "labeled/sensory_role_mismatch/silent-009.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "温度が上がる（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "sensory-role-mismatch-silent-010"
+path = "labeled/sensory_role_mismatch/silent-010.md"
+category = "sensory_role_mismatch"
+expect = "silent"
+note = "冷気が流れ込む（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-006"
+path = "labeled/short_concession/silent-006.md"
+category = "short_concession"
+expect = "silent"
+note = "譲歩の後に条件が続く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-007"
+path = "labeled/short_concession/silent-007.md"
+category = "short_concession"
+expect = "silent"
+note = "文中の「もちろん」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-008"
+path = "labeled/short_concession/silent-008.md"
+category = "short_concession"
+expect = "silent"
+note = "会話の引用（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-009"
+path = "labeled/short_concession/silent-009.md"
+category = "short_concession"
+expect = "silent"
+note = "読点のない「もちろん」（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "short-concession-silent-010"
+path = "labeled/short_concession/silent-010.md"
+category = "short_concession"
+expect = "silent"
+note = "理由が続く（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-006"
+path = "labeled/te_nominal_stop/silent-006.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "見出し（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-007"
+path = "labeled/te_nominal_stop/silent-007.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "述語で終える（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-008"
+path = "labeled/te_nominal_stop/silent-008.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "体言止めだがて形がない（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-009"
+path = "labeled/te_nominal_stop/silent-009.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "仮名の名詞で止める（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "te-nominal-stop-silent-010"
+path = "labeled/te_nominal_stop/silent-010.md"
+category = "te_nominal_stop"
+expect = "silent"
+note = "表の中（合成・2026-11-04、規則の調整に未使用）"

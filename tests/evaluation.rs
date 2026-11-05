@@ -342,7 +342,7 @@ fn labeled_reports_detection_and_fpr_per_category() {
         .args(["labeled", "eval/corpus.toml"])
         .assert()
         .success()
-        .stdout(predicate::str::contains("samples: total=265 categories=28"))
+        .stdout(predicate::str::contains("samples: total=428 categories=40"))
         .stdout(predicate::str::contains("ci=wilson95 low_n<5"))
         .stdout(predicate::str::contains("corpus: sha256="))
         .stdout(predicate::str::contains(
@@ -372,7 +372,9 @@ fn labeled_reports_detection_and_fpr_per_category() {
         .stdout(predicate::str::contains(
             "category=declared_item_count_mismatch\tfire=10/10 detection=1.000 ci95=0.722-1.000\tsilent_fired=0/10 fpr=0.000 ci95=0.000-0.278",
         ))
-        .stdout(predicate::str::contains("mismatches: 1"))
+        // 2026-11-04の評価専用標本で外れた13件（calibration.md）と、既知のTTRの1件。
+        .stdout(predicate::str::contains("mismatches: 14"))
+        .stdout(predicate::str::contains("mismatch id=calque-phrase-silent-003"))
         .stdout(predicate::str::contains("mismatch id=low-ttr-silent-002"));
 }
 
