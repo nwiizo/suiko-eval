@@ -150,16 +150,25 @@ fn tally_lines(output: &mut String, label: &str, tallies: &BTreeMap<String, Tall
 
 /// `ignore`の規則は集計から外す。「〜は、」の読点のように、注釈と偶然重なるだけで
 /// 意味の破綻を指していない規則を外した検出率を見るために使う。
+/// `documents`はidの正規表現で、規則の調整に使った文書と評価用の文書を分けて測るために使う。
 pub fn spans(
     path: &Path,
     experimental: bool,
     ignore: &[String],
+    documents: Option<&str>,
 ) -> Result<String, EvaluationError> {
-    let set: SpanSet = read_toml(path)?;
+    let mut set: SpanSet = read_toml(path)?;
     if set.schema_version != 1 {
         return Err(EvaluationError::Invalid(
             "注釈はschema_version = 1を指定してください".to_owned(),
         ));
+    }
+    if let Some(pattern) = documents {
+        let filter = regex::Regex::new(pattern).map_err(|error| {
+            EvaluationError::Invalid(format!("--documentsの正規表現が不正です: {error}"))
+        })?;
+        set.document
+            .retain(|document| filter.is_match(&document.id));
     }
     let base = path.parent().unwrap_or_else(|| Path::new("."));
     let morphology = Morphology::new()?;
@@ -274,6 +283,9 @@ pub fn spans(
         overall.total,
         overall.total - accepted,
     ));
+    if let Some(pattern) = documents {
+        output.push_str(&format!("documents_filter={pattern}\n"));
+    }
     if !ignore.is_empty() {
         output.push_str(&format!("ignored_categories={}\n", ignore.join(",")));
     }

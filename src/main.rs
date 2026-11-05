@@ -67,6 +67,9 @@ enum Command {
         /// 集計から外す規則（カンマ区切り）。注釈と偶然重なるだけの規則を外して見る
         #[arg(long, value_delimiter = ',')]
         ignore: Vec<String>,
+        /// 文書idの正規表現。調整に使った文書と評価用の文書を分けて測る
+        #[arg(long)]
+        documents: Option<String>,
     },
     /// 規則ごとの品質表と、既定・実験の扱いの判定（降格候補・昇格候補・正例不足）を出す
     Quality {
@@ -141,7 +144,8 @@ fn execute(cli: Cli) -> Result<String, evaluation::EvaluationError> {
             annotations,
             experimental,
             ignore,
-        } => evaluation::spans(&annotations, experimental, &ignore),
+            documents,
+        } => evaluation::spans(&annotations, experimental, &ignore, documents.as_deref()),
         Command::Quality {
             manifest,
             external,

@@ -600,9 +600,9 @@ fn spans_reports_detection_with_and_without_incidental_rules() {
         .assert()
         .success()
         .stdout(predicate::str::contains(
-            "mode=default spans=43 accepted=0 unreviewed=43",
+            "mode=default spans=50 accepted=0 unreviewed=50",
         ))
-        .stdout(predicate::str::contains("overall\tdetected=4/43"))
+        .stdout(predicate::str::contains("overall\tdetected=8/50"))
         .stdout(predicate::str::contains(
             "hit\tsonnet-10-business-motto\tover_compression\t主題と述語の不一致\tshort_topic_comma\t雑談は、仕事だ",
         ));
@@ -619,8 +619,24 @@ fn spans_reports_detection_with_and_without_incidental_rules() {
         .stdout(predicate::str::contains(
             "ignored_categories=short_topic_comma,short_object_comma",
         ))
-        .stdout(predicate::str::contains("overall\tdetected=6/43"))
+        .stdout(predicate::str::contains("overall\tdetected=12/50"))
         .stdout(predicate::str::contains(
-            "category=elaborate_simile\t64\t5\t5",
+            "category=elaborate_simile\t105\t6\t6",
         ));
+    // 第3回（25〜36）は規則の調整に使っていない評価用。idの正規表現で分けて測る。
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--documents=-(2[5-9]|3[0-6])-",
+            "--ignore",
+            "short_topic_comma,short_object_comma",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("documents=60 "))
+        .stdout(predicate::str::contains(
+            "documents_filter=-(2[5-9]|3[0-6])-",
+        ))
+        .stdout(predicate::str::contains("overall\tdetected=0/7"));
 }

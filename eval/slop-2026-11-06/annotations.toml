@@ -1067,3 +1067,460 @@ path = "gpt-5.6-sol/24-essay-motto.md"
 model = "openai-gpt-5.6-sol"
 style = "motto"
 genre = "essay"
+
+[[document]]
+id = "haiku-25-essay-metaphor"
+path = "haiku/25-essay-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "祭りの夢が、ひとつずつ蛍光灯のスイッチに切り替えられていくように思えた"
+kind = "semantic_breakdown"
+reason = "「祭りの夢」が数えられるものとして一つずつ「スイッチに」切り替わるとしており、何が何へ置き換わるのかが復元できない。"
+
+[[document]]
+id = "haiku-26-fiction-metaphor"
+path = "haiku/26-fiction-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "haiku-27-essay-literary"
+path = "haiku/27-essay-literary.md"
+model = "claude-haiku-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "haiku-28-fiction-literary"
+path = "haiku/28-fiction-literary.md"
+model = "claude-haiku-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "haiku-29-copy-metaphor"
+path = "haiku/29-copy-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "business"
+
+[[document]]
+id = "haiku-30-business-subject"
+path = "haiku/30-business-subject.md"
+model = "claude-haiku-5.5"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "haiku-31-recruit-motto"
+path = "haiku/31-recruit-motto.md"
+model = "claude-haiku-5.5"
+style = "motto"
+genre = "business"
+
+[[document.span]]
+text = "スケッチは思考の速さです"
+kind = "over_compression"
+pattern = "主題と述語の不一致"
+reason = "行為である「スケッチ」を「速さ」と等置しており、スケッチが思考に追いつく手段なのか、速く考えることそのものなのかが噛み合わない。"
+
+[[document]]
+id = "haiku-32-tech-literary"
+path = "haiku/32-tech-literary.md"
+model = "claude-haiku-5.5"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "haiku-33-essay-subject"
+path = "haiku/33-essay-subject.md"
+model = "claude-haiku-5.5"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "haiku-34-business-principle"
+path = "haiku/34-business-principle.md"
+model = "claude-haiku-5.5"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "haiku-35-tech-metaphor"
+path = "haiku/35-tech-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "haiku-36-essay-motto"
+path = "haiku/36-essay-motto.md"
+model = "claude-haiku-5.5"
+style = "motto"
+genre = "essay"
+
+[[document]]
+id = "sonnet-25-essay-metaphor"
+path = "sonnet/25-essay-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "金魚すくいの袋だけが、手の中で揺れる小さな水槽の月のように光っていた"
+kind = "semantic_breakdown"
+reason = "「水槽の月」が何を指すのか定まらず、金魚の袋が光る様子との写像が成り立たない。"
+
+[[document]]
+id = "sonnet-26-fiction-metaphor"
+path = "sonnet/26-fiction-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "sonnet-27-essay-literary"
+path = "sonnet/27-essay-literary.md"
+model = "claude-sonnet-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "sonnet-28-fiction-literary"
+path = "sonnet/28-fiction-literary.md"
+model = "claude-sonnet-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "sonnet-29-copy-metaphor"
+path = "sonnet/29-copy-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "business"
+
+[[document]]
+id = "sonnet-30-business-subject"
+path = "sonnet/30-business-subject.md"
+model = "claude-sonnet-5.5"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "sonnet-31-recruit-motto"
+path = "sonnet/31-recruit-motto.md"
+model = "claude-sonnet-5.5"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "sonnet-32-tech-literary"
+path = "sonnet/32-tech-literary.md"
+model = "claude-sonnet-5.5"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "sonnet-33-essay-subject"
+path = "sonnet/33-essay-subject.md"
+model = "claude-sonnet-5.5"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "sonnet-34-business-principle"
+path = "sonnet/34-business-principle.md"
+model = "claude-sonnet-5.5"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "sonnet-35-tech-metaphor"
+path = "sonnet/35-tech-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "sonnet-36-essay-motto"
+path = "sonnet/36-essay-motto.md"
+model = "claude-sonnet-5.5"
+style = "motto"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-25-essay-metaphor"
+path = "gpt-6.1-sol/25-essay-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-26-fiction-metaphor"
+path = "gpt-6.1-sol/26-fiction-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-27-essay-literary"
+path = "gpt-6.1-sol/27-essay-literary.md"
+model = "openai-gpt-6.1-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-28-fiction-literary"
+path = "gpt-6.1-sol/28-fiction-literary.md"
+model = "openai-gpt-6.1-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-29-copy-metaphor"
+path = "gpt-6.1-sol/29-copy-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-30-business-subject"
+path = "gpt-6.1-sol/30-business-subject.md"
+model = "openai-gpt-6.1-sol"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-31-recruit-motto"
+path = "gpt-6.1-sol/31-recruit-motto.md"
+model = "openai-gpt-6.1-sol"
+style = "motto"
+genre = "business"
+
+[[document.span]]
+text = "思い込みを持ち帰る"
+kind = "over_compression"
+pattern = "動詞の独自用法"
+reason = "「思い込み」を「持ち帰る」目的語にしており、観察の結果を持ち帰って思い込みを見直すのか、思い込みを捨てて帰るのかが定まらない。"
+
+[[document]]
+id = "gpt-6.1-sol-32-tech-literary"
+path = "gpt-6.1-sol/32-tech-literary.md"
+model = "openai-gpt-6.1-sol"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "gpt-6.1-sol-33-essay-subject"
+path = "gpt-6.1-sol/33-essay-subject.md"
+model = "openai-gpt-6.1-sol"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-34-business-principle"
+path = "gpt-6.1-sol/34-business-principle.md"
+model = "openai-gpt-6.1-sol"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-35-tech-metaphor"
+path = "gpt-6.1-sol/35-tech-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "gpt-6.1-sol-36-essay-motto"
+path = "gpt-6.1-sol/36-essay-motto.md"
+model = "openai-gpt-6.1-sol"
+style = "motto"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-25-essay-metaphor"
+path = "gpt-6-luna/25-essay-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "指先には水風船の冷たさがまだ小さな月のように残っていた"
+kind = "semantic_breakdown"
+reason = "残っている冷たさを「小さな月」にたとえているが、感触と月の間に写像がなく、何が似ているのかが定まらない。"
+
+[[document]]
+id = "gpt-6-luna-26-fiction-metaphor"
+path = "gpt-6-luna/26-fiction-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "彼の声には、使われなくなったホームの長さがあった"
+kind = "semantic_breakdown"
+reason = "声に駅のホームの「長さ」があるとしており、声の調子なのか語られた年月なのか、何が長いのかが復元できない。"
+
+[[document]]
+id = "gpt-6-luna-27-essay-literary"
+path = "gpt-6-luna/27-essay-literary.md"
+model = "openai-gpt-6-luna"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-28-fiction-literary"
+path = "gpt-6-luna/28-fiction-literary.md"
+model = "openai-gpt-6-luna"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-29-copy-metaphor"
+path = "gpt-6-luna/29-copy-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-30-business-subject"
+path = "gpt-6-luna/30-business-subject.md"
+model = "openai-gpt-6-luna"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-31-recruit-motto"
+path = "gpt-6-luna/31-recruit-motto.md"
+model = "openai-gpt-6-luna"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-32-tech-literary"
+path = "gpt-6-luna/32-tech-literary.md"
+model = "openai-gpt-6-luna"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "gpt-6-luna-33-essay-subject"
+path = "gpt-6-luna/33-essay-subject.md"
+model = "openai-gpt-6-luna"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-34-business-principle"
+path = "gpt-6-luna/34-business-principle.md"
+model = "openai-gpt-6-luna"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-35-tech-metaphor"
+path = "gpt-6-luna/35-tech-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "gpt-6-luna-36-essay-motto"
+path = "gpt-6-luna/36-essay-motto.md"
+model = "openai-gpt-6-luna"
+style = "motto"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-25-essay-metaphor"
+path = "gpt-5.6-sol/25-essay-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-26-fiction-metaphor"
+path = "gpt-5.6-sol/26-fiction-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "紙切れ一枚なのに、閉じた鳥籠の扉ほど重い"
+kind = "semantic_breakdown"
+reason = "鳥籠の扉は軽いものなので重さの比較基準にならず、閉じ込められる感覚との写像も重さとして成り立たない。"
+
+[[document]]
+id = "gpt-5.6-sol-27-essay-literary"
+path = "gpt-5.6-sol/27-essay-literary.md"
+model = "openai-gpt-5.6-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-28-fiction-literary"
+path = "gpt-5.6-sol/28-fiction-literary.md"
+model = "openai-gpt-5.6-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-29-copy-metaphor"
+path = "gpt-5.6-sol/29-copy-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-30-business-subject"
+path = "gpt-5.6-sol/30-business-subject.md"
+model = "openai-gpt-5.6-sol"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-31-recruit-motto"
+path = "gpt-5.6-sol/31-recruit-motto.md"
+model = "openai-gpt-5.6-sol"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-32-tech-literary"
+path = "gpt-5.6-sol/32-tech-literary.md"
+model = "openai-gpt-5.6-sol"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "gpt-5.6-sol-33-essay-subject"
+path = "gpt-5.6-sol/33-essay-subject.md"
+model = "openai-gpt-5.6-sol"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-34-business-principle"
+path = "gpt-5.6-sol/34-business-principle.md"
+model = "openai-gpt-5.6-sol"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-35-tech-metaphor"
+path = "gpt-5.6-sol/35-tech-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "gpt-5.6-sol-36-essay-motto"
+path = "gpt-5.6-sol/36-essay-motto.md"
+model = "openai-gpt-5.6-sol"
+style = "motto"
+genre = "essay"
