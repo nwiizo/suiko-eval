@@ -59,6 +59,15 @@ enum Command {
     },
     /// 正解ラベル付きサンプルからカテゴリ別の検出率と誤検知率を出す
     Labeled { manifest: PathBuf },
+    /// 生成文書に付けたスロップの注釈（意味破綻型・過剰圧縮型）と指摘の重なりを測る
+    Spans {
+        annotations: PathBuf,
+        #[arg(long)]
+        experimental: bool,
+        /// 集計から外す規則（カンマ区切り）。注釈と偶然重なるだけの規則を外して見る
+        #[arg(long, value_delimiter = ',')]
+        ignore: Vec<String>,
+    },
     /// 規則ごとの品質表と、既定・実験の扱いの判定（降格候補・昇格候補・正例不足）を出す
     Quality {
         manifest: PathBuf,
@@ -128,6 +137,11 @@ fn execute(cli: Cli) -> Result<String, evaluation::EvaluationError> {
             experimental,
         } => evaluation::length_analysis(&manifest, experimental),
         Command::Labeled { manifest } => evaluation::labeled(&manifest),
+        Command::Spans {
+            annotations,
+            experimental,
+            ignore,
+        } => evaluation::spans(&annotations, experimental, &ignore),
         Command::Quality {
             manifest,
             external,

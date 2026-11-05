@@ -6,6 +6,7 @@ mod feedback;
 mod fetch;
 mod manifest;
 mod quality;
+mod spans;
 mod support;
 
 use std::collections::BTreeMap;
@@ -25,6 +26,7 @@ use manifest::{
 pub use feedback::feedback;
 pub use fetch::fetch_corpus;
 pub use quality::{DEFAULT_MAX_HUMAN_FIRE_UPPER, quality};
+pub use spans::spans;
 
 /// これ未満の分母は率を性能値として扱わず、low_nを付けて参考値に落とす。
 const MIN_SAMPLES: usize = 5;

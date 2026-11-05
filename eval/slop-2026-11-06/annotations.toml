@@ -1,0 +1,1069 @@
+schema_version = 1
+generated = "2026-11-06"
+annotator = "Claude Opus 5.5（サブエージェント、suikoの規則・出力を見ずに注釈）"
+note = "人の確認前（review未設定はunreviewed）"
+
+[[document]]
+id = "haiku-01-tech-plain"
+path = "haiku/01-tech-plain.md"
+model = "claude-haiku-5.5"
+style = "plain"
+genre = "tech"
+
+[[document]]
+id = "haiku-02-essay-plain"
+path = "haiku/02-essay-plain.md"
+model = "claude-haiku-5.5"
+style = "plain"
+genre = "essay"
+
+[[document]]
+id = "haiku-03-essay-metaphor"
+path = "haiku/03-essay-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "見たことのない景色を思い浮かべるより、この香りをかぐだけで"
+kind = "semantic_breakdown"
+reason = "香りで記憶が戻ることを「見たことのない景色を思い浮かべる」ことと比べているが、見たことのない景色は記憶を呼び戻す手段になり得ず、比較が成り立たない。"
+
+[[document.span]]
+text = "黄身が朝日のように鍋の底へ沈んでいく"
+kind = "semantic_breakdown"
+reason = "朝日は昇るものなので「沈んでいく」動きの比喩にならず、色以外の写像が破綻している。"
+
+[[document.span]]
+text = "時間は火の番をしてくれる誰かのように、そっと寄り添っている"
+kind = "semantic_breakdown"
+reason = "時間が火の番をする人のように寄り添うという写像から、急がなくてよい理由も時間の働きも一つに定まらない。"
+
+[[document.span]]
+text = "残った湯気だけが、昨日の寒さをそっと包んでいる"
+kind = "semantic_breakdown"
+reason = "今朝の湯気が過ぎ去った「昨日の寒さ」を包むことはできず、何を包んでいるのかが復元できない。"
+
+[[document]]
+id = "haiku-04-fiction-metaphor"
+path = "haiku/04-fiction-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "古本屋の店内は夜の入り口に立たされたような匂いに包まれる"
+kind = "semantic_breakdown"
+reason = "匂いを「入り口に立たされたような」という状況・姿勢で形容しており、どんな匂いなのかが定まらない。"
+
+[[document.span]]
+text = "棚の一冊一冊が、夜を待つ書き手の寝息のように並んでいた"
+kind = "semantic_breakdown"
+reason = "形のない寝息は並べられず、夜を待つ者が既に眠っているという点でも比喩の写像が成り立たない。"
+
+[[document]]
+id = "haiku-05-essay-literary"
+path = "haiku/05-essay-literary.md"
+model = "claude-haiku-5.5"
+style = "literary"
+genre = "essay"
+
+[[document.span]]
+text = "足の裏に伝わるその温もりは、今も指先の記憶として残っている"
+kind = "semantic_breakdown"
+reason = "足の裏で感じた温もりが「指先の記憶」として残るという、感覚の部位が食い違った記述になっている。"
+
+[[document.span]]
+text = "縁側は、いまも私のなかで、待つことの静かな輪郭を保っている"
+kind = "semantic_breakdown"
+reason = "形のない「待つこと」に輪郭を与え、それを縁側が保つとしており、何が記憶に残っているのかが一つに定まらない。"
+
+[[document]]
+id = "haiku-06-fiction-literary"
+path = "haiku/06-fiction-literary.md"
+model = "claude-haiku-5.5"
+style = "literary"
+genre = "essay"
+
+[[document.span]]
+text = "夜明けは、まだ遠い。"
+kind = "semantic_breakdown"
+reason = "直前で線路の向こうが白みはじめたと書いた直後に夜明けが遠いと述べ、時間の記述が矛盾している。"
+
+[[document]]
+id = "haiku-07-tech-subject"
+path = "haiku/07-tech-subject.md"
+model = "claude-haiku-5.5"
+style = "subject"
+genre = "tech"
+
+[[document.span]]
+text = "旧方式は少しずつ時間を失っていた"
+kind = "semantic_breakdown"
+reason = "転送間隔による一定の遅れを「少しずつ時間を失う」と表しており、時刻情報が欠けるのか遅延が増えるのか、何が起きていたのか定まらない。"
+
+[[document]]
+id = "haiku-08-business-subject"
+path = "haiku/08-business-subject.md"
+model = "claude-haiku-5.5"
+style = "subject"
+genre = "business"
+
+[[document.span]]
+text = "制度は、評価の材料そのものを記録し、判断の根拠を後から確認できる形へ変えることを求めている"
+kind = "over_compression"
+pattern = "主題と述語の不一致"
+reason = "主題の「制度」が記録し変えることを「求めている」となり、誰が誰に何を求め、何を変えるのかが噛み合わない。"
+
+[[document]]
+id = "haiku-09-tech-motto"
+path = "haiku/09-tech-motto.md"
+model = "claude-haiku-5.5"
+style = "motto"
+genre = "tech"
+
+[[document]]
+id = "haiku-10-business-motto"
+path = "haiku/10-business-motto.md"
+model = "claude-haiku-5.5"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "haiku-11-tech-principle"
+path = "haiku/11-tech-principle.md"
+model = "claude-haiku-5.5"
+style = "principle"
+genre = "tech"
+
+[[document]]
+id = "haiku-12-business-principle"
+path = "haiku/12-business-principle.md"
+model = "claude-haiku-5.5"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "sonnet-01-tech-plain"
+path = "sonnet/01-tech-plain.md"
+model = "claude-sonnet-5.5"
+style = "plain"
+genre = "tech"
+
+[[document]]
+id = "sonnet-02-essay-plain"
+path = "sonnet/02-essay-plain.md"
+model = "claude-sonnet-5.5"
+style = "plain"
+genre = "essay"
+
+[[document]]
+id = "sonnet-03-essay-metaphor"
+path = "sonnet/03-essay-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "sonnet-04-fiction-metaphor"
+path = "sonnet/04-fiction-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "雨音が、店じゅうの本に静かに降り積もっていた"
+kind = "semantic_breakdown"
+reason = "屋外の雨の音が屋内の本の上に積もるとしており、形のない音を物の上に置く写像が成り立たない。"
+
+[[document]]
+id = "sonnet-05-essay-literary"
+path = "sonnet/05-essay-literary.md"
+model = "claude-sonnet-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "sonnet-06-fiction-literary"
+path = "sonnet/06-fiction-literary.md"
+model = "claude-sonnet-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "sonnet-07-tech-subject"
+path = "sonnet/07-tech-subject.md"
+model = "claude-sonnet-5.5"
+style = "subject"
+genre = "tech"
+
+[[document]]
+id = "sonnet-08-business-subject"
+path = "sonnet/08-business-subject.md"
+model = "claude-sonnet-5.5"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "sonnet-09-tech-motto"
+path = "sonnet/09-tech-motto.md"
+model = "claude-sonnet-5.5"
+style = "motto"
+genre = "tech"
+
+[[document]]
+id = "sonnet-10-business-motto"
+path = "sonnet/10-business-motto.md"
+model = "claude-sonnet-5.5"
+style = "motto"
+genre = "business"
+
+[[document.span]]
+text = "雑談は、仕事だ"
+kind = "over_compression"
+pattern = "主題と述語の不一致"
+reason = "雑談を仕事と等置しており、雑談も業務の一部とみなすのか、雑談の場を作ることが運営者の仕事なのかが定まらない。"
+
+[[document.span]]
+text = "小さく話す"
+kind = "over_compression"
+pattern = "省きすぎ"
+reason = "本文に対応する説明がなく、声を小さくするのか、話を短く区切るのか、少人数で話すのかが復元できない。"
+
+[[document]]
+id = "sonnet-11-tech-principle"
+path = "sonnet/11-tech-principle.md"
+model = "claude-sonnet-5.5"
+style = "principle"
+genre = "tech"
+
+[[document]]
+id = "sonnet-12-business-principle"
+path = "sonnet/12-business-principle.md"
+model = "claude-sonnet-5.5"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-01-tech-plain"
+path = "gpt-6.1-sol/01-tech-plain.md"
+model = "openai-gpt-6.1-sol"
+style = "plain"
+genre = "tech"
+
+[[document]]
+id = "gpt-6.1-sol-02-essay-plain"
+path = "gpt-6.1-sol/02-essay-plain.md"
+model = "openai-gpt-6.1-sol"
+style = "plain"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-03-essay-metaphor"
+path = "gpt-6.1-sol/03-essay-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-04-fiction-metaphor"
+path = "gpt-6.1-sol/04-fiction-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-05-essay-literary"
+path = "gpt-6.1-sol/05-essay-literary.md"
+model = "openai-gpt-6.1-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-06-fiction-literary"
+path = "gpt-6.1-sol/06-fiction-literary.md"
+model = "openai-gpt-6.1-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-07-tech-subject"
+path = "gpt-6.1-sol/07-tech-subject.md"
+model = "openai-gpt-6.1-sol"
+style = "subject"
+genre = "tech"
+
+[[document]]
+id = "gpt-6.1-sol-08-business-subject"
+path = "gpt-6.1-sol/08-business-subject.md"
+model = "openai-gpt-6.1-sol"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-09-tech-motto"
+path = "gpt-6.1-sol/09-tech-motto.md"
+model = "openai-gpt-6.1-sol"
+style = "motto"
+genre = "tech"
+
+[[document]]
+id = "gpt-6.1-sol-10-business-motto"
+path = "gpt-6.1-sol/10-business-motto.md"
+model = "openai-gpt-6.1-sol"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-11-tech-principle"
+path = "gpt-6.1-sol/11-tech-principle.md"
+model = "openai-gpt-6.1-sol"
+style = "principle"
+genre = "tech"
+
+[[document]]
+id = "gpt-6.1-sol-12-business-principle"
+path = "gpt-6.1-sol/12-business-principle.md"
+model = "openai-gpt-6.1-sol"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-01-tech-plain"
+path = "gpt-6-luna/01-tech-plain.md"
+model = "openai-gpt-6-luna"
+style = "plain"
+genre = "tech"
+
+[[document]]
+id = "gpt-6-luna-02-essay-plain"
+path = "gpt-6-luna/02-essay-plain.md"
+model = "openai-gpt-6-luna"
+style = "plain"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-03-essay-metaphor"
+path = "gpt-6-luna/03-essay-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "床は足の裏から体温を少しずつ手紙のように奪い"
+kind = "semantic_breakdown"
+reason = "体温を奪う動きを「手紙のように」と形容しているが、手紙と熱を奪うことの間に写像が成り立たず、何を言いたいのか定まらない。"
+
+[[document.span]]
+text = "青い炎が鍋の底に朝の輪郭を描いた"
+kind = "semantic_breakdown"
+reason = "形のない「朝」に輪郭を与えて炎が描くとしており、何が見えたのかが復元できない（直前はやかんで、鍋も出所が不明）。"
+
+[[document.span]]
+text = "すぐに消えてしまう線は、今日の予定をまだ知らない"
+kind = "semantic_breakdown"
+reason = "曇りガラスに引いた線が予定を「知らない」という擬人化から、線と予定の関係も伝えたい内容も一つに定まらない。"
+
+[[document]]
+id = "gpt-6-luna-04-fiction-metaphor"
+path = "gpt-6-luna/04-fiction-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "古本屋は一冊を送り出し、ひとつの時間を静かに棚へ戻した"
+kind = "semantic_breakdown"
+reason = "本が店を出た直後に「時間を棚へ戻した」としており、棚に戻ったものが何なのか、送り出しと戻すことがどう両立するのかが定まらない。"
+
+[[document]]
+id = "gpt-6-luna-05-essay-literary"
+path = "gpt-6-luna/05-essay-literary.md"
+model = "openai-gpt-6-luna"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-06-fiction-literary"
+path = "gpt-6-luna/06-fiction-literary.md"
+model = "openai-gpt-6-luna"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-07-tech-subject"
+path = "gpt-6-luna/07-tech-subject.md"
+model = "openai-gpt-6-luna"
+style = "subject"
+genre = "tech"
+
+[[document]]
+id = "gpt-6-luna-08-business-subject"
+path = "gpt-6-luna/08-business-subject.md"
+model = "openai-gpt-6-luna"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-09-tech-motto"
+path = "gpt-6-luna/09-tech-motto.md"
+model = "openai-gpt-6-luna"
+style = "motto"
+genre = "tech"
+
+[[document]]
+id = "gpt-6-luna-10-business-motto"
+path = "gpt-6-luna/10-business-motto.md"
+model = "openai-gpt-6-luna"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-11-tech-principle"
+path = "gpt-6-luna/11-tech-principle.md"
+model = "openai-gpt-6-luna"
+style = "principle"
+genre = "tech"
+
+[[document]]
+id = "gpt-6-luna-12-business-principle"
+path = "gpt-6-luna/12-business-principle.md"
+model = "openai-gpt-6-luna"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-01-tech-plain"
+path = "gpt-5.6-sol/01-tech-plain.md"
+model = "openai-gpt-5.6-sol"
+style = "plain"
+genre = "tech"
+
+[[document]]
+id = "gpt-5.6-sol-02-essay-plain"
+path = "gpt-5.6-sol/02-essay-plain.md"
+model = "openai-gpt-5.6-sol"
+style = "plain"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-03-essay-metaphor"
+path = "gpt-5.6-sol/03-essay-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "窓ガラスは薄い氷の手紙のように白く曇り"
+kind = "semantic_breakdown"
+reason = "「氷の手紙」が何を指すのか定まらず、曇ったガラスの白さとの写像が成り立たない。"
+
+[[document.span]]
+text = "流し台の金属は眠りを邪魔された猫のように冷たい"
+kind = "semantic_breakdown"
+reason = "眠りを邪魔された猫は冷たいものではないので、冷たさの比喩として写像が成り立たない。"
+
+[[document.span]]
+text = "やかんは胸の内に朝を育て始める"
+kind = "semantic_breakdown"
+reason = "やかんが内側で「朝」を育てるとしており、湯が温まることなのか別の何かなのか、育つものが一つに定まらない。"
+
+[[document]]
+id = "gpt-5.6-sol-04-fiction-metaphor"
+path = "gpt-5.6-sol/04-fiction-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-05-essay-literary"
+path = "gpt-5.6-sol/05-essay-literary.md"
+model = "openai-gpt-5.6-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-06-fiction-literary"
+path = "gpt-5.6-sol/06-fiction-literary.md"
+model = "openai-gpt-5.6-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-07-tech-subject"
+path = "gpt-5.6-sol/07-tech-subject.md"
+model = "openai-gpt-5.6-sol"
+style = "subject"
+genre = "tech"
+
+[[document]]
+id = "gpt-5.6-sol-08-business-subject"
+path = "gpt-5.6-sol/08-business-subject.md"
+model = "openai-gpt-5.6-sol"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-09-tech-motto"
+path = "gpt-5.6-sol/09-tech-motto.md"
+model = "openai-gpt-5.6-sol"
+style = "motto"
+genre = "tech"
+
+[[document]]
+id = "gpt-5.6-sol-10-business-motto"
+path = "gpt-5.6-sol/10-business-motto.md"
+model = "openai-gpt-5.6-sol"
+style = "motto"
+genre = "business"
+
+[[document.span]]
+text = "結論を最後に残せ"
+kind = "over_compression"
+pattern = "省きすぎ"
+reason = "会議の最後に結論を記録せよという意味か、結論は最後まで出さずにおけという意味かが復元できない。"
+
+[[document.span]]
+text = "記録は開く"
+kind = "over_compression"
+pattern = "動詞の独自用法"
+reason = "「開く」を記録に対して使っており、誰でも読めるよう公開するのか、記録を読み返すのかが定まらない。"
+
+[[document]]
+id = "gpt-5.6-sol-11-tech-principle"
+path = "gpt-5.6-sol/11-tech-principle.md"
+model = "openai-gpt-5.6-sol"
+style = "principle"
+genre = "tech"
+
+[[document]]
+id = "gpt-5.6-sol-12-business-principle"
+path = "gpt-5.6-sol/12-business-principle.md"
+model = "openai-gpt-5.6-sol"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "haiku-13-essay-metaphor"
+path = "haiku/13-essay-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "雨音は、その地層に降り積もる砂のようにも感じられた"
+kind = "semantic_breakdown"
+reason = "形のない雨音を本棚の地層に積もる砂とみなしており、屋外の音が館内の本に積もるという写像が成り立たない。"
+
+[[document.span]]
+text = "雨音は、図書館という一冊の本の、最も柔らかな前書きなのかもしれない"
+kind = "semantic_breakdown"
+reason = "図書館を一冊の本に、雨音をその前書きに見立てているが、雨音が何の前に置かれ何を導くのかが一つに定まらない。"
+
+[[document]]
+id = "haiku-14-fiction-metaphor"
+path = "haiku/14-fiction-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "岬の上の白い塔は、まるで長く連れ添った老犬のように、ただ静かに私の足元にまとわりついていた"
+kind = "semantic_breakdown"
+reason = "見上げるほどの灯台が人の足元にまとわりつくことはできず、老犬の比喩の写像が成り立たない。"
+
+[[document]]
+id = "haiku-15-essay-literary"
+path = "haiku/15-essay-literary.md"
+model = "claude-haiku-5.5"
+style = "literary"
+genre = "essay"
+
+[[document.span]]
+text = "過ぎ去った日々が少しずつ、やさしく綻んでいくようだった"
+kind = "semantic_breakdown"
+reason = "過ぎ去った日々が「綻ぶ」のが、ほどけて崩れることなのか花のように開くことなのか定まらず、振り子の揺れとの関係も復元できない。"
+
+[[document]]
+id = "haiku-16-fiction-literary"
+path = "haiku/16-fiction-literary.md"
+model = "claude-haiku-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "haiku-17-copy-metaphor"
+path = "haiku/17-copy-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "business"
+
+[[document.span]]
+text = "その重心は、書き手の呼吸に寄り添う振り子のように"
+kind = "semantic_breakdown"
+reason = "動かない重心を、呼吸に寄り添う振り子にたとえており、それが手首を疲れさせない理由として写像が成り立たない。"
+
+[[document.span]]
+text = "ペン先は、一本の糸で結ばれた職人の技そのものです"
+kind = "semantic_breakdown"
+reason = "ペン先と「一本の糸で結ばれた」技との対応がなく、何と何が糸で結ばれているのかが復元できない。"
+
+[[document]]
+id = "haiku-18-business-subject"
+path = "haiku/18-business-subject.md"
+model = "claude-haiku-5.5"
+style = "subject"
+genre = "business"
+
+[[document.span]]
+text = "技術という言葉も、この会社では人の関わりを映す鏡として扱われてきました"
+kind = "semantic_breakdown"
+reason = "「技術という言葉」が人の関わりを映す鏡になるという写像が成り立たず、会社が技術をどう扱ってきたのかが一つに定まらない。"
+
+[[document]]
+id = "haiku-19-recruit-motto"
+path = "haiku/19-recruit-motto.md"
+model = "claude-haiku-5.5"
+style = "motto"
+genre = "business"
+
+[[document.span]]
+text = "専門用語は、使う前に一度外す"
+kind = "over_compression"
+pattern = "動詞の独自用法"
+reason = "専門用語を「外す」としながら「使う前に」と続けており、言い換えるのか、いったん使わずに考えるのかが定まらない。"
+
+[[document.span]]
+text = "数字を、人の顔の裏側で読める人"
+kind = "semantic_breakdown"
+reason = "本文は「数字の向こうにいるユーザー」を述べているのに、見出しでは数字が人の顔の裏側にあることになっており、位置関係が逆転して意味が通らない。"
+
+[[document]]
+id = "haiku-20-tech-literary"
+path = "haiku/20-tech-literary.md"
+model = "claude-haiku-5.5"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "haiku-21-essay-subject"
+path = "haiku/21-essay-subject.md"
+model = "claude-haiku-5.5"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "haiku-22-business-principle"
+path = "haiku/22-business-principle.md"
+model = "claude-haiku-5.5"
+style = "principle"
+genre = "business"
+
+[[document.span]]
+text = "期限を守るより、約束の意味を守る"
+kind = "over_compression"
+pattern = "省きすぎ"
+reason = "「約束の意味」が何を指すのか、期限を破ってよい場面がどこまでなのかが示されず、行動の基準として復元できない。"
+
+[[document]]
+id = "haiku-23-tech-metaphor"
+path = "haiku/23-tech-metaphor.md"
+model = "claude-haiku-5.5"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "haiku-24-essay-motto"
+path = "haiku/24-essay-motto.md"
+model = "claude-haiku-5.5"
+style = "motto"
+genre = "essay"
+
+[[document.span]]
+text = "急がない朝を、ちゃんと歩く"
+kind = "over_compression"
+pattern = "動詞の独自用法"
+reason = "「歩く」が「朝」を目的語に取っており、急がない朝に散歩をするのか、朝の時間をていねいに過ごすのかが定まらない。"
+
+[[document.span]]
+text = "朝は、一日でいちばん正直な時間である"
+kind = "over_compression"
+pattern = "主題と述語の不一致"
+reason = "時間である「朝」に「正直」という人の性質を述語として与えており、何が正直なのかが噛み合わない。"
+
+[[document]]
+id = "sonnet-13-essay-metaphor"
+path = "sonnet/13-essay-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "sonnet-14-fiction-metaphor"
+path = "sonnet/14-fiction-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "sonnet-15-essay-literary"
+path = "sonnet/15-essay-literary.md"
+model = "claude-sonnet-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "sonnet-16-fiction-literary"
+path = "sonnet/16-fiction-literary.md"
+model = "claude-sonnet-5.5"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "sonnet-17-copy-metaphor"
+path = "sonnet/17-copy-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "business"
+
+[[document.span]]
+text = "ちょうど小鳥を包んだときのような、頼もしさと軽さが同居しています"
+kind = "semantic_breakdown"
+reason = "小鳥を手に包んだときに感じるのは軽さやもろさで、頼もしさではないため、比喩の写像が成り立たない。"
+
+[[document]]
+id = "sonnet-18-business-subject"
+path = "sonnet/18-business-subject.md"
+model = "claude-sonnet-5.5"
+style = "subject"
+genre = "business"
+
+[[document.span]]
+text = "現在の主力事業は、そこから得られる力で支えられ"
+kind = "semantic_breakdown"
+reason = "「そこ」は直前の新領域への挑戦を指すため、主力事業が新しい挑戦に支えられるという逆の関係になり、何が何を支えるのかが定まらない。"
+
+[[document]]
+id = "sonnet-19-recruit-motto"
+path = "sonnet/19-recruit-motto.md"
+model = "claude-sonnet-5.5"
+style = "motto"
+genre = "business"
+
+[[document.span]]
+text = "読みやすさを書く人"
+kind = "over_compression"
+pattern = "動詞の独自用法"
+reason = "「書く」が通常取らない「読みやすさ」を目的語にしており、読みやすいコードを書くのか、読みやすさについて書くのかが定まらない。"
+
+[[document]]
+id = "sonnet-20-tech-literary"
+path = "sonnet/20-tech-literary.md"
+model = "claude-sonnet-5.5"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "sonnet-21-essay-subject"
+path = "sonnet/21-essay-subject.md"
+model = "claude-sonnet-5.5"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "sonnet-22-business-principle"
+path = "sonnet/22-business-principle.md"
+model = "claude-sonnet-5.5"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "sonnet-23-tech-metaphor"
+path = "sonnet/23-tech-metaphor.md"
+model = "claude-sonnet-5.5"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "sonnet-24-essay-motto"
+path = "sonnet/24-essay-motto.md"
+model = "claude-sonnet-5.5"
+style = "motto"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-13-essay-metaphor"
+path = "gpt-6.1-sol/13-essay-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-14-fiction-metaphor"
+path = "gpt-6.1-sol/14-fiction-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-15-essay-literary"
+path = "gpt-6.1-sol/15-essay-literary.md"
+model = "openai-gpt-6.1-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-16-fiction-literary"
+path = "gpt-6.1-sol/16-fiction-literary.md"
+model = "openai-gpt-6.1-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-17-copy-metaphor"
+path = "gpt-6.1-sol/17-copy-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-18-business-subject"
+path = "gpt-6.1-sol/18-business-subject.md"
+model = "openai-gpt-6.1-sol"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-19-recruit-motto"
+path = "gpt-6.1-sol/19-recruit-motto.md"
+model = "openai-gpt-6.1-sol"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-20-tech-literary"
+path = "gpt-6.1-sol/20-tech-literary.md"
+model = "openai-gpt-6.1-sol"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "gpt-6.1-sol-21-essay-subject"
+path = "gpt-6.1-sol/21-essay-subject.md"
+model = "openai-gpt-6.1-sol"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "gpt-6.1-sol-22-business-principle"
+path = "gpt-6.1-sol/22-business-principle.md"
+model = "openai-gpt-6.1-sol"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-6.1-sol-23-tech-metaphor"
+path = "gpt-6.1-sol/23-tech-metaphor.md"
+model = "openai-gpt-6.1-sol"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "gpt-6.1-sol-24-essay-motto"
+path = "gpt-6.1-sol/24-essay-motto.md"
+model = "openai-gpt-6.1-sol"
+style = "motto"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-13-essay-metaphor"
+path = "gpt-6-luna/13-essay-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "雨は傘をたたみ"
+kind = "semantic_breakdown"
+reason = "傘は雨を防ぐ側の道具なので、雨が傘をたたむという動作は成り立たず、雨がやんだこととの写像も崩れている。"
+
+[[document.span]]
+text = "天気に疲れた心を一度預かり、読める形に整えて返してくれる"
+kind = "semantic_breakdown"
+reason = "心を「読める形」に整えるという操作が何を指すのか定まらず、図書館が心に何をするのかが復元できない。"
+
+[[document]]
+id = "gpt-6-luna-14-fiction-metaphor"
+path = "gpt-6-luna/14-fiction-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "essay"
+
+[[document.span]]
+text = "石の螺旋は、海の底へ沈んでいく時間の貝殻だった"
+kind = "semantic_breakdown"
+reason = "上っていく階段を「海の底へ沈んでいく」貝殻にたとえ、しかも「時間の貝殻」としており、向きも対象も写像が成り立たない。"
+
+[[document]]
+id = "gpt-6-luna-15-essay-literary"
+path = "gpt-6-luna/15-essay-literary.md"
+model = "openai-gpt-6-luna"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-16-fiction-literary"
+path = "gpt-6-luna/16-fiction-literary.md"
+model = "openai-gpt-6-luna"
+style = "literary"
+genre = "essay"
+
+[[document.span]]
+text = "長い年月がテーブル一枚分の距離を置いて座った"
+kind = "semantic_breakdown"
+reason = "形のない年月が二人の間に座るとしており、年月の隔たりとテーブル一枚の近さのどちらを言いたいのかが定まらない。"
+
+[[document]]
+id = "gpt-6-luna-17-copy-metaphor"
+path = "gpt-6-luna/17-copy-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-18-business-subject"
+path = "gpt-6-luna/18-business-subject.md"
+model = "openai-gpt-6-luna"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-19-recruit-motto"
+path = "gpt-6-luna/19-recruit-motto.md"
+model = "openai-gpt-6-luna"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-20-tech-literary"
+path = "gpt-6-luna/20-tech-literary.md"
+model = "openai-gpt-6-luna"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "gpt-6-luna-21-essay-subject"
+path = "gpt-6-luna/21-essay-subject.md"
+model = "openai-gpt-6-luna"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "gpt-6-luna-22-business-principle"
+path = "gpt-6-luna/22-business-principle.md"
+model = "openai-gpt-6-luna"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-6-luna-23-tech-metaphor"
+path = "gpt-6-luna/23-tech-metaphor.md"
+model = "openai-gpt-6-luna"
+style = "metaphor"
+genre = "tech"
+
+[[document]]
+id = "gpt-6-luna-24-essay-motto"
+path = "gpt-6-luna/24-essay-motto.md"
+model = "openai-gpt-6-luna"
+style = "motto"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-13-essay-metaphor"
+path = "gpt-5.6-sol/13-essay-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-14-fiction-metaphor"
+path = "gpt-5.6-sol/14-fiction-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-15-essay-literary"
+path = "gpt-5.6-sol/15-essay-literary.md"
+model = "openai-gpt-5.6-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-16-fiction-literary"
+path = "gpt-5.6-sol/16-fiction-literary.md"
+model = "openai-gpt-5.6-sol"
+style = "literary"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-17-copy-metaphor"
+path = "gpt-5.6-sol/17-copy-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-18-business-subject"
+path = "gpt-5.6-sol/18-business-subject.md"
+model = "openai-gpt-5.6-sol"
+style = "subject"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-19-recruit-motto"
+path = "gpt-5.6-sol/19-recruit-motto.md"
+model = "openai-gpt-5.6-sol"
+style = "motto"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-20-tech-literary"
+path = "gpt-5.6-sol/20-tech-literary.md"
+model = "openai-gpt-5.6-sol"
+style = "literary"
+genre = "tech"
+
+[[document]]
+id = "gpt-5.6-sol-21-essay-subject"
+path = "gpt-5.6-sol/21-essay-subject.md"
+model = "openai-gpt-5.6-sol"
+style = "subject"
+genre = "essay"
+
+[[document]]
+id = "gpt-5.6-sol-22-business-principle"
+path = "gpt-5.6-sol/22-business-principle.md"
+model = "openai-gpt-5.6-sol"
+style = "principle"
+genre = "business"
+
+[[document]]
+id = "gpt-5.6-sol-23-tech-metaphor"
+path = "gpt-5.6-sol/23-tech-metaphor.md"
+model = "openai-gpt-5.6-sol"
+style = "metaphor"
+genre = "tech"
+
+[[document.span]]
+text = "ロールバックは帰港できる錨である"
+kind = "semantic_breakdown"
+reason = "錨はその場に留まるための道具で港へ戻す働きはないため、「帰港できる錨」は写像が成り立たない。"
+
+[[document]]
+id = "gpt-5.6-sol-24-essay-motto"
+path = "gpt-5.6-sol/24-essay-motto.md"
+model = "openai-gpt-5.6-sol"
+style = "motto"
+genre = "essay"

@@ -10,6 +10,7 @@ suikoの作業ツリーを隣に置いてビルドする（`Cargo.toml`の`suiko
 cargo +1.97 run --locked -- quality eval/corpus.toml --external   # 規則ごとの品質表と扱いの判定
 cargo +1.97 run --locked -- report eval/corpus.toml --external --experimental
 cargo +1.97 run --locked -- labeled eval/corpus.toml
+cargo +1.97 run --locked -- spans eval/slop-2026-11-06/annotations.toml --experimental --ignore short_topic_comma,short_object_comma
 cargo +1.97 run --locked -- fetch eval/sources.toml                # 著作権のある外部文書を取得し、lockと照合する
 ```
 
@@ -18,6 +19,7 @@ cargo +1.97 run --locked -- fetch eval/sources.toml                # 著作権�
 | `quality` | 規則ごとに人間文書での発火率とラベル付き標本の結果をまとめ、keep・降格候補・昇格候補・標本不足を返す |
 | `report` | カテゴリ別の文書発火率とfinding件数（人間・AI、ジャンル別） |
 | `labeled` | ラベル付き標本の検出率と誤検知率 |
+| `spans` | 生成文書に付けたスロップの注釈（意味破綻型・過剰圧縮型）と、指摘の本文範囲の重なり。`--ignore`で偶然重なるだけの規則を外す |
 | `sweep` / `calibrate` | 閾値候補の比較と、人間文書の誤検知上限を制約にした探索（devのみ） |
 | `length-analysis` / `vocab` | 文書長別の件数、禁止語・誇張語彙の出現実測 |
 | `feedback` | 推敲判断（採用・維持・保留・未確認・対応不能）の集計 |

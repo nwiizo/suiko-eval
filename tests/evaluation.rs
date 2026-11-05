@@ -590,3 +590,37 @@ fn quality_gates_each_rule_by_human_noise_and_fixtures() {
         .failure()
         .stderr(predicate::str::contains("max-human-fire-upper"));
 }
+
+// 2026-11-06の生成文書と注釈（slop-2026-11-06/README.md）。読点の2規則を外した検出と、
+// 当たった規則を明細に出すことを固定する。規則を変えたら値を測り直してREADMEも更新する。
+#[test]
+fn spans_reports_detection_with_and_without_incidental_rules() {
+    eval_command()
+        .args(["spans", "eval/slop-2026-11-06/annotations.toml"])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "mode=default spans=43 accepted=0 unreviewed=43",
+        ))
+        .stdout(predicate::str::contains("overall\tdetected=4/43"))
+        .stdout(predicate::str::contains(
+            "hit\tsonnet-10-business-motto\tover_compression\t主題と述語の不一致\tshort_topic_comma\t雑談は、仕事だ",
+        ));
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--experimental",
+            "--ignore",
+            "short_topic_comma,short_object_comma",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "ignored_categories=short_topic_comma,short_object_comma",
+        ))
+        .stdout(predicate::str::contains("overall\tdetected=6/43"))
+        .stdout(predicate::str::contains(
+            "category=elaborate_simile\t64\t5\t5",
+        ));
+}
