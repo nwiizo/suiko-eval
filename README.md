@@ -11,6 +11,8 @@ cargo +1.97 run --locked -- quality eval/corpus.toml --external   # 規則ごと
 cargo +1.97 run --locked -- report eval/corpus.toml --external --experimental
 cargo +1.97 run --locked -- labeled eval/corpus.toml
 cargo +1.97 run --locked -- spans eval/slop-2026-11-06/annotations.toml --experimental --ignore short_topic_comma,short_object_comma
+cargo +1.97 run --locked -- report eval/yomiyasu-2026-11-06/raw.toml --experimental  # 外部の評価集合（本文は upstream/ へ取得。手順は同じフォルダの README）
+# natural-japanese（coji/natural-japanese）との比較は eval/natural-japanese-2026-11-13/README.md
 cargo +1.97 run --locked -- fetch eval/sources.toml                # 著作権のある外部文書を取得し、lockと照合する
 ```
 

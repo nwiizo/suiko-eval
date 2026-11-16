@@ -2,3 +2,5 @@
 # 著作権のあるweb文書の本文はコミットしない。eval/corpus/external-lock.json のSHA-256で照合する。
 /eval/corpus/external/*
 !/eval/corpus/external/README.md
+/eval/yomiyasu-2026-11-06/upstream/
+/eval/natural-japanese-2026-11-13/upstream/
