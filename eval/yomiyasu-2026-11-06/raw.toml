@@ -1,0 +1,380 @@
+version = 1
+# yomiyasu tests/corpus: 人間16文書と素のAI文書26件。suikoの調整に使っていない外部の評価集合。
+
+[[document]]
+id = "yomiyasu-human-human_doc_09"
+path = "upstream/tests/corpus/human/human_doc_09.md"
+label = "human"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_doc_09.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "7c3a90484a19e5ac74b10cfa766d0601e719a4c30a9488668ebc071e54c29211"
+
+[[document]]
+id = "yomiyasu-human-human_doc_10"
+path = "upstream/tests/corpus/human/human_doc_10.md"
+label = "human"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_doc_10.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "6513b0857e83e054b0e4ef088e3ecd041ad66b0e1850fbef3f6b44a1f64c65dd"
+
+[[document]]
+id = "yomiyasu-human-human_doc_11"
+path = "upstream/tests/corpus/human/human_doc_11.md"
+label = "human"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_doc_11.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "f9a0ff54989fdef9a843ec884234d0e06a9783a8dee47b9fe27e4599c5364754"
+
+[[document]]
+id = "yomiyasu-human-human_doc_12"
+path = "upstream/tests/corpus/human/human_doc_12.md"
+label = "human"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_doc_12.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "e66d2e8a11d5c1872d240cdae974e57e6e802e4cf4bbe7222f27cc52d9790590"
+
+[[document]]
+id = "yomiyasu-human-human_doc_13"
+path = "upstream/tests/corpus/human/human_doc_13.md"
+label = "human"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_doc_13.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "f59d3bf922ecf1aff2be2f964315fb8b6f73096a7f52ad61c384bdee19315da8"
+
+[[document]]
+id = "yomiyasu-human-human_doc_14"
+path = "upstream/tests/corpus/human/human_doc_14.md"
+label = "human"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_doc_14.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "ac27386a4648db3cc8b01f2c5c1d79a7e67e537dde6710350b4d6beeff490d7c"
+
+[[document]]
+id = "yomiyasu-human-human_doc_15"
+path = "upstream/tests/corpus/human/human_doc_15.md"
+label = "human"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_doc_15.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "830754e076786e984acaddb67728897beefe47c7e59da8ac8d8d161c70292084"
+
+[[document]]
+id = "yomiyasu-human-human_doc_16"
+path = "upstream/tests/corpus/human/human_doc_16.md"
+label = "human"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_doc_16.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "bc5a5893d880adc918a61b585cccaaddbc479b9d6fdf49326f03558816bb7e35"
+
+[[document]]
+id = "yomiyasu-human-human_oga_01"
+path = "upstream/tests/corpus/human/human_oga_01.md"
+label = "human"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_oga_01.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "5a0b385d29e07e35b76bb11db0a96a61947385f174e8779e4c32a936cb1e65fb"
+
+[[document]]
+id = "yomiyasu-human-human_oga_02"
+path = "upstream/tests/corpus/human/human_oga_02.md"
+label = "human"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_oga_02.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "80b1db6a97f69d6075d97baaa3517217f2b88aabb8d52f3d031905ea52d13007"
+
+[[document]]
+id = "yomiyasu-human-human_oga_03"
+path = "upstream/tests/corpus/human/human_oga_03.md"
+label = "human"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_oga_03.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "2c983cde055954fde59fc2dd6009485932b8a47f53e28f777ba90d1236bfba77"
+
+[[document]]
+id = "yomiyasu-human-human_oga_04"
+path = "upstream/tests/corpus/human/human_oga_04.md"
+label = "human"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_oga_04.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "e17fc753dda6095a6a48cc35d26e0b6191b0a7bfe2b6b06909de9ef65cef2ee0"
+
+[[document]]
+id = "yomiyasu-human-human_oga_05"
+path = "upstream/tests/corpus/human/human_oga_05.md"
+label = "human"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_oga_05.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "ac4912c58daf1f2d68cd77ec85ec8041cb509bd069e7e82351cb17433c854539"
+
+[[document]]
+id = "yomiyasu-human-human_oga_06"
+path = "upstream/tests/corpus/human/human_oga_06.md"
+label = "human"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_oga_06.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "f7aed35ea2655a877145d8a2c24dc6b1ddf6687a2fc6bb19d8cf5f17149cf46d"
+
+[[document]]
+id = "yomiyasu-human-human_oga_07"
+path = "upstream/tests/corpus/human/human_oga_07.md"
+label = "human"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_oga_07.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "137eb1e037e88bf67d528f1ae7c27ddc894febca5f7777a2199bb63ca3dfedaf"
+
+[[document]]
+id = "yomiyasu-human-human_oga_08"
+path = "upstream/tests/corpus/human/human_oga_08.md"
+label = "human"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/human/human_oga_08.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "d1819c068e1feb4d40ee46887f1c1cbd99ee8b0013dd429472c87e3cf3f9dae6"
+
+[[document]]
+id = "yomiyasu-raw-01_tech_arch_sonnet_casual"
+path = "upstream/tests/corpus/raw_ai/01_tech_arch_sonnet_casual.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/01_tech_arch_sonnet_casual.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "5856540b7294e0f457e34bcaa08bca0943c33a2fbdde2e621054428844be16c2"
+
+[[document]]
+id = "yomiyasu-raw-01_tech_arch_sonnet_default"
+path = "upstream/tests/corpus/raw_ai/01_tech_arch_sonnet_default.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/01_tech_arch_sonnet_default.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "be119a96019f9d62c47a5773adb0a64306e50545ca1f9e14af5e3ccb2c35cde1"
+
+[[document]]
+id = "yomiyasu-raw-01_tech_arch_sonnet_formal"
+path = "upstream/tests/corpus/raw_ai/01_tech_arch_sonnet_formal.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/01_tech_arch_sonnet_formal.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "1944dbc16224ce847ada0669832df51d79d08c85bb7e0e8fc3c6d488a298e872"
+
+[[document]]
+id = "yomiyasu-raw-02_incident_report_sonnet_casual"
+path = "upstream/tests/corpus/raw_ai/02_incident_report_sonnet_casual.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/02_incident_report_sonnet_casual.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "3fcf5d02d50a4bd1a608df2e70c3a33e3fd141923a2079e33bc3e9498bfb90ef"
+
+[[document]]
+id = "yomiyasu-raw-02_incident_report_sonnet_default"
+path = "upstream/tests/corpus/raw_ai/02_incident_report_sonnet_default.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/02_incident_report_sonnet_default.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "25c5b2bfdf74bee36d6182b51f020c76f9dc8b0c4bc39b6fa352f32526b23211"
+
+[[document]]
+id = "yomiyasu-raw-02_incident_report_sonnet_formal"
+path = "upstream/tests/corpus/raw_ai/02_incident_report_sonnet_formal.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/02_incident_report_sonnet_formal.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "bd95a041587c25369ae14ce81e82e3a1f985315baad5d4f5a4c8afeb1a8e22ec"
+
+[[document]]
+id = "yomiyasu-raw-03_pr_description_sonnet_casual"
+path = "upstream/tests/corpus/raw_ai/03_pr_description_sonnet_casual.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/03_pr_description_sonnet_casual.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "288a9ca5597faf0d0e5d1b1ac918c4929dd45cab3ef17c274cb2da253f4fd2ac"
+
+[[document]]
+id = "yomiyasu-raw-03_pr_description_sonnet_default"
+path = "upstream/tests/corpus/raw_ai/03_pr_description_sonnet_default.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/03_pr_description_sonnet_default.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "11e0e0933bd8ed60764639eacffb1503227dee5a75223521de13398096a49905"
+
+[[document]]
+id = "yomiyasu-raw-03_pr_description_sonnet_formal"
+path = "upstream/tests/corpus/raw_ai/03_pr_description_sonnet_formal.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/03_pr_description_sonnet_formal.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "46d4d898e63f81829d8e30f0a6eb235958237d7a35963a0ed20adca298a07c02"
+
+[[document]]
+id = "yomiyasu-raw-04_slack_announce_sonnet_casual"
+path = "upstream/tests/corpus/raw_ai/04_slack_announce_sonnet_casual.md"
+label = "ai"
+genre = "business"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/04_slack_announce_sonnet_casual.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "e1c8f5fdbea4b5aa1ece130b7e7aae97e0185558d3a7b827583ca7b283d34361"
+
+[[document]]
+id = "yomiyasu-raw-04_slack_announce_sonnet_default"
+path = "upstream/tests/corpus/raw_ai/04_slack_announce_sonnet_default.md"
+label = "ai"
+genre = "business"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/04_slack_announce_sonnet_default.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "2dd3ca62ff83c139bbcf96488f6fb0ac5c7df55f42e07fdf08984c933d4c1611"
+
+[[document]]
+id = "yomiyasu-raw-04_slack_announce_sonnet_formal"
+path = "upstream/tests/corpus/raw_ai/04_slack_announce_sonnet_formal.md"
+label = "ai"
+genre = "business"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/04_slack_announce_sonnet_formal.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "a9eb960997a91aaab24b5c8a147773b3f03a463622af88b790c53349634e14ab"
+
+[[document]]
+id = "yomiyasu-raw-05_comparison_sonnet_casual"
+path = "upstream/tests/corpus/raw_ai/05_comparison_sonnet_casual.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/05_comparison_sonnet_casual.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "6d1f0f645a25bd4cdee0d820b74902536658b468865025260f01d6b3c29c9bb9"
+
+[[document]]
+id = "yomiyasu-raw-05_comparison_sonnet_default"
+path = "upstream/tests/corpus/raw_ai/05_comparison_sonnet_default.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/05_comparison_sonnet_default.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "9550eae9c25a348d5137d6e2bed1b8c68c59acf6a8a1b725702b1b55e39d34ce"
+
+[[document]]
+id = "yomiyasu-raw-05_comparison_sonnet_formal"
+path = "upstream/tests/corpus/raw_ai/05_comparison_sonnet_formal.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/05_comparison_sonnet_formal.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "2e4eb258366158d82fff6e3df336222265f4f57c55fc0847969d5fd1b308df39"
+
+[[document]]
+id = "yomiyasu-raw-06_spec_draft_sonnet_casual"
+path = "upstream/tests/corpus/raw_ai/06_spec_draft_sonnet_casual.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/06_spec_draft_sonnet_casual.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "de5912b9d2982e2adece26803a701bb474e5c63b5c703ffde9d2d565c21d2d3e"
+
+[[document]]
+id = "yomiyasu-raw-06_spec_draft_sonnet_default"
+path = "upstream/tests/corpus/raw_ai/06_spec_draft_sonnet_default.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/06_spec_draft_sonnet_default.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "6a69de0aae6d02956a8c4ed474a41b2d4d6f13640e5034a91aad7b6c699ab93d"
+
+[[document]]
+id = "yomiyasu-raw-06_spec_draft_sonnet_formal"
+path = "upstream/tests/corpus/raw_ai/06_spec_draft_sonnet_formal.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/06_spec_draft_sonnet_formal.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "ee5966d44ad055eb34dd38aab82ee58654c317af97ab287e8205af216c4c9564"
+
+[[document]]
+id = "yomiyasu-raw-07_code_review_sonnet_casual"
+path = "upstream/tests/corpus/raw_ai/07_code_review_sonnet_casual.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/07_code_review_sonnet_casual.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "41a3feb8c6b100c5ff52df8afce7d89773c526bd1cb64e958bb5a05c97e90f84"
+
+[[document]]
+id = "yomiyasu-raw-07_code_review_sonnet_default"
+path = "upstream/tests/corpus/raw_ai/07_code_review_sonnet_default.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/07_code_review_sonnet_default.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "94de220e432e6b3748e26ae0901dbfea5cdce71426678c56ffcdc0c139e8eaac"
+
+[[document]]
+id = "yomiyasu-raw-07_code_review_sonnet_formal"
+path = "upstream/tests/corpus/raw_ai/07_code_review_sonnet_formal.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/07_code_review_sonnet_formal.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "3438744b78c2a645cde2f2d00720cc70277b27e0ba1bfc7c83517c49cada7c42"
+
+[[document]]
+id = "yomiyasu-raw-08_essay_retrospective_sonnet_casual"
+path = "upstream/tests/corpus/raw_ai/08_essay_retrospective_sonnet_casual.md"
+label = "ai"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/08_essay_retrospective_sonnet_casual.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "dcc768ac9ffe076b5983c0ae65bd3b5b4f533905f499f9e63e83d5d2aefffd47"
+
+[[document]]
+id = "yomiyasu-raw-08_essay_retrospective_sonnet_default"
+path = "upstream/tests/corpus/raw_ai/08_essay_retrospective_sonnet_default.md"
+label = "ai"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/08_essay_retrospective_sonnet_default.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "476222e951f607805ca7dc32e5ca3cbabd773c28d61acbd99698818bd45b4475"
+
+[[document]]
+id = "yomiyasu-raw-08_essay_retrospective_sonnet_formal"
+path = "upstream/tests/corpus/raw_ai/08_essay_retrospective_sonnet_formal.md"
+label = "ai"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/08_essay_retrospective_sonnet_formal.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "58f56b69c6c37b01ee1962e63c34ddf529f66ba1066925efd6fd0d7f3bc539b1"
+
+[[document]]
+id = "yomiyasu-raw-09_listicle_patterns"
+path = "upstream/tests/corpus/raw_ai/09_listicle_patterns.md"
+label = "ai"
+genre = "tech"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/09_listicle_patterns.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "2593df7e789d73f92a185861332da729670847a1b70e84269dba2a3051d4fd74"
+
+[[document]]
+id = "yomiyasu-raw-10_essay_fragments"
+path = "upstream/tests/corpus/raw_ai/10_essay_fragments.md"
+label = "ai"
+genre = "essay"
+source = "nanaism/yomiyasu@8394e09 tests/corpus/raw_ai/10_essay_fragments.md"
+license = "MIT (nanaism/yomiyasu); text not committed, fetch upstream at the pinned commit"
+sha256 = "c7ee0d8e8b643d36c82146958fad1c392064a97d670a9d996f56b121d5fa2acb"
