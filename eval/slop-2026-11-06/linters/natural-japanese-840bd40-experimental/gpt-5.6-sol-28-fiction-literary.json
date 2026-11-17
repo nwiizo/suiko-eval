@@ -1,0 +1,142 @@
+{
+  "file": "gpt-5.6-sol/28-fiction-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 26,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.07692307692307693,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      6,
+      3,
+      1,
+      1,
+      1,
+      4,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.552026926707974,
+    "rhythm": {
+      "mora_mean": 29.76923076923077,
+      "mora_stdev": 9.740114089948182,
+      "burstiness": -0.5069463123387973,
+      "length_autocorrelation_lag1": -0.25553555468703576
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2692307692307692
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 185,
+      "doc_char_count": 593,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 10,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 2,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.507 (モーラ近似長 平均=29.8, 標準偏差=9.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 閉校する小学校",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "三月の風が、校庭の白線を少しずつ消していた。百十二年続いた山崎小学校は、明日の卒業式を最後に閉校する。六年生は三人だけだった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "放課後、千尋は図書室の鍵を返す前に、もう一度だけ棚の間を歩いた。窓際の床には、西日が長い長方形を置いていた。誰にも借りられなくなった本たちは、口を閉ざし、次の住まいを待っている。千尋は低学年のころ好きだった『海を渡る鳥』を抜き、貸出票を開いた。母の旧姓、叔父の名、見覚えのある町の人々。その末尾に自分の名があった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "廊下では、担任の佐伯先生が古い写真を外していた。運動会、入学式、雪の日の集合写真。壁から写真がなくなるたび、校舎は少しずつ自分の顔を忘れていくようだった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "「先生、学校って、なくなったらどこへ行くの」",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "佐伯先生は画鋲を掌に集め、しばらく考えた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "「ここにいた人の中へ、少しずつ引っ越すんじゃないかな」",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "翌朝、体育館には町じゅうの人が集まった。校歌の伴奏が始まると、低い声も、震える声も、子どもの声も重なった。歌は梁へ昇り、古い窓ガラスを揺らした。千尋は途中で泣きそうになったが、最後の一音まで口を開いた。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "式の後、三人は正門を出た。振り返ると、二階の窓が春の空を映していた。校舎は何も言わない。ただ、長い仕事を終えた者のように、陽だまりの中に立っていた。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "千尋の鞄には、町の図書館へ移されるまで借りてよいと言われた一冊が入っていた。歩くたび、その本が背中に触れた。小学校はもう、静かに引っ越しを始めていた。",
+      "no": 10
+    }
+  ]
+}

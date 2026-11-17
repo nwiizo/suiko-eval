@@ -1,0 +1,172 @@
+{
+  "file": "sonnet/17-copy-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 21,
+    "nominal_ending_count": 5,
+    "nominal_ending_ratio": 0.23809523809523808,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      3,
+      4,
+      3,
+      2,
+      3,
+      1,
+      2,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.40406101782088427,
+    "rhythm": {
+      "mora_mean": 32.666666666666664,
+      "mora_stdev": 11.306691374636076,
+      "burstiness": -0.48574810393074513,
+      "length_autocorrelation_lag1": -0.18428747186527528
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 156,
+      "doc_char_count": 558,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 5,
+      "non_blank_line_count": 15,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 2,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.486 (モーラ近似長 平均=32.7, 標準偏差=11.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 21,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 万年筆「暁（あかつき）」",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "キャップを外した瞬間、小さな夜明けが始まります。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "「暁」は、書くことを日常のなかの儀式に変える万年筆です。深い藍色の軸は、朝の直前の空をそのまま閉じ込めたよう。光の角度によって、墨を流したような黒から澄んだ群青へと表情を変えます。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "ペン先には、14金を職人が一本ずつ研ぎ出したニブを採用しました。紙に触れたときの感触は、凪いだ水面を滑る小舟のよう。力を込めなくても、インクが静かに言葉の道を作っていきます。筆圧の強い方にも弱い方にも、不思議と馴染む柔らかさです。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "軸の重さは約22グラム。手に載せると、ちょうど小鳥を包んだときのような、頼もしさと軽さが同居しています。長い手紙を書いても、指先が疲れにくい設計です。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "首軸のわずかな膨らみは、親指と人差し指のあいだにすっぽり収まる、小さな丘の形。ペンが手の一部になっていくような感覚を、ぜひ味わってください。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "インクは、ボトルから吸入するコンバーター式。付属のカートリッジも使えます。ペン先に宿るインクの量は、旅人の水筒に似て、ほどよく長く持ちます。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "仕様",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "箇条書き",
+      "text": "- 全長 約140mm（キャップ装着時）",
+      "no": 9
+    },
+    {
+      "line": 18,
+      "kind": "箇条書き",
+      "text": "- 重量 約22g",
+      "no": 10
+    },
+    {
+      "line": 19,
+      "kind": "箇条書き",
+      "text": "- ペン先 14金（極細・細字・中字）",
+      "no": 11
+    },
+    {
+      "line": 20,
+      "kind": "箇条書き",
+      "text": "- 軸色 暁藍・白金・墨黒",
+      "no": 12
+    },
+    {
+      "line": 21,
+      "kind": "箇条書き",
+      "text": "- 付属 コンバーター、カートリッジ2本、専用ケース",
+      "no": 13
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "日記の一行目、大切な人への礼状、まだ誰にも見せないアイデアのメモ。どんな言葉も、「暁」の手にかかれば、朝の光を浴びた葉の露のように澄んで見えるはずです。",
+      "no": 14
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "新しいノートを開き、最初の一文字を、ゆっくり落としてみてください。そこから、あなたの一日が静かに明けていきます。",
+      "no": 15
+    }
+  ]
+}

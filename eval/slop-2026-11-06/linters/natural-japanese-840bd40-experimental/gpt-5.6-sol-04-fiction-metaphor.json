@@ -1,0 +1,128 @@
+{
+  "file": "gpt-5.6-sol/04-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 29,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      5,
+      1,
+      7,
+      5,
+      1,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.506790981265485,
+    "rhythm": {
+      "mora_mean": 27.103448275862068,
+      "mora_stdev": 10.668499644332268,
+      "burstiness": -0.43510990394919624,
+      "length_autocorrelation_lag1": 0.26205641636842986
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3448275862068966
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 190,
+      "doc_char_count": 609,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.435 (モーラ近似長 平均=27.1, 標準偏差=10.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 29,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 閉店間際の古本屋",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "閉店十分前、古本屋の扉がためらうように鳴った。店主の榊は、レジの時計から顔を上げた。入ってきた少女の肩には、夜の雨が銀の鱗になって張りついていた。少女は挨拶もせず、書棚の間へ滑り込んだ。細い通路は本でできた峡谷で、その背中をすぐに飲み込んだ。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "榊は閉店の札を裏返さずに待った。店内には古い紙の匂いが沈み、天井の裸電球が蜂蜜色の孤島を作っている。少女は棚から棚へ、なくした鍵を探すように指を走らせた。やがて最奥の文学棚で止まり、一冊の青い本を抜いた。埃が小さな亡霊の群れとなって舞い上がった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "「これ、父が持っていた本と同じです」",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "少女は表紙を撫でた。声は雨粒ほど小さかった。見返しを開くと、そこに古い署名があった。榊は目を細めた。その本を先週売りに来た男を覚えていた。長い入院を終え、蔵書を整理していると言っていた。署名の名字は、少女が告げた名字と同じだった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "榊の胸で、偶然が眠っていた鳥のように羽ばたいた。しかし、事情をどこまで話すべきか迷った。言葉は刃にも橋にもなる。彼はレジの引き出しから買い取り票を出しかけ、手を止めた。そして本だけを少女に差し出した。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "「代金は、次に来たときでいい」",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "少女は驚き、それから本を胸に抱いた。青い表紙は、雨の海から拾い上げた小舟のようだった。扉の外では雨脚が弱まり、雲の裂け目から月が細い栞を差し込んでいた。少女を見送った榊は、ようやく札を閉店へ返した。暗くなった店内で、本棚だけが幾千もの口を閉ざし、今夜渡された物語の続きを静かに待っていた。",
+      "no": 8
+    }
+  ]
+}

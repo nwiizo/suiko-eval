@@ -1,0 +1,128 @@
+{
+  "file": "sonnet/35-tech-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 23,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      4,
+      3,
+      5,
+      3,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.26801800012908594,
+    "rhythm": {
+      "mora_mean": 34.17391304347826,
+      "mora_stdev": 15.298912078152723,
+      "burstiness": -0.38152260193188003,
+      "length_autocorrelation_lag1": 0.16771287117951697
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.17391304347826086
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 178,
+      "doc_char_count": 633,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.382 (モーラ近似長 平均=34.2, 標準偏差=15.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 23,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 負債だらけのコードを引き継いだ話",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "引き継ぎの初日、リポジトリを開いた私は、築五十年の木造アパートの鍵を渡された管理人のような気分になった。階段はきしみ、壁には前の住人の落書きがあり、配電盤の蓋を開けると、色の違う配線が蜘蛛の巣のように絡み合っていた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "最初に出会ったのは、三千行を超えるひとつの関数である。それは、増築を重ねた温泉旅館の廊下に似ていた。どの角を曲がっても、見知らぬ階段に出る。コメントには「あとで直す」と書かれ、その「あとで」は、四年前の日付をまとっていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "テストは、ほとんど存在しなかった。テストのないコードを触るのは、暗闇のなかで地雷原を歩くようなものだ。一歩踏み出すたび、どこかで何かが爆ぜるのではないかと、背筋が冷えた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "そこで私は、大改築を諦めた。まず、玄関の見張り番を置くことにした。変更の入口になる箇所に、動作を記録する小さなテストを一本ずつ書いていく。これは、家じゅうの配線に目印の札を付けて回る作業に近い。地味だが、札が増えるほど、暗闇に灯りがともった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "次に、巨大な関数を、小さな部屋に切り分けた。ひとつ切るたびに、テストを走らせる。緑色の表示が並ぶのを見ると、荒れた庭に、石を一個ずつ敷いて道を作っているような手応えがあった。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "半年後、負債が消えたわけではない。ただ、家のなかを歩けるようになった。懐中電灯なしで、廊下を行き来できる。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "負債の返済は、一括払いの奇跡では終わらない。毎日の少額の返済が、いつの間にか家を住める場所へ変える。私はいま、前任者の落書きの隣に、次の住人への短い手紙を、コメントとして残している。",
+      "no": 8
+    }
+  ]
+}

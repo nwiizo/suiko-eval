@@ -1,0 +1,206 @@
+{
+  "file": "haiku/23-tech-metaphor.md",
+  "stats": {
+    "total_findings": 8,
+    "by_category": {
+      "low_burstiness": 1,
+      "repeated_syntax_template": 7
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 15,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      4,
+      3,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.21081851067789195,
+    "rhythm": {
+      "mora_mean": 40.266666666666666,
+      "mora_stdev": 13.493043475147562,
+      "burstiness": -0.49802394992257626,
+      "length_autocorrelation_lag1": -0.1614568699287748
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.4666666666666667
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 133,
+      "doc_char_count": 487,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.498 (モーラ近似長 平均=40.3, 標準偏差=13.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "今回の移行は、古い倉庫から新しい倉庫へ、",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の46.7%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L7, L9",
+      "related_lines": [
+        3,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "棚の配置は昔のまま、ラベルはところどころ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の46.7%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L7, L9",
+      "related_lines": [
+        3,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "データの移し替えは、川を渡る作業に近かっ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の46.7%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L7, L9",
+      "related_lines": [
+        3,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "両岸の水位が揃うまで、私たちは毎朝、差分",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の46.7%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L7, L9",
+      "related_lines": [
+        3,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "最大の山場は、切り替えの夜だった",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の46.7%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L7, L9",
+      "related_lines": [
+        3,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "読み取りの経路を一つずつ新しい倉庫へ向け",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の46.7%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L7, L9",
+      "related_lines": [
+        3,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "遅延の波が来ても、エラーの岩礁に乗り上げ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の46.7%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L7, L9",
+      "related_lines": [
+        3,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 15,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# データベース移行のふりかえり",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "今回の移行は、古い倉庫から新しい倉庫へ、荷物を一つずつ運び出す作業に似ていた。棚の配置は昔のまま、ラベルはところどころ剥がれ、どの箱に何が入っているのかを、誰もが完全には覚えていなかった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "まず私たちは、倉庫の地図を描き直した。テーブルの依存関係は、絡まった糸の束のようだった。一本引くと別の糸が揺れ、その揺れがさらに遠くの結び目を震わせる。ほどくには、慎重に、糸の向きを一本ずつ確かめるしかなかった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "データの移し替えは、川を渡る作業に近かった。流れを止めずに橋を架けるため、旧い書き込みと新しい書き込みを、しばらく二重に流した。両岸の水位が揃うまで、私たちは毎朝、差分という名の水位計を覗き込んだ。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "最大の山場は、切り替えの夜だった。読み取りの経路を一つずつ新しい倉庫へ向け替えるたび、監視の画面は、嵐の海を映す灯台のように明滅した。遅延の波が来ても、エラーの岩礁に乗り上げても、私たちは舵を切り直し、航路を保った。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "移行が終わったとき、旧い倉庫は静かな空き家になった。私たちはその扉を閉め、最後の鍵を机の引き出しにしまった。データベースは、ただの箱ではなく、チームの記憶を預かる書庫なのだと、今は強く思う。",
+      "no": 6
+    }
+  ]
+}

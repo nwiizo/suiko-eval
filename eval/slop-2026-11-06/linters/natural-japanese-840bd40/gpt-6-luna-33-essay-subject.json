@@ -1,0 +1,124 @@
+{
+  "file": "gpt-6-luna/33-essay-subject.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 24,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      6,
+      5,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.1559023911155809,
+    "rhythm": {
+      "mora_mean": 33.333333333333336,
+      "mora_stdev": 7.431165603202651,
+      "burstiness": -0.635409937712134,
+      "length_autocorrelation_lag1": -0.04623165383498027
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.5416666666666666
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 207,
+      "doc_char_count": 626,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=24, 平均文長=26.1字, 変動係数=0.216",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.635 (モーラ近似長 平均=33.3, 標準偏差=7.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 24,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 古い港町の朝",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "朝の港町では、潮の匂いが路地の先まで届く。坂道は夜の冷たさをまだ抱え、石畳は薄い光を受けてゆっくり目を覚ます。店のシャッターが一枚上がると、金属の音が静けさに切れ目を入れる。町はその切れ目から、一日の気配を少しずつ流し込む。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "岸壁では、漁船が帰り支度を始めている。係留ロープは波に合わせて張り、ほどけ、船体を岸へつなぎとめる。水面は朝焼けを映し、揺れるたびに色を細かく砕く。魚市場の扉が開くと、氷の白さと人の声が外へあふれる。声は倉庫の壁にぶつかり、狭い通りを抜けて、まだ眠る家々の窓をたたく。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "古い時計台は、町の中心で時刻を告げる。鐘の音は、海辺のざわめきに混ざって遠くまで届く。長く住む人にとって、その音は時刻の知らせであり、船を待つ合図でもある。観光客のカメラは、赤い屋根や錆びた錨を切り取る。けれど町の表情をつくるのは、写真に写りにくい仕事の繰り返しだ。網を繕う手、店先を掃く箒、毎朝同じ場所に並ぶ長靴が、港の暮らしを支えている。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "坂の途中の喫茶店は、湯気の立つ窓を通りへ向けている。店主は扉を開け、椅子を拭き、昨日の新聞をたたむ。コーヒーの香りは潮風と混じり、町に陸と海の境目を忘れさせる。通学する子どもは、店先で挨拶を交わして走り去る。その背中を、店主の目がしばらく追う。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "太陽が高くなるころ、港町はすっかり目を覚ましている。潮は満ち引きを続け、船は次の仕事へ向かう。古い町並みは変化を拒むのではなく、変わるものを受け止めながら朝を重ねる。今日の光もまた、濡れた石畳の上に新しい一日を置いていく。",
+      "no": 6
+    }
+  ]
+}

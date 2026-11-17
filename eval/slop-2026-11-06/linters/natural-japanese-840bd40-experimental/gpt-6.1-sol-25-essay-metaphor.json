@@ -1,0 +1,124 @@
+{
+  "file": "gpt-6.1-sol/25-essay-metaphor.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 25,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      5,
+      6,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.12649110640673517,
+    "rhythm": {
+      "mora_mean": 32.4,
+      "mora_stdev": 7.96994353806851,
+      "burstiness": -0.6051545858342396,
+      "length_autocorrelation_lag1": 0.02022764754326937
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.24
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 191,
+      "doc_char_count": 656,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[5, 5, 6, 4, 5]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.126（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.605 (モーラ近似長 平均=32.4, 標準偏差=8.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 25,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 祭りのあとを流れる川",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "夏祭りの帰り道は、ほどけかけた帯に似ている。境内ではあれほど固く結ばれていた人の群れが、角を曲がるたびに細い流れへ分かれていく。金魚の袋を提げた子が走ると、水の中の赤い句読点が揺れた。私の手には、食べ終えたりんご飴の棒だけが残っている。甘さの去った木の感触が、夢から抜け落ちた小さな骨のようだった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "参道を離れても、太鼓は背中を追ってきた。音は家々の屋根にぶつかり、少しずつ丸くなりながら届いた。幼いころは、その音が聞こえなくなるところまでに家に着きたかった。祭りの国と普段の暮らしをつなぐ橋が、最後の一打で落ちてしまう気がしたからだ。今はむしろ、音が消えたあとの静けさを確かめるために、遠回りを選んでいる。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "用水路に沿った道で、妹が下駄を脱いだことを思い出す。鼻緒に擦れた足の指は、夕焼けの切れ端みたいに赤かった。私は片方の下駄を持ち、妹はもう片方を振り回した。母に叱られるぞと言いながら、二人とも笑っていた。あの晩の私たちは、来年も同じ場所で綿菓子を買うことを疑わなかった。未来は露店の軒先のように、明るいものばかり並べていた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "今年、妹は別の町で子どもを寝かしつけている。写真を送ろうと携帯を出したが、暗い水面には何も写らなかった。かわりに「今年も暑かった」とだけ送った。すぐに返ってきた短い返事が、向こう岸から投げられた小石のように胸へ届いた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "家の近くで振り返ると、空にはもう花火の痕もなかった。ただ、煙の匂いが薄い便箋のように夜へ残っていた。私は棒を折らずにポケットへしまった。捨てる場所なら家にある。もう少しだけ、終わった時間の取っ手を握って歩きたかった。",
+      "no": 6
+    }
+  ]
+}

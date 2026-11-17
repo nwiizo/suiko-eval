@@ -1,0 +1,133 @@
+{
+  "file": "haiku/30-business-subject.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 19,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      4,
+      4,
+      3,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.21700555924303477,
+    "rhythm": {
+      "mora_mean": 43.26315789473684,
+      "mora_stdev": 15.49479405023764,
+      "burstiness": -0.47258903561689247,
+      "length_autocorrelation_lag1": -0.23623727696999505
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "連体詞/名詞/助詞/補助記号",
+      "lead_pos_4gram_ratio": 0.15789473684210525
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 175,
+      "doc_char_count": 650,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.473 (モーラ近似長 平均=43.3, 標準偏差=15.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 19,
+      "genre": "business",
+      "by_category": {
+        "no_chain": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 5,
+        "category": "no_chain",
+        "excerpt": "の仮の服の",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 中期経営計画が伝えたいこと",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "この計画は、三年後の私たちがどこに立っているかを示す地図です。ただし、地図そのものは目的地を歩いてはくれません。計画が語れるのは方向と順番までで、歩くのは現場の一人ひとりになります。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "計画書の冒頭に掲げた「顧客との距離を縮める」という言葉は、まだ抽象のままです。しかし、この言葉は、週次の商談記録や、問い合わせへの返信速度という具体の数字に姿を変えて、現場の机の上に降りてきます。数字は、目標が現実の形を取るための仮の服のようなものです。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "次に語りたいのは、投資という概念です。投資は、今期の利益を一時的に痩せさせる代わりに、来期の体力を蓄えようとする約束です。この約束は、新しい研修制度や、古くなったシステムの更新という形で表れます。約束を守れるかどうかは、会議室の議論ではなく、日々の判断が決めていきます。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "計画はまた、失敗の扱い方も示しています。挑戦の結果が思わしくなかったとき、責任の矛先を探すのではなく、その挑戦が何を教えてくれたのかを記録するという約束です。記録は、次の一歩を照らす小さな灯りになります。この灯りを絶やさないことが、組織の持久力を支えます。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "数字の推移は、四半期ごとに共有されます。その数字は、会社の健康診断の結果であり、同時に、私たちがどの方向へ歩いてきたかを示す足跡でもあります。数字が上下しても、足跡が途切れていなければ、計画は生きています。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "この計画が最後に問うのは、「あなたの仕事は、誰の明日を少し軽くしているか」です。その問いへの答えが積み重なったとき、計画は紙の上の文字から、会社の日常へと移っていきます。",
+      "no": 7
+    }
+  ]
+}

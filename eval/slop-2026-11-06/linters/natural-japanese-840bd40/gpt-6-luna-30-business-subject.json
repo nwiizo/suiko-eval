@@ -1,0 +1,121 @@
+{
+  "file": "gpt-6-luna/30-business-subject.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.20327890704543544,
+    "rhythm": {
+      "mora_mean": 43.18181818181818,
+      "mora_stdev": 10.877985958457415,
+      "burstiness": -0.5975573300180307,
+      "length_autocorrelation_lag1": -0.21624634055983866
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.22727272727272727
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 205,
+      "doc_char_count": 689,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.598 (モーラ近似長 平均=43.2, 標準偏差=10.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 中期経営計画が描く三年間",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "中期経営計画は、今後三年間の判断をそろえるための共通の地図です。売上目標だけを示すものではありません。顧客に選ばれる理由を育て、事業の収益力を高め、変化に耐えられる組織をつくる道筋を明らかにします。計画の実行には、各部門の日々の選択を同じ方向へ結び付ける役割があります。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "顧客価値の向上は、すべての施策の起点です。顧客の課題を捉える仕組みは、開発と営業の連携を促します。提供後の利用状況は、改善の優先順位を決める材料になります。顧客の声を集めるだけで終わらせず、製品やサービスの変更へ反映する流れを整えます。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "収益基盤の強化は、成長投資を継続する条件です。事業ポートフォリオは、利益率、成長性、戦略上の役割を共通の尺度で見直します。採算性の低い業務は、原因を分解したうえで、価格、工程、提供範囲を改善します。投資判断は短期の数字に偏らせず、顧客価値と将来の収益性を合わせて評価します。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "組織能力の向上は、計画を実行する力を支えます。人材育成は、必要な専門性と経験を明確にするところから始まります。業務の標準化は、品質を保ちながら改善の時間を生みます。データ基盤は、部門ごとに異なる判断材料をそろえ、事実に基づく議論を促します。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "進捗管理は、四半期ごとの確認を基本とします。指標は結果だけでなく、成果につながる活動も測定します。計画との差が生じた場合は、責任追及より原因分析を優先し、必要な修正を速やかに決めます。市場環境の変化が大きい場合には、前提を再確認して施策を更新します。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "この計画は完成した答えではなく、学習しながら進むための枠組みです。全社の資源配分と現場の工夫をつなぎ、三年後に持続的な成長を実現できる状態を目指します。",
+      "no": 7
+    }
+  ]
+}

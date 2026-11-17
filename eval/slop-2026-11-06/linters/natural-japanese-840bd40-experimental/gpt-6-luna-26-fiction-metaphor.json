@@ -1,0 +1,126 @@
+{
+  "file": "gpt-6-luna/26-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 27,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      7,
+      7,
+      6,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.30089031128281335,
+    "rhythm": {
+      "mora_mean": 26.074074074074073,
+      "mora_stdev": 9.999725647814047,
+      "burstiness": -0.4455962097196753,
+      "length_autocorrelation_lag1": 0.09114965201515768
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2222222222222222
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 176,
+      "doc_char_count": 578,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.446 (モーラ近似長 平均=26.1, 標準偏差=10.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 27,
+      "genre": "essay",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 9,
+        "category": "double_negative",
+        "excerpt": "ないのかもしれない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 雪の夜の駅舎",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "終電を逃した夜、真帆は小さな駅舎のベンチに座っていた。雪は窓の外で音もなく積もり、線路を白い手紙のように覆っていく。駅舎の時計は十一時四十分で止まっていた。針は、誰かが時間の襟をつかんで引き留めた跡のようだった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "改札の向こうで、駅員の老人がストーブに薪を足した。火が赤く息をすると、部屋の冷たさが少し退いた。「ここは昔、もっと人がいたんだよ」と老人は言う。彼の声には、使われなくなったホームの長さがあった。真帆は返事をせず、濡れた手袋を膝に置いた。東京へ戻る列車に乗るはずだった。けれど母から届いた電話のあと、足が改札を越えなかった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "「お母さん、待ってるの？」と老人が尋ねた。真帆は首を振った。母はもういない。実家を片づけるために帰ってきたのだと話すと、老人は窓の外へ目を向けた。「雪は隠すけれど、消しはしない。朝になれば、足跡が見つかる」その言葉は、凍った胸に置かれた小さな湯たんぽのようだった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "やがて駅舎の扉が開き、風が一枚の紙のように吹き込んだ。老人は古い切符を真帆に差し出した。母が若いころ、この駅から旅立った日のものだという。裏には鉛筆で「また帰る」と書かれていた。真帆の指が文字をなぞる。帰るとは、同じ場所へ戻ることだけではないのかもしれない。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "朝、雪はやみ、始発列車が白い景色を割って入ってきた。真帆は切符を胸ポケットにしまい、乗り込んだ。駅舎は小さくなり、窓の向こうで灯りが一つ、消えずに残った。",
+      "no": 6
+    }
+  ]
+}

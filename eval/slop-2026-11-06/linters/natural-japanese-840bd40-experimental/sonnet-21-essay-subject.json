@@ -1,0 +1,135 @@
+{
+  "file": "sonnet/21-essay-subject.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 26,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 8,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      4,
+      4,
+      4,
+      4,
+      3,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.297921795862109,
+    "rhythm": {
+      "mora_mean": 30.653846153846153,
+      "mora_stdev": 8.805340633311074,
+      "burstiness": -0.5536988290809405,
+      "length_autocorrelation_lag1": -0.07148545376856018
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3076923076923077
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 190,
+      "doc_char_count": 656,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 9,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 7,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.554 (モーラ近似長 平均=30.7, 標準偏差=8.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 季節の変わり目",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "季節の変わり目は、いつも少しだけ不意打ちでやってくる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "朝の空気が、昨日までと違う重さで窓から入ってくる。九月の終わりなら、それは冷たさを含んだ軽さだ。冷たさは肌の表面を撫でて、夏の記憶をゆっくりと剥がしていく。私はそれに気づいて、布団のなかで足を縮める。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "衣替えの箱は、押し入れの奥でずっと待っている。蓋を開けると、防虫剤の匂いが立ちのぼり、去年の自分の気配を連れてくる。ニットの袖に残った糸のほつれは、昨年の冬の出来事を、黙って覚えている。服は人よりも記憶がいい。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "この時期の光は、とても低い。夕方、部屋の奥まで差し込む日差しは、夏のそれと違い、壁の色をやわらかく焦がす。光が長く伸びるたびに、一日が早く閉じていくのが分かる。影は足元から伸びて、私より先に家へ帰っていく。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "体調というものも、この時期には気まぐれになる。喉は急に乾燥し、肩は理由もなく重くなる。体は、気候の書き換えに追いつくまで、少し時間がかかるらしい。風邪は、そのあいだの隙間にそっと忍び込む。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "それでも、変わり目には変わり目だけの贈り物がある。金木犀の香りは、ある朝いきなり街角に満ちて、通り過ぎる人の足を止める。その香りは、季節が静かに扉を開けた合図のように思える。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "季節は、私の都合を聞かない。けれど、その無遠慮さにこそ、救われる日もある。うまくいかなかった夏を、時間はあっさりと過去へ押しやり、新しい空気を目の前に置いてくれる。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "私にできるのは、その流れに歩調を合わせることくらいだ。厚手の靴下を出し、温かいお茶を淹れて、窓を少しだけ開ける。入ってくる風が、今日もまた、季節の次の頁をめくっていく。",
+      "no": 9
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "file": "haiku/03-essay-metaphor.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      4,
+      3,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.128564869306645,
+    "rhythm": {
+      "mora_mean": 37.31818181818182,
+      "mora_stdev": 13.49540785074135,
+      "burstiness": -0.46882682610416165,
+      "length_autocorrelation_lag1": 0.011097837694467967
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.36363636363636365
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 200,
+      "doc_char_count": 663,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 4, 4, 3, 4, 3]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.129（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.469 (モーラ近似長 平均=37.3, 標準偏差=13.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 冬の朝の台所",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "冬の朝の台所は、まだ眠っている猫のように静かである。外はまだ薄暗く、窓ガラスの向こうには、夜の名残りがうっすらと貼りついている。蛇口をひねると、冷たい水が細い糸のように流れ出し、シンクの底で小さな音を立てる。その音が、一日の始まりを告げる合図になる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "ガスコンロに火を点けると、青い炎が静かに花を咲かせる。鍋に水を張り、昆布を沈める。昆布はしばらくすると、水の中で深い海の色を滲ませ始める。湯気が立ち上がるころには、台所の空気は少しずつ柔らかくなり、窓の結露が涙のように流れ落ちていく。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "冷蔵庫の扉を開けると、中から白い息のような冷気があふれ出す。卵は行儀よく並び、ねぎは緑の旗のように立っている。冬の食材は、夏のそれよりも少し寡黙だ。多くを語らないけれど、鍋に入れれば、確かな温もりを返してくれる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "味噌を溶くとき、木べらの先から香りがほどけていく。それは、祖母がこの台所で何十年も繰り返していた仕草と同じである。見たことのない景色を思い浮かべるより、この香りをかぐだけで、遠くの記憶がふいに手元へ戻ってくることがある。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "卵を割ると、黄身が朝日のように鍋の底へ沈んでいく。ほんの数十秒の間に、器のなかの白と黄が、ゆっくりと形を変えていく。急いではいけない。冬の台所では、時間は火の番をしてくれる誰かのように、そっと寄り添っている。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "食卓に料理を並べ終えるころ、窓の外が少しずつ白く明るんでくる。台所はまた静けさを取り戻し、残った湯気だけが、昨日の寒さをそっと包んでいる。冬の朝の台所は、一日の最初の灯りであり、その灯りを自分の手で点けることが、この季節の小さな喜びなのだと思う。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "file": "gpt-6-luna/27-essay-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 26,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      6,
+      7,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.22426738057097312,
+    "rhythm": {
+      "mora_mean": 31.115384615384617,
+      "mora_stdev": 12.382763836748499,
+      "burstiness": -0.43065329089237325,
+      "length_autocorrelation_lag1": -0.11236914361640526
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.34615384615384615
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 191,
+      "doc_char_count": 639,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.431 (モーラ近似長 平均=31.1, 標準偏差=12.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 父の書斎",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "父の書斎は、家の中でいちばん静かな部屋だった。扉を開けると、紙と煙草と、古い木の匂いがした。壁際の本棚には背表紙の色が幾層にも並び、机の上には万年筆、読みかけの新聞、湯呑みがいつも同じ順序で置かれていた。父がそこにいるとき、私は用事を短く済ませた。声をかければ、考えの水面に波紋を立ててしまう気がしたからだ。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "父は多くを語らなかった。夕食の席で一日の出来事を聞かれても、私は学校のことをいくつか答えるだけだった。それでも書斎の扉の隙間から漏れる灯りは、家の夜を支えていた。父は誰に読ませるでもない原稿を書き、消し、また書いた。紙の上で鉛筆が動く音は、雨戸の向こうの雨に似ていた。私はその音を聞きながら眠った。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "父が亡くなったあと、書斎は長いあいだ閉じられていた。片づけに入った日、机の引き出しから封筒が出てきた。中には、幼い私が描いた絵が一枚あった。家族の顔は丸く、父の手だけが大きく描かれている。裏には父の字で、日付と「よく描けた」と記されていた。覚えのない絵だった。父は、私が忘れたものを忘れずにいたのだ。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "本棚の本を一冊ずつ箱に移すと、部屋は少しずつ空になった。何もなくなった壁には、背表紙の日焼けが薄い影を残していた。窓を開けると、午後の風が入った。紙の匂いは消えず、けれど別の季節の匂いと混ざった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "父の書斎は、言葉を交わさなかった時間のかたちだったのだろう。机はなくなり、本も散らばった。それでも、何かを丁寧に書き続ける父の背中は、私の中にまだ残っている。あの部屋の静けさを思い出すたび、私は自分の言葉を急がずに選ぼうと思う。",
+      "no": 6
+    }
+  ]
+}

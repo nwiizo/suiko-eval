@@ -1,0 +1,114 @@
+{
+  "file": "haiku/34-business-principle.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 1,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      22
+    ],
+    "paragraph_sentence_count_cv": null,
+    "rhythm": {
+      "mora_mean": 29.5,
+      "mora_stdev": 6.7335658525709166,
+      "burstiness": -0.628324417200956,
+      "length_autocorrelation_lag1": 0.11334848325982523
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.18181818181818182
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 148,
+      "doc_char_count": 501,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 24,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 1,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 5,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=22, 平均文長=22.8字, 変動係数=0.207",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.628 (モーラ近似長 平均=29.5, 標準偏差=6.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 22,
+      "genre": "business",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 13,
+        "category": "double_negative",
+        "excerpt": "ない記録媒体は使わない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 情報セキュリティの心得",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 原則",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "パスワードは、人に教えない。\n貸与された端末は、社外に持ち出すときも自分の目の届く場所に置く。\n業務の情報は、業務で使うアカウントからだけ扱う。\n見慣れないメールの添付ファイルは、開く前に送信者を確かめる。\nリンクをクリックする前に、送り先のURLを読む。\n公共のWi-Fiでは、機密情報を扱わない。\n画面をのぞき見されない場所で作業する。\n離席するときは、画面をロックする。\nUSBメモリなど、持ち主の分からない記録媒体は使わない。\n共有フォルダの公開範囲は、作成時に必ず確認する。\n生成AIには、個人情報と未公開の機密情報を入力しない。\n迷ったときは、作業を止めて上長かセキュリティ窓口に相談する。\nインシデントは、隠さず、すぐに報告する。\n報告は、遅れるほど被害を大きくする。\n日々の小さな確認が、会社と自分を守る。\n退職や異動の際は、保有する情報を速やかに返却または削除する。\nソフトウェアの更新通知は、後回しにせず適用する。\n取引先から受け取った情報は、必要な範囲だけに使う。\n機密情報を含む文書は、印刷後すぐに回収する。\nメールの宛先は、送信前に必ず一度確認する。\n社外との打ち合わせ資料には、社内限定の情報を含めない。\n不審な出来事に気づいたら、自分で調べず、まず報告する。",
+      "no": 3
+    }
+  ]
+}

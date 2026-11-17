@@ -1,0 +1,518 @@
+{
+  "file": "gpt-5.6-sol/31-recruit-motto.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 51,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 51,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "paragraph_sentence_count_cv": 0.0,
+    "rhythm": {
+      "mora_mean": 12.07843137254902,
+      "mora_stdev": 2.9428753263546086,
+      "burstiness": -0.6081731922071197,
+      "length_autocorrelation_lag1": 0.1838125024942005
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.175
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 152,
+      "doc_char_count": 481,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 64,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=51, 各段落の文数=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.000（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.608 (モーラ近似長 平均=12.1, 標準偏差=2.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 51,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# つくる人を、待っている。",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## きれいより、届く。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "見た目だけで終わらせない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "使う人の迷いを見つける。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "意図の届く形をつくる。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "見出し",
+      "text": "## 答えより、問い。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "依頼をそのまま受け取らない。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "目的を問い直す。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "前提をほどく。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "本当に解くべき課題を選ぶ。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "見出し",
+      "text": "## ひとりより、チーム。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "途中の案を見せる。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "未完成を恥じない。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "言葉の違いを越えて話す。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "段落",
+      "text": "仲間の視点で案を強くする。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "見出し",
+      "text": "## センスより、理由。",
+      "no": 16
+    },
+    {
+      "line": 33,
+      "kind": "段落",
+      "text": "好き嫌いだけで決めない。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "段落",
+      "text": "選んだ色を説明する。",
+      "no": 18
+    },
+    {
+      "line": 37,
+      "kind": "段落",
+      "text": "捨てた案にも敬意を持つ。",
+      "no": 19
+    },
+    {
+      "line": 39,
+      "kind": "段落",
+      "text": "判断を次の仕事へ残す。",
+      "no": 20
+    },
+    {
+      "line": 41,
+      "kind": "見出し",
+      "text": "## 完璧より、前進。",
+      "no": 21
+    },
+    {
+      "line": 43,
+      "kind": "段落",
+      "text": "小さくつくる。",
+      "no": 22
+    },
+    {
+      "line": 45,
+      "kind": "段落",
+      "text": "早く試す。",
+      "no": 23
+    },
+    {
+      "line": 47,
+      "kind": "段落",
+      "text": "反応から学ぶ。",
+      "no": 24
+    },
+    {
+      "line": 49,
+      "kind": "段落",
+      "text": "必要なら迷わず壊す。",
+      "no": 25
+    },
+    {
+      "line": 51,
+      "kind": "見出し",
+      "text": "## 流行より、本質。",
+      "no": 26
+    },
+    {
+      "line": 53,
+      "kind": "段落",
+      "text": "新しさに目を開く。",
+      "no": 27
+    },
+    {
+      "line": 55,
+      "kind": "段落",
+      "text": "新しさだけに寄りかからない。",
+      "no": 28
+    },
+    {
+      "line": 57,
+      "kind": "段落",
+      "text": "長く使える骨格をつくる。",
+      "no": 29
+    },
+    {
+      "line": 59,
+      "kind": "段落",
+      "text": "変化できる余白を残す。",
+      "no": 30
+    },
+    {
+      "line": 61,
+      "kind": "見出し",
+      "text": "## 遠慮より、誠実。",
+      "no": 31
+    },
+    {
+      "line": 63,
+      "kind": "段落",
+      "text": "違和感を飲み込まない。",
+      "no": 32
+    },
+    {
+      "line": 65,
+      "kind": "段落",
+      "text": "相手ではなく案を論じる。",
+      "no": 33
+    },
+    {
+      "line": 67,
+      "kind": "段落",
+      "text": "率直さを優しさで包む。",
+      "no": 34
+    },
+    {
+      "line": 69,
+      "kind": "段落",
+      "text": "合意のふりをしない。",
+      "no": 35
+    },
+    {
+      "line": 71,
+      "kind": "見出し",
+      "text": "## 作業より、仕事。",
+      "no": 36
+    },
+    {
+      "line": 73,
+      "kind": "段落",
+      "text": "画面の外まで想像する。",
+      "no": 37
+    },
+    {
+      "line": 75,
+      "kind": "段落",
+      "text": "運用する人を忘れない。",
+      "no": 38
+    },
+    {
+      "line": 77,
+      "kind": "段落",
+      "text": "数字から逃げない。",
+      "no": 39
+    },
+    {
+      "line": 79,
+      "kind": "段落",
+      "text": "成果まで見届ける。",
+      "no": 40
+    },
+    {
+      "line": 81,
+      "kind": "見出し",
+      "text": "## 得意を持つ。境界を越える。",
+      "no": 41
+    },
+    {
+      "line": 83,
+      "kind": "段落",
+      "text": "専門を深く掘る。",
+      "no": 42
+    },
+    {
+      "line": 85,
+      "kind": "段落",
+      "text": "知らない領域へ手を伸ばす。",
+      "no": 43
+    },
+    {
+      "line": 87,
+      "kind": "段落",
+      "text": "学びを惜しまず共有する。",
+      "no": 44
+    },
+    {
+      "line": 89,
+      "kind": "段落",
+      "text": "誰かの成長を喜ぶ。",
+      "no": 45
+    },
+    {
+      "line": 91,
+      "kind": "見出し",
+      "text": "## 違いを、力にする。",
+      "no": 46
+    },
+    {
+      "line": 93,
+      "kind": "段落",
+      "text": "同じ経歴を求めない。",
+      "no": 47
+    },
+    {
+      "line": 95,
+      "kind": "段落",
+      "text": "同じ意見も求めない。",
+      "no": 48
+    },
+    {
+      "line": 97,
+      "kind": "段落",
+      "text": "異なる経験を持ち寄る。",
+      "no": 49
+    },
+    {
+      "line": 99,
+      "kind": "段落",
+      "text": "衝突から新しい形を生む。",
+      "no": 50
+    },
+    {
+      "line": 101,
+      "kind": "見出し",
+      "text": "## デザインを、ひらく。",
+      "no": 51
+    },
+    {
+      "line": 103,
+      "kind": "段落",
+      "text": "デザインを特別な部屋に閉じ込めない。",
+      "no": 52
+    },
+    {
+      "line": 105,
+      "kind": "段落",
+      "text": "顧客と話す。",
+      "no": 53
+    },
+    {
+      "line": 107,
+      "kind": "段落",
+      "text": "技術と話す。",
+      "no": 54
+    },
+    {
+      "line": 109,
+      "kind": "段落",
+      "text": "事業と話す。",
+      "no": 55
+    },
+    {
+      "line": 111,
+      "kind": "段落",
+      "text": "みんなの判断を良くする。",
+      "no": 56
+    },
+    {
+      "line": 113,
+      "kind": "見出し",
+      "text": "## あなたの視点が、まだ足りない。",
+      "no": 57
+    },
+    {
+      "line": 115,
+      "kind": "段落",
+      "text": "完成した組織ではない。",
+      "no": 58
+    },
+    {
+      "line": 117,
+      "kind": "段落",
+      "text": "だから、おもしろい。",
+      "no": 59
+    },
+    {
+      "line": 119,
+      "kind": "段落",
+      "text": "決められた席に座らなくていい。",
+      "no": 60
+    },
+    {
+      "line": 121,
+      "kind": "段落",
+      "text": "新しい席をつくればいい。",
+      "no": 61
+    },
+    {
+      "line": 123,
+      "kind": "段落",
+      "text": "一緒に考える。",
+      "no": 62
+    },
+    {
+      "line": 125,
+      "kind": "段落",
+      "text": "一緒に試す。",
+      "no": 63
+    },
+    {
+      "line": 127,
+      "kind": "段落",
+      "text": "一緒に、届くものをつくる。",
+      "no": 64
+    }
+  ]
+}

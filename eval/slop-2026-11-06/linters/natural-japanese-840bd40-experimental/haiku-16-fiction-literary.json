@@ -1,0 +1,231 @@
+{
+  "file": "haiku/16-fiction-literary.md",
+  "stats": {
+    "total_findings": 9,
+    "by_category": {
+      "low_burstiness": 1,
+      "repeated_syntax_template": 8
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 20,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      5,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.22360679774997896,
+    "rhythm": {
+      "mora_mean": 34.55,
+      "mora_stdev": 15.573936560805684,
+      "burstiness": -0.3785828636219409,
+      "length_autocorrelation_lag1": -0.18130680663159096
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.4
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 164,
+      "doc_char_count": 566,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.379 (モーラ近似長 平均=34.5, 標準偏差=15.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "港の坂を下りきったところに、その喫茶店は",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の40.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L11",
+      "related_lines": [
+        3,
+        5,
+        11
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "木製の扉は潮風で膨らみ、開けるたびに低い",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の40.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L11",
+      "related_lines": [
+        3,
+        5,
+        11
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "窓際の席で、真理子は冷めかけたコーヒーを",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の40.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L11",
+      "related_lines": [
+        3,
+        5,
+        11
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "スプーンが陶器の縁に触れるたび、小さな音",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の40.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L11",
+      "related_lines": [
+        3,
+        5,
+        11
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "窓の外では、防波堤に打ち寄せる波が白い花",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の40.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L11",
+      "related_lines": [
+        3,
+        5,
+        11
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 11,
+      "category": "repeated_syntax_template",
+      "excerpt": "船は霧の向こうへ消えていき、港には、海鳥",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の40.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L11",
+      "related_lines": [
+        3,
+        5,
+        11
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 11,
+      "category": "repeated_syntax_template",
+      "excerpt": "真理子はカップを両手で包み、ゆっくりと口",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の40.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L11",
+      "related_lines": [
+        3,
+        5,
+        11
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 11,
+      "category": "repeated_syntax_template",
+      "excerpt": "苦味の奥に、わずかな甘さがあった",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の40.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L11",
+      "related_lines": [
+        3,
+        5,
+        11
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 20,
+      "genre": "essay",
+      "by_category": {
+        "no_chain": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 9,
+        "category": "no_chain",
+        "excerpt": "の外の雲の",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 港町の喫茶店",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "港の坂を下りきったところに、その喫茶店はあった。木製の扉は潮風で膨らみ、開けるたびに低い軋みが、遠くの汽笛と混ざり合う。店内には、豆を焙煎する香りと、古びたレコードの埃っぽい甘さが漂っていた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "窓際の席で、真理子は冷めかけたコーヒーをかき混ぜていた。スプーンが陶器の縁に触れるたび、小さな音が生まれては消える。窓の外では、防波堤に打ち寄せる波が白い花を散らし、その向こうに、古い貨物船がゆっくりと沖へ去っていく。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "十年前、この店の常連だった人は、いつも同じ席で、同じ港を眺めていた。名前は思い出せない。ただ、その人の左手の指先が、テーブルの木目をなぞる癖だけは、鮮やかに残っている。遠い国の話をするとき、その指は地図の線を描くように動いた。真理子はあの頃、その話の続きを聞きたくて、この店に通っていたのかもしれない。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "マスターが、無言でカップを替えた。彼は多くを語らない人だ。ただ、湯気の立つ一杯を置いて、窓の外の雲の流れを一緒に眺めるだけで、客の胸の内にある重たいものを少しずつ軽くしてくれる。真理子はそのことを、この街に戻ってきてから知った。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "汽笛がもう一度、長く鳴った。船は霧の向こうへ消えていき、港には、海鳥の声だけが残された。真理子はカップを両手で包み、ゆっくりと口をつけた。苦味の奥に、わずかな甘さがあった。それは、戻る場所がここにあるという、静かな合図のようだった。",
+      "no": 6
+    }
+  ]
+}

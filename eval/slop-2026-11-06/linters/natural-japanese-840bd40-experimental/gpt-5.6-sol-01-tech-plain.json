@@ -1,0 +1,124 @@
+{
+  "file": "gpt-5.6-sol/01-tech-plain.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 16,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      3,
+      3,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.125,
+    "rhythm": {
+      "mora_mean": 49.375,
+      "mora_stdev": 16.178206791854283,
+      "burstiness": -0.5064099047595455,
+      "length_autocorrelation_lag1": -0.3457678261950662
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.25
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 195,
+      "doc_char_count": 635,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[4, 3, 3, 3, 3]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.125（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.506 (モーラ近似長 平均=49.4, 標準偏差=16.2)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 16,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 社内CIが遅くなった原因を調べた話",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "ある週から、社内リポジトリのCIが急に遅くなった。以前は十数分で終わっていた変更でも、結果が返るまで三十分以上かかる。個々のジョブを見ると極端に遅いものはなく、最初は実行基盤の混雑を疑った。しかし、時間帯を変えて再実行しても改善せず、待ち行列の長さにも目立った変化はなかった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "そこで、直近一か月の実行時間をジョブ単位で集計した。すると、テストそのものではなく、各ジョブの開始直後にある依存パッケージの取得が少しずつ延びていた。増加は一回あたり二、三分だったが、同じ処理を十数個のジョブが繰り返していたため、全体では大きな遅延になっていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "原因はキャッシュキーの変更だった。依存関係に影響しない設定ファイルまでハッシュの対象に加えた結果、日常的な変更のたびに新しいキーが生成され、ほぼ毎回キャッシュが外れていた。さらに、失敗時に使う予備キーも削除されていたため、完全一致しなければすべてを取り直す動作になっていた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "修正では、キーをロックファイルと実行環境のバージョンだけから作り、ブランチをまたいで利用できる予備キーを戻した。また、依存取得をジョブごとに実行する構成を見直し、共通の成果物を後続ジョブへ渡すようにした。変更後、中央値は十二分まで戻り、実行時間のばらつきも小さくなった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "今回の調査で役立ったのは、遅いジョブを探すだけでなく、全ジョブに共通する小さな増加を見ることだった。CIの遅延は一つの重い処理が原因とは限らない。短い処理の重複や、キャッシュ命中率の低下も継続的に計測しておく必要がある。",
+      "no": 6
+    }
+  ]
+}

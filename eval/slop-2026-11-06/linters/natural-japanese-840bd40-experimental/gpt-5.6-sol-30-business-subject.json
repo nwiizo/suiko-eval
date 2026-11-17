@@ -1,0 +1,124 @@
+{
+  "file": "gpt-5.6-sol/30-business-subject.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 20,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      4,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.15811388300841897,
+    "rhythm": {
+      "mora_mean": 44.2,
+      "mora_stdev": 9.821405194777375,
+      "burstiness": -0.6363883849608977,
+      "length_autocorrelation_lag1": -0.0909590142226523
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "接頭辞/名詞/助詞/名詞",
+      "lead_pos_4gram_ratio": 0.2
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 187,
+      "doc_char_count": 635,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=20, 平均文長=31.8字, 変動係数=0.225",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.636 (モーラ近似長 平均=44.2, 標準偏差=9.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 20,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 中期経営計画が示す三年間の進路",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "本計画は、今後三年間における当社の成長方針と資源配分の基準を示します。市場環境の変化は、既存事業の収益性を揺さぶる一方、新たな顧客課題を生み出しています。中期経営計画は、その変化を受け身で捉えず、選択と集中によって持続的な成長へ転換します。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "第一の柱である既存事業の深化は、収益基盤を強くします。商品構成の見直しは、低採算領域への過度な依存を減らします。業務プロセスの標準化は、部門ごとの重複作業をなくし、顧客対応へ充てる時間を増やします。価格体系の再設計は、提供価値と対価の不均衡を正します。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "第二の柱である新規事業の育成は、将来の収益源をつくります。顧客データの分析は、未解決の課題を明らかにします。小規模な実証実験は、投資判断に必要な学びを早期にもたらします。事業化基準は、継続、修正、撤退の判断を透明にし、限られた資金と人材を有望な機会へ導きます。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "第三の柱である組織能力の向上は、二つの事業戦略を支えます。人材ポートフォリオは、現在の配置と将来必要な専門性の差を可視化します。育成制度は、現場経験と学習機会を結びつけます。評価制度は、短期成果だけでなく、部門間の協働と長期的な価値創出を後押しします。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "各年度の重点目標と指標は、進捗を共通の尺度で捉えます。四半期ごとのレビューは、前提条件の変化を検知し、施策の優先順位を更新します。計画は固定された予定表ではありません。計画そのものが対話の土台となり、各部門の判断を同じ方向へそろえます。一人ひとりの業務と経営目標を結ぶ実行こそが、三年後の姿を現実にします。",
+      "no": 6
+    }
+  ]
+}

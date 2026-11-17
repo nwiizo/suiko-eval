@@ -1,0 +1,126 @@
+{
+  "file": "gpt-5.6-sol/27-essay-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 25,
+    "nominal_ending_count": 4,
+    "nominal_ending_ratio": 0.16,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      6,
+      5,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.17888543819998318,
+    "rhythm": {
+      "mora_mean": 30.44,
+      "mora_stdev": 12.80962138394418,
+      "burstiness": -0.4076423804856903,
+      "length_autocorrelation_lag1": 0.2925918575108318
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.28
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 188,
+      "doc_char_count": 605,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.408 (モーラ近似長 平均=30.4, 標準偏差=12.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 25,
+      "genre": "essay",
+      "by_category": {
+        "buried_list": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 7,
+        "category": "buried_list",
+        "excerpt": "そこには読んだ本の一節、庭に来た鳥、母の咳、私が初めて自転車に乗った日のことが",
+        "severity": "info",
+        "detail": "同格の名詞句が読点で4個並んでいる（一文54字）。並んだ項目を読み手が頭の中で組み立て直すことになる",
+        "related_lines": null,
+        "hint": "箇条書きに開く。各項目を「太字: 説明」の形にはしない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 父の書斎",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "父の書斎は、家の北側にある六畳の部屋だった。午後になっても日差しは深く入らず、窓辺にはいつも薄い水の底のような静けさがあった。本棚には背表紙の褪せた全集や辞典が並び、紙と煙草と、少し湿った木の匂いが混じっていた。幼い私は、その部屋にだけ別の季節が住んでいると思っていた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "父は机に向かうと、家族の声から遠ざかった。万年筆が紙を擦る音、頁を繰る音、灰皿へ灰を落とすかすかな音。それらは扉の外にいる私には、知らない国の雨音のように聞こえた。何を書いているのかと尋ねても、父は「忘れないためだ」としか言わなかった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "亡くなった後、机の引き出しを整理した。領収書、古い切手、錆びたクリップ。期待していた日記はなかった。代わりに、大学ノートが何冊も出てきた。そこには読んだ本の一節、庭に来た鳥、母の咳、私が初めて自転車に乗った日のことが、日付もなく書き留められていた。どの記述も短く、感情を語る言葉はほとんどなかった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "けれど、行間には父の眼差しが残っていた。黙っていた人の声は、沈黙の中でこそよく響く。私が転んでも泣かなかったこと。夕焼けのなかを何度も往復したこと。父は窓から見ていたのだ。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "書斎は今もそのままにしてある。煙草の匂いは消え、机の天板には白い埃が降りる。ときどき窓を開け、ノートを一冊だけ読む。すると北向きの部屋に、遠い日の光が静かに差し込む。父が忘れまいとしたものを、今度は私が忘れない。そのために書斎は、家の記憶の奥で、閉じられない一冊の本として残っている。",
+      "no": 6
+    }
+  ]
+}

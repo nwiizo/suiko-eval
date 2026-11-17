@@ -1,0 +1,150 @@
+{
+  "file": "haiku/12-business-principle.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_burstiness": 1,
+      "english_syntax_inanimate_subject": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 20,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      3,
+      4,
+      3,
+      3,
+      3,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.22360679774997896,
+    "rhythm": {
+      "mora_mean": 44.65,
+      "mora_stdev": 14.402343559296174,
+      "burstiness": -0.5122177142780332,
+      "length_autocorrelation_lag1": -0.3017645194031023
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.35
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 192,
+      "doc_char_count": 657,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.512 (モーラ近似長 平均=44.6, 標準偏差=14.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 7,
+      "category": "english_syntax_inanimate_subject",
+      "excerpt": "、社内で確認が取れたものに限る。できないことは、できない理由とともに率直に伝え、代わりに可能な手段を提示す",
+      "severity": "info",
+      "detail": "もの・ことを主語にして他動詞で受ける、英語の構文の直訳の疑い",
+      "related_lines": null,
+      "hint": "人や状況を主語にするか、「〜から分かる」「〜を見ると」のように言い換える"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 20,
+      "genre": "business",
+      "by_category": {
+        "no_chain": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 15,
+        "category": "no_chain",
+        "excerpt": "の担当者の行動の",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 顧客対応の基本方針",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "本方針は、お客様からのお問い合わせ、ご相談、ご指摘に対応するすべての担当者が守るべき原則を定めるものである。対応の品質は、担当者の経験や判断に左右されるが、その判断の土台を揃えることが本方針の目的である。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "第一に、お客様の状況を正確に把握することを優先する。問い合わせの文面だけで判断せず、契約内容や過去の経緯を確認してから回答する。確認が必要な場合は、確認中であることを先にお伝えし、推測で答えてはならない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "第二に、約束は実行できるものだけを行う。回答の期限や対応内容は、社内で確認が取れたものに限る。できないことは、できない理由とともに率直に伝え、代わりに可能な手段を提示する。その場を取り繕うための約束は、必ず後で信頼を失わせる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "第三に、誤りが判明した場合は速やかに認め、訂正する。誤りを隠すことや、責任を曖昧にすることは行わない。訂正の際には、何が誤っていたのか、お客様にどのような影響があったのか、そして今後どう防ぐのかを明確に伝える。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "第四に、記録は正確かつ速やかに残す。対応の経緯、やり取りの内容、判断の理由を、次に対応する担当者が読めば状況を理解できる水準で記載する。記録の不備は、お客様に同じ説明を繰り返させる原因となる。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "第五に、担当者個人で抱え込まず、必ず共有する。判断に迷う案件や、重大なご不満がある案件は、速やかに上長へ報告する。報告は失敗ではなく、お客様を守るための基本的な行動である。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "お客様の状況を確かめ、できることだけを約束し、誤りは速やかに正し、記録を残し、一人で抱えない。この五つを、すべての担当者の行動の基準として定める。",
+      "no": 8
+    }
+  ]
+}

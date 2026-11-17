@@ -1,0 +1,207 @@
+{
+  "file": "gpt-6-luna/19-recruit-motto.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 19,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 10,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    "paragraph_sentence_count_cv": 0.15789473684210525,
+    "rhythm": {
+      "mora_mean": 17.157894736842106,
+      "mora_stdev": 3.406853122669949,
+      "burstiness": -0.6686705671332471,
+      "length_autocorrelation_lag1": -0.024618298195866573
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.42105263157894735
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 78,
+      "doc_char_count": 252,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 28,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 5,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=19, 平均文長=13.3字, 変動係数=0.195",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.669 (モーラ近似長 平均=17.2, 標準偏差=3.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 19,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 私たちが一緒に働きたい人",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 課題の奥まで見る人",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "目の前の依頼で終わらない。  \n本当に解くべき問題を探す。",
+      "no": 3
+    },
+    {
+      "line": 8,
+      "kind": "見出し",
+      "text": "## 小さく試し、早く学ぶ人",
+      "no": 4
+    },
+    {
+      "line": 10,
+      "kind": "段落",
+      "text": "完璧な計画を待たない。  \n確かめ、直し、前へ進む。",
+      "no": 5
+    },
+    {
+      "line": 13,
+      "kind": "見出し",
+      "text": "## 違いを力に変える人",
+      "no": 6
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "異なる意見を歓迎する。  \n対話から、よりよい答えをつくる。",
+      "no": 7
+    },
+    {
+      "line": 18,
+      "kind": "見出し",
+      "text": "## 手を動かし、共有する人",
+      "no": 8
+    },
+    {
+      "line": 20,
+      "kind": "段落",
+      "text": "知識を抱え込まない。  \n学びを言葉にし、チームへ渡す。",
+      "no": 9
+    },
+    {
+      "line": 23,
+      "kind": "見出し",
+      "text": "## 使う人を想像する人",
+      "no": 10
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "コードの先にいる人を見る。  \n便利さと安心を、細部まで考える。",
+      "no": 11
+    },
+    {
+      "line": 28,
+      "kind": "見出し",
+      "text": "## 変化を楽しめる人",
+      "no": 12
+    },
+    {
+      "line": 30,
+      "kind": "段落",
+      "text": "昨日の正解にとどまらない。  \n必要なら、自分の考えも更新する。",
+      "no": 13
+    },
+    {
+      "line": 33,
+      "kind": "見出し",
+      "text": "## 約束を大切にする人",
+      "no": 14
+    },
+    {
+      "line": 35,
+      "kind": "段落",
+      "text": "できることを明確に伝える。  \n仲間と利用者への信頼を積み重ねる。",
+      "no": 15
+    },
+    {
+      "line": 38,
+      "kind": "見出し",
+      "text": "## チームの成果を喜べる人",
+      "no": 16
+    },
+    {
+      "line": 40,
+      "kind": "段落",
+      "text": "個人の手柄より、届いた価値を祝う。  \n互いの強みをつなぎ、難題に挑む。",
+      "no": 17
+    },
+    {
+      "line": 43,
+      "kind": "段落",
+      "text": "肩書きや年数は問いません。  \n好奇心と誠実さを、歓迎します。",
+      "no": 18
+    },
+    {
+      "line": 46,
+      "kind": "段落",
+      "text": "あなたの一歩が、チームの次の可能性になる。",
+      "no": 19
+    }
+  ]
+}

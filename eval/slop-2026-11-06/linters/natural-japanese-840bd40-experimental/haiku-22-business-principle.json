@@ -1,0 +1,229 @@
+{
+  "file": "haiku/22-business-principle.md",
+  "stats": {
+    "total_findings": 0,
+    "by_category": {},
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 0,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 0,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [],
+    "paragraph_sentence_count_cv": null,
+    "rhythm": {},
+    "ngram": {
+      "lead_pos_4gram_top": null,
+      "lead_pos_4gram_ratio": null
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 0,
+      "doc_char_count": 0,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 28,
+      "non_blank_line_count": 29,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 0,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新規事業チーム 行動指針",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "箇条書き",
+      "text": "1. 顧客の声を、最初に聞く。",
+      "no": 2
+    },
+    {
+      "line": 4,
+      "kind": "箇条書き",
+      "text": "2. 仮説は、必ず言葉にして残す。",
+      "no": 3
+    },
+    {
+      "line": 5,
+      "kind": "箇条書き",
+      "text": "3. 作る前に、捨てる案を決める。",
+      "no": 4
+    },
+    {
+      "line": 6,
+      "kind": "箇条書き",
+      "text": "4. 小さく出して、早く学ぶ。",
+      "no": 5
+    },
+    {
+      "line": 7,
+      "kind": "箇条書き",
+      "text": "5. 数字は、判断の材料であり、目的ではない。",
+      "no": 6
+    },
+    {
+      "line": 8,
+      "kind": "箇条書き",
+      "text": "6. 失敗は、責任追及ではなく情報として共有する。",
+      "no": 7
+    },
+    {
+      "line": 9,
+      "kind": "箇条書き",
+      "text": "7. 決めたことは、チーム全員に同じ言葉で伝える。",
+      "no": 8
+    },
+    {
+      "line": 10,
+      "kind": "箇条書き",
+      "text": "8. 会議は、結論を出す場にする。",
+      "no": 9
+    },
+    {
+      "line": 11,
+      "kind": "箇条書き",
+      "text": "9. 自分の専門を、他のメンバーに開く。",
+      "no": 10
+    },
+    {
+      "line": 12,
+      "kind": "箇条書き",
+      "text": "10. 期限を守るより、約束の意味を守る。",
+      "no": 11
+    },
+    {
+      "line": 13,
+      "kind": "箇条書き",
+      "text": "11. 反対意見は、チームの資産として扱う。",
+      "no": 12
+    },
+    {
+      "line": 14,
+      "kind": "箇条書き",
+      "text": "12. 撤退の基準を、事前に合意しておく。",
+      "no": 13
+    },
+    {
+      "line": 15,
+      "kind": "箇条書き",
+      "text": "13. 社内の前例より、顧客の現実を優先する。",
+      "no": 14
+    },
+    {
+      "line": 16,
+      "kind": "箇条書き",
+      "text": "14. 迷ったら、一人で抱えず、すぐに相談する。",
+      "no": 15
+    },
+    {
+      "line": 17,
+      "kind": "箇条書き",
+      "text": "15. 進捗は、隠さず、週に一度は公開する。",
+      "no": 16
+    },
+    {
+      "line": 18,
+      "kind": "箇条書き",
+      "text": "16. 成果は、チームの名前で語る。",
+      "no": 17
+    },
+    {
+      "line": 19,
+      "kind": "箇条書き",
+      "text": "17. 休むことも、持続可能な速度の一部とする。",
+      "no": 18
+    },
+    {
+      "line": 20,
+      "kind": "箇条書き",
+      "text": "18. 外部の知見には、敬意を払い、学びを返す。",
+      "no": 19
+    },
+    {
+      "line": 21,
+      "kind": "箇条書き",
+      "text": "19. 最後まで、自分たちの事業を疑い続ける。",
+      "no": 20
+    },
+    {
+      "line": 22,
+      "kind": "箇条書き",
+      "text": "20. 完成より、検証の回数を誇る。",
+      "no": 21
+    },
+    {
+      "line": 23,
+      "kind": "箇条書き",
+      "text": "21. ユーザーの不満を、改善の起点とする。",
+      "no": 22
+    },
+    {
+      "line": 24,
+      "kind": "箇条書き",
+      "text": "22. 技術の選択は、流行より運用のしやすさで決める。",
+      "no": 23
+    },
+    {
+      "line": 25,
+      "kind": "箇条書き",
+      "text": "23. 権限は、判断の速さのために分け与える。",
+      "no": 24
+    },
+    {
+      "line": 26,
+      "kind": "箇条書き",
+      "text": "24. 誰の仕事も、見えないところで支えられている。",
+      "no": 25
+    },
+    {
+      "line": 27,
+      "kind": "箇条書き",
+      "text": "25. 記録は、未来の自分への贈り物として残す。",
+      "no": 26
+    },
+    {
+      "line": 28,
+      "kind": "箇条書き",
+      "text": "26. 小さな成功は、言葉にして全員で祝う。",
+      "no": 27
+    },
+    {
+      "line": 29,
+      "kind": "箇条書き",
+      "text": "27. 初心を忘れたときは、最初の顧客に会いに行く。",
+      "no": 28
+    },
+    {
+      "line": 30,
+      "kind": "箇条書き",
+      "text": "28. 新しい挑戦は、チームの誇りとして語り継ぐ。",
+      "no": 29
+    }
+  ]
+}

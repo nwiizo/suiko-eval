@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6.1-sol/35-tech-metaphor.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 27,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      5,
+      4,
+      5,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.1111111111111111,
+    "rhythm": {
+      "mora_mean": 33.407407407407405,
+      "mora_stdev": 10.303754293349726,
+      "burstiness": -0.5285527131999673,
+      "length_autocorrelation_lag1": 0.2683941173720684
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2222222222222222
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 222,
+      "doc_char_count": 711,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[5, 5, 4, 5, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.111（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.529 (モーラ近似長 平均=33.4, 標準偏差=10.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 27,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 配線図のない家を引き継いだ",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "引き継いだコードは、増築を繰り返した家に似ていた。入口は三つあり、どの扉を開けても同じ台所へ出る。似た名前の関数が並び、一方を直すと別の機能が止まった。最初の私は、壁を抜いて見通しをよくしたくなった。だが、柱と飾りの区別がつかない家で、勢いよく工具を振るうわけにはいかなかった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "最初に作ったのは、改修案よりも配線図だった。利用者の操作を入口に、呼ばれる処理と外部への通信をたどった。注文確定だけは古い経路を通り、同じ計算が画面表示と請求処理に分かれていた。過去の事情を知らないまま「重複」と呼んでいた部分にも、税の丸め方という違いがあった。似た壁紙の裏に、別の配管が走っていたのだ。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "次に、変更する箇所の現在の動作をテストで押さえた。理想の仕様を一度に書くと、今の利用者を支えている癖まで壊してしまう。端数や空の入力で何が起きるかを確かめ、期待する動作か不具合か不明なものは記録した。テストは家全体を覆う足場にはならなかったが、今回登る窓の下には板を渡せた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "改修は、請求計算の入口を一つ用意するところから始めた。呼び出し元を一つずつ切り替え、変更前後の結果を比べた。古い経路は利用がなくなったことを確認してから取り除いた。差分を小さくすると、レビューで見渡せる範囲も狭まった。間違えたときに戻る道が、作業場所のすぐそばに残った。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "すべての負債を返す予定は立てていない。変更の多い場所と、失敗したときの影響が大きい場所を先に扱う。普段使わない部屋の壁紙より、毎日通る階段のぐらつきを直す。その順番をチームで共有した。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "今もコードには読みにくい箇所がある。ただ、次に触る人には地図と点検記録を渡せる。家はまだ古い。それでも、どのスイッチでどの灯りがつくかを説明できる部屋が、一つ増えた。",
+      "no": 7
+    }
+  ]
+}

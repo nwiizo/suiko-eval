@@ -1,0 +1,124 @@
+{
+  "file": "gpt-5.6-sol/05-essay-literary.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.09090909090909091,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      5,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.11134044285378081,
+    "rhythm": {
+      "mora_mean": 35.18181818181818,
+      "mora_stdev": 12.615417564653916,
+      "burstiness": -0.4721277342660947,
+      "length_autocorrelation_lag1": -0.043260707817952236
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2727272727272727
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 198,
+      "doc_char_count": 616,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[4, 5, 5, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.111（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.472 (モーラ近似長 平均=35.2, 標準偏差=12.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 祖母の家の縁側",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "祖母の家の縁側には、午後がゆっくりと溜まっていた。庭に面した板は長い年月に磨かれ、日に焼けた飴色をしていた。腰を下ろすと、かすかな軋みが足元で鳴る。それは家が古さを訴える声ではなく、帰ってきた者を確かめる低い挨拶のように聞こえた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "庭には柿の木が一本あり、夏には濃い葉を重ね、秋には不器用なほど多くの実をつけた。祖母は渋柿を剥き、軒下へ吊るした。細い縄に並んだ柿は、傾く日を受けて静かに色を深めた。その隣で私は麦茶を飲み、氷が薄くなる音を聞いていた。話すことがなくても、沈黙は少しも重くなかった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "祖母は庭を眺めながら、ときどき昔の話をした。同じ話を何度も聞いた。川が氾濫した年のこと、祖父が初めて家へ来た日のこと、母が幼いころに縁側から落ちたこと。細部は語るたびに少しずつ変わったが、私は訂正しなかった。記憶とは正確に保存されるものではなく、その日の光に照らされて姿を変えるものなのだと、いつしか思うようになった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "祖母が亡くなってから家を訪れると、縁側は以前より短く見えた。柿の木も、庭も、子どもの目で見た広さを失っていた。ただ、板に掌を置いたときの温度だけは変わらなかった。風が障子を揺らし、どこかで茶碗の触れ合う音がした気がした。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "家はやがて人の手を離れる。それでも縁側で過ごした午後は、私の中にひとつの場所として残っている。急ぐ理由のない時間、言葉を求めない親しさ、季節が庭を横切る気配。祖母の家を思い出すとき、私はいつもあの板の上に座り、遠い夏の氷が溶ける音を聞いている。",
+      "no": 6
+    }
+  ]
+}

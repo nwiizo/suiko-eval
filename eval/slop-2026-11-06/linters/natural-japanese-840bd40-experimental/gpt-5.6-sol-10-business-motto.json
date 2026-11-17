@@ -1,0 +1,121 @@
+{
+  "file": "gpt-5.6-sol/10-business-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "uniform_paragraph_structure": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 33,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 1,
+    "paragraph_lead_conjunction_ratio": 0.16666666666666666,
+    "paragraph_sentence_counts": [
+      5,
+      6,
+      6,
+      5,
+      5,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.09090909090909091,
+    "rhythm": {
+      "mora_mean": 24.12121212121212,
+      "mora_stdev": 14.634449965867848,
+      "burstiness": -0.244783901098851,
+      "length_autocorrelation_lag1": -0.07856917315378407
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3103448275862069
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 190,
+      "doc_char_count": 610,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[5, 6, 6, 5, 5, 6]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.091（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 33,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# リモートワークのチーム運営",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "リモートワークでは、同じ場所にいないことより、同じ状況を見られないことが問題になる。誰が何を判断し、どこで作業が止まっているか。情報が個人の手元に留まると、チームは静かに分断される。見える場所に書く。共有は仕事の一部だ。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "会議は目的から決める。情報を伝えるだけなら文書で足りる。意見を集める、選択肢を比較する、決定するなど、同時に集まる理由があるときに会議を開く。議題を先に示せ。結論を最後に残せ。参加者の時間を、予定表の空白として扱わない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "一方で、文章だけですべてを済ませようとしない。複雑な対立や、本人も整理できていない悩みは、短い通話のほうがほどけやすい。声を聞く。表情を見る。効率だけでは拾えない兆候がある。雑談の場も、偶然任せにせず用意する。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "成果の確認は、オンライン状態の長さではなく、合意した目標と進捗で行う。常時応答を求めると、集中する時間が失われる。返信の目安、連絡手段の使い分け、緊急時の経路を決めておく。急ぎを定義せよ。待てる連絡まで緊急にしない。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "マネージャーは、発言の多い人だけを見ない。会議で話しにくい人には事前に意見を募り、一対一の対話でも確認する。孤立を放置しない。負担を推測で測らない。仕事量、難しさ、生活上の制約を話せる関係を日頃から作る。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "よいリモートチームは、距離を消そうとはしない。距離がある前提で、情報、判断、信頼の通り道を設計する。記録は開く。期待はそろえる。休むときは休む。働く場所の自由を、働く人の孤独へ変えない運営が、持続する成果につながる。",
+      "no": 7
+    }
+  ]
+}

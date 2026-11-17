@@ -1,0 +1,131 @@
+{
+  "file": "haiku/33-essay-subject.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      4,
+      3,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.128564869306645,
+    "rhythm": {
+      "mora_mean": 33.13636363636363,
+      "mora_stdev": 10.830493376428402,
+      "burstiness": -0.5073337458132475,
+      "length_autocorrelation_lag1": -0.4255502429000656
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.45454545454545453
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 177,
+      "doc_char_count": 577,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[3, 4, 4, 3, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.129（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.507 (モーラ近似長 平均=33.1, 標準偏差=10.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 古い港町の朝",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "朝の港町は、まだ眠りの底にいる。石畳の道は夜露を抱いたまま黒く光り、そこに立つ街灯の影が、誰も歩かないうちに長く伸びている。町の時間は、ここではいつも少しだけ遅れてやってくる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "港そのものが、先に目を覚ます。水面は、夜の名残を吸い込んだ藍色の布のように広がり、その上に漁船の白い腹が浮かぶ。船のロープがきしむ音は、この町の最初の言葉だ。寡黙な港が、ようやく声を出す合図になる。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "市場の屋根は、長年の潮風に焼かれて色を変えた。トタンの錆は、地図に描かれない時間の帯を示している。屋根の下では、魚箱が積まれ、氷の欠片が陽の光を待っている。氷は、まだ溶けきらない夜の記憶を抱えながら、少しずつ姿を消していく。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "路地の奥では、パン屋の窓が湯気を白く曇らせている。小麦の香りは、ここでは時間そのものの匂いだ。それは、誰かの手が生地を捏ねた証であり、そして今日もこの町が続いていくという、静かな約束でもある。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "坂道を上る風は、海の塩を運んでくる。その風が、古い家々の板壁を撫で、窓辺に干された洗濯物を揺らす。物干し竿の影が、白い布の上に細い縞模様を描く。日々の暮らしが、風に乗って町中へ薄く広がっていく。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "昼が近づくと、港は少しずつ喧騒を取り戻す。しかし、朝のこの時間だけは、町は誰のものでもない。物たちが、それぞれの役目を思い出すように静かに動き出す。その控えめな始まりを、私は毎朝、坂の途中で立ち止まって眺めている。",
+      "no": 7
+    }
+  ]
+}

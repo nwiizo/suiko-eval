@@ -1,0 +1,121 @@
+{
+  "file": "gpt-5.6-sol/17-copy-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 21,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.09523809523809523,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      4,
+      4,
+      4,
+      5,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.31943828249996997,
+    "rhythm": {
+      "mora_mean": 35.61904761904762,
+      "mora_stdev": 13.196233916127776,
+      "burstiness": -0.45934004675897194,
+      "length_autocorrelation_lag1": -0.02979018456408586
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 167,
+      "doc_char_count": 587,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.459 (モーラ近似長 平均=35.6, 標準偏差=13.2)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 21,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 言葉の航跡を描く、新しい万年筆",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "紙の上を進むたび、一本の静かな川が生まれる。新しい万年筆「アステル」は、考えが言葉になる瞬間を、なめらかな書き心地で支える筆記具です。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "ペン先には、適度なしなりを持つ十四金を採用しました。紙面に触れると、細いスケート靴が氷を滑るように軽やかに進み、力を込めれば線に豊かな表情が宿ります。日々のメモでは小気味よく、手紙では呼吸するように。書く人の速度と感情を受け止め、インクの濃淡へ映します。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "軸は、夜明け前の空を思わせる深い藍色。光を受けるたび、奥から微細な輝きが浮かびます。握りやすい緩やかな曲線は、長時間の筆記でも指に穏やかです。金属部分の落ち着いた銀色が、澄んだ月明かりのような輪郭を添えました。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "コンバーターとカートリッジの両方に対応し、気分や用途に合わせてインクを選べます。黒は揺るがない礎、青は遠くへ開く窓、緑は机上に芽吹く若葉。色を替えるたび、いつものノートが新しい風景へ変わります。気密性を高めたキャップが乾燥を抑え、久しぶりに開いた日も、言葉の泉をすぐに呼び戻します。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "予定を書き留める。大切な人へ便りを送る。まだ名前のない構想を、最初の一行にする。万年筆は、単に文字を残す道具ではありません。心の中を飛び交う思いに着陸場所を与え、未来の自分へ小さな灯台を建てる道具です。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "「アステル」を手に取ると、白い紙は空白ではなく、出航を待つ海になります。あなたの言葉だけが描ける航跡を、今日の一行から始めてください。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "file": "sonnet/34-business-principle.md",
+  "stats": {
+    "total_findings": 0,
+    "by_category": {},
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 0,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 0,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [],
+    "paragraph_sentence_count_cv": null,
+    "rhythm": {},
+    "ngram": {
+      "lead_pos_4gram_top": null,
+      "lead_pos_4gram_ratio": null
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 0,
+      "doc_char_count": 0,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 31,
+      "non_blank_line_count": 39,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 0,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 情報セキュリティの心得",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 基本",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "箇条書き",
+      "text": "- 情報は、会社の資産である。",
+      "no": 3
+    },
+    {
+      "line": 6,
+      "kind": "箇条書き",
+      "text": "- 守るのは、全員の仕事である。",
+      "no": 4
+    },
+    {
+      "line": 7,
+      "kind": "箇条書き",
+      "text": "- 迷ったら、止まる。",
+      "no": 5
+    },
+    {
+      "line": 8,
+      "kind": "箇条書き",
+      "text": "- 気づいたら、すぐ報告する。",
+      "no": 6
+    },
+    {
+      "line": 10,
+      "kind": "見出し",
+      "text": "## パスワード",
+      "no": 7
+    },
+    {
+      "line": 12,
+      "kind": "箇条書き",
+      "text": "- 使い回さない。",
+      "no": 8
+    },
+    {
+      "line": 13,
+      "kind": "箇条書き",
+      "text": "- 他人に教えない。",
+      "no": 9
+    },
+    {
+      "line": 14,
+      "kind": "箇条書き",
+      "text": "- 紙に書いて貼らない。",
+      "no": 10
+    },
+    {
+      "line": 15,
+      "kind": "箇条書き",
+      "text": "- 管理ツールを使う。",
+      "no": 11
+    },
+    {
+      "line": 16,
+      "kind": "箇条書き",
+      "text": "- 二段階認証を、必ず有効にする。",
+      "no": 12
+    },
+    {
+      "line": 18,
+      "kind": "見出し",
+      "text": "## メールとメッセージ",
+      "no": 13
+    },
+    {
+      "line": 20,
+      "kind": "箇条書き",
+      "text": "- 送信前に、宛先を確認する。",
+      "no": 14
+    },
+    {
+      "line": 21,
+      "kind": "箇条書き",
+      "text": "- 不審な添付は、開かない。",
+      "no": 15
+    },
+    {
+      "line": 22,
+      "kind": "箇条書き",
+      "text": "- 不審なリンクは、押さない。",
+      "no": 16
+    },
+    {
+      "line": 23,
+      "kind": "箇条書き",
+      "text": "- 急かす文面ほど、疑う。",
+      "no": 17
+    },
+    {
+      "line": 24,
+      "kind": "箇条書き",
+      "text": "- 差出人を、別の手段で確かめる。",
+      "no": 18
+    },
+    {
+      "line": 26,
+      "kind": "見出し",
+      "text": "## 端末",
+      "no": 19
+    },
+    {
+      "line": 28,
+      "kind": "箇条書き",
+      "text": "- 席を離れるときは、画面をロックする。",
+      "no": 20
+    },
+    {
+      "line": 29,
+      "kind": "箇条書き",
+      "text": "- OSとアプリは、常に最新にする。",
+      "no": 21
+    },
+    {
+      "line": 30,
+      "kind": "箇条書き",
+      "text": "- 私物の端末に、業務データを置かない。",
+      "no": 22
+    },
+    {
+      "line": 31,
+      "kind": "箇条書き",
+      "text": "- 紛失したら、すぐ連絡する。",
+      "no": 23
+    },
+    {
+      "line": 33,
+      "kind": "見出し",
+      "text": "## 社外",
+      "no": 24
+    },
+    {
+      "line": 35,
+      "kind": "箇条書き",
+      "text": "- 公共のWi-Fiで、機密を扱わない。",
+      "no": 25
+    },
+    {
+      "line": 36,
+      "kind": "箇条書き",
+      "text": "- 人前で、機密を話さない。",
+      "no": 26
+    },
+    {
+      "line": 37,
+      "kind": "箇条書き",
+      "text": "- 画面の覗き見に、注意する。",
+      "no": 27
+    },
+    {
+      "line": 38,
+      "kind": "箇条書き",
+      "text": "- 公開の場に、社内情報を書かない。",
+      "no": 28
+    },
+    {
+      "line": 40,
+      "kind": "見出し",
+      "text": "## 共有",
+      "no": 29
+    },
+    {
+      "line": 42,
+      "kind": "箇条書き",
+      "text": "- 必要な人にだけ、渡す。",
+      "no": 30
+    },
+    {
+      "line": 43,
+      "kind": "箇条書き",
+      "text": "- 権限は、最小限にする。",
+      "no": 31
+    },
+    {
+      "line": 44,
+      "kind": "箇条書き",
+      "text": "- 公開設定を、必ず確認する。",
+      "no": 32
+    },
+    {
+      "line": 45,
+      "kind": "箇条書き",
+      "text": "- 不要になったデータは、消す。",
+      "no": 33
+    },
+    {
+      "line": 47,
+      "kind": "見出し",
+      "text": "## 事故のとき",
+      "no": 34
+    },
+    {
+      "line": 49,
+      "kind": "箇条書き",
+      "text": "- 隠さない。",
+      "no": 35
+    },
+    {
+      "line": 50,
+      "kind": "箇条書き",
+      "text": "- 自分で直そうとしない。",
+      "no": 36
+    },
+    {
+      "line": 51,
+      "kind": "箇条書き",
+      "text": "- 証拠を、消さない。",
+      "no": 37
+    },
+    {
+      "line": 52,
+      "kind": "箇条書き",
+      "text": "- すぐ、セキュリティ担当へ連絡する。",
+      "no": 38
+    },
+    {
+      "line": 53,
+      "kind": "箇条書き",
+      "text": "- 責めない。学ぶ。",
+      "no": 39
+    }
+  ]
+}

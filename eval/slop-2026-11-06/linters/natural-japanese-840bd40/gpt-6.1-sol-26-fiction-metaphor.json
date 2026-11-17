@@ -1,0 +1,163 @@
+{
+  "file": "gpt-6.1-sol/26-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 36,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 12,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      1,
+      3,
+      3,
+      2,
+      6,
+      1,
+      2,
+      3,
+      4,
+      1,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.5610836076867821,
+    "rhythm": {
+      "mora_mean": 23.694444444444443,
+      "mora_stdev": 9.98838059515056,
+      "burstiness": -0.40691550762687106,
+      "length_autocorrelation_lag1": 0.20235459883416063
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.4
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 206,
+      "doc_char_count": 687,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 13,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.407 (モーラ近似長 平均=23.7, 標準偏差=10.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 36,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 雪を待つ切符",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "最終列車の出た駅舎は、底に少しだけ茶の残った湯飲みに似ていた。ストーブの赤が待合室の隅に沈み、時計の針だけが乾いた音を立てている。駅員の佐伯が戸締まりに立つと、ベンチに小さな女の子が座っていた。青い毛糸の帽子には、溶けかけた雪が砂糖のようについていた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "「お迎えは」",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "女の子は切符を差し出した。隣町までの、大人の切符だった。「お母さんを待ってる」",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "佐伯は壁の時刻表を見た。運休を知らせる紙が、いくつもの駅名を白い包帯のように覆っていた。電話をかけようとすると、女の子は首を振った。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「電車じゃないよ。歩いてくるの」",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "外では雪が線路の傷を縫い合わせていた。佐伯は紙コップに白湯を入れて渡した。女の子は両手で包み、一口も飲まずに戸口を見つめた。その横顔を見ているうちに、佐伯は二十年前の娘を思い出した。帰ると言って帰れなかった夜がある。事故の対応で、駅から一歩も離れられなかった夜だ。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "「遅い人は、いつも遅いんだ」",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "思わず口にすると、女の子は笑った。「でも、来るよ」",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "その言葉は、冷えた胸へ置かれた小さな湯たんぽだった。佐伯は受付の椅子を持ち出し、向かいに座った。ストーブへ灯油が落ちるたび、沈黙に橙色の穴が開いた。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "やがて戸の向こうに、白い闇をかき分ける影が見えた。女が息を切らして入ってきた。介護施設の名札が胸で揺れていた。女の子は立ち上がり、切符を握った手を母親の腰へ回した。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "「ここなら、明るいから」",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "母親は何度も頭を下げた。二人が雪の中へ帰ると、待合室は急に広くなった。佐伯はストーブを消す前に、携帯を取り出した。娘の名前は、長く開けていない引き出しのように画面にあった。「雪は大丈夫か」と打つ。送信音が、閉じかけた駅舎に一本の細いレールを延ばした。",
+      "no": 13
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "file": "haiku/15-essay-literary.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 19,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.10526315789473685,
+    "rhythm": {
+      "mora_mean": 39.26315789473684,
+      "mora_stdev": 12.506175759718236,
+      "burstiness": -0.5168500393227681,
+      "length_autocorrelation_lag1": -0.1994429977146154
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3157894736842105
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 170,
+      "doc_char_count": 609,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[3, 4, 4, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.105（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.517 (モーラ近似長 平均=39.3, 標準偏差=12.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 19,
+      "genre": "essay",
+      "by_category": {
+        "no_chain": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 3,
+        "category": "no_chain",
+        "excerpt": "の生き物の心音の",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 実家の古い柱時計",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "実家の居間の隅に、柱時計が立っている。振り子は、もう誰の手も借りずに、ただ一定の拍で空気を叩き続けている。その音は、家というひとつの生き物の心音のようで、耳を澄ますほどに、家の隅々まで血が巡っていくのが感じられる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "この時計は祖父の代から、この家の時を刻んできた。文字盤の塗料はところどころ剥がれ、数字は淡い影となって残っている。それでも針は正確に、ひとつずつ時間を前へと送り出していく。その慎ましさに、私はいつも少しだけ胸を打たれる。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "子どもの頃、夜中に目を覚ますと、この時計の音が天井の方から降りてきた。暗がりの中で数える十二の鐘は、まるで家族全員の寝息を見守る、年老いた守り人の呼び声のようだった。父が遅く帰った夜も、母が台所で湯を沸かす夜も、時計は変わらず同じ速さで歩いていた。その歩みに合わせて、私たちの日々もまた、少しずつ形を整えてきたのだと思う。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "母が亡くなってから、家の時間は少しずつ歪んでいった。食卓の椅子は一つ空いたまま、廊下の光は昔より遠くまで伸びている。その中で、柱時計だけが迷いなく時を刻んでいる。ねじを巻く人がいなくなったのに、それでも止まらないことが、どこか責めるように、そしてどこか慰めるように響いた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "先日、私はゼンマイを巻いた。金属の手応えがゆっくりと指に伝わり、振り子がひときわ大きく揺れ始める。その揺れの一往復ごとに、過ぎ去った日々が少しずつ、やさしく綻んでいくようだった。時計は今日も、私たちの代わりに、時間を覚えている。",
+      "no": 6
+    }
+  ]
+}

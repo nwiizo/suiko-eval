@@ -1,0 +1,114 @@
+{
+  "file": "gpt-6-luna/35-tech-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 23,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      6,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.1739130434782609,
+    "rhythm": {
+      "mora_mean": 38.391304347826086,
+      "mora_stdev": 11.933654021240802,
+      "burstiness": -0.5257361592344195,
+      "length_autocorrelation_lag1": -0.06049498793848934
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.17391304347826086
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 200,
+      "doc_char_count": 711,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.526 (モーラ近似長 平均=38.4, 標準偏差=11.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 23,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 負債だらけのコードを引き継いだ話",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "引き継いだコードベースは、長いあいだ増築を繰り返した古い家に似ていた。廊下の先に扉があり、その先には別の廊下が続く。似た名前の関数があちこちにあり、設定値は壁の裏に隠れ、テストは床板の一部だけを照らしていた。最初に必要だったのは、壁を壊すことではなく、家の地図を描くことだった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "私はまず、起動方法、主要な処理の流れ、外部サービスとの接点を記録した。小さな変更を一つ選び、どの画面やジョブに影響するかを追った。ログとテスト結果を照らし合わせると、似た処理が別々に実装されている理由も少しずつ見えてきた。設計の歪みは、誰かの怠慢というより、期限や要件に応じて貼り重ねられた応急処置の跡だった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "負債をまとめて返そうとすると、建物全体を改修するような大工事になる。そこで、変更のたびに足場を一段だけ整えることにした。触った箇所には回帰テストを足す。重複を見つけたら、挙動を確かめてから共通化する。危険な設定は、呼び出し元を洗い出して段階的に置き換える。返済額は小さくても、利息の増え方を抑える効果があった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "特に助けになったのは、変更の境界を明確にすることだった。データ形式、外部API、データベースの責任を切り分けると、ひとつの修正が予期せぬ部屋まで揺らすことが減った。境界は壁ではなく、点検口のようなものだ。必要なときに中を確認でき、問題の広がりを狭く保てる。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "数か月後、コードは新築のようにはならなかった。それでも、主要な道筋が文書になり、変更を確かめるテストが増え、危険な箇所を誰もが指差せるようになった。引き継ぎで受け取ったのは、負債そのものだけではない。なぜそうなったかという履歴と、次の人へ渡す責任でもある。古い家は、手入れの跡が増えるほど、少しずつ住みやすくなる。",
+      "no": 6
+    }
+  ]
+}

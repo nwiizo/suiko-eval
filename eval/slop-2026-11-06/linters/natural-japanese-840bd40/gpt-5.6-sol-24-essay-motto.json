@@ -1,0 +1,163 @@
+{
+  "file": "gpt-5.6-sol/24-essay-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 30,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 12,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      1,
+      4,
+      1,
+      5,
+      1,
+      4,
+      1,
+      5,
+      3,
+      1,
+      1
+    ],
+    "paragraph_sentence_count_cv": 0.6429100507328637,
+    "rhythm": {
+      "mora_mean": 27.4,
+      "mora_stdev": 11.586198686368192,
+      "burstiness": -0.40562562769581373,
+      "length_autocorrelation_lag1": -0.22657156744414936
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/動詞/助詞",
+      "lead_pos_4gram_ratio": 0.13333333333333333
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 196,
+      "doc_char_count": 656,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 13,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.406 (モーラ近似長 平均=27.4, 標準偏差=11.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 30,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 朝の散歩で考えたこと",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "朝は、まだ誰のものでもない。玄関を出ると、夜の冷たさが道の隅に残り、町はゆっくり輪郭を取り戻していた。新聞配達の自転車が角を曲がり、遠くでシャッターの上がる音がした。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "歩けば、考えはほどける。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "机に向かっていると、悩みは閉じた部屋の中で大きくなる。同じ問いが壁に反射し、出口を失う。けれど歩き始めると、足音が考えに一定の間隔を与える。答えを急いでいた心が、信号の前で立ち止まり、風景を見る余裕を取り戻す。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "小さな変化を見逃さない。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "昨日まで固かった街路樹の芽が、今日はわずかに開いていた。空き地には名も知らない草が伸び、塀の上では猫が朝日を受けていた。劇的な出来事はない。それでも世界は、誰にも報告せず更新されている。変化とは、大きな決断より先に、こうした微かな動きとして始まるのかもしれない。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "遠回りを惜しまない。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "いつもの道を外れ、細い路地へ入った。古い家の軒先に鉢植えが並び、小さなパン屋から甘い匂いが流れてきた。効率だけを考えれば、知らずに通り過ぎた場所だ。近道は早く目的地へ運ぶが、寄り道は目的そのものを増やしてくれる。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "今日できる一歩を選ぶ。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "散歩の途中で、長く先延ばしにしていた用事を思い出した。不思議なことに、部屋で考えたときほど重く感じなかった。全部を片づけようとするから動けない。まず一通のメールを書く。それだけなら、朝食の前にもできる。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "帰るころには、町の音が増えていた。通勤する人々が駅へ向かい、交差点に一日の速度が満ちていく。私は玄関の鍵を開けながら、散歩で得た答えが特別なものではないと気づいた。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "急がず、止まらず、よく見る。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "一日は、その繰り返しで十分に前へ進む。",
+      "no": 13
+    }
+  ]
+}

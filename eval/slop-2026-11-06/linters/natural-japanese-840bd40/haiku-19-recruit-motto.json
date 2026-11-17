@@ -1,0 +1,258 @@
+{
+  "file": "haiku/19-recruit-motto.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 26,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.07692307692307693,
+    "total_paragraphs": 13,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.0,
+    "rhythm": {
+      "mora_mean": 24.807692307692307,
+      "mora_stdev": 6.263565160570301,
+      "burstiness": -0.5968257694772636,
+      "length_autocorrelation_lag1": -0.7568313295502787
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3076923076923077
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 147,
+      "doc_char_count": 519,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 40,
+      "boilerplate_heading_count": 1,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=13, 各段落の文数=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.000（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 4,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.597 (モーラ近似長 平均=24.8, 標準偏差=6.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 私たちが一緒に働きたい人",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 答えを急がない人。",
+      "no": 2
+    },
+    {
+      "line": 4,
+      "kind": "段落",
+      "text": "問いを、長く持てる人。\nすぐに結論を出せなくても、考え続けられる人と働きたい。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "見出し",
+      "text": "## 失敗を、次の設計図にできる人。",
+      "no": 4
+    },
+    {
+      "line": 8,
+      "kind": "段落",
+      "text": "責めるのではなく、理由を探す。\n失敗は、誰かの責任である前に、チームの情報です。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "見出し",
+      "text": "## 小さな改善を、面倒がらない人。",
+      "no": 6
+    },
+    {
+      "line": 12,
+      "kind": "段落",
+      "text": "毎日の一行が、チームの明日を変える。\n大きな変革は、小さな修正の積み重ねでできています。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "見出し",
+      "text": "## 違う意見を、歓迎できる人。",
+      "no": 8
+    },
+    {
+      "line": 16,
+      "kind": "段落",
+      "text": "議論の後に、同じ方向を向ける人。\n反対の声を、プロジェクトの足場に変えられる人です。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "見出し",
+      "text": "## 説明を、相手の言葉でできる人。",
+      "no": 10
+    },
+    {
+      "line": 20,
+      "kind": "段落",
+      "text": "専門用語は、使う前に一度外す。\nわかってもらえて、初めて仕事は前に進みます。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "見出し",
+      "text": "## 自分の仕事に、責任を持てる人。",
+      "no": 12
+    },
+    {
+      "line": 24,
+      "kind": "段落",
+      "text": "誰かに任せきりにせず、最後まで見届ける。\n途中で手を離さない人が、チームの信頼を育てます。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "見出し",
+      "text": "## 数字を、人の顔の裏側で読める人。",
+      "no": 14
+    },
+    {
+      "line": 28,
+      "kind": "段落",
+      "text": "指標は、人の行動の結果です。\n数字の向こうにいるユーザーを、思い浮かべられる人を探しています。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "見出し",
+      "text": "## 書いた文章を、読み返せる人。",
+      "no": 16
+    },
+    {
+      "line": 32,
+      "kind": "段落",
+      "text": "ドキュメントは、未来の自分と仲間への手紙です。\n読み返し、書き直すことを、丁寧な仕事と呼びたい。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "見出し",
+      "text": "## 学ぶことを、楽しめる人。",
+      "no": 18
+    },
+    {
+      "line": 36,
+      "kind": "段落",
+      "text": "昨日の知識は、今日の入り口に過ぎない。\n新しい技術を、わくわくしながら試せる人と一緒に働きたい。",
+      "no": 19
+    },
+    {
+      "line": 39,
+      "kind": "見出し",
+      "text": "## ペースを、チームに合わせられる人。",
+      "no": 20
+    },
+    {
+      "line": 40,
+      "kind": "段落",
+      "text": "速く走るだけが、良い仕事ではない。\n隣の人の歩幅に気づき、一緒に進める人を歓迎します。",
+      "no": 21
+    },
+    {
+      "line": 43,
+      "kind": "見出し",
+      "text": "## 休むことも、仕事の一部と考えられる人。",
+      "no": 22
+    },
+    {
+      "line": 44,
+      "kind": "段落",
+      "text": "疲れた頭からは、良い設計は生まれない。\n休息は、次の挑戦に向けた準備です。",
+      "no": 23
+    },
+    {
+      "line": 47,
+      "kind": "見出し",
+      "text": "## 目の前の人を、大切にできる人。",
+      "no": 24
+    },
+    {
+      "line": 48,
+      "kind": "段落",
+      "text": "ユーザーも、仲間も、同じ人間として見る。\n相手の時間を尊重できる人が、プロダクトを良くします。",
+      "no": 25
+    },
+    {
+      "line": 51,
+      "kind": "見出し",
+      "text": "## 最後に。",
+      "no": 26
+    },
+    {
+      "line": 52,
+      "kind": "段落",
+      "text": "完璧な人は、要りません。\n一緒に、ちょっとずつ良くしていける人を、待っています。",
+      "no": 27
+    }
+  ]
+}

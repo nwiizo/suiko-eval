@@ -1,0 +1,149 @@
+{
+  "file": "gpt-6.1-sol/09-tech-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 31,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.03225806451612903,
+    "total_paragraphs": 10,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      1,
+      4,
+      1,
+      5,
+      1,
+      5,
+      1,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.5670450268144176,
+    "rhythm": {
+      "mora_mean": 29.967741935483872,
+      "mora_stdev": 10.864217297246489,
+      "burstiness": -0.46785716378077313,
+      "length_autocorrelation_lag1": -0.07780112870857259
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/動詞",
+      "lead_pos_4gram_ratio": 0.0967741935483871
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 222,
+      "doc_char_count": 723,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 11,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.468 (モーラ近似長 平均=30.0, 標準偏差=10.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 31,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 障害対応で迷ったときに戻る言葉",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "障害対応では、調べたいことが次々に出てくる。直前の変更、増えたリクエスト、見慣れないエラー。どれも気になるが、最初に確認するのは利用者への影響だ。どの操作が、いつから、どの程度失敗しているか。調査の開始時にこれを短く書くと、担当が増えても目的を共有しやすい。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "まず、被害を減らす。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "原因が確定する前でも、安全に戻せる変更があれば検討する。直前の公開が疑わしいなら、戻した場合の影響と手順を確認する。一方、データの書き換えを伴う処理では、単純な取り消しが状況を悪くすることもある。速さだけで選ばず、予想される効果と失敗時の扱いを伝えてから実行する。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "事実と予想を分ける。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「データベースが原因」と書くより、「接続待ちが増えている。接続数の上限を疑っている」と書く。後者なら、別の担当が異なる観測を持ってきやすい。予想が外れたことを隠す必要もない。確認できたこと、まだ分からないこと、次に確かめることを、同じ場所へ残していく。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "黙って抱えない。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "調査に集中すると、共有の時間は後回しになりやすい。だから最初に連絡役を決め、次の報告時刻を置く。進展がないときも、継続している調査と現在の影響を知らせる。交代する際は、試した操作と結果を渡す。同じ確認を何度も繰り返す時間を減らすためだ。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "復旧を、確かめる。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "エラー率が下がっただけで終わりにしない。利用者が失敗していた操作を、実際に通るところまで確認する。滞留した処理や、不整合が残っていないかも調べる。監視が静かになった時刻と、利用者が仕事を再開できた時刻は、必ずしも一致しない。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "対応後には、判断に足りなかった情報と、役に立った手順を振り返る。誰が間違えたかを並べても、次の担当が使える知識は増えにくい。次の障害で一つ早く判断できるようにする。そのために、対応の記録を残している。",
+      "no": 11
+    }
+  ]
+}

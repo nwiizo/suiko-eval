@@ -1,0 +1,135 @@
+{
+  "file": "sonnet/26-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 24,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 8,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      5,
+      1,
+      3,
+      4,
+      4,
+      3,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.40824829046386296,
+    "rhythm": {
+      "mora_mean": 30.083333333333332,
+      "mora_stdev": 11.824820881894528,
+      "burstiness": -0.43567923220069527,
+      "length_autocorrelation_lag1": 0.2623716226974817
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.25
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 166,
+      "doc_char_count": 578,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 11,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.436 (モーラ近似長 平均=30.1, 標準偏差=11.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 24,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 雪の夜の駅舎",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "最終列車が行ってしまうと、駅は巨大な貝殻のように静まり返った。降りしきる雪が屋根を白い毛布で包み、待合室の石油ストーブだけが、赤い心臓のようにことことと脈打っている。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "美咲は木のベンチに腰かけ、携帯電話の画面を見つめていた。圏外の二文字が、凍った湖面みたいに動かない。迎えの車は、この雪で峠を越えられないのだろう。仕方なく、彼女は鞄から魔法瓶を取り出した。蓋に注いだ茶は、小さな湯気の旗を立てた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "「お嬢さん、ここは冷えますよ」",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "声に振り向くと、改札の脇で、駅員の老人が古い外套の襟を立てていた。皺の深い顔は、長く風に晒された山肌を思わせた。老人は黙ってストーブに薪を一本くべ、火の粉が蛍のように舞い上がるのを見ていた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「この駅ね、もう来月で閉めるんです」\n「そうなんですか」\n「雪の夜は、ホームが海になる。ずっと昔の汽笛が、波みたいに戻ってくるんですよ」",
+      "no": 6
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "美咲は窓の外を見た。線路は雪に埋もれ、二本の銀の糸が闇の奥へ消えている。たしかに、遠くから低い音が寄せてくる気がした。それは風のうなりか、思い出の残響か、分からなかった。",
+      "no": 7
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "しばらくして、老人は小さな缶を差し出した。中には、飴玉が琥珀の欠片のように並んでいた。美咲は一つ口に含み、甘さが舌の上でゆっくりほどけるのを待った。",
+      "no": 8
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "夜が明けるころ、雪はやみ、東の空が薄い桃色の紙のように透けはじめた。迎えの車のライトが、白い野原の向こうで、小さな星のように瞬いた。",
+      "no": 9
+    }
+  ]
+}

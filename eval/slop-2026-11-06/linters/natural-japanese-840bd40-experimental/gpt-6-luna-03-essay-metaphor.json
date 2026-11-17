@@ -1,0 +1,114 @@
+{
+  "file": "gpt-6-luna/03-essay-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      5,
+      4,
+      4,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.2317736142542175,
+    "rhythm": {
+      "mora_mean": 32.77272727272727,
+      "mora_stdev": 9.287977655314414,
+      "burstiness": -0.558353685645332,
+      "length_autocorrelation_lag1": 0.003813655053249187
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3181818181818182
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 186,
+      "doc_char_count": 569,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.558 (モーラ近似長 平均=32.8, 標準偏差=9.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 冬の朝の台所",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "冬の朝、台所はまだ眠りの底にいる。窓ガラスには夜が薄く貼りつき、外の光は白い封筒のように差し込んでくる。床は足の裏から体温を少しずつ手紙のように奪い、私は靴下を探しながら、暗い部屋を渡る。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "蛇口をひねると、水が細い銀の糸になって流れた。やかんに注ぐ音は、静かな家の中で小さな鐘を鳴らす。火をつけると、青い炎が鍋の底に朝の輪郭を描いた。湯が温まるまでの数分、私は窓のそばに立ち、曇ったガラスに指で線を引く。すぐに消えてしまう線は、今日の予定をまだ知らない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "冷蔵庫を開けると、冷気が白い獣の息のように手首へ触れた。卵を取り出し、パンを焼き、湯気の立つカップを並べる。トースターの中でパンが色づくのを待つ時間は、夜と昼のあいだに架けた細い橋に似ている。焼き上がりの音が鳴るころ、家の隅々まで少しずつ目が覚めていく。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "湯気はカップの上でほどけ、窓へ向かってゆっくり上る。そこに朝日が触れると、見えない糸が金色に光ったように思える。私は両手でカップを包み、冷えた指を温める。飲み物の熱は、体の中に小さな暖炉をひとつ運び込む。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "冬の台所には、急がない時間がある。外では人々が襟を立て、駅へ向かう足音が道を満たしている。その前に私は、パンのかけらを皿から拾い、流しに残った水滴を拭く。窓の曇りが晴れ、向かいの屋根が朝の色を帯びる。台所はもう眠っていない。今日という長い布を、端から静かに織り始めている。",
+      "no": 6
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "format": "yomiyasu-lint",
+  "format_version": 2,
+  "tool_version": "3.0.0",
+  "candidate_count": 0,
+  "counts": {
+    "error": 0,
+    "warn": 0,
+    "info": 0
+  },
+  "no_rule_findings": true,
+  "rule_penalty_score": 100,
+  "not_judged": [
+    "meaning_preservation",
+    "reader_comprehension"
+  ],
+  "context": {
+    "doc_type": "article",
+    "reader": null,
+    "skipped_by_doc_type": {}
+  },
+  "metrics": {
+    "char_count": 704,
+    "total_lines": 53,
+    "list_lines": 0,
+    "list_ratio": 0.0,
+    "bold_count": 0,
+    "bold_per_1000": 0.0
+  },
+  "findings": []
+}

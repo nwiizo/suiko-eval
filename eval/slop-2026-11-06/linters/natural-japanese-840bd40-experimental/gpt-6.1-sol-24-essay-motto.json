@@ -1,0 +1,147 @@
+{
+  "file": "gpt-6.1-sol/24-essay-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 35,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 8,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      5,
+      2,
+      5,
+      5,
+      1,
+      6,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.3948649988881501,
+    "rhythm": {
+      "mora_mean": 25.65714285714286,
+      "mora_stdev": 13.21242457936113,
+      "burstiness": -0.3201661119103268,
+      "length_autocorrelation_lag1": -0.12145860550719093
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.1875
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 226,
+      "doc_char_count": 723,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 9,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.320 (モーラ近似長 平均=25.7, 標準偏差=13.2)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 35,
+      "genre": "essay",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 15,
+        "category": "double_negative",
+        "excerpt": "なくても構わない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 遠回りの朝",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "朝の散歩には、行き先がない。駅へ向かうときと同じ道を歩いても、信号を待つ気持ちが違う。青になりかけた点滅を見て、今日は次を待とうと思う。向こうの歩道では、小学生が水筒を揺らしていた。急がなくても、朝は進む。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "川沿いまで出ると、犬を連れた人に道を譲った。犬は私の靴を少し嗅ぎ、すぐ草の方へ行った。私はもう関心の外にいた。そのあっさりした態度がおかしくて、昨日の会議で言いそびれたことを考えるのをやめた。朝から同じ場面を何度もやり直しても、相手の返事まで新しくなるわけではない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "足を動かす。考えも動く。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "歩いていると、悩みの順番が入れ替わる。机の前ではいちばん大きかったことが、川を一本渡る間に、今日やる三つの仕事の一つになる。解決したわけではない。それでも、昼までに連絡を入れればよい、と手が付けられる大きさになる。頭だけで持っていたものを、体の動きに少し預けられるのだと思う。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "パン屋の裏口から、天板を運ぶ人が出てきた。まだ店の正面には準備中の札が掛かっている。私が朝を始めようとしている間に、その人はもう幾つもの作業を済ませている。焼けた匂いに気づくと、急にお腹が空いた。世の中について大きく考えていたはずなのに、次の角では朝食の卵のことを考えていた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "食べてから、決める。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "そんな短い言葉を自分の決まりにしてもいい。ただ、毎朝守れなくても構わない。早く起きられない日も、雨で玄関から戻る日もあるだろう。散歩を立派な習慣に仕立てると、出られなかった朝まで失敗に数えてしまう。今日は歩けた。それだけを覚えておく。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "帰り道、来るときには閉じていた窓が一つ開いていた。部屋の中から食器の触れ合う音がした。自宅の鍵を出すと、少し冷えた指に金属が硬かった。まだ何も片づいていない一日が、扉の向こうにある。まず湯を沸かす。そこから始める。",
+      "no": 9
+    }
+  ]
+}

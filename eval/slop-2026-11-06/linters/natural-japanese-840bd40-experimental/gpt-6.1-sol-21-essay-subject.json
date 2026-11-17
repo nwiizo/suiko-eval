@@ -1,0 +1,382 @@
+{
+  "file": "gpt-6.1-sol/21-essay-subject.md",
+  "stats": {
+    "total_findings": 18,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_sentence_variance": 1,
+      "low_burstiness": 1,
+      "repeated_syntax_template": 15
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 27,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 1,
+    "paragraph_lead_conjunction_ratio": 0.16666666666666666,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      5,
+      5,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.1111111111111111,
+    "rhythm": {
+      "mora_mean": 34.18518518518518,
+      "mora_stdev": 7.649919084718706,
+      "burstiness": -0.6342822986473565,
+      "length_autocorrelation_lag1": 0.005773962710537082
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.5555555555555556
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 220,
+      "doc_char_count": 732,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 4, 5, 5, 4, 5]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.111（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=27, 平均文長=27.1字, 変動係数=0.219",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.634 (モーラ近似長 平均=34.2, 標準偏差=7.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "朝の床が、季節の変わり目を最初に知らせる",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "昨日まで気にならなかった冷たさが、素足を",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "窓の向こうには同じ建物が並び、暦にも大き",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "椅子の背に掛かった薄い上着が、ようやく出",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "昼の暑さが何度もそれを置き去りにしてきた",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "鞄の中の折り畳み傘と上着が場所を取り合い",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "季節の移動は、こうした小さな窮屈さを日常",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "商店街の品ぞろえは、空気より一足早く変わ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "店先の栗が秋を名乗り、まだ冷たい飲み物の",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "季節の名前と実際の体感には、いつも少し距",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "夕飯の買い物が急ぎ足になり、明るい店内が",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 11,
+      "category": "repeated_syntax_template",
+      "excerpt": "朝の踏切や、近所の学校から聞こえる笛が、",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "季節の変わり目は、去年の暮らしも呼び戻す",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "上着のポケットから出てきた古い切符が、忘",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "毛布の重みが、以前の朝の眠さを体に返す",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 27,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 季節が部屋を通る",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "朝の床が、季節の変わり目を最初に知らせる。昨日まで気にならなかった冷たさが、素足を通って膝まで届く。窓の向こうには同じ建物が並び、暦にも大きな印はない。それでも床の感触が、夏の習慣を今日から少し変えるよう促してくる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "椅子の背に掛かった薄い上着が、ようやく出番を迎える。昼の暑さが何度もそれを置き去りにしてきたが、夕方の風が今度は袖を必要にする。鞄の中の折り畳み傘と上着が場所を取り合い、軽かった持ち物に厚みが出る。季節の移動は、こうした小さな窮屈さを日常へ持ち込む。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "商店街の品ぞろえは、空気より一足早く変わる。店先の栗が秋を名乗り、まだ冷たい飲み物の欲しい喉がそれに追いつかない。温かい汁物の写真が食堂の入口に増えても、昼の陽射しには夏の強さが残る。季節の名前と実際の体感には、いつも少し距離がある。その距離が、一年のこの時期を長く感じさせる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "日の短さは、帰宅の気分にも手を加える。同じ時刻の駅なのに、暗くなった出口が一日を使い切ったように見せる。夕飯の買い物が急ぎ足になり、明るい店内がしばらく足をとどめる。部屋に着くと、窓に映った室内が外の景色を押し隠す。閉めたカーテンが、夜の始まりをはっきりさせる。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "一方で、冷えた空気は遠い音を連れてくる。朝の踏切や、近所の学校から聞こえる笛が、開けた窓のそばへ届く。夏じゅう働いていた扇風機の沈黙が、それらの音に場所を譲る。部屋が静かになったというより、部屋の外まで聞こえる範囲が広がったように思える。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "季節の変わり目は、去年の暮らしも呼び戻す。上着のポケットから出てきた古い切符が、忘れていた外出を思い出させる。毛布の重みが、以前の朝の眠さを体に返す。新しい空気と古い記憶が、同じ部屋にしばらく居合わせる。冷たい床が翌朝も足に触れ、その日にはもう、靴下が枕元に用意されている。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "file": "gpt-6.1-sol/04-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 39,
+    "nominal_ending_count": 3,
+    "nominal_ending_ratio": 0.07692307692307693,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      1,
+      6,
+      5,
+      5,
+      7,
+      1,
+      5,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.4485347611419462,
+    "rhythm": {
+      "mora_mean": 23.205128205128204,
+      "mora_stdev": 8.62667148331263,
+      "burstiness": -0.45798405570859024,
+      "length_autocorrelation_lag1": 0.10638590568142402
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.20512820512820512
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 218,
+      "doc_char_count": 722,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 10,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 7,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.458 (モーラ近似長 平均=23.2, 標準偏差=8.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 39,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 最後の一冊を閉じるまで",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "閉店の札を裏返そうとしたとき、戸の鈴が鳴った。十一月の風が、濡れた犬のように足元へ入り込んだ。客は灰色のコートを着た女で、傘を持っていなかった。肩についた雨粒が、店の裸電球を小さく映していた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "「まだ、間に合いますか」",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "私は時計を見ずにうなずいた。店の時計は三日前から止まっている。八時十二分。その針の下では、いつでも同じだけの夜が残っていた。女は礼を言い、詩集の棚へ歩いていった。濡れた靴が、古い床にためらいがちな足跡をつけた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "棚の本は、眠った鳥の群れのように背を寄せている。女はその一羽一羽を起こさない手つきで、背表紙をなぞった。探している題名を尋ねると、覚えていない、と答えた。「父が持っていた本です。中に、母の名前が書いてありました」",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "名前なら本を開かなければ分からない。そう言いかけて、私は黙った。女が抜き取った薄い本に見覚えがあった。先月、向かいの団地から引き取った本の一冊だった。持ち主の息子だという男は、全部処分してください、と、荷物より軽い声で言った。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "女は表紙を開いた。ページを押さえる指が止まった。私は帳場から、その指だけを見ていた。紙の上に何があるのかは知っている。青いインクで書かれた名前と、日付。余白に小さな桜。遠い春が、押し花にもならず、そのまま紙の中に残っていた。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "「売ってしまったんですね」",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "誰に向けた言葉なのか分からなかった。女は本を胸の前で閉じた。値段を告げると、財布から硬貨を数えた。私は袋を出しかけてやめた。彼女の両手はもう、本を手放す形をしていなかった。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "戸が閉まると、雨の音が急に遠ざかった。私は止まった時計の電池を取り出した。引き出しには新しいものがあった。針が一秒ぶん進むのを見届けてから、閉店の札を裏返した。棚の奥で、戻らなかった一冊の隙間だけが、細い窓のように暗く開いていた。",
+      "no": 10
+    }
+  ]
+}

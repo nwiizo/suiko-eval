@@ -1,0 +1,177 @@
+{
+  "file": "sonnet/16-fiction-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 34,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 14,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      3,
+      3,
+      1,
+      3,
+      5,
+      3,
+      1,
+      1,
+      2,
+      3,
+      2,
+      3,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.4322628957852667,
+    "rhythm": {
+      "mora_mean": 21.88235294117647,
+      "mora_stdev": 9.937346982565472,
+      "burstiness": -0.37539656210580274,
+      "length_autocorrelation_lag1": -0.060734825133309515
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.18181818181818182
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 172,
+      "doc_char_count": 613,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 15,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 1,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.375 (モーラ近似長 平均=21.9, 標準偏差=9.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 34,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 港町の喫茶店",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "坂を下りきったところに、その喫茶店はあった。潮風に晒された木の看板には、かろうじて「汀」の一字が読める。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "水野澄子は、十年ぶりにその扉を押した。鈴が鳴った。記憶のなかの音よりも、少し濁っていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "店内は薄暗く、煙草と珈琲の古い匂いが壁に染みついていた。カウンターの向こうで、白髪の主人が豆を挽いていた。顔を上げた彼は、澄子を見て、ほんのわずか目を細めた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "「窓際、空いてますよ」",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "それだけだった。十年のあいだに何があったのか、彼は尋ねなかった。澄子はありがたいと思い、同時に少しだけ寂しいとも思った。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "窓の外には、錆びたクレーンと、停泊した漁船が見えた。曇天の下で、海は鈍い鉛の色をしている。ここで、彼女はかつて一人の男を待っていた。船乗りだった。出航の朝に「帰ったらここで会おう」と言い残し、それきり便りは途絶えた。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "珈琲が運ばれてきた。白い厚手のカップから、細い湯気が立ちのぼる。一口含むと、苦みの奥に、ひどく懐かしい甘さがあった。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "「あの人のこと、聞きましたか」",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "澄子がようやく口にすると、主人は布巾を持つ手を止めた。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "「去年、亡くなったそうです。遠い港で」",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "彼はそう言い、しばらく黙っていた。それから、棚の奥から色褪せた封筒を取り出した。宛名は、澄子の名前だった。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "「預かっていたんです。いつか、来る気がして」",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "澄子は封筒を受け取った。開けずに、膝の上に置いた。窓の外では、日が傾き、鉛色の海がかすかに金を帯びはじめていた。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "段落",
+      "text": "珈琲は、冷めかけていた。それでも彼女は、最後の一滴まで、ゆっくりと飲み干した。",
+      "no": 15
+    }
+  ]
+}

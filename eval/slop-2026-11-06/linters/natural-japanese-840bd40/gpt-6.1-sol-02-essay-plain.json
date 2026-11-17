@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6.1-sol/02-essay-plain.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 28,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      5,
+      4,
+      5,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.10101525445522107,
+    "rhythm": {
+      "mora_mean": 30.035714285714285,
+      "mora_stdev": 10.588005824844393,
+      "burstiness": -0.47872790596091064,
+      "length_autocorrelation_lag1": 0.09824810224925214
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.25
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 205,
+      "doc_char_count": 702,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 5, 5, 4, 5, 5]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.101（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.479 (モーラ近似長 平均=30.0, 標準偏差=10.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 28,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# まだ自分の部屋にならない一週間",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "引っ越した日の夜、歯ブラシを入れた箱が見つからなかった。台所用品と書かれた箱から皿を出し、本と書かれた箱からタオルを出した。最後には探すことを諦め、近くのコンビニで一本買った。帰り道で部屋のある建物を通り過ぎてしまい、明るい店の看板まで戻った。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "二日目は、目が覚めても自分がどちらを向いて寝ているのか分からなかった。前の部屋では右手に窓があった。今度は足元にある。カーテンの隙間から入る光を見て、ようやく思い出した。起きて最初にすることが、場所の確認になるのは妙な感じだった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "三日目にスーパーへ行った。買う物はいつもと同じなのに、店の中を何度も往復した。豆腐を探して乳製品の棚を眺め、最後に入口の近くで見つけた。帰宅して冷蔵庫にしまうと、今度は醤油を買い忘れたことに気づいた。慣れた買い物にも、場所の記憶がずいぶん混ざっていた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "四日目には雨が降った。ベランダに置いたままの物干し竿が濡れていた。前の部屋にはひさしがあったので、弱い雨なら気にしなくてよかった。洗濯物を取り込みながら、この家で覚え直すことは、箱を開ける作業より多いのかもしれないと思った。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "五日目と六日目は、仕事を終えてから少しずつ家具を動かした。机は窓際に置く予定だったが、午後になると画面が見づらい。壁際へ寄せると落ち着いた。間取り図を見ながら考えた配置は、実際に一日過ごしただけで変わった。空いた床に座って食べた夕飯は、なぜかよく覚えている。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "七日目の帰り道、コンビニの角を考えずに曲がった。鍵も鞄の中で迷わず取り出せた。部屋にはまだ箱が積んであり、歯ブラシは見つかっていない。それでも玄関を開けたとき、片づけなくては、と思うより先に、座りたい、と思った。その順番が変わったことに、少し安心した。",
+      "no": 7
+    }
+  ]
+}

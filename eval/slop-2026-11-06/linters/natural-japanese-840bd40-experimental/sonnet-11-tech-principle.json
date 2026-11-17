@@ -1,0 +1,163 @@
+{
+  "file": "sonnet/11-tech-principle.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 31,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 12,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      2,
+      2,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.24777889509253576,
+    "rhythm": {
+      "mora_mean": 22.612903225806452,
+      "mora_stdev": 9.455080284385911,
+      "burstiness": -0.41031026903324025,
+      "length_autocorrelation_lag1": -0.31067076442620195
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/補助記号/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.16129032258064516
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 169,
+      "doc_char_count": 572,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 13,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.410 (モーラ近似長 平均=22.6, 標準偏差=9.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 31,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# コードレビューの心得",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "コードレビューで守るべき原則を、以下に示す。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "一、変更の目的を先に読む。コードを見る前に、説明文を読む。何を解決したいのかがわからないまま、細部を指摘してはならない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "二、指摘は、コードに向ける。書いた人には向けない。「この書き方は読みにくい」と言い、「あなたの書き方は悪い」とは言わない。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "三、理由を添える。「直してください」だけの指摘は、無責任である。なぜ直すのか、直すとどうなるのかを、一文でよいから書く。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "四、重要度を明示する。必ず直すべき指摘と、好みの範囲の提案を、混ぜてはならない。前者には「必須」、後者には「任意」と書く。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "五、良い点も書く。見落としを探すだけが、レビューではない。うまい工夫を見つけたら、言葉にして伝える。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "六、小さく出す。レビューする側も、される側も、変更は小さいほど良い。四百行を超える差分は、分割を求める。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "七、待たせない。依頼を受けたら、その日のうちに最初の返信をする。放置は、書いた人の勢いを奪う。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "八、自動化できることは、人に任せない。書式や命名の細かな揃え方は、整形ツールと静的解析に任せる。人間は、設計と振る舞いの確認に時間を使う。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "九、わからないことは、質問する。推測で指摘してはならない。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "十、最後は、承認か差し戻しかを、はっきり示す。曖昧な返答は、次の作業を止める。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "レビューは、品質を守るための作業であり、同時に、チームが互いに学ぶ場でもある。この二つを、常に両立させる。",
+      "no": 13
+    }
+  ]
+}

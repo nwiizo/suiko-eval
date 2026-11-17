@@ -1,0 +1,324 @@
+{
+  "file": "gpt-6-luna/18-business-subject.md",
+  "stats": {
+    "total_findings": 14,
+    "by_category": {
+      "low_burstiness": 1,
+      "repeated_syntax_template": 12,
+      "low_specificity": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 24,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      5,
+      4,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.2041241452319315,
+    "rhythm": {
+      "mora_mean": 33,
+      "mora_stdev": 10.618380290797651,
+      "burstiness": -0.5131235859742432,
+      "length_autocorrelation_lag1": -0.013952372093867632
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.5
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 164,
+      "doc_char_count": 623,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 1
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.513 (モーラ近似長 平均=33.0, 標準偏差=10.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "会社の次の十年は、今日の小さな選択から始",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "市場の変化は、私たちに新しい問いを運びま",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "技術の進歩は、これまで届かなかった価値へ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "過去の成功は、立ち止まる理由ではありませ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "次の挑戦を支える足場です",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "一人ひとりの専門性と好奇心が交わる場所に",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "お客様の期待は、私たちの仕事の基準です",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "社会の変化は、事業の責任を問い直します",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "仲間の成長は、組織の未来を広げます",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "low_specificity",
+      "excerpt": "お客様の期待は、私たちの仕事の基準です。社会の変化は、事業の責任を問い直します。",
+      "severity": "info",
+      "detail": "段落の具体性スコア=-0.180（閾値-0.15未満）。固有名詞密度=0.000, 数値密度=0.000, 抽象名詞率=0.120, 例示マーカー=なし。固有名詞・数値・実例が乏しく一般論に留まっている疑い。素材が足りていないサイン",
+      "related_lines": null,
+      "hint": "新しく書くときは素材を集め直す。既存の文書を直すときは、自分で具体例や数値を足さず、どんな素材があれば具体的にできるかをユーザーに伝える"
+    },
+    {
+      "line": 11,
+      "category": "repeated_syntax_template",
+      "excerpt": "現場の改善も、率直な提案も、丁寧な仕事も",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "会社の可能性は、まだ完成していません",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "仲間とともに問いを立て、行動し、学ぶこと",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の50.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9, L11, L13",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 24,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 次の十年へ",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "会社の次の十年は、今日の小さな選択から始まります。市場の変化は、私たちに新しい問いを運びます。技術の進歩は、これまで届かなかった価値への扉を開きます。そして、お客様の声は、進む方向を確かめる羅針盤になります。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "私たちは創業以来、現場の課題に向き合い、仲間と知恵を持ち寄ってきました。その積み重ねが、今の信頼をつくっています。過去の成功は、立ち止まる理由ではありません。次の挑戦を支える足場です。変えるべきものを見極め、守るべき約束を確かめながら、会社は一歩ずつ進みます。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "これからの十年には、正解の見えない課題が増えるでしょう。だからこそ、対話が力になります。異なる視点は、思い込みに窓を開けます。失敗から得た学びは、次の判断を確かなものにします。一人ひとりの専門性と好奇心が交わる場所に、新しい事業の芽が育ちます。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "お客様の期待は、私たちの仕事の基準です。社会の変化は、事業の責任を問い直します。仲間の成長は、組織の未来を広げます。これらを別々の課題として扱わず、同じ地平に置いて考えることが、持続する価値につながります。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "次の十年を形づくるのは、特別な誰かだけではありません。現場の改善も、率直な提案も、丁寧な仕事も、会社の未来を動かします。私たちは変化を恐れず、しかし足元を忘れず、必要な一歩を選び続けます。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "新しい年が、その一歩を踏み出す機会となることを願います。会社の可能性は、まだ完成していません。仲間とともに問いを立て、行動し、学ぶことで、次の十年の景色を自分たちの手で描いていきましょう。",
+      "no": 7
+    }
+  ]
+}

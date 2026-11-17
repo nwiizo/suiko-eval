@@ -1,0 +1,124 @@
+{
+  "file": "gpt-6.1-sol/27-essay-literary.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 30,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      5,
+      6,
+      7,
+      7
+    ],
+    "paragraph_sentence_count_cv": 0.14907119849998599,
+    "rhythm": {
+      "mora_mean": 29.433333333333334,
+      "mora_stdev": 10.83723006840565,
+      "burstiness": -0.46177906873099916,
+      "length_autocorrelation_lag1": 0.14912868207004198
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 210,
+      "doc_char_count": 698,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[5, 5, 6, 7, 7]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.149（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.462 (モーラ近似長 平均=29.4, 標準偏差=10.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 30,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 書斎の窓を開ける",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "父の書斎に入るとき、私は今でも二度、戸を叩いてしまう。返事がないことは知っている。それでも拳を下ろすまでの短い間だけ、部屋の奥に父がいる。眼鏡を少しずらし、読んでいた行に指を置いて、こちらを見る。その顔を待つ癖が、父よりも長くこの家に残った。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "机には、緑色の下敷きが敷かれている。隅に小さな焦げ跡がある。煙草をやめたのは私が高校生のころだから、それ以前についたものだろう。父は家族の記念日をよく忘れたが、この机についた傷については、ひとつひとつ事情を覚えていた。私が彫刻刀でつけた溝にも、何年かしてから薄い紙を重ねて使うだけで、文句は言わなかった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "本棚の整理を頼まれて、先週から少しずつ本を抜いている。難しい歴史の本の隣に、薄い料理の本があった。開くと卵焼きの頁だけが波打っていた。母が入院していた二週間、父は毎朝、妙に甘い卵焼きを作った。焦げた端を自分の皿に寄せる、その箸の動きまで思い出した。あのころ私は、父にも初めてのことがあるとは考えなかった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "本の余白には、短い書き込みがあった。「要確認」「これは違う」。几帳面な字の間に、一か所だけ「なるほど」とある。何が父を納得させたのか、本文を読んでも私には分からなかった。分からないままでよい気もした。親の一生に、子どもの知らない時間がある。その当たり前のことを、書斎の静けさがようやく私に教えていた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "午後になり、窓を開けた。庭の金木犀はもう花を落とし、枝の間から隣家の洗濯物が見えた。父がここで見ていた景色は、思っていたよりありふれていた。椅子に座ると、肘掛けの片方だけがよく磨けている。私はそこへ手を置き、本を一冊、元の場所へ戻した。片づけは少し遅れるだろう。母には、もう一日かかると伝えるつもりでいる。",
+      "no": 6
+    }
+  ]
+}

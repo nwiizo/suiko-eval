@@ -1,0 +1,121 @@
+{
+  "file": "haiku/32-tech-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      4,
+      5,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.20327890704543544,
+    "rhythm": {
+      "mora_mean": 36.68181818181818,
+      "mora_stdev": 11.367363025291324,
+      "burstiness": -0.5268446729073761,
+      "length_autocorrelation_lag1": 0.14929246089046982
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.18181818181818182
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 174,
+      "doc_char_count": 644,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.527 (モーラ近似長 平均=36.7, 標準偏差=11.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 初めてのオンコール",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "夜の十一時を回ると、携帯電話は急に重たい石のような存在になる。枕元に置いたそれは、いつ鳴るとも知れない見張り番のように、暗がりで静かに息を潜めていた。入社して三か月目、私に初めてのオンコールの順番が回ってきた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "最初の通知が鳴ったのは、深夜二時過ぎだった。アラートの文面は短く、無機質で、それでいて何か大きな異変を告げる鐘の音のように聞こえた。ダッシュボードを開くと、エラー率のグラフが、山の稜線のように急峻に立ち上がっている。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "そのとき私が学んだ最初の教訓は、慌てて原因を探すより先に、影響範囲を確かめることだった。どのユーザーが、どの機能で、どれくらい困っているのか。ログは大量の言葉を吐き出すが、その多くは雑音に近い。必要な一行を見つけることは、砂浜で一粒の砂金を探すような作業だ。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "先輩のメッセージが届いたのは、その直後だった。「まずはロールバックの判断基準を確認して。迷ったら戻していい。」その一文は、暗い海に投げられた浮き輪のようだった。手順書に書かれた一行一行が、そのまま足場に変わっていく。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "結論から言えば、原因は直前のデプロイに含まれた設定の変更だった。環境変数の名前がわずかに食い違い、接続先の参照が空になっていたのだ。たった一文字の違いが、サービス全体の流れを堰き止めていた。そのことに気づいたとき、背中に冷たい汗が一筋流れた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "修正を戻してから、エラー率のグラフは、嵐が去ったあとの海のように穏やかになった。私は画面の前で、しばらく動けずにいた。オンコールとは、夜の闇の中で、誰かの日常の灯りを守る役目なのだと知った。",
+      "no": 7
+    }
+  ]
+}

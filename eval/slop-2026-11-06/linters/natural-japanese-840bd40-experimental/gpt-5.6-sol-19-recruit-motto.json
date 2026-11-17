@@ -1,0 +1,257 @@
+{
+  "file": "gpt-5.6-sol/19-recruit-motto.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 52,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 12,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      4,
+      5,
+      5,
+      4,
+      5,
+      5,
+      4,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.10878565864408424,
+    "rhythm": {
+      "mora_mean": 11.038461538461538,
+      "mora_stdev": 3.497040168603787,
+      "burstiness": -0.5188277310161276,
+      "length_autocorrelation_lag1": 0.13882780261316494
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.24324324324324326
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 139,
+      "doc_char_count": 439,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 25,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=12, 各段落の文数=[4, 4, 4, 5, 5, 4, 5, 5, 4, 4, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.109（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.519 (モーラ近似長 平均=11.0, 標準偏差=3.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 52,
+      "genre": "business",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 41,
+        "category": "double_negative",
+        "excerpt": "ない約束をしない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# つくる人と、働こう。",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 問いから始める。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "答えを急がない。前提を疑う。目的を確かめる。良い問いが、良いプロダクトをつくる。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "見出し",
+      "text": "## 小さく出す。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "完璧を待たない。動くものを届ける。反応を受け取る。学びを次へつなぐ。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "見出し",
+      "text": "## 深く掘る。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "表面で終わらない。症状と原因を分ける。仕組みを理解する。直すなら、根まで届かせる。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "見出し",
+      "text": "## 利用者を見る。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "コードだけを見ない。その先の人を見る。迷いを減らす。時間を返す。技術を価値に変える。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "見出し",
+      "text": "## 言葉にする。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "考えを開く。判断を残す。知らないと言う。助けを求める。明快な言葉が、チームを速くする。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "見出し",
+      "text": "## 違いを歓迎する。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "同じ経験を求めない。異なる視点を招く。反対意見を聞く。強い結論を、対話でつくる。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "見出し",
+      "text": "## 品質を守る。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "段落",
+      "text": "速さだけを誇らない。テストを書く。運用を考える。壊れ方を想像する。信頼を積み上げる。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "見出し",
+      "text": "## 手を動かす。",
+      "no": 16
+    },
+    {
+      "line": 33,
+      "kind": "段落",
+      "text": "肩書きに隠れない。必要な仕事を拾う。試す。確かめる。前進を自分から生み出す。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "見出し",
+      "text": "## 学びを渡す。",
+      "no": 18
+    },
+    {
+      "line": 37,
+      "kind": "段落",
+      "text": "知識を囲わない。失敗を共有する。仕組みに残す。昨日の発見を、明日の標準にする。",
+      "no": 19
+    },
+    {
+      "line": 39,
+      "kind": "見出し",
+      "text": "## 誠実に選ぶ。",
+      "no": 20
+    },
+    {
+      "line": 41,
+      "kind": "段落",
+      "text": "都合の悪い事実を隠さない。近道の代償を語る。できない約束をしない。信頼を判断の中心に置く。",
+      "no": 21
+    },
+    {
+      "line": 43,
+      "kind": "見出し",
+      "text": "## 仕事を楽しむ。",
+      "no": 22
+    },
+    {
+      "line": 45,
+      "kind": "段落",
+      "text": "難問を面白がる。仲間の成果を喜ぶ。好奇心を手放さない。良い仕事に、熱を宿す。",
+      "no": 23
+    },
+    {
+      "line": 47,
+      "kind": "見出し",
+      "text": "## 一緒につくる。",
+      "no": 24
+    },
+    {
+      "line": 49,
+      "kind": "段落",
+      "text": "完成した組織へ入るのではない。未完成を楽しむ。文化も仕組みも育てる。次の当たり前を、ともにつくる。",
+      "no": 25
+    }
+  ]
+}

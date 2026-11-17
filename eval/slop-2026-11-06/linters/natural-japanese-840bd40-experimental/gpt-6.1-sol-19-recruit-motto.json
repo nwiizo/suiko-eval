@@ -1,0 +1,193 @@
+{
+  "file": "gpt-6.1-sol/19-recruit-motto.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 47,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.0425531914893617,
+    "total_paragraphs": 8,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      7,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.10203896858112169,
+    "rhythm": {
+      "mora_mean": 16.93617021276596,
+      "mora_stdev": 4.887692991538876,
+      "burstiness": -0.552078113230222,
+      "length_autocorrelation_lag1": 0.24315465683048298
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2558139534883721
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 198,
+      "doc_char_count": 614,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 54,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 7,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=8, 各段落の文数=[7, 6, 6, 6, 6, 5, 5, 6]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.102（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.552 (モーラ近似長 平均=16.9, 標準偏差=4.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 47,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# よい仕事を、一緒につくる。",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 動く先まで、考える。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "コードの先に、使う人がいる。\n画面の先に、毎日の仕事がある。\n仕様を読む。現場を見る。困りごとを聞く。\n実装の完了まで、利用者への責任を持つ。\n小さな不便にも、手を伸ばす。",
+      "no": 3
+    },
+    {
+      "line": 11,
+      "kind": "見出し",
+      "text": "## 分からないと、早く言う。",
+      "no": 4
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "疑問を隠さない。\n前提を確かめる。\n調べたことと、残った疑問を伝える。\n助けを求める力も、仕事の力。\n知っている人は、手がかりを渡す。\n一人の理解を、チームの理解に変える。",
+      "no": 5
+    },
+    {
+      "line": 20,
+      "kind": "見出し",
+      "text": "## 小さく出す。確かめる。",
+      "no": 6
+    },
+    {
+      "line": 22,
+      "kind": "段落",
+      "text": "変更を小さく切る。\n影響する範囲を言葉にする。\n必要な検証を選ぶ。\n使われた結果を見る。\n予想が外れたら、判断を変える。\n戻せる準備が、挑戦を支える。",
+      "no": 7
+    },
+    {
+      "line": 29,
+      "kind": "見出し",
+      "text": "## 違いを、持ち寄る。",
+      "no": 8
+    },
+    {
+      "line": 31,
+      "kind": "段落",
+      "text": "意見には根拠を添える。\n相手の説明を最後まで聞く。\n経験の長さで結論を決めない。\n静かな人にも、発言の時間を渡す。\n決まった理由を記録する。\n後から来た仲間にも、道筋を残す。",
+      "no": 9
+    },
+    {
+      "line": 38,
+      "kind": "見出し",
+      "text": "## 直す仕事も、引き受ける。",
+      "no": 10
+    },
+    {
+      "line": 40,
+      "kind": "段落",
+      "text": "壊れた検証を放置しない。\n読みにくい箇所に名前を付ける。\n障害の経緯を記録する。\n同じ負担を繰り返さない仕組みを考える。\n目立たない改善にも、価値がある。\n次に触る人の時間を、大切にする。",
+      "no": 11
+    },
+    {
+      "line": 47,
+      "kind": "見出し",
+      "text": "## 続けられる速さで、進む。",
+      "no": 12
+    },
+    {
+      "line": 49,
+      "kind": "段落",
+      "text": "見積もりの不安を共有する。\n難しい期限には、範囲の相談をする。\n休む人の仕事を、引き継げる形にする。\n集中する時間を互いに守る。\n生活を含めて、長く働ける場をつくる。",
+      "no": 13
+    },
+    {
+      "line": 55,
+      "kind": "見出し",
+      "text": "## 経験を、具体的に話そう。",
+      "no": 14
+    },
+    {
+      "line": 57,
+      "kind": "段落",
+      "text": "得意な言語を聞かせてほしい。\n迷った設計も聞かせてほしい。\n失敗から変えた動作も聞かせてほしい。\n規模の大小より、自分で考えた過程を知りたい。\n完成した成果物にも、途中の工夫にも会いたい。",
+      "no": 15
+    },
+    {
+      "line": 63,
+      "kind": "見出し",
+      "text": "## あなたからも、確かめよう。",
+      "no": 16
+    },
+    {
+      "line": 65,
+      "kind": "段落",
+      "text": "選考は、互いの仕事を知る時間。\n開発の進め方を説明する。\n今の課題も共有する。\n一緒に働く仲間と話す機会をつくる。\n疑問を持ったまま、入社を決めない。\n納得できる仕事を、ここから始める。",
+      "no": 17
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "file": "gpt-6-luna/01-tech-plain.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 15,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      3,
+      2,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.21081851067789195,
+    "rhythm": {
+      "mora_mean": 53.2,
+      "mora_stdev": 14.597716716436627,
+      "burstiness": -0.5693743853501305,
+      "length_autocorrelation_lag1": 0.02807233346488647
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 186,
+      "doc_char_count": 669,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.569 (モーラ近似長 平均=53.2, 標準偏差=14.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 15,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 社内CIが遅くなった原因を調べた",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "先月から、社内のCIが少しずつ遅くなっていました。以前はプルリクエストを開いて数分で結果が出ていたのに、最近は十数分待つこともあります。誰かが大きな変更を入れた直後なら原因を想像できますが、遅さは毎日少しずつ増えていました。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "まず、CI全体の時間だけを見るのをやめ、ジョブごとの実行時間を並べました。すると、テスト自体はほぼ変わらず、依存パッケージのインストールとビルド準備が伸びていると分かりました。さらにキャッシュのヒット率を確認すると、以前は大半のジョブで再利用できていたキャッシュが、最近は頻繁に作り直されていました。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "原因は、キャッシュキーに使っていたファイルの指定でした。依存関係とは関係のない設定ファイルを追加した際、キーの計算対象を広いディレクトリ全体に変えていました。そのため、ドキュメントやCI設定を少し触るだけで別のキャッシュと判断され、毎回依存パッケージを取得し直していたのです。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "依存ロックファイルとランタイムのバージョンだけをキーに含めるよう修正し、キャッシュ対象も必要なディレクトリに絞りました。変更後は、キャッシュが初回作成される実行を除いて準備時間が短くなり、CI全体も以前に近い時間で終わるようになりました。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "今回の調査では、単にジョブを並列化するより先に、どの工程が時間を使っているかを分けて見ることが役立ちました。CIの遅さは、テストの増加だけで起きるわけではありません。キャッシュの条件が少し広がるだけでも、毎日の待ち時間に積み重なります。今後は週ごとの実行時間とキャッシュヒット率を記録し、変化が現れた段階で調べられるようにします。",
+      "no": 6
+    }
+  ]
+}

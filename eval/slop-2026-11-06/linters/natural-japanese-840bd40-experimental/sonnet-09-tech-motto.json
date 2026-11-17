@@ -1,0 +1,130 @@
+{
+  "file": "sonnet/09-tech-motto.md",
+  "stats": {
+    "total_findings": 0,
+    "by_category": {},
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 36,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.05555555555555555,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      5,
+      5,
+      4,
+      4,
+      3,
+      5,
+      3,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.26352313834736496,
+    "rhythm": {
+      "mora_mean": 18.75,
+      "mora_stdev": 10.212669147246038,
+      "burstiness": -0.29477016808603596,
+      "length_autocorrelation_lag1": 0.176795610343064
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.12903225806451613
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 172,
+      "doc_char_count": 552,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 10,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 36,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 障害対応で大事にしていること",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "障害対応で、私が大事にしていることを書く。派手なことは何もない。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "まず、止血が先だ。原因の究明は、そのあとでいい。画面の前でログを読み込みたくなる気持ちは、よくわかる。けれど、利用者が困っているあいだは、直すより戻すほうが早い。直前のリリースを疑い、戻せるなら戻す。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "次に、声に出すこと。一人で抱えない。調べていることも、わからないことも、チャットに書く。書けば、誰かが同じ場所を見ていることに気づく。重複した調査は、時間の無駄だ。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "役割を分ける。調査する人と、連絡する人を、同じにしない。調査に没頭している人に、状況の報告を求めてはいけない。指揮を執る人が一人いて、周りがそれを支える形が、最も混乱しにくい。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "推測と事実を分ける。「たぶんデータベースが遅い」は推測で、「接続数が上限に達している」は事実だ。記録するときは、必ず区別して書く。あとで振り返るとき、この区別が効いてくる。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "焦らない。焦ると、手が速くなり、確認が減る。深呼吸をひとつして、次の一手を声に出して読み上げる。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "終わったら、責めない。人ではなく、仕組みを見る。なぜその操作が可能だったのか。なぜ検知が遅れたのか。問いは、いつも仕組みに向ける。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "最後に、記録を残す。時系列と、判断の理由を残す。三か月後の自分は、今日のことを忘れている。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "止血が先。報告は短く。事実を書く。人を責めない。この四つがあれば、大きくは外れない。",
+      "no": 10
+    }
+  ]
+}

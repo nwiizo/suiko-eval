@@ -1,0 +1,121 @@
+{
+  "file": "gpt-5.6-sol/15-essay-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 26,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.07692307692307693,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      5,
+      4,
+      5,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.17200522903844537,
+    "rhythm": {
+      "mora_mean": 33.11538461538461,
+      "mora_stdev": 12.080903312752362,
+      "burstiness": -0.4654028520235447,
+      "length_autocorrelation_lag1": -0.16965527650096346
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2692307692307692
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 201,
+      "doc_char_count": 690,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.465 (モーラ近似長 平均=33.1, 標準偏差=12.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 実家の古い柱時計",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "実家の廊下には、古い柱時計が掛かっている。黒ずんだ木の箱に、乳白色の文字盤。振り子を守る細長いガラスには、幼いころ私がぶつけた玩具の傷が、今も薄い稲妻のように残っている。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "時計は、家族の誰よりも早くこの家にいた。祖父が町の時計店から買い求め、荷車で運んできたのだと母は言う。祖父の顔を知らない私にとって、その話は昔話に近い。それでも、夜の廊下で時を打つ低い音を聞くと、会ったことのない人の咳払いが、壁の向こうから聞こえたような気がした。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "子どものころは、あの時計が怖かった。真夜中、暗がりの中で振り子だけが往復し、家じゅうの眠りを見張っていた。嘘をついた日には、刻む音が責める声に聞こえた。遠足の前夜には、いつまでも朝を連れてこない意地悪な番人に思えた。時間が等しく進むものだと知る前、時計は私の心に合わせて速くなったり遅くなったりしていた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "進学で家を出てから、帰省のたびに家は少しずつ小さくなった。父の背は丸くなり、母の食器棚からは客用の皿が減った。それでも柱時計は同じ場所で、同じ響きを廊下へ落とした。ただ、ぜんまいを巻く父の手つきだけが、以前より慎重になった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "ある冬、時計が止まっていた。故障ではなく、父が巻き忘れたのだという。静かな廊下に立つと、失われた音の大きさに気づいた。私は椅子を運び、教わりながら鍵を回した。やがて振り子が動き出し、家は深い息を一つ吐いた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "いつか、この時計を私が引き取る日が来るのだろう。けれど別の壁に掛けたなら、それは同じ時を刻むだろうか。柱時計が数えてきたものは時間だけではない。食卓の声、出発の朝、帰れなかった夜。そのすべてが木の箱の奥で静かに重なり、今日も廊下に、家族の過ぎゆく音を響かせている。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "file": "haiku/09-tech-motto.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "forbidden_phrase": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 26,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      4,
+      3,
+      4,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.12162606385262997,
+    "rhythm": {
+      "mora_mean": 31.53846153846154,
+      "mora_stdev": 12.92353479042363,
+      "burstiness": -0.41867051156100565,
+      "length_autocorrelation_lag1": -0.05586344910916548
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.11538461538461539
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 178,
+      "doc_char_count": 642,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=7, 各段落の文数=[4, 4, 4, 3, 4, 4, 3]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.122（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "forbidden_phrase",
+      "excerpt": "組み合わせは現れる。大切なのは、障害をゼロにするこ",
+      "severity": "warn",
+      "detail": "AI の書いた文章によく出る言い回し「大切なのは」",
+      "related_lines": null,
+      "hint": "多くは削っても意味が変わらない。削ると前後がつながらないときだけ、元の文書の内容で言い換える。固有名詞や引用の一部なら残す"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.419 (モーラ近似長 平均=31.5, 標準偏差=12.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 障害対応で大事にしていること",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "障害は、いつか必ず起きる。どれだけ設計を丁寧に行っても、想定外の組み合わせは現れる。大切なのは、障害をゼロにすることではなく、起きたときにどう動くかを決めておくことだと考えている。ここでは、私たちが障害対応で守っている考え方を、短く言い切る形でまとめる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "まず、止血を最優先にする。原因の追究は、影響が止まってからでいい。焦って原因を探すほど、判断は遅れ、被害は広がる。だから最初の十分間は、ロールバックや切り替えといった、戻せる手段を先に使う。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "次に、事実と推測を分けて話す。チャットに書く言葉は、見たものか、考えたものかを明示する。推測を事実のように伝えると、誰かがその前提で動き、別の混乱を生む。短い言葉で、確かなことだけを共有する。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "役割は、最初に決める。誰が指揮し、誰が調査し、誰が外部へ連絡するのかを、声をかけ合って明確にする。役割が曖昧なまま全員が同時に手を動かすと、同じ確認が何度も行われ、大事な作業が抜け落ちる。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "記録は、その場で残す。時刻と操作、そのときの判断を、思い出さずに済むように書き留める。振り返りのとき、記憶は必ず都合よく書き換えられている。記録だけが、正確な過去を教えてくれる。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "最後に、誰かを責めないことを約束する。障害は仕組みの隙間から起きる。その隙間を埋めることが目的であり、個人の失敗を探すことではない。この原則が守られてこそ、次の障害で人は正直に状況を話せる。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "止血、事実、役割、記録、非難しない。この五つを、夜中の一本の電話にも持ち出せるように覚えておく。それが、障害対応で一番大事にしていることである。",
+      "no": 8
+    }
+  ]
+}

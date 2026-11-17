@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6-luna/20-tech-literary.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 24,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.041666666666666664,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      5,
+      4,
+      3,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.14433756729740643,
+    "rhythm": {
+      "mora_mean": 38.208333333333336,
+      "mora_stdev": 14.032638046908911,
+      "burstiness": -0.4627726982804109,
+      "length_autocorrelation_lag1": 0.3141112516848202
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.20833333333333334
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 214,
+      "doc_char_count": 715,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 4, 5, 4, 3, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.144（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.463 (モーラ近似長 平均=38.2, 標準偏差=14.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 24,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 深夜のデプロイを振り返る",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "午前一時、オフィスの窓は黒い画面になり、そこに私たちの顔だけが薄く映っていた。リリースのコマンドを打つ前、チャットには短い確認が並んだ。監視の担当、ロールバックの手順、変更点の一覧。昼間なら事務的に見える言葉が、夜の静けさの中では、船を出す前の点呼のように聞こえた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "今回の変更は、利用者向けの新機能と、裏側のデータ形式の更新を含んでいた。影響範囲を小さくするため、まず一部のトラフィックだけを新しい環境へ流した。メトリクスの線は、暗い水面に浮かぶ細い灯りのように安定している。エラー率と応答時間を確認し、次の割合へ進めた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "切り替え後、遅延がわずかに上がった。想定した範囲内ではあったが、事前の負荷試験より悪い値だった。私たちは作業を止め、クエリの実行計画と接続数を調べた。原因は、移行先で統計情報が十分に更新されていないことだった。分析基盤を整えたつもりでも、稼働環境の癖までは再現できていなかった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "統計を更新し、少量のリクエストで再確認した。数値は落ち着き、段階的な展開を再開できた。予定より時間はかかったが、切り替えは最後まで進んだ。午前四時、監視画面の線がいつもの幅で揺れているのを見届け、私たちは記録を残した。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "振り返ると、成功を支えたのは、素早い判断だけではない。止まる条件を事前に決めていたこと、誰が何を見るかを共有していたこと、ロールバックを実際に試していたことが、深夜の迷いを減らした。一方で、負荷試験に本番相当の統計情報を含めること、観測する指標を手順書に明記することが次の課題として残った。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "夜明けは、振り返りを待たずに窓の向こうへ来た。デプロイは一度の作業で終わるものではない。準備し、観測し、学びを次の手順へ戻す。その繰り返しが、サービスを静かな朝まで運ぶ。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "file": "gpt-5.6-sol/16-fiction-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 30,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 8,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      5,
+      4,
+      1,
+      3,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.3197221015541813,
+    "rhythm": {
+      "mora_mean": 28.133333333333333,
+      "mora_stdev": 9.601157337645406,
+      "burstiness": -0.49112034285229833,
+      "length_autocorrelation_lag1": -0.15827995909219744
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.13333333333333333
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 208,
+      "doc_char_count": 677,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 9,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.491 (モーラ近似長 平均=28.1, 標準偏差=9.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 30,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 港町の喫茶店",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "港へ下る坂の途中に、「凪」という喫茶店があった。青い扉の塗装は潮風に剥がれ、窓辺のレースは古い波のように黄ばんでいた。客は多くなかったが、店主の澄江は毎朝七時に鍵を開け、豆を挽いた。コーヒーの香りが漂い始めると、町はようやく目を覚ますのだった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "十一月のある朝、見慣れない青年が入ってきた。濡れた髪を額に貼りつかせ、窓際の席で「いちばん苦いものを」と言った。澄江は黙って深煎りを淹れた。青年は一口飲み、顔をしかめ、それから小さく笑った。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "彼は三日続けて現れた。いつも同じ席に座り、沖を見ていた。四日目、澄江は頼まれる前に深煎りを置いた。「船を待っているの」と尋ねると、青年は首を振った。「乗れなかった船を見ています」",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "東京で働くはずだったが、出発の朝、病気の父を一人にできず切符を捨てたという。父は先月亡くなった。それなのに町を出る理由も、残る理由も見つからないらしい。澄江は磨いていたカップを棚へ戻した。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「理由なんて、あとから港に着くこともあるよ」",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "青年は意味を問わなかった。外では汽笛が鳴り、窓ガラスがかすかに震えた。遠ざかる船の白い航跡は、海に書かれた短い手紙のようだった。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "一週間後、青年は来なくなった。春になり、澄江のもとへ絵葉書が届いた。北の造船所で働いていること、苦いコーヒーにも慣れたことが、几帳面な字で記されていた。差出人の名を見ても、澄江にはすぐ思い出せなかった。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "その夕方、店を閉める前に、彼が座っていた席を拭いた。港には幾つもの灯がともり、海の上で静かに揺れていた。人は去っても、座っていた場所にはわずかな温度が残る。澄江は青い扉を閉め、明日の豆を量った。町はまた、誰かが旅立つ朝を迎えるのだろう。",
+      "no": 9
+    }
+  ]
+}

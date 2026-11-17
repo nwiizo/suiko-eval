@@ -1,0 +1,131 @@
+{
+  "file": "haiku/05-essay-literary.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 23,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.043478260869565216,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.09722034684781694,
+    "rhythm": {
+      "mora_mean": 36.04347826086956,
+      "mora_stdev": 10.964282965391744,
+      "burstiness": -0.5335117997805668,
+      "length_autocorrelation_lag1": 0.06488631326121688
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.34782608695652173
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 208,
+      "doc_char_count": 675,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[3, 4, 4, 4, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.097（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.534 (モーラ近似長 平均=36.0, 標準偏差=11.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 23,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 祖母の家の縁側",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "祖母の家の縁側は、夏の光がいちばん長く留まる場所だった。午後の陽は軒を越えて板の目に沁み、ところどころ節の浮いた床を、ぬるい飴色に温めていた。足の裏に伝わるその温もりは、今も指先の記憶として残っている。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "縁側に腰を下ろすと、庭の向こうに井戸の屋根が見えた。瓦の影は時間をかけて東へ伸び、やがて蝉の声もひとつずつ途切れていく。祖母は決まって、湯呑みを膝の上に置き、何も言わずに遠くの山の稜線を眺めていた。その沈黙は、沈みゆく夕陽に似て、ひどく穏やかだった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "縁側の柱には、いくつもの小さな傷があった。背丈を測った跡である。上へ行くほど間隔は広くなり、やがて刻むこともなくなった。それは、ひとりの子どもが少しずつ大人へ向かっていく足取りを、そのまま静かに刻んだ年輪のようにも見えた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "祖母が漬けた梅干しを、瓶から一粒つまみ出すと、その酸味は舌の奥で長いこと響いた。台所から漂う出汁の香りが、風に乗って縁側まで流れてくる。鍋の蓋が小さく鳴る音、遠くで洗濯物をはたく音。それらが混じり合い、午後の時間はゆっくりと濃くなっていった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "ある夏の夕暮れ、祖母は縁側の端に座ったまま、ふと口を開いた。「人はね、ここで待つことを覚えるんだよ」。その言葉の意味を、当時の私はまだ理解できなかった。ただ、陽がすっかり傾き、空の色が藍に溶けていくのを見届けたとき、その沈黙の重みが少しだけ分かった気がした。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "祖母が亡くなってから、その家は人の手を離れた。縁側の板は色を失い、柱の傷は埃に隠れている。それでも、夏の午後に目を閉じると、あの温もりがふいに足の裏へ戻ってくる。縁側は、いまも私のなかで、待つことの静かな輪郭を保っている。",
+      "no": 7
+    }
+  ]
+}

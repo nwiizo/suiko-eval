@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6-luna/16-fiction-literary.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_burstiness": 1,
+      "wago_nominalization": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 32,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.0625,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      7,
+      4,
+      7,
+      5,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.23385358667337133,
+    "rhythm": {
+      "mora_mean": 24.53125,
+      "mora_stdev": 8.227181986409441,
+      "burstiness": -0.4977059958289414,
+      "length_autocorrelation_lag1": 0.0040166272102315536
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.1935483870967742
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 193,
+      "doc_char_count": 626,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.498 (モーラ近似長 平均=24.5, 標準偏差=8.2)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 9,
+      "category": "wago_nominalization",
+      "excerpt": "「知らせを",
+      "severity": "warn",
+      "detail": "「知らせ」は、ふだん「通知」と書く",
+      "related_lines": null,
+      "hint": "ふだん漢語で言う語を、和語の動詞の名詞化で書いたもの。直し方に挙げた漢語にする(「事実の確かめ」→「事実の確認」)。動詞のまま(「〜を確かめる」)なら自然なので、文を動詞の形に戻してもよい"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 32,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 港町の喫茶店",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "港に面した通りの角に、小さな喫茶店があった。店名は「白帆」。色褪せた看板の下で、朝から琥珀色の灯りがともっている。窓際の席には、いつも同じ老人が座り、冷める前にコーヒーを飲んだ。店主の澄江は、彼が何を待っているのか尋ねたことがなかった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "ある秋の日、店に若い女性が入ってきた。濡れた髪を手で押さえ、窓際の席を見つめる。「ここに、父が来ていませんでしたか」。女性は古い写真を差し出した。写真には、まだ若い老人と、船乗りの制服を着た男が写っていた。澄江は、写真の裏に記された日付を読んだ。三十年前、店が開いたばかりのころだった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "老人はその日、いつもの時刻に現れた。女性は立ち上がり、父の名を呼んだ。老人は少し目を細め、それから椅子を引いた。二人の間には、長い年月がテーブル一枚分の距離を置いて座った。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "「船が戻らなかったと聞いた」と老人は言った。「知らせを受けたのは、ずっと後だった」。女性は頷く。父は海難事故で亡くなったのではなかった。船を降り、別の町で暮らし、病で世を去った。家族に手紙を出さなかった理由を、彼女も知らない。ただ、遺品から写真を見つけ、父の昔を知る人に会いに来たのだった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "コーヒーが運ばれた。二人は少しずつ言葉を交わした。若いころの航海、店の古い壁紙、写真を撮った日の風。話すたび、空白の年月に細い橋が架かっていく。夕方、女性が帰ると、老人は窓の外の船を見ていた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "その翌週、彼は来なかった。澄江は窓際の席を空けたままにした。港には船が出入りし、潮の匂いが店に届く。白帆の灯りは、今日も静かにともっている。",
+      "no": 7
+    }
+  ]
+}

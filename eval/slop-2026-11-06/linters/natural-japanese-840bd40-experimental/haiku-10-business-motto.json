@@ -1,0 +1,128 @@
+{
+  "file": "haiku/10-business-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 26,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.1884222879063983,
+    "rhythm": {
+      "mora_mean": 33.03846153846154,
+      "mora_stdev": 11.30514099946354,
+      "burstiness": -0.49011174769597204,
+      "length_autocorrelation_lag1": -0.272988854550009
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.19230769230769232
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 201,
+      "doc_char_count": 680,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.490 (モーラ近似長 平均=33.0, 標準偏差=11.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# リモートワークのチーム運営",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "リモートワークが定着してから、チームの運営は大きく変わった。顔を合わせなくても仕事は回る。しかし、言葉にされなかった前提が増え、誤解が静かに積み重なることもある。この記事では、分散したチームを運営するときに私たちが大切にしている考え方を、短い言葉でまとめる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "まず、非同期を基本にする。全員が同じ時間に画面の前にいることは、もはや前提にできない。だから、決定の経緯は必ず文章で残す。会議で決まったことも、議事録として共有し、後から参加した人が追いかけられるようにする。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "次に、書くことを仕事の一部とみなす。口頭で伝えたつもりの情報は、受け手の記憶から簡単に消える。方針、期限、担当を一行ずつ書き、誰が読んでも同じ理解に辿り着けるようにする。文章は、遠くにいる仲間への最も確かな手紙である。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "会議は、目的がある時だけ開く。情報共有は文書で済ませ、議論が必要なときだけ集まる。予定表の空白を守ることは、深い作業を守ることでもある。集中の時間を奪わない会議こそ、良い会議だと考えている。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "雑談の場も、意図して作る。画面越しの関係は、放っておくと乾いてしまう。週に一度の自由な通話や、仕事と関係のない話題を書き込める場所を用意する。そこで交わした何気ない言葉が、困ったときに相談できる関係を育てる。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "最後に、成果で語り、時間で測らない。オンラインにいる時間は、貢献の大きさを表さない。何を完成させ、誰の課題を解決したのかを、チーム全員が見える形で共有する。見えない努力を見える言葉にすることが、リーダーの仕事である。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "非同期、書く、集まる時間を絞る、雑談を作る、成果で測る。この五つを守れば、距離があっても、チームは確かに前へ進む。",
+      "no": 8
+    }
+  ]
+}

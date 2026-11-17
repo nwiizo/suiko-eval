@@ -1,0 +1,161 @@
+{
+  "file": "sonnet/06-fiction-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 29,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.034482758620689655,
+    "total_paragraphs": 10,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      3,
+      5,
+      4,
+      3,
+      3,
+      2,
+      2,
+      3,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.3253096942088484,
+    "rhythm": {
+      "mora_mean": 23.517241379310345,
+      "mora_stdev": 8.576715429721665,
+      "burstiness": -0.4655245857807118,
+      "length_autocorrelation_lag1": 0.16291744456270948
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.20689655172413793
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 154,
+      "doc_char_count": 562,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 11,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 2,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.466 (モーラ近似長 平均=23.5, 標準偏差=8.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 29,
+      "genre": "essay",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 9,
+        "category": "double_negative",
+        "excerpt": "ない距離ではない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 終電を逃した夜",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "改札の向こうで、シャッターが下りる音がした。鈍い金属の響きが、無人になったコンコースに長く尾を引いた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "由紀は腕時計を見た。零時四十二分。終電は、三分前に出ていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "駅前の広場には、街灯の光が白く沈んでいた。ベンチには誰もいない。タクシー乗り場にも、車の影はなかった。彼女は鞄を抱え直し、冷えた空気を胸の奥まで吸い込んだ。吐いた息が、ほのかに白かった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "歩いて帰れない距離ではない。けれど、そうする気にもなれなかった。今夜の会議で、彼女は長年の同僚と意見を違えた。言い過ぎたかもしれないという思いが、帰り道のあいだじゅう、棘のように胸に刺さっていた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "ふと、広場の隅に、灯りのともった自動販売機が見えた。夜のなかで、そこだけが小さな港のように明るい。彼女は近づき、硬貨を落として、温かい缶のお茶を買った。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "缶を両手で包むと、じんわりと熱が伝わった。そのとき、遠くで犬の鳴く声がした。それに応えるように、どこかの窓で、カーテンの揺れる気配がした。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "世界は眠っているのではない、と由紀は思った。ただ、私を待たずに、静かに続いているだけなのだ。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "彼女はお茶を飲み干し、空き缶をゴミ箱に落とした。乾いた音が、夜気に溶けた。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "携帯電話を取り出し、同僚の名前を画面に出す。指が少しためらい、それから、短い言葉を打った。「さっきは、ごめん」",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "送信を押すと、彼女は歩き出した。街灯の列が、帰り道を細く照らしていた。",
+      "no": 11
+    }
+  ]
+}

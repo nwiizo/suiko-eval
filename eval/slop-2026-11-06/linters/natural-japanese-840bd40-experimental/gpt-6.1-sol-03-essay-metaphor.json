@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6.1-sol/03-essay-metaphor.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 26,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.038461538461538464,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      4,
+      4,
+      5,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.10878565864408424,
+    "rhythm": {
+      "mora_mean": 33.03846153846154,
+      "mora_stdev": 10.127953583374197,
+      "burstiness": -0.5307484508598459,
+      "length_autocorrelation_lag1": -0.30422675772518976
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.23076923076923078
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 213,
+      "doc_char_count": 697,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 5, 4, 4, 5, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.109（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.531 (モーラ近似長 平均=33.0, 標準偏差=10.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 台所に朝がほどける",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "冬の朝、台所の床は薄い氷のようだ。靴下越しに立つと、眠りの底に残っていた温かさを足の裏から吸い取っていく。窓は白く曇り、向こうの家並みを古い封筒の中に隠している。私は蛇口をひねり、金属の喉から出てくる水に、やかんを差し出す。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "火をつけると、青い花が底に咲く。まだ暗い台所で、そこだけが小さな季節を持っている。冷蔵庫の低い音、時計の針、遠くで閉まる車の扉。夜のあいだ沈んでいた音が、火を合図に一つずつ水面へ上がってくる。私もその中に混じり、ようやく今日という岸へ近づく。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "食パンを焼く匂いは、見えない毛布になって肩にかかる。袋を開けたばかりのパンは頼りないほど白いのに、熱の中を通ると、ちゃんと朝食の顔になる。端が少し焦げたところを指でつまむ。ぱり、と小さく割れる音がして、部屋の静けさにも細い切れ目が入る。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "母は冬になると、味噌汁をいつもより多めに作った。鍋の中に浮かぶ大根は、白い舟のようだった。湯気で眼鏡を曇らせながら食べていると、急ぎなさい、と言われた。その声まで温かかったように思い出すのは、あのころの寒さを、もう体が正確には覚えていないからだろうか。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "いまの台所では、やかんの鳴る音だけが私をせかす。カップに湯を注ぐと、湯気が細い糸になって立ち上る。つかもうとすれば消えるその糸を、しばらく目で追う。窓の曇りに指を置いて丸く拭くと、向こうの電線に雀が一羽いた。小さな句読点のように、動かず朝を区切っていた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "コーヒーを飲み終えるころ、床の冷たさはまだ変わらない。それでも部屋の中には、パンの匂いと湯の余熱が残っている。私はカップを洗い、水切り籠へ伏せる。冬を押し返すほどの力はないけれど、こうして一杯分ずつ、暮らしの内側に温かい場所を作っていく。",
+      "no": 7
+    }
+  ]
+}

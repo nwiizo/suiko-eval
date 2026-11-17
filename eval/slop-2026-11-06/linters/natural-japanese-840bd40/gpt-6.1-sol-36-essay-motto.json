@@ -1,0 +1,142 @@
+{
+  "file": "gpt-6.1-sol/36-essay-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 31,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      1,
+      5,
+      6,
+      1,
+      6,
+      1,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.5661267346704595,
+    "rhythm": {
+      "mora_mean": 27.677419354838708,
+      "mora_stdev": 9.85830940415305,
+      "burstiness": -0.47472396406895534,
+      "length_autocorrelation_lag1": -0.015848115028288468
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.1935483870967742
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 208,
+      "doc_char_count": 699,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 10,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.475 (モーラ近似長 平均=27.7, 標準偏差=9.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 31,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 寒い日の頁",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "その本を買った日は、駅前の噴水に薄い氷が張っていた。約束までの時間をつぶすつもりで古本屋に入り、薄い随筆集を一冊選んだ。表紙の角が丸くなり、背には値札を剥がした跡があった。知らない人が長く持っていたことが、妙に心強かった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "読む場所を、先につくる。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "帰宅すると、窓際の椅子を少しだけ暖房へ寄せた。携帯は台所に置いた。湯飲みを置く場所がなく、積んであった郵便物を片づけた。本を開くまでにしたことはそれだけだったのに、いつもの夜とは違った。何かを読み終えるための夜ではなく、いま座っている場所に落ち着くための夜になった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "随筆には、冬の畑と、道具の手入れと、近所の人を見送った日のことが書かれていた。大きな事件はなかった。私もその日は、仕事で小さな失敗をしていた。送る資料を一つ取り違え、訂正のメールを出した。それだけのことを、帰り道では何度も思い返していた。頁の中の手つきに付き合っているうちに、自分の失敗も一日の大きさへ戻っていった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "一度で分からなくても、頁は逃げない。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "気になった一節を読み返した。何がよいのか説明できず、鉛筆で線を引くのもためらった。代わりに、読み終えたレシートを挟んだ。翌晩も同じ場所を開いたが、前の日ほどは響かなかった。そのことが少し面白かった。本には同じ言葉があり、読む私のほうが動いている。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "読みかけにも、居場所を。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "その冬、結局ほかの本へ何度も寄り道した。随筆集を読み終えたのは、梅が咲いてからだった。最後の頁を閉じても、達成した気分にはならなかった。もう窓際が寒くないことに気づき、椅子を元の場所へ戻した。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "いまも本にはレシートが挟まっている。印刷された文字は薄れたが、折った角だけは指に触れる。冬の夜に確保した、ほんの小さな席の感触として。",
+      "no": 10
+    }
+  ]
+}

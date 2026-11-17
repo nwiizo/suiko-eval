@@ -1,0 +1,121 @@
+{
+  "file": "gpt-5.6-sol/06-fiction-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 27,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.037037037037037035,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      6,
+      6,
+      3,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.24845199749997665,
+    "rhythm": {
+      "mora_mean": 29.40740740740741,
+      "mora_stdev": 9.425180062173325,
+      "burstiness": -0.5145736776074229,
+      "length_autocorrelation_lag1": -0.19406572033541875
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.4074074074074074
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 191,
+      "doc_char_count": 638,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.515 (モーラ近似長 平均=29.4, 標準偏差=9.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 27,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 終電を逃した夜",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "改札の上の時計が零時十二分を指していた。ホームへ続く階段は消灯され、駅員は申し訳なさそうに、もう電車はありませんと告げた。俊介は時刻表を見た。見れば何かが変わるわけでもないのに、数字の列から目を離せなかった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "外へ出ると、十一月の風が街の熱をさらっていた。タクシー乗り場には長い列ができている。家までは歩けば三時間ほどだった。俊介はコートの襟を立て、線路沿いの道を行くことにした。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "昼間には騒がしい商店街も、夜更けには舞台を降りた役者のように黙っていた。閉じたシャッター、積まれたビールケース、赤だけを繰り返す信号。そのどれもが人間の不在を慎ましく守っていた。俊介は自分の靴音を聞きながら、夕方の電話を思い返した。父の入院を知らせる姉の声に、忙しいから週末に行くと答えた。忙しいという言葉は便利で、口にするたび、向き合うべきものを遠ざけた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "一時間ほど歩くと、小さな公園に出た。ベンチに座り、自動販売機の缶コーヒーを開けた。夜空は雲に覆われ、星はなかった。父と最後に歩いたのはいつだったか。思い出そうとすると、古い記憶ばかりが浮かんだ。小学校の帰り道、父は俊介の歩幅に合わせ、何度も立ち止まってくれた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "俊介は携帯電話を取り出し、姉に短いメッセージを送った。朝になったら、そのまま病院へ行く。送信の印が灯ると、胸の内に固まっていたものが、わずかにほどけた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "東の空が淡くなるころ、始発駅に着いた。街はまだ眠っていたが、パン屋の奥には明かりがともり、焼ける匂いが流れていた。俊介は始発を待つ列に並んだ。逃したのは昨夜の電車だけでよいと思った。",
+      "no": 7
+    }
+  ]
+}

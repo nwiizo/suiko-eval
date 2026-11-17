@@ -1,0 +1,130 @@
+{
+  "file": "sonnet/10-business-motto.md",
+  "stats": {
+    "total_findings": 0,
+    "by_category": {},
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 32,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      6,
+      4,
+      4,
+      3,
+      3,
+      2,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.40019526483955303,
+    "rhythm": {
+      "mora_mean": 21.4375,
+      "mora_stdev": 11.91096527364596,
+      "burstiness": -0.28566636120081074,
+      "length_autocorrelation_lag1": -0.03179767014953746
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/補助記号/名詞",
+      "lead_pos_4gram_ratio": 0.1111111111111111
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 167,
+      "doc_char_count": 561,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 10,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 3,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 32,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# リモートワークのチーム運営",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "リモートワーク中心のチームを三年運営してきて、気づいたことをまとめる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "最初に起きる問題は、孤立だ。顔が見えないと、困っていても言い出しにくい。そこで私は、毎朝十分の短い立ち話を設けた。議題はない。昨日どうだったか、今日は何をするか。それだけだ。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "雑談は、仕事だ。オフィスなら廊下で自然に起きる会話が、リモートでは起きない。だから雑談専用のチャンネルを作り、最初の数週間は私が率先して書き込んだ。放っておくと、誰も書かない。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "文書は、残す。口頭で決めたことは、その日のうちに文字にする。参加していなかった人が、あとから追いつけるようにするためだ。会議の議事録は、三行でいい。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "会議は、短くする。三十分の予定は、二十五分で終える。終了の五分前に区切ると、次の会議までに息をつく余裕ができる。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "成果で見る。何時間座っていたかではなく、何が進んだかを見る。画面の前にいる時間を気にし始めると、チームは疲れていく。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "信頼は、先に渡す。部下を疑って監視するより、任せて確認するほうが、結局は速い。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "もちろん、うまくいかない日もある。いちばん苦労したのは、新しく入った人の立ち上がりだ。画面越しでは、わからないことを聞くための空気がつくれない。今は、入社後の一か月、毎日三十分の個別の時間を取っている。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "迷ったら、聞く。聞かれたら、答える。小さく話す。早く共有する。リモートのチームは、この繰り返しで保たれている。",
+      "no": 10
+    }
+  ]
+}

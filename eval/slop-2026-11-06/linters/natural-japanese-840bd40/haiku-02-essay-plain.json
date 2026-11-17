@@ -1,0 +1,121 @@
+{
+  "file": "haiku/02-essay-plain.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 23,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.043478260869565216,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      5,
+      5,
+      4,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.23413760031019581,
+    "rhythm": {
+      "mora_mean": 36.69565217391305,
+      "mora_stdev": 12.536675873850035,
+      "burstiness": -0.4907136683974199,
+      "length_autocorrelation_lag1": -0.2260555157387697
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2608695652173913
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 189,
+      "doc_char_count": 700,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.491 (モーラ近似長 平均=36.7, 標準偏差=12.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 23,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 引っ越して最初の一週間",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "引っ越しの荷物が届いたのは、週末の午前中だった。段ボールは全部で四十箱を超えていて、どこに何を入れたかを書いたメモは、途中からほとんど役に立たなくなった。それでも、新しい部屋に最初の日の夜が来ると、不思議なほど落ち着いた気持ちになった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "最初の二日間は、生活に必要なものを探すことに費やした。歯ブラシ、鍋、ハンガー、そして電球。どれも引っ越す前は当たり前にあったものだが、いざ必要になると、どの箱に入っているのか分からない。結局、近所のドラッグストアに三回通った。店の人の顔を覚えるくらい通ったのは、久しぶりのことだった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "三日目には、近くの定食屋を見つけた。昼どきに混むわけでもなく、年配の店主が一人で切り盛りしている。注文を受けてから、味噌汁をよそうまでの動作がとても静かだった。ここが自分の街の店になるのかどうか、まだ分からない。ただ、次も来てみようと思えたことが、この一週間で一番大きな収穫だったように思う。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "四日目からは、仕事の準備を始めた。新しい部屋の机は、前の部屋よりも少し狭い。モニターを置き直し、ケーブルを束ね、椅子の高さを何度も調整した。作業ができる場所ができると、ようやく生活が始まった感じがした。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "週の後半には、夜に散歩をするようになった。川沿いの道を歩くと、街灯の下で犬を連れた人や、ランニングをする人とすれ違う。知らない人同士が、少しずつ同じ景色に馴染んでいくのを眺めるのは、思ったより心地よかった。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "一週間が過ぎて振り返ると、まだ片付いていない箱が六つ残っている。それでも、どこに何があるかは大体わかるようになった。引っ越しは荷物を運ぶ作業だと思っていたが、実際には、自分の生活の置き場所を少しずつ決めていく時間なのだと思う。",
+      "no": 7
+    }
+  ]
+}

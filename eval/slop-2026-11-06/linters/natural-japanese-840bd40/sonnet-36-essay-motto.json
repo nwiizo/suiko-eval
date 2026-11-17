@@ -1,0 +1,161 @@
+{
+  "file": "sonnet/36-essay-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 28,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.03571428571428571,
+    "total_paragraphs": 10,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      4,
+      2,
+      1,
+      7,
+      1,
+      5,
+      3,
+      1,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.6925256939166184,
+    "rhythm": {
+      "mora_mean": 24.392857142857142,
+      "mora_stdev": 8.587113624971039,
+      "burstiness": -0.4792528055635677,
+      "length_autocorrelation_lag1": -0.0937255972684748
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.25
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 165,
+      "doc_char_count": 539,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 11,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 3,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.479 (モーラ近似長 平均=24.4, 標準偏差=8.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 28,
+      "genre": "essay",
+      "by_category": {
+        "no_chain": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 11,
+        "category": "no_chain",
+        "excerpt": "の夜の静けさの",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 冬に読んだ本のこと",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "冬は、本の季節だ。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "十二月の初め、仕事帰りの書店で、一冊の文庫を手に取った。北国の漁師を描いた古い小説である。表紙の紙は少し黄ばんでいて、頁の端が柔らかく丸まっていた。誰かが何度も読んだ本は、それだけで温度を持つ。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "家に帰り、炬燵に足を入れて、最初の頁を開いた。窓の外では、冷たい雨が雪に変わりかけていた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "読み始めたら、止まらない。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "主人公の老人は、不漁の海へ、毎朝ひとりで舟を出す。誰も彼を励まさない。彼自身も、愚痴をこぼさない。ただ黙って網を打ち、黙って引き上げる。その繰り返しが、何十頁も続く。普段の私なら、退屈だと感じたかもしれない。けれども、冬の夜の静けさのなかでは、その単調さが、不思議に心地よかった。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "遅い本は、深く効く。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "この冬、私は気づいた。早く読める本ばかりを選んでいた自分に。速さは便利だが、残るものは少ない。ゆっくり読んだ本の言葉は、数週間経っても、ふとした瞬間に浮かんでくる。電車の窓の曇りを見たとき、台所でやかんが鳴ったとき。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "読み終えたのは、年が明けて三日目の夜だった。最後の頁を閉じると、部屋の暖房の音だけが残った。物語の海は、まだ胸のなかで、ゆっくり波打っていた。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "本は、読み終えてから始まる。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "私は棚の隅に、その文庫を立てた。来年の冬、もう一度開くつもりでいる。そのとき、老人の舟は、また違う海を進んでいるだろう。",
+      "no": 11
+    }
+  ]
+}

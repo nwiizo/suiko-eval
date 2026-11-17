@@ -1,0 +1,141 @@
+{
+  "file": "gpt-6.1-sol/08-business-subject.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 23,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.09722034684781694,
+    "rhythm": {
+      "mora_mean": 43.26086956521739,
+      "mora_stdev": 7.979415862375259,
+      "burstiness": -0.6885491251351077,
+      "length_autocorrelation_lag1": -0.03307204180664422
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.21739130434782608
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 226,
+      "doc_char_count": 754,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[3, 4, 4, 4, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.097（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=23, 平均文長=32.8字, 変動係数=0.172",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.689 (モーラ近似長 平均=43.3, 標準偏差=8.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 23,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新しい評価制度の運用について",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "新しい評価制度は、仕事の成果と、その成果につながる取り組みを共通の観点で確認するために導入されます。部署ごとの説明方法の違いを減らし、評価の理由を本人が確認できることを目指します。導入初年度の評価期間は、四月から九月、十月から三月の半年単位です。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "評価項目は、役割に応じた成果、仕事の進め方、周囲への貢献で構成されます。売上や件数などの数値だけでは、すべての職種の成果を表せません。目標の記録には、期待する状態と、それを確認する方法が必要です。業務改善や事故の予防も、実際の取り組みと結果が確認できれば評価の対象になります。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "期初の面談は、目標と役割について認識をそろえる場になります。目標欄には本人と上長が合意した内容が残り、合意できなかった点も記録されます。期中の担当変更や事業の優先順位の変更は、目標を見直す理由になります。見直しの記録には、変更日と変更理由を併記します。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "月次の面談記録は、期末だけでは思い出しにくい出来事を補います。記録の中心になるのは、実施した仕事、確認できた結果、次に試すことです。発言の多さや勤務場所は、それ自体では高い評価の理由になりません。成果への寄与が説明できる具体的な事実が、評価判断の根拠になります。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "期末の評価案は、部署をまたぐ確認の対象になります。この確認は、部署間の点数を機械的にそろえるためのものではありません。同じ役割に異なる期待が置かれていないか、説明と評価が一致しているかを確かめます。最終的な評価結果には、根拠と次期に期待することを添えます。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "結果通知後の確認窓口は、事実の誤りや説明不足について申し出を受け付けます。申し出が評価上の不利益につながることはありません。初回の運用結果と寄せられた意見は、次期に向けた制度の見直しに使われます。制度の詳しい日程と記入例は、期初面談の開始前に社内で共有されます。",
+      "no": 7
+    }
+  ]
+}

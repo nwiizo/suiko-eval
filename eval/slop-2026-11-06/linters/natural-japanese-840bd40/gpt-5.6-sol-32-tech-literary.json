@@ -1,0 +1,143 @@
+{
+  "file": "gpt-5.6-sol/32-tech-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 24,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.041666666666666664,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      7,
+      3,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.3535533905932738,
+    "rhythm": {
+      "mora_mean": 33.333333333333336,
+      "mora_stdev": 11.838027238053176,
+      "burstiness": -0.4758613825968353,
+      "length_autocorrelation_lag1": 0.11847252276516898
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.16666666666666666
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 193,
+      "doc_char_count": 624,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.476 (モーラ近似長 平均=33.3, 標準偏差=11.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 2,
+      "sentences": 24,
+      "genre": "tech",
+      "by_category": {
+        "kanji_run": 1,
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 3,
+        "category": "kanji_run",
+        "excerpt": "午前二時十三分",
+        "severity": "info",
+        "detail": "漢字が7字連続（目安6字）。語の切れ目が読み取りにくい疑い",
+        "related_lines": null,
+        "hint": "ひらがなを交えて開く（「再送抑制機能」→「再送を止める機能」）。固有名詞はそのままでよい"
+      },
+      {
+        "line": 13,
+        "category": "double_negative",
+        "excerpt": "なくなったわけではない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 初めてのオンコール",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "午前二時十三分、枕元の電話が鳴った。音は暗い部屋をまっすぐに裂き、眠りの底にいた私を現実へ引き上げた。監視画面には、決済APIのエラー率上昇を告げる赤い線が走っていた。初めて担当するオンコールの夜だった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "手順書を開く指が乾いていた。ログの時刻をそろえ、直前の変更を確かめ、ダッシュボードを切り替える。訓練で何度もなぞった操作なのに、実際の障害は紙の上ほど行儀よく並んではくれない。無数の数字が、暗い森に浮かぶ獣の目のようにこちらを見返した。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "原因はデータベース接続数の急増だった。私は当番リーダーを呼び、影響範囲と観測事実を伝えた。「推測はあとでいい。今見えているものを話して」。その一言で、狭くなっていた視界が少し開いた。接続プールの設定、リクエスト数、再試行の波。ばらばらだった事実が、やがて一本の流れを描き始めた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "負荷を逃がし、問題のある機能を一時停止すると、赤い線はゆっくり下がった。午前三時を過ぎたころ、サービスは平常へ戻った。窓の外はまだ夜だったが、遠くで新聞配達のバイクが走り、街は見えないところから朝の準備を始めていた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "翌日の振り返りで、私は判断の遅れも、手順書の不足も隠さず話した。障害対応は英雄になる場ではない。確かな事実を手渡し、隣の人が動ける明かりを灯し続ける仕事だと知った。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "あの夜以来、通知音を怖いと思わなくなったわけではない。ただ、その向こうには困っている利用者がいて、隣には呼べる仲間がいる。オンコールとは、眠らないシステムの夜を、チームで少しずつ朝へ運ぶ役目なのだ。",
+      "no": 7
+    }
+  ]
+}
