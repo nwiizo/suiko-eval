@@ -1,0 +1,124 @@
+{
+  "file": "gpt-6-luna/02-essay-plain.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      5,
+      5,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.11134044285378081,
+    "rhythm": {
+      "mora_mean": 33,
+      "mora_stdev": 9.634219315449583,
+      "burstiness": -0.5480522702120462,
+      "length_autocorrelation_lag1": -0.20850768268592554
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/動詞/助動詞",
+      "lead_pos_4gram_ratio": 0.13636363636363635
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 182,
+      "doc_char_count": 604,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[4, 4, 5, 5, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.111（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.548 (モーラ近似長 平均=33.0, 標準偏差=9.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 引っ越して最初の一週間",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "引っ越して最初の一週間は、部屋の中で小さな探し物を何度もした。はさみはどの箱に入れたのか、充電器はどこへ置いたのか。荷ほどきは進んでいるのに、必要なものほどすぐには見つからない。箱に書いた「台所」「書類」という文字を頼りに、毎晩ひとつずつ開けた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "新しい部屋は、前の部屋より少し広い。窓から見える景色も違うし、駅までの道もまだ覚えきれていない。朝は地図を見ながら歩き、帰りは目印にしたパン屋の角を探す。道を間違えて遠回りをした日もあったが、知らない店を見つけると、少し得をした気分になった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "最初に整ったのは寝る場所だった。ベッドを置き、シーツを敷き、枕を箱から出す。そこだけはその日のうちに使えるようにしたかった。次に必要になったのは食器で、段ボールの上に皿を並べて夕食を食べた。テーブルはまだなくても、食事の場所が決まると部屋が生活の場らしくなった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "一週間の終わりには、玄関に積んであった箱がだいぶ減っていた。全部を片づけたわけではない。季節外れの服や、使う頻度の低い道具はまだ箱の中にある。それでも、朝起きてカーテンを開け、帰宅したら鍵を決まった場所に置くようになった。部屋の使い方が少しずつ決まり始めている。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "引っ越しは、荷物を運んだ日に終わるものだと思っていた。実際には、どこに何を置くかを試しながら、毎日の手順を新しい場所に合わせていく時間が続く。今週はまだ、近所の店の営業時間を確かめている。来週には、迷わず帰れる道がもう一本増えているだろう。",
+      "no": 6
+    }
+  ]
+}

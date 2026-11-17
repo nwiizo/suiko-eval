@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6.1-sol/18-business-subject.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 27,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.037037037037037035,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      4,
+      4,
+      4,
+      5,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.1111111111111111,
+    "rhythm": {
+      "mora_mean": 37.74074074074074,
+      "mora_stdev": 12.836846828109316,
+      "burstiness": -0.4923899124039942,
+      "length_autocorrelation_lag1": -0.03092179730359035
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2962962962962963
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 213,
+      "doc_char_count": 754,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[5, 4, 4, 4, 5, 5]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.111（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.492 (モーラ近似長 平均=37.7, 標準偏差=12.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 27,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 次の十年を支える仕事",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "新しい年が始まりました。この一年の出発点には、昨年までの一つひとつの仕事があります。日々の改善、納期を守る工夫、お客様から寄せられた厳しいご意見への対応。その積み重ねが、当社の信用を支えてきました。皆さんの尽力に、心から感謝します。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "会社の次の十年は、今年の判断の積み重ねから形になります。売上の拡大だけでは、その土台は十分に育ちません。お客様の業務を深く理解した提案、安定して使える製品、困ったときに届く支援が、継続して選ばれる理由をつくります。今年の事業計画は、その三つへ人員と予算を振り向けます。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "顧客の声は、新しい仕事の出発点になります。ただし、一件の要望だけで開発の優先順位は決まりません。同じ困りごとを抱えるお客様の数、解決によって生まれる価値、運用を含む費用の確認が必要です。共通の判断基準が、部門ごとの見え方の違いを埋め、限られた時間の使い道を明らかにします。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "技術への投資は、目先の納期と並ぶ経営課題です。保守しやすい設計と自動化された検証が、将来の変更に必要な時間を減らします。学習の時間と業務の引き継ぎが、特定の人への依存を小さくします。今年の計画には、改善と育成に充てる時間を、あらかじめ組み込みます。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "新しい事業には、不確実さが伴います。小さな検証が、期待と事実の隔たりを早く示します。事前に定めた評価日と中止条件が、根拠の薄い継続を防ぎます。検証の結果が見込みを下回った場合も、得られた知見には次の判断を支える価値があります。報告の率直さが損なわれない運営を、経営の責任で整えます。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "健全な利益は、働く環境と次の挑戦を支えます。無理な受注や慢性的な残業は、その基盤を傷めます。月ごとの進捗確認では、収益と品質に加えて、業務量の偏りも扱います。次の十年への信頼が、今年の具体的な働き方から育つ一年にしてまいります。本年もよろしくお願いいたします。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "file": "haiku/11-tech-principle.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 26,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.12162606385262997,
+    "rhythm": {
+      "mora_mean": 31.96153846153846,
+      "mora_stdev": 9.087103157056282,
+      "burstiness": -0.5572519431220404,
+      "length_autocorrelation_lag1": -0.038664788727893966
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/補助記号/名詞",
+      "lead_pos_4gram_ratio": 0.2692307692307692
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 194,
+      "doc_char_count": 682,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 7,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=7, 各段落の文数=[3, 4, 4, 4, 4, 4, 3]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.122（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.557 (モーラ近似長 平均=32.0, 標準偏差=9.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 26,
+      "genre": "tech",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 13,
+        "category": "double_negative",
+        "excerpt": "ない箇所は分からない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# コードレビューの心得",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "コードレビューは、書き手と読み手が同じ目的に向かうための作業である。欠陥を見つけるだけでなく、チームのコードを共通の水準へ揃えていく場でもある。ここでは、私たちがレビューを行うときの心得を、原則として示す。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "レビューは、変更の意図を理解することから始める。差分を眺める前に、プルリクエストの説明と関連する課題を読む。何を解決したい変更なのかが分からないまま、細部を指摘してはならない。意図を理解できないときは、指摘より先に質問を書く。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "指摘は、動作と根拠に基づいて行う。「読みにくい」と書くのではなく、どの条件で誤った値になるのかを示す。根拠が示せない指摘は、個人の好みに過ぎない。好みを押しつけず、再現できる事実で話す。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "修正の要否は、影響の大きさで判断する。明らかな不具合や、セキュリティに関わる箇所は必ず直す。一方で、動作に影響しない命名や書式は、後から直す前提で承認してよい。すべてを完璧にしようとすると、レビューは終わらなくなる。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "提案は、代替案とともに書く。否定だけでは、書き手は次に何をすべきかを判断できない。より単純な書き方や、既存のユーティリティの利用など、具体的な候補を一つ添える。採用するかどうかは、書き手が決める。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "承認は、理解したうえで行う。自分が読み切れていない変更に承認を出すことは、責任の所在をあいまいにする。分からない箇所は分からないと書き、理解できた範囲で承認する。レビューは、通すための儀式ではない。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "コードレビューは、速さと丁寧さのどちらかを捨てるものではない。意図を読み、根拠で話し、影響で判断し、代替案を添え、理解して承認する。この五つを守って、チームの信頼を一行ずつ積み重ねていく。",
+      "no": 8
+    }
+  ]
+}

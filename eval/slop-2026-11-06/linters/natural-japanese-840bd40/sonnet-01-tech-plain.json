@@ -1,0 +1,128 @@
+{
+  "file": "sonnet/01-tech-plain.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 25,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      2,
+      5,
+      3,
+      4,
+      3,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.25298221281347033,
+    "rhythm": {
+      "mora_mean": 34.8,
+      "mora_stdev": 13.001538370516005,
+      "burstiness": -0.45602008580814396,
+      "length_autocorrelation_lag1": -0.23095896706164995
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/名詞",
+      "lead_pos_4gram_ratio": 0.16
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 215,
+      "doc_char_count": 726,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.456 (モーラ近似長 平均=34.8, 標準偏差=13.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 25,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 社内CIが遅くなった原因を調べた",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "先月から、社内のCIが目に見えて遅くなった。以前は平均八分で終わっていたパイプラインが、十四分前後かかるようになっていた。誰かが何かを足したのは確かだが、心当たりのある人がいない。まず所要時間をジョブごとに分けて見ることにした。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "CIの実行履歴を二か月分取り出して比べると、テストジョブは二分ほどしか延びていなかった。大きく増えていたのはその前の依存パッケージの取得で、三十秒だったものが五分近くになっていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "次に、この取得が何をしているかを確認した。キャッシュのキーにロックファイルのハッシュを使っているのは以前のままだった。ただ、ロックファイルの先頭にビルド日時を書き込む処理が入っており、毎回ハッシュが変わっていた。つまりキャッシュは一度も当たっていなかった。二週間前の変更で、リリース用のスクリプトを共通化したときに混ざったものだった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "直し方は単純だった。日時の出力をロックファイルから外し、成果物のメタデータ側へ移した。これでキャッシュは当たるようになり、取得は四十秒前後に戻った。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "もうひとつ、並列実行の設定も見直した。テストを四分割していたが、分割ごとに所要時間がかなり偏っていた。一番重い分割が全体を決めていたので、過去の実行時間をもとに振り分け直した。ここで二分ほど縮んだ。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "結果として、平均は九分まで戻った。八分には届いていない。残りの一分は、新しく追加された静的解析のジョブで、これは必要なものなので残すことにした。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "今回わかったのは、遅くなった理由がひとつではなかったことだ。キャッシュが外れていたのが主因で、分割の偏りと静的解析の追加が重なっていた。原因を探すときは、全体の数字を見る前にジョブごとの内訳を出したほうが早い。今後はキャッシュのヒット率も、毎週ダッシュボードで確認する。",
+      "no": 8
+    }
+  ]
+}

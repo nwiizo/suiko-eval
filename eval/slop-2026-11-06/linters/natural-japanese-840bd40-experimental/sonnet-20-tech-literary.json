@@ -1,0 +1,156 @@
+{
+  "file": "sonnet/20-tech-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 26,
+    "nominal_ending_count": 4,
+    "nominal_ending_ratio": 0.15384615384615385,
+    "total_paragraphs": 8,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      4,
+      5,
+      2,
+      3,
+      3,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.297921795862109,
+    "rhythm": {
+      "mora_mean": 33.03846153846154,
+      "mora_stdev": 13.025066866005155,
+      "burstiness": -0.4344737662457426,
+      "length_autocorrelation_lag1": 0.297904323367029
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.23076923076923078
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 195,
+      "doc_char_count": 679,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 9,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.434 (モーラ近似長 平均=33.0, 標準偏差=13.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 2,
+      "sentences": 26,
+      "genre": "tech",
+      "by_category": {
+        "kanji_run": 2
+      }
+    },
+    "findings": [
+      {
+        "line": 7,
+        "category": "kanji_run",
+        "excerpt": "午前一時二十分",
+        "severity": "info",
+        "detail": "漢字が7字連続（目安6字）。語の切れ目が読み取りにくい疑い",
+        "related_lines": null,
+        "hint": "ひらがなを交えて開く（「再送抑制機能」→「再送を止める機能」）。固有名詞はそのままでよい"
+      },
+      {
+        "line": 13,
+        "category": "kanji_run",
+        "excerpt": "午前三時四十分",
+        "severity": "info",
+        "detail": "漢字が7字連続（目安6字）。語の切れ目が読み取りにくい疑い",
+        "related_lines": null,
+        "hint": "ひらがなを交えて開く（「再送抑制機能」→「再送を止める機能」）。固有名詞はそのままでよい"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 深夜のデプロイを振り返る",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "午前一時を過ぎたオフィスは、水底のように静まり返っていた。非常口の緑のランプと、モニターの青白い光だけが、私たちの輪郭を闇に浮かび上がらせていた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "先週の金曜日、決済基盤のデータ構造を変更するリリースを深夜帯に行った。利用者の少ない時間を選んだのは、万一のときの影響を最小にするためである。参加したのは私を含めて四人。手順書は事前に三度、読み合わせてあった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "最初の問題は、午前一時二十分に現れた。マイグレーションの実行中、本番のレプリカ遅延が急に伸びはじめたのである。ダッシュボードの折れ線が、ゆっくりと、しかし確実に右上へ傾いていく。誰も言葉を発さなかった。キーボードを叩く音だけが、夜の底で乾いて響いた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "原因は、巨大なテーブルへの索引追加が書き込みを長く塞いでいたことだった。検証環境のデータ量は本番の十分の一で、そのため手順書の所要時間の見積もりが甘かったのだと、あとで分かった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "私たちはいったん処理を止め、残りを小さな単位に分割して流し直した。一回ごとに遅延を確かめ、収まったのを見届けてから次へ進む。地味な作業だったが、画面の数字が落ち着いていくたび、胸のつかえも少しずつほどけていった。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "作業が完了したのは午前三時四十分。外に出ると、東の空にはまだ夜が居座っていて、冷えた空気が頬を撫でた。缶コーヒーの温かさが、掌に妙に沁みた。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "今回の学びは三つある。本番相当のデータ量で検証すること。止めてよい地点を手順書に書いておくこと。そして、遅延や失敗の兆しを口に出して共有すること。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "深夜のデプロイは、いつも静かだ。けれど、その静けさのなかで、チームの信頼は確かに積み上がっていく。次の夜も、同じ四人で臨みたい。",
+      "no": 9
+    }
+  ]
+}

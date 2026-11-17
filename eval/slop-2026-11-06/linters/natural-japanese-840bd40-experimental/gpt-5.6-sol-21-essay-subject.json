@@ -1,0 +1,297 @@
+{
+  "file": "gpt-5.6-sol/21-essay-subject.md",
+  "stats": {
+    "total_findings": 13,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1,
+      "repeated_syntax_template": 11
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 24,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      4,
+      5,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.14433756729740643,
+    "rhythm": {
+      "mora_mean": 32.541666666666664,
+      "mora_stdev": 11.169076232566814,
+      "burstiness": -0.4889550947091005,
+      "length_autocorrelation_lag1": -0.5194886585385243
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.4583333333333333
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 184,
+      "doc_char_count": 608,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[3, 4, 4, 5, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.144（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.489 (モーラ近似長 平均=32.5, 標準偏差=11.2)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "朝の光が、部屋の奥へ差し込む角度を変える",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "影の長さが、太陽の高さを語る",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "光景は昨日とほとんど同じなのに、光だけが",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "店先の果物が、季節を色で並べる",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "食卓の湯気が、いつの間にか邪魔なものでは",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "眠気が朝の布団を重くし、乾いた空気が喉に",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "季節の境目は一本の線ではない",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 11,
+      "category": "repeated_syntax_template",
+      "excerpt": "金木犀の香りが通学路を連れ戻し、早い夕暮",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 11,
+      "category": "repeated_syntax_template",
+      "excerpt": "匂いと光が扉を開けると、忘れていた声まで",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "終わりが次の始まりへ場所を譲り、冷たい風",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "季節の変わり目は、暮らしの頁をめくる見え",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の45.8%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L9, L11, L13",
+      "related_lines": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 24,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 季節の変わり目",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "九月の風が、夏の終わりを最初に知らせる。日差しにはまだ力が残っていても、夕方の風は薄い冷たさを運び、開け放した窓辺のカーテンを静かに揺らす。その一瞬が、暦より確かに次の季節を告げる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "朝の光が、部屋の奥へ差し込む角度を変える。夏には届かなかった机の脚を照らし、床に細長い四角をつくる。影の長さが、太陽の高さを語る。光景は昨日とほとんど同じなのに、光だけが時間の進行を見逃さない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "店先の果物が、季節を色で並べる。桃の淡い紅色が姿を消し、梨の乾いた黄色や葡萄の濃い紫が棚を占める。食卓の湯気が、いつの間にか邪魔なものではなくなる。温かい茶が両手を引き寄せ、器の丸みが小さな安心をつくる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "身体もまた、変化を先に知る。眠気が朝の布団を重くし、乾いた空気が喉に触れ、肩が上着の所在を思い出す。季節の境目は一本の線ではない。暑さと涼しさが行き来し、昨日の服装が今日は少し外れる。その迷いが、移り変わりの正体なのだろう。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "記憶は、季節に古い景色を重ねる。金木犀の香りが通学路を連れ戻し、早い夕暮れが部活動から帰った道を呼び起こす。匂いと光が扉を開けると、忘れていた声まで鮮やかになる。過去は消えたのではなく、次の季節が鍵を差すまで眠っているだけなのかもしれない。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "変化は、ときに心を落ち着かなくさせる。けれど季節の揺らぎは、同じ日が永遠には続かないことを穏やかに教える。終わりが次の始まりへ場所を譲り、冷たい風が新しい時間を運ぶ。季節の変わり目は、暮らしの頁をめくる見えない指である。",
+      "no": 7
+    }
+  ]
+}

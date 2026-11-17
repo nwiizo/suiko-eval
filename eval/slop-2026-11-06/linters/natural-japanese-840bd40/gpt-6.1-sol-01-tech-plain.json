@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6.1-sol/01-tech-plain.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 1,
+    "paragraph_lead_conjunction_ratio": 0.16666666666666666,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      3,
+      4,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.128564869306645,
+    "rhythm": {
+      "mora_mean": 39.72727272727273,
+      "mora_stdev": 10.834212721248194,
+      "burstiness": -0.5714440497489329,
+      "length_autocorrelation_lag1": -0.23150117003526685
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.18181818181818182
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 206,
+      "doc_char_count": 679,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 4, 3, 4, 4, 3]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.129（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.571 (モーラ近似長 平均=39.7, 標準偏差=10.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# CIの待ち時間を調べて分かったこと",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "社内のCIが遅いという話は、以前から出ていた。ただ、遅い日の記憶だけでは改善の順番を決められない。そこで直近二週間の実行履歴を集め、開始までの待ち時間と、開始後の処理時間を分けて比較した。平均だけでなく、特に時間がかかった実行も確認した。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "最初に目についたのは、昼過ぎに長くなる開始待ちだった。複数のチームが同じ実行環境を使い、プルリクエストの更新が重なる時間に処理が集中していた。一方、夜間にも処理そのものが長い例があった。実行環境の台数を増やすだけでは、両方の問題は解決しない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "各工程のログを見ると、依存パッケージの取得に毎回数分かかっていた。キャッシュは設定されていたが、保存先の指定が古く、現在使っているパッケージ管理ツールの保存先と一致していなかった。設定があることで安心してしまい、実際に再利用されたかを見ていなかった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "さらに、同じブランチへの更新ごとに、古い実行も最後まで残っていた。短い間隔で修正を送ると、確認に使わない実行が枠を占有する。最新の更新で置き換えられる検証については、古い実行を取り消す設定を加えた。公開処理など、途中で止められない処理は対象から外した。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "変更後は同じ曜日と時間帯で数日分を比べた。キャッシュが使える実行では取得時間が縮まり、混雑時の開始待ちも減った。ただし、初回の実行は依然として時間がかかる。結果を共有するときは、初回と二回目以降を分けて示すことにした。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "今回役に立ったのは、大きな構成変更よりも、時間の内訳を確かめたことだった。今後は工程ごとの所要時間を定期的に記録する。遅さに慣れる前に変化を見つけられれば、調査のために半日を空ける回数も減らせるはずだ。",
+      "no": 7
+    }
+  ]
+}

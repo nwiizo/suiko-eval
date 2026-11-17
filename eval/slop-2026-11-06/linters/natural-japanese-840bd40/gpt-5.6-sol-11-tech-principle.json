@@ -1,0 +1,121 @@
+{
+  "file": "gpt-5.6-sol/11-tech-principle.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 31,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      5,
+      5,
+      5,
+      7
+    ],
+    "paragraph_sentence_count_cv": 0.1737149937785324,
+    "rhythm": {
+      "mora_mean": 27.161290322580644,
+      "mora_stdev": 12.616161611953876,
+      "burstiness": -0.36566265568154166,
+      "length_autocorrelation_lag1": -0.26967331926603927
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.25806451612903225
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 198,
+      "doc_char_count": 631,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.366 (モーラ近似長 平均=27.2, 標準偏差=12.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 31,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# コードレビューの心得",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "コードレビューでは、変更の目的を最初に確認する。差分だけを読み始めず、解決したい問題、期待する動作、対象外の範囲を把握する。目的が不明確なら、細部の指摘より先に認識をそろえる。正しい実装は、正しい課題設定から生まれる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "動作の正しさを優先する。命名や書式に目を奪われる前に、境界条件、失敗時の処理、データの整合性、権限の扱いを確かめる。正常系だけで判断しない。入力が欠けた場合、依存先が遅い場合、処理が途中で止まった場合を考える。重大な危険を小さな好みの指摘に埋もれさせない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "コメントには理由を書く。「直してください」だけで終えず、どの利用者や保守作業にどんな影響があるかを示す。必須の修正と提案を区別する。個人の好みを規則として扱わない。自動化できる書式確認はツールへ任せ、人は設計と意図の確認に集中する。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "変更量を必要以上に増やさない。今回の目的に関係しない改善は、別の変更として提案する。大きな差分には分割を求める。読み手の負担を下げ、問題が起きた際に戻せる単位を保つ。小さく出し、早く確かめる。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "書き手への敬意を守る。コードを批評し、人を評価しない。疑問は断定せず、前提を確認する。優れた判断や分かりやすいテストも具体的に伝える。レビューを知識の受け渡しとして扱う。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "承認には責任を持つ。すべてを理解していない状態で形式的に承認しない。不明点が残るなら質問し、必要なら手元で動かす。同時に、完全さを求めて変更を止め続けない。現在の要件と危険に照らし、十分な品質を判断する。速さと安全を両立させる。それがレビューの役割である。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "file": "sonnet/29-copy-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 19,
+    "nominal_ending_count": 3,
+    "nominal_ending_ratio": 0.15789473684210525,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      3,
+      4,
+      2,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.21700555924303477,
+    "rhythm": {
+      "mora_mean": 35.05263157894737,
+      "mora_stdev": 13.33169426675247,
+      "burstiness": -0.44892507919742664,
+      "length_autocorrelation_lag1": -0.3096919997325878
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2631578947368421
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 147,
+      "doc_char_count": 554,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.449 (モーラ近似長 平均=35.1, 標準偏差=13.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 19,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 朝の窓を開ける豆　エチオピア・ハンバレラ新ロット",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "袋の口を切ると、小さな果樹園が立ちのぼります。ジャスミンの白い花、熟したアプリコット、そのあとから紅茶のような余韻が静かについてくる。今回お届けするエチオピア・ハンバレラは、そんな香りの豆です。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "標高二千メートルの高地で、一粒ずつ手摘みされたチェリーは、天日の上でゆっくりと眠ります。その時間は、ワインが樽のなかで過ごす歳月に似ています。急がず、焦らず、果実の甘みが豆の芯へ染み込んでいくのを待つのです。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "焙煎は、あえて浅めに。深い焙煎が重厚な交響曲だとすれば、この豆は、窓辺で鳴る一本のフルートのような軽やかさを持っています。苦みは影を潜め、舌の上にはレモンの皮を思わせる明るい酸が、さざ波のように広がります。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "おすすめの淹れ方は、ハンドドリップ。九十度のお湯を細く注ぐと、粉がふっくらとドームのように膨らみ、部屋じゅうが花畑に変わります。ミルクを足さず、砂糖も入れず、まずは素のままでひと口。カップのなかに、朝の光が溶けているのが分かるはずです。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "忙しい平日の始まりに、この一杯は小さな休日をひらきます。週末の午後には、お気に入りの本と並んで、ゆっくり時間をほどいてくれるでしょう。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "内容量は二百グラム。中挽き、粗挽き、豆のままからお選びいただけます。焙煎してから三日目から十日目が、香りの花盛りです。今日の朝を、少しだけ特別な一杯で始めてみませんか。",
+      "no": 7
+    }
+  ]
+}

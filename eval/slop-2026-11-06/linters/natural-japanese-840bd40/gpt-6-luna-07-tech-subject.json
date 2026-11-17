@@ -1,0 +1,126 @@
+{
+  "file": "gpt-6-luna/07-tech-subject.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 20,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      3,
+      5,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.15811388300841897,
+    "rhythm": {
+      "mora_mean": 44.2,
+      "mora_stdev": 13.388801290630912,
+      "burstiness": -0.5350206640675771,
+      "length_autocorrelation_lag1": -0.04862471479511037
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 209,
+      "doc_char_count": 676,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.535 (モーラ近似長 平均=44.2, 標準偏差=13.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 20,
+      "genre": "tech",
+      "by_category": {
+        "buried_list": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 5,
+        "category": "buried_list",
+        "excerpt": "アプリケーションログ、監査ログ、メトリクスに近いイベントが同じ場所へ送られていた",
+        "severity": "info",
+        "detail": "同格の名詞句が読点で4個並んでいる（一文63字）。並んだ項目を読み手が頭の中で組み立て直すことになる",
+        "related_lines": null,
+        "hint": "箇条書きに開く。各項目を「太字: 説明」の形にはしない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# ログ基盤を移行した記録",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "旧ログ基盤は、サービスの増加に合わせて運用の負担を重ねていた。保存先の容量は個別に調整され、検索画面の設定もチームごとに異なっていた。障害調査では、同じリクエストを追うために複数の画面を行き来する必要があった。移行の目的は、単に保存先を変えることではなく、収集から検索までの経路を揃えることだった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "移行計画は、まずログの種類と利用者を整理した。アプリケーションログ、監査ログ、メトリクスに近いイベントが同じ場所へ送られていたため、保持期間やアクセス権の要件が混在していた。棚卸しの結果をもとに、用途ごとに保存期間と閲覧範囲を定義し、共通のフィールド名と時刻形式を決めた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "新しい収集経路は、既存環境と並行して稼働させた。各サービスは一定期間、旧基盤と新基盤の両方へログを送信した。比較用のダッシュボードは、件数、遅延、欠落率を並べて表示した。初期段階では一部のサービスで時刻の単位が異なり、検索結果が正しく並ばなかった。変換処理を修正し、送信元の形式も明示的に検証するようにした。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "切り替えはサービス単位で進めた。利用者が多いサービスから始めず、影響範囲を把握しやすいものを先行させた。各段階で、検索手順、アラート、権限設定を確認し、問題があれば旧経路へ戻せる状態を保った。全サービスの切り替え後も、旧基盤は参照専用で一定期間残した。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "移行後は、検索にかかる時間とログの到着遅延が改善した。一方、共通形式に合わせる作業は継続している。基盤が一つになっても、ログの意味が揃わなければ調査は速くならない。今回の記録を運用手順に反映し、フィールド変更や新サービス追加の際に同じ確認を繰り返せるようにした。",
+      "no": 6
+    }
+  ]
+}

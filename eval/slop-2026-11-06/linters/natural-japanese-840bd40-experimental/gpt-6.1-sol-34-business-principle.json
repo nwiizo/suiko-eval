@@ -1,0 +1,358 @@
+{
+  "file": "gpt-6.1-sol/34-business-principle.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 37,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 37,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "paragraph_sentence_count_cv": 0.0,
+    "rhythm": {
+      "mora_mean": 26.62162162162162,
+      "mora_stdev": 5.4838896796883105,
+      "burstiness": -0.6583832832798048,
+      "length_autocorrelation_lag1": 0.28465764155453027
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2972972972972973
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 228,
+      "doc_char_count": 699,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 38,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=37, 各段落の文数=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.000（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=37, 平均文長=18.9字, 変動係数=0.182",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.658 (モーラ近似長 平均=26.6, 標準偏差=5.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 37,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 情報を守る行動原則",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "情報の利用目的を明確にする。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "業務に必要な範囲だけを取得する。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "取得時に情報の管理区分を確認する。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "保存先は会社が認めた場所を使う。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "個人のアカウントへ業務情報を移さない。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "共有範囲は必要な相手に絞る。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "公開リンクの発行前に閲覧範囲を確かめる。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "宛先と添付ファイルは送信前に確認する。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "機密情報の送信には指定の方法を使う。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "認証情報は他人と共有しない。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "パスワードはサービスごとに異なるものを使う。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "パスワードの管理には承認済みの管理ツールを使う。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "多要素認証は利用可能な業務サービスで有効にする。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "段落",
+      "text": "心当たりのない認証要求は拒否して報告する。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "段落",
+      "text": "権限は業務に必要な最小限にする。",
+      "no": 16
+    },
+    {
+      "line": 33,
+      "kind": "段落",
+      "text": "異動と退職に伴う権限変更を速やかに行う。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "段落",
+      "text": "端末を離れるときは画面をロックする。",
+      "no": 18
+    },
+    {
+      "line": 37,
+      "kind": "段落",
+      "text": "更新プログラムは社内の適用方針に従って導入する。",
+      "no": 19
+    },
+    {
+      "line": 39,
+      "kind": "段落",
+      "text": "外部媒体は承認されたものだけを接続する。",
+      "no": 20
+    },
+    {
+      "line": 41,
+      "kind": "段落",
+      "text": "外出先では画面と会話からの漏えいを防ぐ。",
+      "no": 21
+    },
+    {
+      "line": 43,
+      "kind": "段落",
+      "text": "送信者の名前だけで依頼を信用しない。",
+      "no": 22
+    },
+    {
+      "line": 45,
+      "kind": "段落",
+      "text": "不審なリンクと添付ファイルは開かない。",
+      "no": 23
+    },
+    {
+      "line": 47,
+      "kind": "段落",
+      "text": "送金や権限変更の依頼は別の連絡経路で確かめる。",
+      "no": 24
+    },
+    {
+      "line": 49,
+      "kind": "段落",
+      "text": "外部サービスへの情報入力は利用条件と社内規定に従う。",
+      "no": 25
+    },
+    {
+      "line": 51,
+      "kind": "段落",
+      "text": "生成AIへの入力にも情報の管理区分を適用する。",
+      "no": 26
+    },
+    {
+      "line": 53,
+      "kind": "段落",
+      "text": "委託先との共有には契約と許可された範囲を守る。",
+      "no": 27
+    },
+    {
+      "line": 55,
+      "kind": "段落",
+      "text": "本番相当のデータを検証環境へ移す前に利用条件を確認する。",
+      "no": 28
+    },
+    {
+      "line": 57,
+      "kind": "段落",
+      "text": "検証には目的に足りる最小限のデータを使う。",
+      "no": 29
+    },
+    {
+      "line": 59,
+      "kind": "段落",
+      "text": "不要になった情報は保存期間と廃棄手順に従って削除する。",
+      "no": 30
+    },
+    {
+      "line": 61,
+      "kind": "段落",
+      "text": "紙の機密資料は指定の方法で廃棄する。",
+      "no": 31
+    },
+    {
+      "line": 63,
+      "kind": "段落",
+      "text": "紛失と誤送信は判明した時点で報告する。",
+      "no": 32
+    },
+    {
+      "line": 65,
+      "kind": "段落",
+      "text": "不審な動作は指定の窓口へ速やかに伝える。",
+      "no": 33
+    },
+    {
+      "line": 67,
+      "kind": "段落",
+      "text": "事故の報告に自己判断の原因確定を待たせない。",
+      "no": 34
+    },
+    {
+      "line": 69,
+      "kind": "段落",
+      "text": "証拠になり得る記録を独断で消さない。",
+      "no": 35
+    },
+    {
+      "line": 71,
+      "kind": "段落",
+      "text": "事故対応は担当部署の指示に従う。",
+      "no": 36
+    },
+    {
+      "line": 73,
+      "kind": "段落",
+      "text": "例外の利用には期限と承認の記録を残す。",
+      "no": 37
+    },
+    {
+      "line": 75,
+      "kind": "段落",
+      "text": "迷った判断は実行前に担当窓口へ確認する。",
+      "no": 38
+    }
+  ]
+}

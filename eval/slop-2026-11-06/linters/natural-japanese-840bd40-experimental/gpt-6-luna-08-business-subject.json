@@ -1,0 +1,114 @@
+{
+  "file": "gpt-6-luna/08-business-subject.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 20,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      5,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.15811388300841897,
+    "rhythm": {
+      "mora_mean": 43.45,
+      "mora_stdev": 10.997613377456037,
+      "burstiness": -0.5960295522517951,
+      "length_autocorrelation_lag1": -0.4302416566147461
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 197,
+      "doc_char_count": 642,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.596 (モーラ近似長 平均=43.5, 標準偏差=11.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 20,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新しい評価制度の導入について",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "新しい評価制度は、日々の仕事と評価結果のつながりを分かりやすくするために導入します。従来の制度では、期末の面談で初めて評価の見方を知るという声がありました。評価の観点や期待される役割を前もって共有し、本人と上司が同じ材料を見ながら振り返れる仕組みを目指します。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "新制度では、成果と行動の二つの観点を扱います。成果は、期初に合意した目標に対して何を実現したかを確認します。行動は、職務や役割に応じて期待される取り組みを振り返ります。数値目標だけで判断せず、目標の難易度、周囲との協働、環境の変化も面談で確認します。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "評価サイクルは半期単位です。期初に本人と上司が目標を設定し、期間中は定期的な面談で進捗や障害を確認します。期末には本人が振り返りを記入し、上司が評価案を作成します。最終評価は部門間の調整を経て確定し、その理由を本人へ説明します。途中で目標の前提が変わった場合は、記録を残したうえで合意し直します。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "評価制度は、給与や昇格の判断にも利用します。ただし、評価結果だけで自動的に処遇を決めるものではありません。役割、経験、組織の状況など、会社が定める基準を合わせて判断します。制度の説明資料には、評価段階の定義と具体例を掲載し、判断のばらつきを減らします。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "導入初年度は、運用上の疑問や記入負担を定期的に集めます。人事部門は質問窓口を設け、制度の解釈と手続きの案内を行います。変更が必要な点は、運用実績と社員からの意見を確認して見直します。新制度を一度公開して終わりにせず、納得できる対話を支える仕組みとして育てていきます。",
+      "no": 6
+    }
+  ]
+}

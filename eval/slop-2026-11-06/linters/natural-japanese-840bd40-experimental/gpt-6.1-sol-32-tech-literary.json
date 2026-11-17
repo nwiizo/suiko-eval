@@ -1,0 +1,143 @@
+{
+  "file": "gpt-6.1-sol/32-tech-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 30,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      5,
+      5,
+      7,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.2,
+    "rhythm": {
+      "mora_mean": 30.3,
+      "mora_stdev": 12.345444503945576,
+      "burstiness": -0.42101930710074464,
+      "length_autocorrelation_lag1": -0.10840010260588777
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.16666666666666666
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 213,
+      "doc_char_count": 715,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.421 (モーラ近似長 平均=30.3, 標準偏差=12.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 2,
+      "sentences": 30,
+      "genre": "tech",
+      "by_category": {
+        "kanji_run": 1,
+        "translationese_morph": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 5,
+        "category": "kanji_run",
+        "excerpt": "午前三時十七分",
+        "severity": "info",
+        "detail": "漢字が7字連続（目安6字）。語の切れ目が読み取りにくい疑い",
+        "related_lines": null,
+        "hint": "ひらがなを交えて開く（「再送抑制機能」→「再送を止める機能」）。固有名詞はそのままでよい"
+      },
+      {
+        "line": 7,
+        "category": "translationese_morph",
+        "excerpt": "で原因と決めることはでき",
+        "severity": "info",
+        "detail": "「〜することができる」型の言い回し",
+        "related_lines": null,
+        "hint": "「〜することができる」は「〜できる」か、動詞の可能形にする"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 午前三時の当番表",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "初めてのオンコール当番は、火曜の午後から始まった。引き継ぎの場では何も起きず、私は通知音を一度鳴らしてから携帯をポケットへしまった。帰宅しても、その小さな重さが気になった。眠る前には音量を二度確かめた。障害そのものより、呼び出しに気づかず眠り続ける自分が怖かった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "午前三時十七分、通知が鳴った。画面には、APIの応答時間がしきい値を超えたとあった。椅子に座ると、昼間は見慣れていたダッシュボードが遠く感じられた。私は手順書の冒頭に従い、通知の確認を記録し、対応用のチャットへ調査開始を書いた。最初の数行を自分で考えずに済んだことが、思いのほか助けになった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "応答時間と同じ時刻に、データベース接続の待ち時間が増えていた。ただ、それだけで原因と決めることはできない。エラー率、処理件数、直前の変更を順に見た。日次処理の開始が重なっていた。手順書には、その処理を一時停止する条件と操作が書かれていたが、停止後の再開方法を私は説明できなかった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "二次担当へ連絡した。深夜に人を起こすことをためらい、送信までに数分かかった。返事は短かった。「一緒に見ます」。通話をつなぎ、確認した事実と未確認の点を分けて伝えた。処理の一時停止後、接続待ちは減り、応答時間も戻った。通知が消えてからも、一定時間は指標と利用者への影響を確かめた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "朝の引き継ぎには、時刻、観測、操作、結果を並べた。原因の断定は避け、詳しい調査に必要なログの場所を添えた。後日、手順書には再開方法と連絡の目安が加わった。私が迷った場所を、次の当番も通るかもしれないと思ったからだ。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "窓が明るくなったころ、ようやく湯を沸かした。何かに強くなった実感はなかった。ただ、助けを呼んだ時刻を記録に残せた。次の夜の自分には、その一行が役に立つはずだった。",
+      "no": 7
+    }
+  ]
+}

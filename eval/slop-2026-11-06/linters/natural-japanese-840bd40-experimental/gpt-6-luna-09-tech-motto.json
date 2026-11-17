@@ -1,0 +1,133 @@
+{
+  "file": "gpt-6-luna/09-tech-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 27,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      5,
+      5,
+      5,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.1697250257391052,
+    "rhythm": {
+      "mora_mean": 27.814814814814813,
+      "mora_stdev": 11.122340005049686,
+      "burstiness": -0.4287029929893377,
+      "length_autocorrelation_lag1": -0.0497245420949697
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/動詞/助動詞",
+      "lead_pos_4gram_ratio": 0.1111111111111111
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 170,
+      "doc_char_count": 568,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.429 (モーラ近似長 平均=27.8, 標準偏差=11.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 27,
+      "genre": "tech",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 5,
+        "category": "double_negative",
+        "excerpt": "ない点は分からない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 障害対応で大事にしていること",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "障害が起きたとき、最初に必要なのは正しい犯人探しではない。利用者への影響を小さくし、状況を確かめられる状態を作ることだ。私たちの対応では、復旧、共有、原因調査の順番を意識している。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "まず、影響範囲を言葉にする。どの機能が使えないのか、いつから起きているのか、利用者にどんな回避策があるのかを確認する。分からない点は分からないと記録する。推測を事実のように伝えない。状況の更新は、確定した情報が少なくても続ける。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "復旧策は、小さく試す。変更する対象と戻し方を決め、実施後に利用者側の動作を確かめる。監視画面が緑に戻っただけで完了とはしない。症状が解消したかを、実際のリクエストや問い合わせで確認する。急ぐときほど、戻せる道を残す。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "連絡は短く、途切れさせない。担当者は窓口を一本化し、調査する人と利用者へ知らせる人を分ける。長い推測より、次の更新時刻を伝える。沈黙を作らない。情報が変わったら、古い案内も更新する。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "復旧後の振り返りでは、個人の注意不足で説明を終えない。手順、監視、権限、設計のどこに改善の余地があったかを見る。誰が間違えたかではなく、なぜその操作が安全に見えたのかを問う。責めるより、仕組みを直す。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "障害は、いつか起きる。だから準備を日常に置く。連絡先を確かめ、手順を試し、判断の記録を残す。復旧を急ぎ、説明を続け、学びを次の変更に返す。この繰り返しが、次の障害で迷う時間を短くする。",
+      "no": 7
+    }
+  ]
+}

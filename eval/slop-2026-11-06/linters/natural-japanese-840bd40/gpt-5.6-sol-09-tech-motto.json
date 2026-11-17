@@ -1,0 +1,131 @@
+{
+  "file": "gpt-5.6-sol/09-tech-motto.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 33,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      6,
+      5,
+      6,
+      5,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.09090909090909091,
+    "rhythm": {
+      "mora_mean": 24.87878787878788,
+      "mora_stdev": 13.035516927267027,
+      "burstiness": -0.3123694608698056,
+      "length_autocorrelation_lag1": 0.056367168455059284
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.22580645161290322
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 194,
+      "doc_char_count": 616,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[5, 6, 5, 6, 5, 6]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.091（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.312 (モーラ近似長 平均=24.9, 標準偏差=13.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 33,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 障害対応で大事にしていること",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "障害対応では、知識の量だけでなく、状況の扱い方が結果を左右する。監視通知を受けた直後は情報が少なく、焦りだけが大きい。だから最初に、利用者への影響、発生時刻、継続中かどうかを確認する。影響を先に見る。原因探しはその後だ。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "復旧を優先する。原因究明に夢中になると、安全な迂回策を見落とす。切り戻し、機能停止、流量制限など、既知の手段で影響を小さくできるなら検討する。ただし、操作の前後には観測点を決める。変化を測れ。勘で成功を決めない。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "事実と推測を分ける。ログにエラーがあることは事実だが、そのエラーが原因だとは限らない。時系列、変更履歴、メトリクスを並べ、確認できた内容には時刻を添える。仮説には仮説と明記する。この区別が、参加者の誤解と重複調査を減らす。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "指揮系統を一つにする。調査する人、操作する人、社内外へ伝える人を分ける。全員が同時に判断すると、重要な作業が抜け、危険な操作が重なる。声を集め、決定を絞る。記録を残せ。途中参加者が同じ質問を繰り返さずに済む。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "利用者への連絡では、分からないことを無理に断定しない。現在の影響、実施中の対応、次回の更新予定を簡潔に伝える。沈黙は不安を増やす。短くても更新する。復旧後も、監視が安定したことを確認してから終了を宣言する。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "振り返りでは個人を責めない。判断を生んだ情報、仕組み、手順を見る。うまくいった行動も残し、改善項目には担当者と期限を付ける。学びを仕組みに変えよ。障害を完全になくすことは難しい。しかし、次の障害を小さくする準備は、今日からできる。",
+      "no": 7
+    }
+  ]
+}

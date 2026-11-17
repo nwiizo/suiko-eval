@@ -1,0 +1,124 @@
+{
+  "file": "haiku/21-essay-subject.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 19,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.10526315789473685,
+    "rhythm": {
+      "mora_mean": 33.526315789473685,
+      "mora_stdev": 9.7136280882644,
+      "burstiness": -0.5507104210990698,
+      "length_autocorrelation_lag1": -0.5074077441365237
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2631578947368421
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 148,
+      "doc_char_count": 523,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[3, 4, 4, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.105（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.551 (モーラ近似長 平均=33.5, 標準偏差=9.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 19,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 季節の変わり目",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "季節は、ある朝突然に入れ替わるわけではない。少しずつ、音も立てずに、町の隅に影を置いていく。気づいたときには、薄手の上着の袖がもう、腕に馴染んでいる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "風は、いちばん先に季節を知っている。夏の終わりの風は、まだ湿った土の匂いを運びながら、窓の隙間から部屋の奥へと入ってくる。その風が、ほんの少し冷たくなったことを、私の肌は覚えている。風は何も言わないが、確かに次の季節への道筋を指さしている。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "空は、季節の色を塗り替える画家だ。入道雲は、いつの間にか高く薄くほどけ、青は少しだけ透明に近づく。夕焼けの色が長く残るようになったのも、この時期の特徴だ。空は、季節が変わったことを、誰かに告げるのではなく、ただ色を変えて示す。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "影も、季節を映す鏡である。昼の影は短く濃かったのに、いつの間にか長く伸び、朝の影は少しだけ柔らかくなる。道端の木々の影が、歩道の上でゆっくりと揺れている。その揺れを見ていると、時間がどれほど穏やかに流れているのかを、思い出させられる。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "季節の変わり目は、いつも少し寂しく、そして少しだけ懐かしい。過ぎていったものを手放すには、まだ名残りが必要だからだ。けれど、風も、空も、影も、次の季節を迎える準備を、もう静かに始めている。私たちも、その流れに、そっと身を任せればいい。",
+      "no": 6
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "file": "sonnet/18-business-subject.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 25,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      1,
+      3,
+      4,
+      4,
+      1,
+      6,
+      2,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.5824087911424415,
+    "rhythm": {
+      "mora_mean": 34.68,
+      "mora_stdev": 11.018965468681714,
+      "burstiness": -0.517758647020874,
+      "length_autocorrelation_lag1": -0.23477311406371273
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/補助記号/名詞",
+      "lead_pos_4gram_ratio": 0.24
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 191,
+      "doc_char_count": 692,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 10,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.518 (モーラ近似長 平均=34.7, 標準偏差=11.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 2,
+      "sentences": 25,
+      "genre": "business",
+      "by_category": {
+        "no_chain": 2
+      }
+    },
+    "findings": [
+      {
+        "line": 17,
+        "category": "no_chain",
+        "excerpt": "の日々の仕事の",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      },
+      {
+        "line": 19,
+        "category": "no_chain",
+        "excerpt": "の十年の最初の",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 年頭のごあいさつ　次の十年に向けて",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "社員のみなさん、あけましておめでとうございます。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "新しい年の始まりにあたり、会社の次の十年について、私の考えをお話しします。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "この十年、会社を前へ進めてきたのは、現場の一つひとつの判断でした。お客様の小さな困りごとに耳を傾け、手を動かし続けた時間が、いまの事業の土台になっています。実績は、そうした積み重ねを静かに語っています。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "次の十年には、いくつもの変化が待っています。技術は、私たちの仕事の前提を何度も書き換えるでしょう。人工知能は、これまで人が担ってきた作業の多くを引き受け、同時に新しい問いを私たちに突きつけます。市場は、昨日までの正解を今日には古くしてしまいます。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "こうした変化のなかで、会社に求められるのは速さだけではありません。信頼は、一度の成功よりも、小さな約束を守り続けることで育ちます。品質は、検査の最後ではなく、毎日の仕事の最初に宿ります。挑戦は、失敗を責めない空気のなかでしか、芽を出しません。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "だからこそ、私はこの十年で三つのことに力を注ぎたいと考えています。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "一つ目は、人への投資です。学ぶ機会は、会社が差し出せるもっとも確かな報酬です。二つ目は、お客様との長い関係づくりです。契約の数字ではなく、続いていく付き合いが、事業の骨格になります。三つ目は、新しい領域への挑戦です。現在の主力事業は、そこから得られる力で支えられ、次の柱を育てる土壌にもなります。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "会社の未来は、経営者が一人で描くものではありません。ここにいるみなさんの日々の仕事の先に、少しずつ姿を現していくものです。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "今年も、現場の声を聞くことから始めます。一緒に、次の十年の最初の一年を、よいものにしていきましょう。本年もどうぞよろしくお願いいたします。",
+      "no": 10
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "file": "haiku/26-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 25,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      4,
+      5,
+      3,
+      3,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.2039607805437114,
+    "rhythm": {
+      "mora_mean": 30.92,
+      "mora_stdev": 12.435175913512442,
+      "burstiness": -0.4263579537391849,
+      "length_autocorrelation_lag1": 0.1994042222075966
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.20833333333333334
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 167,
+      "doc_char_count": 635,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 9,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.426 (モーラ近似長 平均=30.9, 標準偏差=12.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 25,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 雪の夜の駅舎",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "最終列車が行ってしまうと、駅舎は大きな白い貝殻になった。外では雪が静かに降り積もり、世界中の音を一枚ずつ吸い取っていく。待合室のストーブだけが、まだ生き物のように低く唸っていた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "駅員の佐伯は、改札の奥で古い時刻表をめくっていた。紙は乾いた落ち葉のように指先で崩れそうで、そこに刻まれた数字は、もう誰も乗らない列車たちの墓標だった。彼は墓守のように、毎晩それを一行ずつ読み上げる。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "窓ガラスには、雪の粒が白い蛾のように張りついていた。ときどき風が吹くと、蛾は一斉に羽ばたき、すぐにまた息を殺して動かなくなる。その様子を眺めていると、佐伯は自分の胸の中にも同じ粉雪が積もっているのを感じた。妻を亡くしてから、そこはずっと凍ったままの線路だった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "待合室の隅に、ひとりの少女が座っていた。赤いマフラーが、夜の中に灯った小さな信号機のように目立つ。少女は何も言わず、凍てついた自動販売機の光を見つめている。佐伯は温かいココアを差し出した。湯気が、白い糸のように二人のあいだでほどけていく。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「電車、来ますか」\n「来ないよ。今夜はもう、どこへも行けない列車ばかりだ」",
+      "no": 6
+    },
+    {
+      "line": 14,
+      "kind": "段落",
+      "text": "少女はそれを聞いても泣かなかった。ただ、ストーブの炎を映す瞳が、雪明かりの中で小さな湖のように揺れた。佐伯はその揺れを見て、凍っていた線路の下で、水が流れ出す音を聞いたような気がした。",
+      "no": 7
+    },
+    {
+      "line": 16,
+      "kind": "段落",
+      "text": "夜明け前、雪は止んだ。窓の外には、まっさらな白い原稿用紙のような世界が広がっていた。少女の足跡が、そこに最初の一行を書きつけている。佐伯はその文字を、ホームの端からいつまでも見送った。",
+      "no": 8
+    }
+  ]
+}

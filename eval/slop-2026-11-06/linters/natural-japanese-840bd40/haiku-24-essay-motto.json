@@ -1,0 +1,121 @@
+{
+  "file": "haiku/24-essay-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 23,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.043478260869565216,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      5,
+      3,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.17926546198337653,
+    "rhythm": {
+      "mora_mean": 24.130434782608695,
+      "mora_stdev": 6.930112915988843,
+      "burstiness": -0.5537675006096718,
+      "length_autocorrelation_lag1": 0.21817163464943878
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.21739130434782608
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 127,
+      "doc_char_count": 434,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 2,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.554 (モーラ近似長 平均=24.1, 標準偏差=6.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 23,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 朝の散歩で考えたこと",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "朝の散歩は、頭の中の霧を晴らす小さな儀式だ。玄関を出ると、まだ眠たい空気が頬をなでる。足音だけが、静かな住宅街に規則正しく響いていく。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "歩き出して五分もすると、考えは自然に言葉をほどき始める。昨日の会議、読みかけの本、冷蔵庫に残った卵のこと。どれも大切でも、急ぐ必要はない。ここで、ひとつ決めている。急がない朝を、ちゃんと歩く。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "道端の猫が、塀の上から私を見送る。その視線に、少しだけ背筋が伸びる。小さな生き物にも、きちんと挨拶を返せる朝でありたい。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "角を曲がると、パン屋の煙突から甘い匂いが流れてくる。焼きたての香りは、人を立ち止まらせる力を持っている。私も一瞬、足を止めて深く息を吸った。焦りは、この匂いの中では形を失ってしまう。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "考えは、歩くほどに整っていく。まとまらない思いも、足取りに合わせて順番を見つける。迷ったら、まず一歩進む。朝の光は、いつも答えより先に、道を照らしてくれる。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "散歩の終わりには、いつも小さな決意が残る。今日は、一つだけ丁寧に仕事をしよう。それで十分だ。朝は、一日でいちばん正直な時間である。",
+      "no": 7
+    }
+  ]
+}

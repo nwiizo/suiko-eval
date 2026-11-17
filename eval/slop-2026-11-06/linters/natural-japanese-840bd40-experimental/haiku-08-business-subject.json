@@ -1,0 +1,131 @@
+{
+  "file": "haiku/08-business-subject.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_burstiness": 1,
+      "forbidden_phrase": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 23,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 1,
+    "paragraph_lead_conjunction_ratio": 0.16666666666666666,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      5,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.17926546198337653,
+    "rhythm": {
+      "mora_mean": 38.82608695652174,
+      "mora_stdev": 11.623260688632808,
+      "burstiness": -0.5392106645109742,
+      "length_autocorrelation_lag1": -0.1432360767892603
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/補助記号/名詞",
+      "lead_pos_4gram_ratio": 0.17391304347826086
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 209,
+      "doc_char_count": 698,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.539 (モーラ近似長 平均=38.8, 標準偏差=11.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 5,
+      "category": "forbidden_phrase",
+      "excerpt": "一度の面談と、上長の総合的な判断によって結論が",
+      "severity": "warn",
+      "detail": "AI の書いた文章によく出る言い回し「総合的」",
+      "related_lines": null,
+      "hint": "多くは削っても意味が変わらない。削ると前後がつながらないときだけ、元の文書の内容で言い換える。固有名詞や引用の一部なら残す"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 23,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新しい評価制度の導入",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "評価制度は、組織の中で何が大切にされているかを、目に見える形にする仕組みである。今回導入される新しい制度も、その役割を果たすために設計された。この文書は、制度が何を測り、何を測らないのかを説明するものである。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "これまでの制度は、年に一度の面談と、上長の総合的な判断によって結論が出されていた。この方式には、記憶や印象が結果を左右しやすいという課題があった。制度は、評価の材料そのものを記録し、判断の根拠を後から確認できる形へ変えることを求めている。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "新しい制度では、評価は三つの軸で行われる。一つ目は、担当する仕事の成果である。二つ目は、チームの成果に対してどのような貢献をしたかである。三つ目は、組織の方針をどう実践したかである。どの軸も、数字だけでは測れない部分を含むため、具体的な行動の記録が添えられる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "制度は、評価者と対象者の対話を重視する。評価結果は一方的に伝えられるのではなく、事前に共有された記録をもとに話し合われる。対話の場では、結果への同意を求めるのではなく、認識の違いを明らかにすることが目的とされる。その違いが残る場合は、次の期間の目標へ反映される。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "一方で、この制度が測れないものもある。たとえば、目に見えない支援や、後輩の成長を支えた時間は、記録として残りにくい。制度はそれらを軽視するものではないが、評価の中心に置くことはしない。その代わり、互いに感謝を伝える仕組みを別に設けている。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "導入は段階的に進められる。最初の半年は、既存の制度と並行して運用し、記録の形式と対話の進め方を確かめる。その結果を見て、次の期間から本格的に切り替える予定である。制度は、運用しながら磨かれていくものであり、完成した形で届くものではない。",
+      "no": 7
+    }
+  ]
+}

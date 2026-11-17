@@ -1,0 +1,493 @@
+{
+  "file": "gpt-5.6-sol/34-business-principle.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 52,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 52,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "paragraph_sentence_count_cv": 0.0,
+    "rhythm": {
+      "mora_mean": 16.596153846153847,
+      "mora_stdev": 3.6069357087562,
+      "burstiness": -0.6429322654881178,
+      "length_autocorrelation_lag1": 0.23320779155211047
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.25
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 206,
+      "doc_char_count": 640,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 53,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=52, 各段落の文数=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.000（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=52, 平均文長=12.3字, 変動係数=0.190",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.643 (モーラ近似長 平均=16.6, 標準偏差=3.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 3,
+      "sentences": 52,
+      "genre": "business",
+      "by_category": {
+        "double_negative": 3
+      }
+    },
+    "findings": [
+      {
+        "line": 7,
+        "category": "double_negative",
+        "excerpt": "ない収集をしない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      },
+      {
+        "line": 27,
+        "category": "double_negative",
+        "excerpt": "ない外部媒体を接続しない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      },
+      {
+        "line": 51,
+        "category": "double_negative",
+        "excerpt": "ずに閉じない",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 情報セキュリティの心得",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "情報は預かりものとして扱う。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "必要な情報だけを持つ。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "目的のない収集をしない。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "保存期間を先に決める。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "不要な情報は確実に消す。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "機密度を確かめてから扱う。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "公開範囲を思い込みで決めない。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "閲覧権限は最小限にする。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "共有相手を送信前に確かめる。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "宛先と添付を声に出して確かめる。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "個人情報を私物端末へ移さない。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "業務情報を私用サービスへ置かない。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "許可のない外部媒体を接続しない。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "段落",
+      "text": "机を離れる前に画面をロックする。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "段落",
+      "text": "書類を机上に放置しない。",
+      "no": 16
+    },
+    {
+      "line": 33,
+      "kind": "段落",
+      "text": "会話の場所を選ぶ。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "段落",
+      "text": "画面を見られる場所を避ける。",
+      "no": 18
+    },
+    {
+      "line": 37,
+      "kind": "段落",
+      "text": "パスワードを使い回さない。",
+      "no": 19
+    },
+    {
+      "line": 39,
+      "kind": "段落",
+      "text": "長く推測されにくい認証情報を使う。",
+      "no": 20
+    },
+    {
+      "line": 41,
+      "kind": "段落",
+      "text": "多要素認証を必ず有効にする。",
+      "no": 21
+    },
+    {
+      "line": 43,
+      "kind": "段落",
+      "text": "認証情報を他人へ渡さない。",
+      "no": 22
+    },
+    {
+      "line": 45,
+      "kind": "段落",
+      "text": "秘密をチャットへ貼らない。",
+      "no": 23
+    },
+    {
+      "line": 47,
+      "kind": "段落",
+      "text": "更新通知を後回しにしない。",
+      "no": 24
+    },
+    {
+      "line": 49,
+      "kind": "段落",
+      "text": "端末とソフトウェアを最新に保つ。",
+      "no": 25
+    },
+    {
+      "line": 51,
+      "kind": "段落",
+      "text": "警告を読まずに閉じない。",
+      "no": 26
+    },
+    {
+      "line": 53,
+      "kind": "段落",
+      "text": "リンクを開く前に送信元を確かめる。",
+      "no": 27
+    },
+    {
+      "line": 55,
+      "kind": "段落",
+      "text": "急がせる依頼ほど立ち止まる。",
+      "no": 28
+    },
+    {
+      "line": 57,
+      "kind": "段落",
+      "text": "不自然な指示は別経路で確認する。",
+      "no": 29
+    },
+    {
+      "line": 59,
+      "kind": "段落",
+      "text": "正規の手順を近道で省かない。",
+      "no": 30
+    },
+    {
+      "line": 61,
+      "kind": "段落",
+      "text": "例外は記録して承認を得る。",
+      "no": 31
+    },
+    {
+      "line": 63,
+      "kind": "段落",
+      "text": "ログを消さない。",
+      "no": 32
+    },
+    {
+      "line": 65,
+      "kind": "段落",
+      "text": "操作の証跡を残す。",
+      "no": 33
+    },
+    {
+      "line": 67,
+      "kind": "段落",
+      "text": "データを暗号化して送る。",
+      "no": 34
+    },
+    {
+      "line": 69,
+      "kind": "段落",
+      "text": "バックアップを定期的に確かめる。",
+      "no": 35
+    },
+    {
+      "line": 71,
+      "kind": "段落",
+      "text": "復元できることまで検証する。",
+      "no": 36
+    },
+    {
+      "line": 73,
+      "kind": "段落",
+      "text": "権限を定期的に見直す。",
+      "no": 37
+    },
+    {
+      "line": 75,
+      "kind": "段落",
+      "text": "異動と退職に合わせて権限を止める。",
+      "no": 38
+    },
+    {
+      "line": 77,
+      "kind": "段落",
+      "text": "委託先にも同じ基準を求める。",
+      "no": 39
+    },
+    {
+      "line": 79,
+      "kind": "段落",
+      "text": "事故の兆候を小さく扱わない。",
+      "no": 40
+    },
+    {
+      "line": 81,
+      "kind": "段落",
+      "text": "誤送信を隠さない。",
+      "no": 41
+    },
+    {
+      "line": 83,
+      "kind": "段落",
+      "text": "紛失に気づいた時点で報告する。",
+      "no": 42
+    },
+    {
+      "line": 85,
+      "kind": "段落",
+      "text": "疑わしい挙動を直ちに共有する。",
+      "no": 43
+    },
+    {
+      "line": 87,
+      "kind": "段落",
+      "text": "自分だけで解決しようとしない。",
+      "no": 44
+    },
+    {
+      "line": 89,
+      "kind": "段落",
+      "text": "報告者を責めない。",
+      "no": 45
+    },
+    {
+      "line": 91,
+      "kind": "段落",
+      "text": "事実と推測を分けて伝える。",
+      "no": 46
+    },
+    {
+      "line": 93,
+      "kind": "段落",
+      "text": "影響範囲を決めつけない。",
+      "no": 47
+    },
+    {
+      "line": 95,
+      "kind": "段落",
+      "text": "初動を記録する。",
+      "no": 48
+    },
+    {
+      "line": 97,
+      "kind": "段落",
+      "text": "学びを手順へ反映する。",
+      "no": 49
+    },
+    {
+      "line": 99,
+      "kind": "段落",
+      "text": "便利さと安全性を同時に考える。",
+      "no": 50
+    },
+    {
+      "line": 101,
+      "kind": "段落",
+      "text": "迷ったときは安全側を選ぶ。",
+      "no": 51
+    },
+    {
+      "line": 103,
+      "kind": "段落",
+      "text": "守る理由を理解して行動する。",
+      "no": 52
+    },
+    {
+      "line": 105,
+      "kind": "段落",
+      "text": "情報を守る責任を全員で担う。",
+      "no": 53
+    }
+  ]
+}

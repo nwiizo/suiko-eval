@@ -1,0 +1,149 @@
+{
+  "file": "gpt-5.6-sol/26-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 31,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 10,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      7,
+      1,
+      1,
+      1,
+      2,
+      6,
+      3,
+      3,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.6681391992647735,
+    "rhythm": {
+      "mora_mean": 24.64516129032258,
+      "mora_stdev": 10.265973822408302,
+      "burstiness": -0.41187968885808834,
+      "length_autocorrelation_lag1": 0.29668956649122774
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3225806451612903
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 182,
+      "doc_char_count": 593,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 11,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 3,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.412 (モーラ近似長 平均=24.6, 標準偏差=10.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 31,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 雪の夜の駅舎",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "最終列車が行ったあと、駅舎は雪原に置き忘れられた古い鞄のようだった。窓には白い息が貼りつき、時計の針だけが、静けさの底を探る細い櫂のように進んでいた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "待合室には、真琴と老人しかいなかった。真琴は膝の上の封筒を何度も裏返した。都会の会社から届いた採用通知だった。紙切れ一枚なのに、閉じた鳥籠の扉ほど重い。出ていけば母を残す。残れば、自分の時間が凍った線路になる。迷いは胸の中で吹雪き、どの方角も白く塗りつぶした。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "老人は石炭ストーブへ手をかざしながら言った。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "「列車を待っているのかね」",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「明日の朝のを」",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "「朝は必ず来る。列車は、ときどき遅れるが」",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "その笑い声は、凍った窓に落ちた小石だった。真琴も少し笑った。老人は昔、この駅の助役だったという。多くの出発を見送り、多くの帰郷を迎えた。人は列車に乗るのではない。決めた自分に乗り込むのだ、と彼は言った。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "やがて老人は立ち上がり、雪の向こうへ消えた。扉が開いた一瞬、風が白い獣のように待合室へ駆け込んだ。真琴が窓から外を見ると、足跡は途中で途切れていた。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "壁に掛かった歴代駅員の写真へ目をやる。いちばん端に、若いころの老人がいた。写真の下には、三十年前の雪崩で乗客を救い、亡くなったと記されていた。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "夜明け前、雪はやんだ。ホームは新しい便箋のようにまっさらだった。真琴は封筒を鞄へしまい、母へ電話をかけた。始発の灯が山の向こうに現れ、暗闇へ一本の縫い目を入れた。駅舎は黙ったまま、その光を胸いっぱいに迎えていた。",
+      "no": 11
+    }
+  ]
+}

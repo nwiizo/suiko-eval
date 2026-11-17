@@ -1,0 +1,187 @@
+{
+  "file": "gpt-6-luna/24-essay-motto.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 28,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 14,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.0,
+    "rhythm": {
+      "mora_mean": 14.785714285714286,
+      "mora_stdev": 4.177808233111359,
+      "burstiness": -0.5593847895121884,
+      "length_autocorrelation_lag1": -0.27905933304262615
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.19230769230769232
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 100,
+      "doc_char_count": 336,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 29,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=14, 各段落の文数=[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.000（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.559 (モーラ近似長 平均=14.8, 標準偏差=4.2)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 28,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 朝の散歩で考えたこと",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "朝は、靴ひもを結ぶところから始まる。  \n一歩目で、昨日の続きがほどける。",
+      "no": 2
+    },
+    {
+      "line": 6,
+      "kind": "段落",
+      "text": "道は急がない。  \n曲がり角まで歩けば、景色が変わる。",
+      "no": 3
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "街路樹は黙って立つ。  \nそれでも季節のことを教えてくれる。",
+      "no": 4
+    },
+    {
+      "line": 12,
+      "kind": "段落",
+      "text": "考えは、歩幅に合わせて整う。  \n答えを追い立てない。",
+      "no": 5
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "信号で止まる。  \n止まる時間も、散歩の一部だ。",
+      "no": 6
+    },
+    {
+      "line": 18,
+      "kind": "段落",
+      "text": "遠くの犬が吠える。  \n知らない朝にも、暮らしはある。",
+      "no": 7
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "昨日の失敗は、靴底の小石に似ている。  \n気づけば、立ち止まって取り除ける。",
+      "no": 8
+    },
+    {
+      "line": 24,
+      "kind": "段落",
+      "text": "大きな決断をしなくていい。  \n小さな方向を選べばいい。",
+      "no": 9
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "橋の上で、川を見る。  \n流れは同じ場所にとどまらない。",
+      "no": 10
+    },
+    {
+      "line": 30,
+      "kind": "段落",
+      "text": "私も、昨日と同じではない。  \n変化は、声を張らずに訪れる。",
+      "no": 11
+    },
+    {
+      "line": 33,
+      "kind": "段落",
+      "text": "家へ戻る。  \n机の上には、まだ手つかずの仕事がある。",
+      "no": 12
+    },
+    {
+      "line": 36,
+      "kind": "段落",
+      "text": "歩いた距離は短い。  \n気持ちには、窓が一つ増えた。",
+      "no": 13
+    },
+    {
+      "line": 39,
+      "kind": "段落",
+      "text": "朝の散歩は、答えをくれない。  \n問いを持てる余白をくれる。",
+      "no": 14
+    },
+    {
+      "line": 42,
+      "kind": "段落",
+      "text": "だから明日も、靴を履く。  \n一歩目から、考え直せる。",
+      "no": 15
+    }
+  ]
+}

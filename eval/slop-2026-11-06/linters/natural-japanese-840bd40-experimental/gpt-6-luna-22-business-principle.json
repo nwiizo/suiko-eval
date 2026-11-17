@@ -1,0 +1,438 @@
+{
+  "file": "gpt-6-luna/22-business-principle.md",
+  "stats": {
+    "total_findings": 13,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1,
+      "repeated_syntax_template": 11
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 27,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.0,
+    "rhythm": {
+      "mora_mean": 13.962962962962964,
+      "mora_stdev": 3.7066654824286824,
+      "burstiness": -0.5804478295755671,
+      "length_autocorrelation_lag1": -0.04390609041786816
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.44
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 92,
+      "doc_char_count": 276,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 37,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=9, 各段落の文数=[3, 3, 3, 3, 3, 3, 3, 3, 3]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.000（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.580 (モーラ近似長 平均=14.0, 標準偏差=3.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "顧客の声を聞く",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "思い込みを事実で確かめる",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 12,
+      "category": "repeated_syntax_template",
+      "excerpt": "目的と手段を混同しない",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "成果の定義を先に決める",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 17,
+      "category": "repeated_syntax_template",
+      "excerpt": "最小の検証を早く行う",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 19,
+      "category": "repeated_syntax_template",
+      "excerpt": "学びを次の判断に使う",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 23,
+      "category": "repeated_syntax_template",
+      "excerpt": "事実と解釈を分ける",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 30,
+      "category": "repeated_syntax_template",
+      "excerpt": "担当と期限を明確にする",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 43,
+      "category": "repeated_syntax_template",
+      "excerpt": "品質と安全の基準を守る",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 49,
+      "category": "repeated_syntax_template",
+      "excerpt": "成果を関係者と分かち合う",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 55,
+      "category": "repeated_syntax_template",
+      "excerpt": "学びを次の挑戦へ渡す",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の44.0%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L5, L7, L12, L13, L17, L19, L23, L30, L43, L49, L55",
+      "related_lines": [
+        5,
+        7,
+        12,
+        13,
+        17,
+        19,
+        23,
+        30,
+        43,
+        49,
+        55
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 27,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新規事業チームの行動指針",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 顧客の現実から始める",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "顧客の声を聞く。  \n現場を観察する。  \n思い込みを事実で確かめる。",
+      "no": 3
+    },
+    {
+      "line": 9,
+      "kind": "見出し",
+      "text": "## 問いを絞る",
+      "no": 4
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "解く課題を一つに定める。  \n目的と手段を混同しない。  \n成果の定義を先に決める。",
+      "no": 5
+    },
+    {
+      "line": 15,
+      "kind": "見出し",
+      "text": "## 小さく試す",
+      "no": 6
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "最小の検証を早く行う。  \n結果が出るまで待ち続けない。  \n学びを次の判断に使う。",
+      "no": 7
+    },
+    {
+      "line": 21,
+      "kind": "見出し",
+      "text": "## 数字を共有する",
+      "no": 8
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "事実と解釈を分ける。  \n都合のよい指標を選ばない。  \n不確実さを明らかにする。",
+      "no": 9
+    },
+    {
+      "line": 27,
+      "kind": "見出し",
+      "text": "## 決定を記録する",
+      "no": 10
+    },
+    {
+      "line": 29,
+      "kind": "段落",
+      "text": "決めた理由を残す。  \n担当と期限を明確にする。  \n状況が変われば見直す。",
+      "no": 11
+    },
+    {
+      "line": 33,
+      "kind": "見出し",
+      "text": "## 失敗から学ぶ",
+      "no": 12
+    },
+    {
+      "line": 35,
+      "kind": "段落",
+      "text": "失敗を隠さない。  \n責任追及より原因の理解を優先する。  \n同じ失敗を仕組みで防ぐ。",
+      "no": 13
+    },
+    {
+      "line": 39,
+      "kind": "見出し",
+      "text": "## 速さと信頼を両立する",
+      "no": 14
+    },
+    {
+      "line": 41,
+      "kind": "段落",
+      "text": "約束を守る。  \n難しいときは早く伝える。  \n品質と安全の基準を守る。",
+      "no": 15
+    },
+    {
+      "line": 45,
+      "kind": "見出し",
+      "text": "## チームで成果をつくる",
+      "no": 16
+    },
+    {
+      "line": 47,
+      "kind": "段落",
+      "text": "知見を開く。  \n異論を歓迎する。  \n成果を関係者と分かち合う。",
+      "no": 17
+    },
+    {
+      "line": 51,
+      "kind": "見出し",
+      "text": "## 手を止めて確かめる",
+      "no": 18
+    },
+    {
+      "line": 53,
+      "kind": "段落",
+      "text": "続ける根拠を定期的に点検する。  \n価値が薄れた取り組みを終える。  \n学びを次の挑戦へ渡す。",
+      "no": 19
+    }
+  ]
+}

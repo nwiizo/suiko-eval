@@ -1,0 +1,301 @@
+{
+  "file": "gpt-5.6-sol/22-business-principle.md",
+  "stats": {
+    "total_findings": 0,
+    "by_category": {},
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 0,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 0,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [],
+    "paragraph_sentence_count_cv": null,
+    "rhythm": {},
+    "ngram": {
+      "lead_pos_4gram_top": null,
+      "lead_pos_4gram_ratio": null
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 0,
+      "doc_char_count": 0,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 41,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 0,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新規事業チームの行動指針",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 顧客の現実から始める。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "見出し",
+      "text": "## 課題を自分たちの言葉で定義する。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "見出し",
+      "text": "## 思い込みより観察を選ぶ。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "見出し",
+      "text": "## 一次情報を取りに行く。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "見出し",
+      "text": "## 小さな仮説を早く試す。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "見出し",
+      "text": "## 検証できない主張を置かない。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "見出し",
+      "text": "## 学ぶための最小単位をつくる。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "見出し",
+      "text": "## 完成を待たずに反応を得る。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "見出し",
+      "text": "## 数字と対話を同時に見る。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "見出し",
+      "text": "## 成功条件を実行前に決める。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "見出し",
+      "text": "## 撤退条件を熱狂の前に決める。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "見出し",
+      "text": "## 失敗を隠さず学びに変える。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "見出し",
+      "text": "## 都合の悪い事実を歓迎する。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "見出し",
+      "text": "## 顧客の要望と顧客の課題を分ける。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "見出し",
+      "text": "## 解決策に恋をしない。",
+      "no": 16
+    },
+    {
+      "line": 33,
+      "kind": "見出し",
+      "text": "## 技術を目的にしない。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "見出し",
+      "text": "## 売上につながる道筋を描く。",
+      "no": 18
+    },
+    {
+      "line": 37,
+      "kind": "見出し",
+      "text": "## 支払う理由を具体化する。",
+      "no": 19
+    },
+    {
+      "line": 39,
+      "kind": "見出し",
+      "text": "## 一度きりの成果より再現性を選ぶ。",
+      "no": 20
+    },
+    {
+      "line": 41,
+      "kind": "見出し",
+      "text": "## 手作業で学び仕組みで伸ばす。",
+      "no": 21
+    },
+    {
+      "line": 43,
+      "kind": "見出し",
+      "text": "## 速度のために品質の下限を決める。",
+      "no": 22
+    },
+    {
+      "line": 45,
+      "kind": "見出し",
+      "text": "## セキュリティを後回しにしない。",
+      "no": 23
+    },
+    {
+      "line": 47,
+      "kind": "見出し",
+      "text": "## 法務と運用を設計に含める。",
+      "no": 24
+    },
+    {
+      "line": 49,
+      "kind": "見出し",
+      "text": "## 判断者と期限を明確にする。",
+      "no": 25
+    },
+    {
+      "line": 51,
+      "kind": "見出し",
+      "text": "## 会議より実験を前に進める。",
+      "no": 26
+    },
+    {
+      "line": 53,
+      "kind": "見出し",
+      "text": "## 反対意見を記録に残す。",
+      "no": 27
+    },
+    {
+      "line": 55,
+      "kind": "見出し",
+      "text": "## 決めた後は同じ方向へ動く。",
+      "no": 28
+    },
+    {
+      "line": 57,
+      "kind": "見出し",
+      "text": "## 部門の境界で顧客を迷わせない。",
+      "no": 29
+    },
+    {
+      "line": 59,
+      "kind": "見出し",
+      "text": "## 助けを早く求める。",
+      "no": 30
+    },
+    {
+      "line": 61,
+      "kind": "見出し",
+      "text": "## 知識を個人に閉じ込めない。",
+      "no": 31
+    },
+    {
+      "line": 63,
+      "kind": "見出し",
+      "text": "## 今日の学びを明日の標準にする。",
+      "no": 32
+    },
+    {
+      "line": 65,
+      "kind": "見出し",
+      "text": "## 短期の成果と長期の信頼を両立する。",
+      "no": 33
+    },
+    {
+      "line": 67,
+      "kind": "見出し",
+      "text": "## 説明できない近道を選ばない。",
+      "no": 34
+    },
+    {
+      "line": 69,
+      "kind": "見出し",
+      "text": "## 約束を小さく守り続ける。",
+      "no": 35
+    },
+    {
+      "line": 71,
+      "kind": "見出し",
+      "text": "## 成果をチームで分かち合う。",
+      "no": 36
+    },
+    {
+      "line": 73,
+      "kind": "見出し",
+      "text": "## 責任を引き受け功績を手渡す。",
+      "no": 37
+    },
+    {
+      "line": 75,
+      "kind": "見出し",
+      "text": "## 迷ったら顧客価値へ戻る。",
+      "no": 38
+    },
+    {
+      "line": 77,
+      "kind": "見出し",
+      "text": "## 続ける理由を定期的に問い直す。",
+      "no": 39
+    },
+    {
+      "line": 79,
+      "kind": "見出し",
+      "text": "## やめる決断を前進として扱う。",
+      "no": 40
+    },
+    {
+      "line": 81,
+      "kind": "見出し",
+      "text": "## 次の挑戦に学びを持ち越す。",
+      "no": 41
+    }
+  ]
+}

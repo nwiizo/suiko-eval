@@ -1,0 +1,142 @@
+{
+  "file": "sonnet/14-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 24,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      2,
+      3,
+      1,
+      3,
+      4,
+      4,
+      2,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.3535533905932738,
+    "rhythm": {
+      "mora_mean": 33.5,
+      "mora_stdev": 14.37300710823359,
+      "burstiness": -0.39953606525120067,
+      "length_autocorrelation_lag1": 0.045041842095684265
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.20833333333333334
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 186,
+      "doc_char_count": 627,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 10,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 3,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.400 (モーラ近似長 平均=33.5, 標準偏差=14.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 24,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 灯台守の最後の夜",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "灯台は四十年のあいだ、岬の先で一本の白い指のように夜を指し続けてきた。その指を守る男の名は、島田といった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "明日の朝、自動化の工事が終わり、灯りは機械の手に渡る。島田の最後の夜は、凪いだ海の上に黒い布を広げたような静かな夜だった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "彼は螺旋階段をゆっくり上った。百八十段の鉄の段は、足の裏に覚えこまれた古い楽譜のようなもので、どの段が軋み、どの段が沈黙するかを彼は知っていた。最上階のレンズ室に着くと、巨大なガラスの目が、琥珀色の光を抱いて静かに回っていた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "「おまえも今夜で終わりか」",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "島田は独り言をこぼした。レンズは答えず、ただ光の腕を闇へ伸ばしては引き戻す。その動きは、潮の満ち引きを真似て呼吸する巨大な生き物のようだった。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "窓の外では、遠くの沖を貨物船の灯りが星屑を引きずるように横切っていく。あの船の誰も、島田の顔を知らない。けれど彼らは、この光を頼りに暗い水の上を渡ってきた。名前のない約束が、四十年間、見えない糸で結ばれていたのだと島田は思った。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "午前二時、彼は真鍮の磨き布を取り出し、レンズの枠を拭いはじめた。機械になれば不要な作業だ。それでも手を止めなかった。金属は彼の掌の温度を受けて、小さな太陽のように鈍く光った。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "東の空が薄墨から灰色にほどけはじめたころ、島田は最後に光を見上げた。夜が剥がれていくなか、灯りの輪郭はしだいに薄れ、朝焼けに溶けていく。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "役目を終えた光は、波に落ちた一滴の蜜のように、静かに消えた。島田は帽子を脱ぎ、胸の前で握りしめた。階段を下りる足音が、塔のなかに長く響いた。",
+      "no": 10
+    }
+  ]
+}

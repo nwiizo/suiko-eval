@@ -1,0 +1,248 @@
+{
+  "file": "gpt-6-luna/25-essay-metaphor.md",
+  "stats": {
+    "total_findings": 11,
+    "by_category": {
+      "low_burstiness": 1,
+      "repeated_syntax_template": 10
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 19,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 4,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      5,
+      7,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.3113726201631377,
+    "rhythm": {
+      "mora_mean": 35.10526315789474,
+      "mora_stdev": 17.289774090156374,
+      "burstiness": -0.34002245257304464,
+      "length_autocorrelation_lag1": 0.2661999842032101
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.5555555555555556
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 162,
+      "doc_char_count": 523,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 5,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.340 (モーラ近似長 平均=35.1, 標準偏差=17.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "祭りの灯りを背にすると、町は急に夜の深さ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "さっきまで太鼓の音が胸の中で跳ね、屋台の",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "浴衣の袖には焼きそばの匂いが住みつき、指",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "水の中で尾が揺れるたび、夜の底に赤い花が",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "金魚は祭りの名残を運ぶ船で、妹はその船が",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "帰り道の坂は、昼間より長く感じる",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "下駄の音が乾いた道に小さな点を打ち、点は",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "約束は夜空に結ぶ細い糸だ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "玄関の明かりが見えたころ、祭りの音はもう",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 9,
+      "category": "repeated_syntax_template",
+      "excerpt": "夏の夜は、帰り道にこそ本当の姿を見せる",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の55.6%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L9",
+      "related_lines": [
+        3,
+        5,
+        7,
+        9
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 19,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 夏祭りの帰り道",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "祭りの灯りを背にすると、町は急に夜の深さを取り戻した。さっきまで太鼓の音が胸の中で跳ね、屋台の赤い提灯が人波を照らしていたのに、角を曲がれば街灯がぽつりぽつりと、眠る家々のまぶたを照らすだけだ。浴衣の袖には焼きそばの匂いが住みつき、指先には水風船の冷たさがまだ小さな月のように残っていた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "隣を歩く妹は、金魚の袋を両手で持っている。水の中で尾が揺れるたび、夜の底に赤い花が咲く。金魚は祭りの名残を運ぶ船で、妹はその船が沈まないよう、歩幅まで慎重にしていた。遠くでは最後の花火が雲を薄く染めた。音は遅れて届き、空の戸を誰かがそっと閉めるように響いた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "帰り道の坂は、昼間より長く感じる。楽しかった時間が背中を押す一方で、終わりの気配が足首に絡むからだろう。下駄の音が乾いた道に小さな点を打ち、点は家まで続く星座になった。妹は「来年も来ようね」と言う。私はうなずく。約束は夜空に結ぶ細い糸だ。見えなくても、忘れたころに手のひらへ戻ってくる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "玄関の明かりが見えたころ、祭りの音はもう聞こえなかった。それでも胸の奥には、太鼓がひとつ、消え残った火のように鳴っている。夏の夜は、帰り道にこそ本当の姿を見せる。賑わいを脱いだ町を歩きながら、私は今日という一日を、冷めない飴玉のように口の中で転がした。",
+      "no": 5
+    }
+  ]
+}

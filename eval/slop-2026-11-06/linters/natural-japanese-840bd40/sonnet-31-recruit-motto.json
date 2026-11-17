@@ -1,0 +1,196 @@
+{
+  "file": "sonnet/31-recruit-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 33,
+    "nominal_ending_count": 6,
+    "nominal_ending_ratio": 0.18181818181818182,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      4,
+      3,
+      3,
+      3,
+      4,
+      4,
+      5,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.18181818181818182,
+    "rhythm": {
+      "mora_mean": 12.909090909090908,
+      "mora_stdev": 3.8008263564303406,
+      "burstiness": -0.5450813674256959,
+      "length_autocorrelation_lag1": 0.22311205582755964
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/補助記号/名詞",
+      "lead_pos_4gram_ratio": 0.2413793103448276
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 102,
+      "doc_char_count": 347,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 19,
+      "boilerplate_heading_count": 1,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.545 (モーラ近似長 平均=12.9, 標準偏差=3.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 33,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 私たちが一緒に働きたい人",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 作る前に、聞く人。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "絵を描く前に、相手の話を聞く。困りごとの正体を、まず知る。私たちはそういう人と働きたい。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "見出し",
+      "text": "## 好きを、言葉にできる人。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "なぜこの色なのか。なぜこの余白なのか。理由を語れるデザインは、強い。説明は、逃げではない。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "見出し",
+      "text": "## 直されても、折れない人。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "指摘は、攻撃ではない。意見は、素材だ。ぶつかっても、前に進む。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "見出し",
+      "text": "## 小さな違和感を、見逃さない人。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "一ピクセルのずれに、気づく。ボタンの押しにくさに、気づく。細部は、体験そのもの。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "見出し",
+      "text": "## 正解のない問いを、楽しめる人。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "答えは、いつも一つではない。迷う時間も、仕事のうちだ。手を動かして、考える。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "見出し",
+      "text": "## 職種の壁を、またげる人。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "エンジニアと話す。企画と話す。営業とも話す。デザインは、一人では完成しない。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "見出し",
+      "text": "## 学び続ける人。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "段落",
+      "text": "昨日の自分より、一つ上手くなる。流行を追わず、本質を追う。道具は変わる。姿勢は変わらない。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "見出し",
+      "text": "## 使う人の顔が、浮かぶ人。",
+      "no": 16
+    },
+    {
+      "line": 33,
+      "kind": "段落",
+      "text": "画面の向こうには、人がいる。急いでいる人。疲れている人。初めて使う人。その人のために、考え抜く。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "見出し",
+      "text": "## 最後に。",
+      "no": 18
+    },
+    {
+      "line": 37,
+      "kind": "段落",
+      "text": "肩書きより、姿勢。経歴より、好奇心。私たちは、あなたの作るものを、見たい。まずは気軽に、話しましょう。",
+      "no": 19
+    }
+  ]
+}

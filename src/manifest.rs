@@ -91,6 +91,8 @@ struct SampleSpec {
 
 pub(super) struct Document {
     pub(super) id: String,
+    /// manifestのディレクトリからの相対パス。
+    pub(super) path: PathBuf,
     pub(super) label: Label,
     pub(super) genre: Genre,
     pub(super) split: Split,
@@ -172,6 +174,7 @@ pub(super) fn load_corpus(manifest_path: &Path) -> Result<Corpus, EvaluationErro
         let text = utf8(&path, bytes)?;
         documents.push(Document {
             id: spec.id,
+            path: spec.path,
             label: spec.label,
             genre: spec.genre,
             split: spec.split,
@@ -315,6 +318,7 @@ pub(super) fn load_external_documents(
         }
         documents.push(Document {
             id: spec.id.clone(),
+            path: Path::new("corpus/external").join(format!("{}.md", spec.id)),
             label: Label::Human,
             genre: spec.genre,
             split: spec.split,

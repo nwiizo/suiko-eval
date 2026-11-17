@@ -1,0 +1,131 @@
+{
+  "file": "haiku/07-tech-subject.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 24,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.0,
+    "rhythm": {
+      "mora_mean": 40.083333333333336,
+      "mora_stdev": 12.638949938802494,
+      "burstiness": -0.5205461844827846,
+      "length_autocorrelation_lag1": -0.012867852659001512
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/補助記号/名詞",
+      "lead_pos_4gram_ratio": 0.16666666666666666
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 217,
+      "doc_char_count": 757,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 4, 4, 4, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.000（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.521 (モーラ近似長 平均=40.1, 標準偏差=12.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 24,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# ログ基盤を移行した記録",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "ログ基盤は、サービスの出来事を黙って記録し続ける。普段は誰の目にも留まらないが、障害が起きた瞬間に最初に呼ばれる存在である。今回、その基盤は古いファイル転送の仕組みから、新しいストリーム処理の仕組みへ移された。この記録は、移行の過程で基盤が何を求め、何を手放したかをまとめたものである。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "旧い基盤は、各サーバーが書いたログを一定間隔でまとめて転送する方式だった。この方式は単純で壊れにくい。一方で、転送の遅れは避けられず、障害の初動では数分前の状況しか見えなかった。基盤にとって最も大切な性質は、いつ起きたかを正確に伝えることだが、その点で旧方式は少しずつ時間を失っていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "新しい基盤では、ログが発生した時点で小さな単位のメッセージとして流れ出す。ここでの主役は、個々のログではなく、流れそのものである。流れは途切れず、後から追いかけることもできる。基盤は、過去を溜め込む倉庫から、現在を映す川へと役割を変えた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "移行で最も苦労したのは、順序の扱いだった。複数のサーバーから届くメッセージは、必ずしも発生した順に届かない。基盤は、時刻と発生元の組み合わせを鍵として、並べ直す規則を持たなければならない。その規則は完璧ではないが、障害調査で必要な精度には十分であることを、実際の事例で確かめた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "もう一つの課題は、失われる可能性への向き合い方である。流れは速い代わりに、一時的な通信断で一部を取りこぼすことがある。基盤は、取りこぼしを前提に設計し直された。重要なログは二系統に送られ、どちらかが欠けたときに検知できるよう、件数の照合を毎分行う。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "移行後の基盤は、初動の応答時間を大きく縮めた。ただし、それは仕組みが完成したことを意味しない。流れを守る監視も、古い倉庫の記録を新しい形式へ移す作業も、まだ続いている。この基盤は、今後も変わり続ける前提で育てていく必要がある。",
+      "no": 7
+    }
+  ]
+}

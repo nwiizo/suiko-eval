@@ -1,0 +1,121 @@
+{
+  "file": "gpt-6-luna/10-business-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 28,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.15971914124998496,
+    "rhythm": {
+      "mora_mean": 28.928571428571427,
+      "mora_stdev": 10.41265909303455,
+      "burstiness": -0.4706490389355778,
+      "length_autocorrelation_lag1": 0.048611263108263816
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.10714285714285714
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 190,
+      "doc_char_count": 623,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.471 (モーラ近似長 平均=28.9, 標準偏差=10.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 28,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# リモートワークのチーム運営",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "リモートワークでは、同じ部屋にいることで自然に伝わっていた情報が届きにくい。だからチーム運営では、情報を見つけられる場所に置き、相談の入口を分かりやすくする。働く場所が離れていても、仕事の前提は共有できる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "連絡の基本は、目的に合わせて手段を選ぶことだ。すぐに判断が必要な問題は、短い通話で集中的に話す。後から確認する内容は、文書やチャットに残す。会議を開くなら、決めたいことと必要な参加者を先に示す。集まる時間にも目的を持たせる。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "非同期で進めるには、依頼の背景と期限が欠かせない。「確認してください」だけでは、何を見て、いつまでに返せばよいか分からない。求める判断、関連資料、回答期限を一緒に書く。急ぎなら急ぎと明記する。曖昧さを相手の推測に預けない。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "進捗は、成果と次の一手で共有する。作業時間を細かく報告することより、完了したこと、詰まっていること、助けが必要なことを伝える。見えない仕事を可視化する。困りごとは早く表に出す。遅れを責めるのではなく、障害を取り除く。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "働く時間の違いにも配慮する。即時返信を常態化させず、各自が集中できる時間を守る。緊急時の連絡方法と対応範囲は、チームで合意しておく。常時接続を信頼の代わりにしない。成果と協働で信頼を築く。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "定期的な一対一の対話は、業務報告だけにしない。負荷や成長、孤立感について話せる時間を確保する。画面越しでは気づきにくい変化を、質問と傾聴で確かめる。距離があるからこそ、対話を後回しにしない。チームの働き方は、明文化し、試し、必要に応じて更新する。",
+      "no": 7
+    }
+  ]
+}

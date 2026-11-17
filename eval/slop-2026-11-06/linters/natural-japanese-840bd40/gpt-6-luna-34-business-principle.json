@@ -1,0 +1,169 @@
+{
+  "file": "gpt-6-luna/34-business-principle.md",
+  "stats": {
+    "total_findings": 0,
+    "by_category": {},
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 0,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 0,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [],
+    "paragraph_sentence_count_cv": null,
+    "rhythm": {},
+    "ngram": {
+      "lead_pos_4gram_top": null,
+      "lead_pos_4gram_ratio": null
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 0,
+      "doc_char_count": 0,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 18,
+      "non_blank_line_count": 19,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 0,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 情報セキュリティの心得",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "箇条書き",
+      "text": "- 画面を離れるときは、端末をロックする。",
+      "no": 2
+    },
+    {
+      "line": 4,
+      "kind": "箇条書き",
+      "text": "- パスワードは使い回さず、管理ツールで保管する。",
+      "no": 3
+    },
+    {
+      "line": 5,
+      "kind": "箇条書き",
+      "text": "- 多要素認証を有効にし、認証コードを他人へ渡さない。",
+      "no": 4
+    },
+    {
+      "line": 6,
+      "kind": "箇条書き",
+      "text": "- 不審なリンクや添付ファイルを開かない。",
+      "no": 5
+    },
+    {
+      "line": 7,
+      "kind": "箇条書き",
+      "text": "- 送信前に宛先と添付ファイルを確認する。",
+      "no": 6
+    },
+    {
+      "line": 8,
+      "kind": "箇条書き",
+      "text": "- 機密情報は、承認された場所と方法で共有する。",
+      "no": 7
+    },
+    {
+      "line": 9,
+      "kind": "箇条書き",
+      "text": "- 必要な人に、必要な範囲だけアクセス権を付与する。",
+      "no": 8
+    },
+    {
+      "line": 10,
+      "kind": "箇条書き",
+      "text": "- 退職や異動に伴う権限変更を速やかに申請する。",
+      "no": 9
+    },
+    {
+      "line": 11,
+      "kind": "箇条書き",
+      "text": "- 公共の場では、画面と会話から情報が漏れないようにする。",
+      "no": 10
+    },
+    {
+      "line": 12,
+      "kind": "箇条書き",
+      "text": "- 端末や記録媒体を社外へ持ち出すときは、定められた手続きを守る。",
+      "no": 11
+    },
+    {
+      "line": 13,
+      "kind": "箇条書き",
+      "text": "- ソフトウェアと端末を最新の状態に保つ。",
+      "no": 12
+    },
+    {
+      "line": 14,
+      "kind": "箇条書き",
+      "text": "- 業務データを個人用サービスへ保存しない。",
+      "no": 13
+    },
+    {
+      "line": 15,
+      "kind": "箇条書き",
+      "text": "- 情報の廃棄には、指定された方法を使う。",
+      "no": 14
+    },
+    {
+      "line": 16,
+      "kind": "箇条書き",
+      "text": "- 紛失、誤送信、不審な挙動を見つけたら、すぐに報告する。",
+      "no": 15
+    },
+    {
+      "line": 17,
+      "kind": "箇条書き",
+      "text": "- 事故の可能性を隠さず、事実を正確に伝える。",
+      "no": 16
+    },
+    {
+      "line": 18,
+      "kind": "箇条書き",
+      "text": "- 調査中の記録を消さず、指示に従って保全する。",
+      "no": 17
+    },
+    {
+      "line": 19,
+      "kind": "箇条書き",
+      "text": "- 例外が必要なときは、事前に責任者の承認を得る。",
+      "no": 18
+    },
+    {
+      "line": 20,
+      "kind": "箇条書き",
+      "text": "- 判断に迷ったときは、共有する前に相談する。",
+      "no": 19
+    }
+  ]
+}

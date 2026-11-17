@@ -1,0 +1,203 @@
+{
+  "file": "haiku/31-recruit-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 18,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.05555555555555555,
+    "total_paragraphs": 10,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.22222222222222224,
+    "rhythm": {
+      "mora_mean": 24.444444444444443,
+      "mora_stdev": 7.041324230113271,
+      "burstiness": -0.5527297235208959,
+      "length_autocorrelation_lag1": -0.06464626567690816
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.4444444444444444
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 110,
+      "doc_char_count": 362,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 20,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.553 (モーラ近似長 平均=24.4, 標準偏差=7.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 18,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 私たちが一緒に働きたい人",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "仕事を、自分の言葉で語れる人。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "見出し",
+      "text": "## 答えより、問いを育てる人。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "正解はまだ誰も持っていません。だから、問いを立てることから始めます。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "見出し",
+      "text": "## 見た目の美しさの、その奥を考える人。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "色や余白は、理由があって置かれるものです。理由を言葉にできる人と一緒に作りたい。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "見出し",
+      "text": "## 誰かの困りごとに、先に気づく人。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "画面の向こうにいる人は、いつも少し急いでいます。その速度を想像できる人を探しています。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "見出し",
+      "text": "## 小さな修正を、面倒がらない人。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "一ピクセルのずれが、読む人の呼吸を乱すことがあります。細部は、全体の信頼です。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "見出し",
+      "text": "## 失敗を、次の一枚の材料にする人。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "ボツになった案は、捨てられるのではなく、棚に置かれます。棚の数だけ、私たちは強くなります。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "見出し",
+      "text": "## チームの声を、最後まで聞く人。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "デザインは一人では完成しません。議論の熱が冷めるまで、耳を傾けられる人に来てほしい。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "見出し",
+      "text": "## 手を動かしながら、考え続ける人。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "段落",
+      "text": "スケッチは思考の速さです。紙の上でも、画面の中でも、考えたことを形にしてみる人と話したい。",
+      "no": 16
+    },
+    {
+      "line": 33,
+      "kind": "見出し",
+      "text": "## 違いを、武器にできる人。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "段落",
+      "text": "同じ課題に、違う答えを持つ人がいるからこそ、いい案は生まれます。",
+      "no": 18
+    },
+    {
+      "line": 37,
+      "kind": "見出し",
+      "text": "## 肩書きより、目の前の一枚に誇りを持つ人。",
+      "no": 19
+    },
+    {
+      "line": 39,
+      "kind": "段落",
+      "text": "今日つくった画面が、明日の誰かの一日を変える。そう信じられる人と、働きたいと思っています。",
+      "no": 20
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "file": "gpt-6.1-sol/14-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_burstiness": 1,
+      "repeated_sentence_lead": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 33,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 8,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      5,
+      2,
+      1,
+      4,
+      6,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.4099317957111722,
+    "rhythm": {
+      "mora_mean": 28.03030303030303,
+      "mora_stdev": 9.317578201686116,
+      "burstiness": -0.5010384581760188,
+      "length_autocorrelation_lag1": -0.26937486012479406
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3939393939393939
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 223,
+      "doc_char_count": 716,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 9,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.501 (モーラ近似長 平均=28.0, 標準偏差=9.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 5,
+      "category": "repeated_sentence_lead",
+      "excerpt": "榊は回転する光を確かめた",
+      "severity": "info",
+      "detail": "文頭2形態素「榊は」が5回反復（閾値5回以上）。人間が意図して繰り返す場合と区別がつかないため、参考情報。対応箇所: L5, L7, L13, L15, L17",
+      "related_lines": [
+        5,
+        7,
+        13,
+        15,
+        17
+      ],
+      "hint": "参考情報。同じ書き出しが続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 33,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 最後の光の番人",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "灯台の階段は、海から引き上げた大きな巻貝の内側だった。七十一歳の榊は、その螺旋を一段ずつ上がった。膝の痛みは昔からの借金のように、決まった場所で取り立てに来る。明日から灯台は遠隔操作になり、この階段を夜ごと上る者はいなくなる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "灯室の窓を拭くと、闇に浮いた自分の顔が消え、海が戻ってきた。沖の漁火は、黒い布に縫い残された金色の糸くずに見えた。榊は回転する光を確かめた。光は岬の肩を越え、暗い水面をなで、また戻ってくる。四十二年間、同じ挨拶を繰り返してきた腕だった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "机の引き出しには、妻の手袋が片方だけ残っていた。冬の夜、弁当を届けに来た妻が忘れたものだ。もう片方を探しておいて、と言われたきり、妻は翌春に死んだ。榊は手袋を掌に載せた。毛糸はすっかり痩せていたが、親指の丸みだけが、持ち主を待つ小さな部屋のように残っていた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "九時すぎ、無線が鳴った。港へ戻る若い船長が、礼を言いたいと告げた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「子どものころ、あの光が見えると安心したんです」",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "榊は返事を探した。長い勤めが胸の内で、ほどけない漁網になった。結局、波が高くなるから気をつけろ、とだけ言った。無線の向こうで笑い声がし、それから船のエンジン音が遠ざかった。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "夜半、雨が窓を打ち始めた。榊は記録簿に風向きと視程を書いた。最後の欄にも、いつもと同じ字が並んだ。特別な言葉を書けば、この夜に自分だけの錨を下ろしてしまう気がした。灯台は明日も光る。自分が下りたあとの階段にも、朝日は差す。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "明け方、彼は手袋を上着のポケットへ入れた。沖では、さっきの船らしい小さな影が港口へ滑り込んでいた。榊は最後に窓を拭いた。東の空が薄く裂け、その傷口から淡い光がにじんでいた。階段を下りるとき、膝はやはり痛んだ。彼は手すりを握り、一段ずつ、自分の足で朝のある方へ向かった。",
+      "no": 9
+    }
+  ]
+}

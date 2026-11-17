@@ -1,0 +1,121 @@
+{
+  "file": "gpt-5.6-sol/29-copy-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 21,
+    "nominal_ending_count": 3,
+    "nominal_ending_ratio": 0.14285714285714285,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      3,
+      5,
+      5,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.31943828249996997,
+    "rhythm": {
+      "mora_mean": 34.04761904761905,
+      "mora_stdev": 11.499383794986542,
+      "burstiness": -0.4950542043469089,
+      "length_autocorrelation_lag1": -0.06490502970997622
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.19047619047619047
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 160,
+      "doc_char_count": 586,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.495 (モーラ近似長 平均=34.0, 標準偏差=11.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 21,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 朝をほどく、新しいコーヒー豆",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "眠っていた一日に、香りで鍵を差し込む。新しいコーヒー豆「暁ブレンド」は、そんな一杯のために生まれました。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "主役は、標高の高い農園でゆっくり熟した豆。エチオピア産の華やかさと、グアテマラ産のやわらかな甘みを重ね、浅煎りと中煎りのあいだで丁寧に火を止めました。熱は豆の奥へ小さな夕焼けを灯し、眠っていた果実味を起こします。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "袋を開ければ、最初に広がるのはジャスミンを思わせる軽やかな香り。湯を注ぐと、挽いた豆がふくらみ、雨上がりの土のような深い息を返します。口に含めば、赤いりんごの明るい酸味が舌を走り、そのあとを蜂蜜の甘さが金色の毛布のように包みます。余韻にはカカオの静かなほろ苦さ。にぎやかに始まり、穏やかに着地する味わいです。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "忙しい朝には、気持ちを前へ運ぶ帆になります。仕事の合間には、思考の結び目をほどく指になります。休日の午後には、何もしない時間へ架ける小さな橋になります。飲む場面によって表情を変えながら、決して日常を追い越さない。毎日に寄り添うための設計です。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "おすすめは、豆15グラムに対して湯240ミリリットル。少し冷めると、隠れていた柑橘の風味が窓を開けます。ミルクを加えれば、キャラメルのような丸い甘さも楽しめます。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "一日は、目覚まし時計だけでは始まりません。香りが部屋を満たし、最初のひと口が心に明かりを入れたとき、朝はようやく動き出します。「暁ブレンド」で、今日という白いページに、おいしい一行目を。",
+      "no": 7
+    }
+  ]
+}

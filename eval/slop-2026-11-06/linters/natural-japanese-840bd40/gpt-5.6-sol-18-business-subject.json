@@ -1,0 +1,131 @@
+{
+  "file": "gpt-5.6-sol/18-business-subject.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_burstiness": 1,
+      "low_specificity": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 25,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      6,
+      3,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.21540659228538014,
+    "rhythm": {
+      "mora_mean": 32.08,
+      "mora_stdev": 10.134771827722615,
+      "burstiness": -0.5198471345962804,
+      "length_autocorrelation_lag1": -0.0069271981164121255
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.44
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 178,
+      "doc_char_count": 611,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 1
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.520 (モーラ近似長 平均=32.1, 標準偏差=10.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 5,
+      "category": "low_specificity",
+      "excerpt": "今年は、当社が次の十年へ踏み出す起点です。市場の変化は、これまでの正解を静かに塗",
+      "severity": "info",
+      "detail": "段落の具体性スコア=-0.154（閾値-0.15未満）。固有名詞密度=0.000, 数値密度=0.000, 抽象名詞率=0.103, 例示マーカー=なし。固有名詞・数値・実例が乏しく一般論に留まっている疑い。素材が足りていないサイン",
+      "related_lines": null,
+      "hint": "新しく書くときは素材を集め直す。既存の文書を直すときは、自分で具体例や数値を足さず、どんな素材があれば具体的にできるかをユーザーに伝える"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 25,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 次の十年を、ともに形づくる",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "新しい年が、私たちの前に扉を開きました。昨年の成果は、一人ひとりの挑戦と支え合いが積み重なって生まれたものです。お客様から寄せられた信頼が事業を育て、現場から上がった率直な声が会社を強くしました。心より感謝します。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "今年は、当社が次の十年へ踏み出す起点です。市場の変化は、これまでの正解を静かに塗り替えています。技術の進歩は、新しい可能性を次々に運びます。社会の期待は、企業に利益だけでなく、持続的な価値を求めています。こうした動きは脅威ではありません。変化そのものが、私たちの進む方向を照らす標識になります。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "次の十年を支える第一の柱は、お客様への理解です。数字は行動の輪郭を示し、対話はその背景にある願いを教えます。両方の理解が、選ばれ続ける製品とサービスを生みます。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "第二の柱は、学び続ける組織です。失敗の共有は、次の挑戦を安全にします。部門を越えた知識の往来は、個人の経験を会社の力へ変えます。異なる意見は判断を遅らせる壁ではなく、判断の質を高める材料です。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "第三の柱は、長い視点です。短期の成果は会社の足元を固めます。一方で、研究、人材、信頼への投資が未来の選択肢を増やします。今日の意思決定が十年後の景色をつくるという責任を、経営陣がまず引き受けます。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "会社の未来は、どこかに完成品として待っているものではありません。日々の仕事が未来を形づくり、皆さんの判断が会社の文化を定めます。次の十年が、誇りを持って振り返れる時間になるように。今年も、ともに歩んでまいりましょう。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "file": "sonnet/33-essay-subject.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 19,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.16643566632465154,
+    "rhythm": {
+      "mora_mean": 37.36842105263158,
+      "mora_stdev": 15.529972807499119,
+      "burstiness": -0.41283764310265775,
+      "length_autocorrelation_lag1": -0.3805604452575908
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.47368421052631576
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 179,
+      "doc_char_count": 559,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.413 (モーラ近似長 平均=37.4, 標準偏差=15.5)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 19,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 古い港町の朝",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "朝は、まず潮の匂いからやって来る。夜のあいだに満ちた海は、岸壁の石を黒く濡らし、そのしめりを風が運んで、まだ眠っている路地の奥まで届ける。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "漁船のエンジン音は、町の目覚まし時計である。ひとつ、またひとつと低く唸りはじめ、その響きが重なるころ、港の空は薄い灰色から淡い桃色へと変わっていく。空は、誰に頼まれるでもなく、毎朝同じ手順で色を塗り替えている。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "石畳は、夜露をたっぷりと吸って、足音を柔らかく返す。何百年もの靴底に磨かれた石の表面は、朝日を受けて鈍く光り、この町の記憶を黙って支えている。石は語らないが、角の丸さが、通り過ぎた人々の数を物語っている。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "市場の屋根の下では、氷が溶けはじめている。魚の銀の腹は、その水の上で最後の輝きを見せ、競り人の声が、それを値段という言葉へ変えていく。声は、朝のいちばん熱い部分だ。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "防波堤の端には、古い灯台が立っている。灯台の光は、もう船を導く役目を終えつつあるが、朝焼けのなかで、なお律儀に回りつづけている。役目を失ってなお続くものの姿には、どこか人を黙らせる力がある。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "やがて太陽が水平線を離れると、町じゅうの窓ガラスが、いっせいに金色の目を開く。パン屋の煙突からは、湯気が立ちのぼる。猫は軒先で伸びをし、鷗は風の上に身を預ける。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "港町の朝は、人が起きる前から、すでに始まっている。人はあとから、その朝に招かれるのである。",
+      "no": 8
+    }
+  ]
+}

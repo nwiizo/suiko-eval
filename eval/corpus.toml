@@ -190,7 +190,7 @@ id = "repeated-sentence-mode-fire-001"
 path = "labeled/repeated_sentence_mode/fire-001.md"
 category = "repeated_sentence_mode"
 expect = "fire"
-note = "30モーラ以上で長さの揃った「である」終止が同一段落で3文連続"
+note = "30モーラ以上で長さの揃った「だった」終止が同一段落で3文連続。「である」の連続はv0.4.3からrepeated_sentence_endingが示すため、2026-11-15に文末を「だった」へ変えた"
 
 [[sample]]
 id = "repeated-sentence-mode-silent-001"
@@ -1647,9 +1647,9 @@ note = "述語の前に別の名詞句"
 id = "short-object-comma-silent-001"
 path = "labeled/short_object_comma/silent-001.md"
 category = "short_object_comma"
-expect = "silent"
+expect = "fire"
 genre = "tech"
-note = "5字を超える名詞句"
+note = "5字を超える名詞句。v0.4.3で対象を15字以内の名詞句に広げたため、2026-11-15に期待をsilentからfireへ変えた"
 
 [[sample]]
 id = "short-object-comma-silent-002"
@@ -3311,3 +3311,598 @@ path = "labeled/te_nominal_stop/silent-010.md"
 category = "te_nominal_stop"
 expect = "silent"
 note = "表の中（合成・2026-11-04、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-fire-001"
+path = "labeled/repeated_sentence_ending/fire-001.md"
+category = "repeated_sentence_ending"
+expect = "fire"
+note = "「ます」が同じ段落で3文続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-fire-002"
+path = "labeled/repeated_sentence_ending/fire-002.md"
+category = "repeated_sentence_ending"
+expect = "fire"
+note = "「でした」が3文続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-fire-003"
+path = "labeled/repeated_sentence_ending/fire-003.md"
+category = "repeated_sentence_ending"
+expect = "fire"
+note = "「である」が3文続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-fire-004"
+path = "labeled/repeated_sentence_ending/fire-004.md"
+category = "repeated_sentence_ending"
+expect = "fire"
+note = "「です」が隣接する行にまたがって3文続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-fire-005"
+path = "labeled/repeated_sentence_ending/fire-005.md"
+category = "repeated_sentence_ending"
+expect = "fire"
+note = "「ました」が3文続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-silent-001"
+path = "labeled/repeated_sentence_ending/silent-001.md"
+category = "repeated_sentence_ending"
+expect = "silent"
+note = "過去の「た」の連続は数えない（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-silent-002"
+path = "labeled/repeated_sentence_ending/silent-002.md"
+category = "repeated_sentence_ending"
+expect = "silent"
+note = "「ません」の連続は数えない（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-silent-003"
+path = "labeled/repeated_sentence_ending/silent-003.md"
+category = "repeated_sentence_ending"
+expect = "silent"
+note = "空行で段落が分かれ、各段落2文以下（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-silent-004"
+path = "labeled/repeated_sentence_ending/silent-004.md"
+category = "repeated_sentence_ending"
+expect = "silent"
+note = "「です」「ます」「です」と形が混ざる（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-silent-005"
+path = "labeled/repeated_sentence_ending/silent-005.md"
+category = "repeated_sentence_ending"
+expect = "silent"
+note = "台詞の中の文末（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "repeated-sentence-ending-silent-006"
+path = "labeled/repeated_sentence_ending/silent-006.md"
+category = "repeated_sentence_ending"
+expect = "silent"
+note = "「のだ」は断定の「だ」と別に数える（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-fire-001"
+path = "labeled/negated_contrast/fire-001.md"
+category = "negated_contrast"
+expect = "fire"
+note = "一文の中の「AではなくB」（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-fire-002"
+path = "labeled/negated_contrast/fire-002.md"
+category = "negated_contrast"
+expect = "fire"
+note = "「AではなくB」で場の役割を言い切る（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-fire-003"
+path = "labeled/negated_contrast/fire-003.md"
+category = "negated_contrast"
+expect = "fire"
+note = "「Aではない。Bだ。」の2文（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-fire-004"
+path = "labeled/negated_contrast/fire-004.md"
+category = "negated_contrast"
+expect = "fire"
+note = "読点のない「AではなくB」（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-fire-005"
+path = "labeled/negated_contrast/fire-005.md"
+category = "negated_contrast"
+expect = "fire"
+note = "敬体の「Aではありません。Bです。」（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-silent-001"
+path = "labeled/negated_contrast/silent-001.md"
+category = "negated_contrast"
+expect = "silent"
+note = "状態の変化（ではなくなる）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-silent-002"
+path = "labeled/negated_contrast/silent-002.md"
+category = "negated_contrast"
+expect = "silent"
+note = "譲歩（ではなくても）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-silent-003"
+path = "labeled/negated_contrast/silent-003.md"
+category = "negated_contrast"
+expect = "silent"
+note = "付け足し（だけではなく）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-silent-004"
+path = "labeled/negated_contrast/silent-004.md"
+category = "negated_contrast"
+expect = "silent"
+note = "二重否定（不可能ではない）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-silent-005"
+path = "labeled/negated_contrast/silent-005.md"
+category = "negated_contrast"
+expect = "silent"
+note = "部分否定（必ずしも〜ではない）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "negated-contrast-silent-006"
+path = "labeled/negated_contrast/silent-006.md"
+category = "negated_contrast"
+expect = "silent"
+note = "次の文が接続詞で始まる（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-fire-001"
+path = "labeled/short_topic_comma/fire-001.md"
+category = "short_topic_comma"
+expect = "fire"
+note = "名詞をつなぐ「の」を含む主題＋読点（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-fire-002"
+path = "labeled/short_topic_comma/fire-002.md"
+category = "short_topic_comma"
+expect = "fire"
+note = "格助詞に続く「では」＋読点（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-fire-003"
+path = "labeled/short_topic_comma/fire-003.md"
+category = "short_topic_comma"
+expect = "silent"
+note = "形容詞（新しい）を含む句。仕様で対象外なのにfireと書いた期待の誤りを、2026-11-15の評価後に直した（規則は変えていない）"
+
+[[sample]]
+id = "short-topic-comma-fire-004"
+path = "labeled/short_topic_comma/fire-004.md"
+category = "short_topic_comma"
+expect = "fire"
+note = "「も」＋読点（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-fire-005"
+path = "labeled/short_topic_comma/fire-005.md"
+category = "short_topic_comma"
+expect = "fire"
+note = "「からは」＋読点（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-silent-001"
+path = "labeled/short_topic_comma/silent-001.md"
+category = "short_topic_comma"
+expect = "silent"
+note = "副詞にもなる名詞（今回は）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-silent-002"
+path = "labeled/short_topic_comma/silent-002.md"
+category = "short_topic_comma"
+expect = "silent"
+note = "人称だけの句（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-silent-003"
+path = "labeled/short_topic_comma/silent-003.md"
+category = "short_topic_comma"
+expect = "silent"
+note = "並べた名詞の最後（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-silent-004"
+path = "labeled/short_topic_comma/silent-004.md"
+category = "short_topic_comma"
+expect = "silent"
+note = "同じ助詞の句の並び（Aも、Bも、）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-silent-005"
+path = "labeled/short_topic_comma/silent-005.md"
+category = "short_topic_comma"
+expect = "silent"
+note = "動詞を含む句（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-silent-006"
+path = "labeled/short_topic_comma/silent-006.md"
+category = "short_topic_comma"
+expect = "silent"
+note = "後ろに連体修飾が続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-fire-001"
+path = "labeled/short_subject_comma/fire-001.md"
+category = "short_subject_comma"
+expect = "silent"
+note = "形容詞（新しい）を含む句。仕様で対象外なのにfireと書いた期待の誤りを、2026-11-15の評価後に直した（規則は変えていない）"
+
+[[sample]]
+id = "short-subject-comma-fire-002"
+path = "labeled/short_subject_comma/fire-002.md"
+category = "short_subject_comma"
+expect = "fire"
+note = "「の」でつないだ主語＋「が」＋読点（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-fire-003"
+path = "labeled/short_subject_comma/fire-003.md"
+category = "short_subject_comma"
+expect = "fire"
+note = "物の主語＋「が」＋読点（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-fire-004"
+path = "labeled/short_subject_comma/fire-004.md"
+category = "short_subject_comma"
+expect = "fire"
+note = "文の2つ目の読点、敬称の付いた主語（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-fire-005"
+path = "labeled/short_subject_comma/fire-005.md"
+category = "short_subject_comma"
+expect = "fire"
+note = "作業の名詞の主語＋「が」＋読点（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-silent-001"
+path = "labeled/short_subject_comma/silent-001.md"
+category = "short_subject_comma"
+expect = "silent"
+note = "人称だけの句（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-silent-002"
+path = "labeled/short_subject_comma/silent-002.md"
+category = "short_subject_comma"
+expect = "silent"
+note = "後ろに連体修飾が続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-silent-003"
+path = "labeled/short_subject_comma/silent-003.md"
+category = "short_subject_comma"
+expect = "silent"
+note = "同じ助詞の句の並び（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-silent-004"
+path = "labeled/short_subject_comma/silent-004.md"
+category = "short_subject_comma"
+expect = "silent"
+note = "動詞を含む句（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-silent-005"
+path = "labeled/short_subject_comma/silent-005.md"
+category = "short_subject_comma"
+expect = "silent"
+note = "引用の中（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-fire-101"
+path = "labeled/short_object_comma/fire-101.md"
+category = "short_object_comma"
+expect = "fire"
+note = "15字以内の「の」でつないだ目的語＋読点（v0.4.3で広げた範囲）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-fire-102"
+path = "labeled/short_object_comma/fire-102.md"
+category = "short_object_comma"
+expect = "fire"
+note = "「の」でつないだ目的語＋読点（v0.4.3で広げた範囲）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-fire-103"
+path = "labeled/short_object_comma/fire-103.md"
+category = "short_object_comma"
+expect = "fire"
+note = "文の2つ目の読点（v0.4.3で広げた範囲）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-fire-104"
+path = "labeled/short_object_comma/fire-104.md"
+category = "short_object_comma"
+expect = "fire"
+note = "接頭辞の付いた目的語＋読点（v0.4.3で広げた範囲）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-fire-105"
+path = "labeled/short_object_comma/fire-105.md"
+category = "short_object_comma"
+expect = "fire"
+note = "複合名詞の目的語＋読点（v0.4.3で広げた範囲）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-silent-101"
+path = "labeled/short_object_comma/silent-101.md"
+category = "short_object_comma"
+expect = "silent"
+note = "指示語だけの句（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-silent-102"
+path = "labeled/short_object_comma/silent-102.md"
+category = "short_object_comma"
+expect = "silent"
+note = "「と」で並べた名詞（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-silent-103"
+path = "labeled/short_object_comma/silent-103.md"
+category = "short_object_comma"
+expect = "silent"
+note = "後ろに別の主語が続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-silent-104"
+path = "labeled/short_object_comma/silent-104.md"
+category = "short_object_comma"
+expect = "silent"
+note = "動詞を含む句（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-object-comma-silent-105"
+path = "labeled/short_object_comma/silent-105.md"
+category = "short_object_comma"
+expect = "silent"
+note = "後ろに連体修飾（開けたまま）が続く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-fire-101"
+path = "labeled/abstract_metaphor/fire-101.md"
+category = "abstract_metaphor"
+expect = "fire"
+note = "経験の土台（v0.4.3で足した抽象語）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-fire-102"
+path = "labeled/abstract_metaphor/fire-102.md"
+category = "abstract_metaphor"
+expect = "fire"
+note = "関係を土台に（Xを土台に）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-fire-103"
+path = "labeled/abstract_metaphor/fire-103.md"
+category = "abstract_metaphor"
+expect = "fire"
+note = "甘みを土台に（性質の名詞）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-fire-104"
+path = "labeled/abstract_metaphor/fire-104.md"
+category = "abstract_metaphor"
+expect = "fire"
+note = "土台が育つ（土台を育つものとして扱う）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-fire-105"
+path = "labeled/abstract_metaphor/fire-105.md"
+category = "abstract_metaphor"
+expect = "fire"
+note = "述語にした羅針盤（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-silent-101"
+path = "labeled/abstract_metaphor/silent-101.md"
+category = "abstract_metaphor"
+expect = "silent"
+note = "家の土台（建物の実物）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-silent-102"
+path = "labeled/abstract_metaphor/silent-102.md"
+category = "abstract_metaphor"
+expect = "silent"
+note = "土台づくり（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-silent-103"
+path = "labeled/abstract_metaphor/silent-103.md"
+category = "abstract_metaphor"
+expect = "silent"
+note = "実物の地図を土台にする（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-silent-104"
+path = "labeled/abstract_metaphor/silent-104.md"
+category = "abstract_metaphor"
+expect = "silent"
+note = "実物の羅針盤を述語にする（航海の語なし）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "abstract-metaphor-silent-105"
+path = "labeled/abstract_metaphor/silent-105.md"
+category = "abstract_metaphor"
+expect = "silent"
+note = "建物の土台（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-fire-101"
+path = "labeled/vague_sensory_term/fire-101.md"
+category = "vague_sensory_term"
+expect = "fire"
+note = "手紙の体温（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-fire-102"
+path = "labeled/vague_sensory_term/fire-102.md"
+category = "vague_sensory_term"
+expect = "fire"
+note = "チームの熱量（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-fire-103"
+path = "labeled/vague_sensory_term/fire-103.md"
+category = "vague_sensory_term"
+expect = "fire"
+note = "熱量のある提案（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-fire-104"
+path = "labeled/vague_sensory_term/fire-104.md"
+category = "vague_sensory_term"
+expect = "fire"
+note = "記憶の体温（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-fire-105"
+path = "labeled/vague_sensory_term/fire-105.md"
+category = "vague_sensory_term"
+expect = "fire"
+note = "現場の熱量（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-silent-101"
+path = "labeled/vague_sensory_term/silent-101.md"
+category = "vague_sensory_term"
+expect = "silent"
+note = "体温を測る（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-silent-102"
+path = "labeled/vague_sensory_term/silent-102.md"
+category = "vague_sensory_term"
+expect = "silent"
+note = "子どもの体温（体）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-silent-103"
+path = "labeled/vague_sensory_term/silent-103.md"
+category = "vague_sensory_term"
+expect = "silent"
+note = "食品の熱量（カロリー）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-silent-104"
+path = "labeled/vague_sensory_term/silent-104.md"
+category = "vague_sensory_term"
+expect = "silent"
+note = "体温が何度（度）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "vague-sensory-term-silent-105"
+path = "labeled/vague_sensory_term/silent-105.md"
+category = "vague_sensory_term"
+expect = "silent"
+note = "体温を奪う（体の描写）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-fire-101"
+path = "labeled/technical_jargon_metaphor/fire-101.md"
+category = "technical_jargon_metaphor"
+expect = "fire"
+note = "設計が効いて（抽象的な主語＋効く）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-fire-102"
+path = "labeled/technical_jargon_metaphor/fire-102.md"
+category = "technical_jargon_metaphor"
+expect = "fire"
+note = "習慣が効いた（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-fire-103"
+path = "labeled/technical_jargon_metaphor/fire-103.md"
+category = "technical_jargon_metaphor"
+expect = "fire"
+note = "ルールが効いて（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-fire-104"
+path = "labeled/technical_jargon_metaphor/fire-104.md"
+category = "technical_jargon_metaphor"
+expect = "fire"
+note = "決済処理の入口（処理の始まりを場所で言う）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-fire-105"
+path = "labeled/technical_jargon_metaphor/fire-105.md"
+category = "technical_jargon_metaphor"
+expect = "fire"
+note = "操作を入口に（APIのある文）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-silent-101"
+path = "labeled/technical_jargon_metaphor/silent-101.md"
+category = "technical_jargon_metaphor"
+expect = "silent"
+note = "薬が効く（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-silent-102"
+path = "labeled/technical_jargon_metaphor/silent-102.md"
+category = "technical_jargon_metaphor"
+expect = "silent"
+note = "エアコンが効いた部屋（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-silent-103"
+path = "labeled/technical_jargon_metaphor/silent-103.md"
+category = "technical_jargon_metaphor"
+expect = "silent"
+note = "効かなかった（否定形）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-silent-104"
+path = "labeled/technical_jargon_metaphor/silent-104.md"
+category = "technical_jargon_metaphor"
+expect = "silent"
+note = "駅の入口（実物）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "technical-jargon-metaphor-silent-105"
+path = "labeled/technical_jargon_metaphor/silent-105.md"
+category = "technical_jargon_metaphor"
+expect = "silent"
+note = "問い合わせ窓口（組織の窓口）（合成・2026-11-15、規則の調整に未使用）"
+
+[[sample]]
+id = "short-topic-comma-fire-006"
+path = "labeled/short_topic_comma/fire-006.md"
+category = "short_topic_comma"
+expect = "fire"
+note = "文の2つ目の読点（合成・2026-11-15、fire-003の期待の誤りを直した後に追加。規則の調整に未使用）"
+
+[[sample]]
+id = "short-subject-comma-fire-006"
+path = "labeled/short_subject_comma/fire-006.md"
+category = "short_subject_comma"
+expect = "fire"
+note = "「の」でつないだ短い主語＋「が」＋読点（合成・2026-11-15、fire-001の期待の誤りを直した後に追加。規則の調整に未使用）"

@@ -1,0 +1,192 @@
+{
+  "file": "sonnet/04-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 26,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.038461538461538464,
+    "total_paragraphs": 13,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      2,
+      3,
+      1,
+      3,
+      4,
+      1,
+      2,
+      1,
+      2,
+      3,
+      1,
+      1
+    ],
+    "paragraph_sentence_count_cv": 0.4803844614152614,
+    "rhythm": {
+      "mora_mean": 27.76923076923077,
+      "mora_stdev": 12.052154905651623,
+      "burstiness": -0.3946893257783543,
+      "length_autocorrelation_lag1": 0.19408193529506254
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.36
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 169,
+      "doc_char_count": 597,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 14,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 1,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.395 (モーラ近似長 平均=27.8, 標準偏差=12.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 2,
+      "sentences": 26,
+      "genre": "essay",
+      "by_category": {
+        "kanji_run": 1,
+        "no_chain": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 3,
+        "category": "kanji_run",
+        "excerpt": "午後七時五十分",
+        "severity": "info",
+        "detail": "漢字が7字連続（目安6字）。語の切れ目が読み取りにくい疑い",
+        "related_lines": null,
+        "hint": "ひらがなを交えて開く（「再送抑制機能」→「再送を止める機能」）。固有名詞はそのままでよい"
+      },
+      {
+        "line": 19,
+        "category": "no_chain",
+        "excerpt": "の前の持ち主さんの",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 閉店間際の古本屋",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "午後七時五十分、古本屋「みどり堂」の店内は、深い海の底のように静まっていた。天井の蛍光灯が一本だけ切れかけて、まばたきするように光っている。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "店主の久保田は帳場で、積み上がった文庫本の山を崩さないよう、そっと値札を貼っていた。背表紙の色褪せた本たちは、長い旅から戻った船乗りのように、どれも少し疲れた顔をしている。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "ドアのベルが鳴った。入ってきたのは、濡れた傘を提げた青年だった。肩に雨粒を光らせたまま、彼は棚と棚のあいだを、迷路でも歩くように進んでいく。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "「閉めるのは八時ですが、どうぞごゆっくり」",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "久保田が声をかけると、青年は小さくうなずいた。やがて彼は、一番奥の棚の前で足を止めた。そこには、背の剥げた詩集が一冊、古い鍵のように差し込まれていた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "青年が本を開くと、紙の匂いがふわりと立った。乾いた草と、少し甘い埃の匂い。ページのあいだから、一枚の栞が落ちた。薄い桜色の紙で、誰かの細い字が書かれている。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "「あ」",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "青年の声は、水面に落ちた小石のようだった。拾い上げた栞を、彼はしばらく黙って見つめていた。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "「それは、お客さんの前の持ち主さんのものでしょうね」と久保田が言った。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "「いえ」青年は首を振った。「これ、母の字です」",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "八時を告げる柱時計が、低く鳴った。久保田は帳場から立ち上がり、鍵束を手に取りかけて、やめた。壊れかけの蛍光灯が、またひとつまばたきをした。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "「閉めるのは、もう少しあとにしましょうか」",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "雨音が、店じゅうの本に静かに降り積もっていた。",
+      "no": 14
+    }
+  ]
+}

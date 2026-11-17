@@ -1,0 +1,178 @@
+{
+  "file": "haiku/36-essay-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 21,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 9,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      1,
+      4,
+      1,
+      4,
+      1,
+      4,
+      1,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.6388765649999398,
+    "rhythm": {
+      "mora_mean": 30.857142857142858,
+      "mora_stdev": 9.44803186502083,
+      "burstiness": -0.5311752433701578,
+      "length_autocorrelation_lag1": 0.051655254219412465
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.23809523809523808
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 156,
+      "doc_char_count": 525,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 14,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 3,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.531 (モーラ近似長 平均=30.9, 標準偏差=9.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 21,
+      "genre": "essay",
+      "by_category": {
+        "no_chain": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 9,
+        "category": "no_chain",
+        "excerpt": "の部屋の床の",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 冬に読んだ本のこと",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "冬は、本を読むために用意された季節だと思う。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "見出し",
+      "text": "## 外は寒く、ページの中は温かい。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "暖房の音と、頁をめくる小さな音だけが部屋に残る。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "窓の外で木の枝が揺れている。それを眺めながら、一冊の小説を読み進めた。登場人物たちは、遠い町の雪道を歩いている。その足音が、いつの間にか自分の部屋の床の上にまで聞こえてくるようだった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "見出し",
+      "text": "## 読書は、別の人生を借りることだ。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "借りた時間は、読み終えたあとも少しだけ返しきれずに残る。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "その本は、ひとりの女性が古い手紙を整理する話だった。手紙の文字は、かすれて読めない箇所がある。それでも彼女は、わずかな言葉をつなぎ合わせ、書いた人の気持ちを想像していく。その丁寧な手つきを見て、私は自分が普段どれだけ急いで文字を追っているかに気づいた。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "見出し",
+      "text": "## 急がない読み方が、いちばん遠くまで連れていく。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "一行の余白で立ち止まることが、物語の奥行きを教えてくれる。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "冬の夜は長い。その長さのなかで、本は静かに私を待っていた。ページをめくる指先が冷たくなると、手を擦り合わせてまた読む。その繰り返しが、妙に心地よかった。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "見出し",
+      "text": "## 本は、閉じたあとにも続く。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "読み終えた瞬間よりも、ふとした日の帰り道で思い出すことのほうが多い。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "読み終えた本を閉じ、窓の外を見ると、雪が降りはじめていた。白い粒が、街灯の下で小さな星のように踊っている。その光景が、物語の最後の一場面と重なって見えた。冬に読んだ本は、春になっても、雪の匂いと一緒に記憶の中で咲き続けるのだろう。",
+      "no": 14
+    }
+  ]
+}

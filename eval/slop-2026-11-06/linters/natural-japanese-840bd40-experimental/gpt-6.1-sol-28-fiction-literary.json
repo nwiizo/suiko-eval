@@ -1,0 +1,378 @@
+{
+  "file": "gpt-6.1-sol/28-fiction-literary.md",
+  "stats": {
+    "total_findings": 14,
+    "by_category": {
+      "low_burstiness": 1,
+      "repeated_syntax_template": 13
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 34,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.058823529411764705,
+    "total_paragraphs": 11,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      4,
+      1,
+      2,
+      4,
+      1,
+      5,
+      1,
+      3,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.486851334036672,
+    "rhythm": {
+      "mora_mean": 24.705882352941178,
+      "mora_stdev": 12.743001335830687,
+      "burstiness": -0.3194455972714954,
+      "length_autocorrelation_lag1": 0.27665329863383575
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.41935483870967744
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 200,
+      "doc_char_count": 676,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 12,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.319 (モーラ近似長 平均=24.7, 標準偏差=12.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "鍵は今日の夕方、教育委員会へ返すことにな",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "校庭の隅に残った雪が、昨夜の雨で黒ずんで",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 3,
+      "category": "repeated_syntax_template",
+      "excerpt": "玄関の傘立てには、持ち主の分からない黄色",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "息子は友だちの前で母を呼ばず、廊下ですれ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 5,
+      "category": "repeated_syntax_template",
+      "excerpt": "美代は無理などしていなかった",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 7,
+      "category": "repeated_syntax_template",
+      "excerpt": "廊下の時計は動いていた",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "男の子は窓際の鉢を指した",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 13,
+      "category": "repeated_syntax_template",
+      "excerpt": "男の子は流しから水を汲み、土が濃い色にな",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 17,
+      "category": "repeated_syntax_template",
+      "excerpt": "美代は新聞紙を探しに行った",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 17,
+      "category": "repeated_syntax_template",
+      "excerpt": "昨日の日付と、「ありがとう」の文字がまだ",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 17,
+      "category": "repeated_syntax_template",
+      "excerpt": "男の子は鉢を包んでもらうと、両腕で大事に",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 21,
+      "category": "repeated_syntax_template",
+      "excerpt": "最後の日にも、言うことは同じだった",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    },
+    {
+      "line": 23,
+      "category": "repeated_syntax_template",
+      "excerpt": "窓の外では、鉢を抱えた男の子が門の前で立",
+      "severity": "info",
+      "detail": "文頭品詞4-gram「名詞/助詞/名詞/助詞」が全文の41.9%で一致（閾値40%以上）。構文テンプレートの使い回しの疑い。対応箇所: L3, L5, L7, L13, L17, L21, L23",
+      "related_lines": [
+        3,
+        5,
+        7,
+        13,
+        17,
+        21,
+        23
+      ],
+      "hint": "同じ組み立ての文が続くところは、文の順序や主語を入れ替えるか、2文を1文にまとめる"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 34,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 最後の当番",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "閉校式の翌朝、美代はいつもの時刻に校門を開けた。鍵は今日の夕方、教育委員会へ返すことになっていた。校庭の隅に残った雪が、昨夜の雨で黒ずんでいる。玄関の傘立てには、持ち主の分からない黄色い傘が一本あった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "美代がこの小学校の用務員になったのは、息子が四年生のときだった。息子は友だちの前で母を呼ばず、廊下ですれ違うと妙に丁寧な会釈をした。その息子も今では県外に暮らし、電話のたびに、もう無理をして働かなくていいと言う。美代は無理などしていなかった。ただ、朝になればここへ来るのだった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "廊下の時計は動いていた。全部止めるようにと言われていたので、脚立を運んで電池を抜いた。二年生の教室で作業をしていると、入口に男の子が立っていた。昨日、卒業生を送る言葉を読んだ六年生だった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "「忘れ物かい」",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「ううん。水」",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "男の子は窓際の鉢を指した。茎の細いゼラニウムに、小さな蕾がついていた。美代は処分する鉢と一緒にしてしまうところだった。男の子は流しから水を汲み、土が濃い色になるまで、少しずつ注いだ。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "「先生、持って帰っていいって」",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "美代は新聞紙を探しに行った。戻ると、男の子は黒板を見ていた。昨日の日付と、「ありがとう」の文字がまだ残っている。消そうか、と言いかけてやめた。男の子は鉢を包んでもらうと、両腕で大事に抱え、上履きのまま玄関へ歩きだした。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "「靴」",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "呼び止めると、男の子は笑った。美代も笑った。最後の日にも、言うことは同じだった。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "一人になってから、美代は黒板を消した。何度拭いても、斜めから見ると文字の跡が浮いた。雑巾を洗い、固く絞り、もう一度拭いた。窓の外では、鉢を抱えた男の子が門の前で立ち止まり、黄色い傘を開こうとしていた。",
+      "no": 12
+    }
+  ]
+}

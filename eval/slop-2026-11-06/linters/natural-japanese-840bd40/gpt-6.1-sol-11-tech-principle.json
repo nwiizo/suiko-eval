@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6.1-sol/11-tech-principle.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 26,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      4,
+      4,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.10878565864408424,
+    "rhythm": {
+      "mora_mean": 37.88461538461539,
+      "mora_stdev": 10.656622798403612,
+      "burstiness": -0.5609249703015784,
+      "length_autocorrelation_lag1": -0.006960647552770075
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.19230769230769232
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 229,
+      "doc_char_count": 743,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 5, 4, 4, 4, 5]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.109（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.561 (モーラ近似長 平均=37.9, 標準偏差=10.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 26,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# コードレビューの行動指針",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "レビューは、変更後の動作と、その変更を今後扱い続けられるかを確認するために行う。最初に変更の目的を読み、何ができれば完了なのかを把握する。目的が分からないまま、行ごとの指摘を始めない。必要な情報が説明に欠けていれば、確認する対象を具体的に示して尋ねる。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "指摘には、問題になる条件と影響を添える。「危ない」「分かりにくい」だけで終えない。たとえば、空の入力で例外が発生し、保存処理が中断するなら、その入力と動作を書く。修正方法を提案するときも、満たすべき条件を先に説明する。提案した方法以外で解決できる余地を残す。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "修正が必要な指摘と、任意の提案を区別する。既存の取り決めに反する点、確認できる不具合、運用に支障を出す点は、根拠を示して修正を求める。命名などに複数の妥当な選択肢がある場合は、自分の好みを必須条件にしない。同じ議論が繰り返されるなら、別途チームの取り決めとして整理する。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "差分の外にある呼び出し元と利用側も確認する。型が変わっていなくても、戻り値の意味や処理の順番が変われば、利用側の動作に影響する。保存済みデータや公開済みの入出力を扱う変更では、古い形式との関係を確かめる。影響が確認できない場合は、何を未確認としているかを明記する。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "テストは、変更によって守りたい動作を確かめる。実装と同じ計算をテスト内で繰り返すだけでは、共通の誤りを見落とす。代表的な利用例と、問題が起きる条件から期待する結果を定める。既存の検証で十分に確認できるなら、数を増やすためだけのテストは求めない。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "レビュー中に新しい要望を見つけたら、今回の目的に必要かを判断する。独立した改善は別の作業として残す。承認するときは、確認した範囲を説明できる状態にする。読み切れない大きさなら分割を相談する。急ぎの変更でも、確認していないことを確認済みとして扱わない。",
+      "no": 7
+    }
+  ]
+}

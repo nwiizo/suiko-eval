@@ -1,0 +1,124 @@
+{
+  "file": "gpt-6.1-sol/13-essay-metaphor.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 28,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      5,
+      5,
+      6,
+      7,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.14285714285714288,
+    "rhythm": {
+      "mora_mean": 31.964285714285715,
+      "mora_stdev": 10.13650454988286,
+      "burstiness": -0.5184648798143866,
+      "length_autocorrelation_lag1": -0.044254391145542464
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.14285714285714285
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 214,
+      "doc_char_count": 719,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[5, 5, 6, 7, 5]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.143（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.518 (モーラ近似長 平均=32.0, 標準偏差=10.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 28,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 雨が本をひらく日",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "雨の日の図書館は、町から静かに離岸する船に似ている。傘を閉じて入口をくぐると、車の音も信号の色も、岸辺の景色になって遠ざかる。靴底に残った水だけが、私を陸地につなぐ細い綱だった。受付の人が顔を上げ、小さく会釈する。その動きに合わせて、船内の時間がゆるやかに動き出す。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "窓には無数の雨粒が貼りついている。それぞれが町の小さな逆さ絵を抱え、重みに耐えられなくなると、隣の粒と手をつないで流れ落ちる。私は窓際の椅子に座り、知らない土地の紀行文をひらいた。紙は乾いた砂浜のような匂いがした。ついさっきまで濡れた歩道を歩いていた指が、その白い岸に着く。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "晴れた日には、読書にもどこか締切がある。洗濯物を取り込む時刻や、夕方までに済ませたい買い物が、ページの端から顔を出す。けれど雨は、外へ向かう用事の足首をやさしくつかむ。今日でなくてもよい、と窓をたたき続ける。その許しを借りて、私は一つの段落に長くとどまる。意味を急いで取り出さず、言葉の水温を指先で確かめる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "書架の間では、誰かが背表紙をたどっていた。指が並んだ本の上を滑り、一冊の前で止まる。たくさんの眠った声のなかから、自分に届く声を探す仕草だった。図書館という大きな貝殻には、まだ聞いたことのない海がいくつも収まっている。借りる予定のなかった詩集を手に取ると、以前の持ち主が挟んだのか、細い紙片が落ちた。そこには何も書かれていなかった。その空白まで、誰かから届いた短い便りに思えた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "帰るころにも雨は降っていた。私は二冊を鞄に入れ、傘の下へ戻った。町は相変わらず濡れていたが、往きより少し奥行きがあった。読んだ文章が胸の内に灯りを置き、見慣れた路地の曲がり角まで照らしていた。水たまりを避けて歩くたび、鞄の中で、まだ開いていない一冊の海が静かに揺れた。",
+      "no": 6
+    }
+  ]
+}

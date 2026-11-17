@@ -1,0 +1,365 @@
+{
+  "file": "gpt-6.1-sol/22-business-principle.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 38,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 38,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "paragraph_sentence_count_cv": 0.0,
+    "rhythm": {
+      "mora_mean": 22.81578947368421,
+      "mora_stdev": 3.1275958747380823,
+      "burstiness": -0.7588906896510111,
+      "length_autocorrelation_lag1": 0.04044328874821174
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3684210526315789
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 200,
+      "doc_char_count": 621,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 39,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=38, 各段落の文数=[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.000（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=38, 平均文長=16.3字, 変動係数=0.131",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.759 (モーラ近似長 平均=22.8, 標準偏差=3.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 38,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新規事業チームの行動指針",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "顧客の困りごとを、事業の出発点にする。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "観察した事実と、自分の解釈を分ける。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "要望の背景にある仕事を確かめる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "利用者と購入を決める人の両方を知る。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "検証する仮説を、一文で示す。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "成功と失敗の判定条件を先に決める。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "仮説を崩す証拠も集める。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "最も大きな不確実さから確かめる。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "試す範囲を、判断に必要な最小限に絞る。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "検証の期限と費用の上限を決める。",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "顧客との約束を記録する。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "段落",
+      "text": "提供できる内容を正確に伝える。",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "使われた回数と、使われた理由を確かめる。",
+      "no": 14
+    },
+    {
+      "line": 29,
+      "kind": "段落",
+      "text": "好意的な感想と、支払いの意思を区別する。",
+      "no": 15
+    },
+    {
+      "line": 31,
+      "kind": "段落",
+      "text": "集める情報を、目的に必要な範囲に限る。",
+      "no": 16
+    },
+    {
+      "line": 33,
+      "kind": "段落",
+      "text": "預かった情報の扱いを事前に決める。",
+      "no": 17
+    },
+    {
+      "line": 35,
+      "kind": "段落",
+      "text": "売上と、提供にかかる費用を並べて見る。",
+      "no": 18
+    },
+    {
+      "line": 37,
+      "kind": "段落",
+      "text": "導入後の運用と問い合わせ対応を見積もる。",
+      "no": 19
+    },
+    {
+      "line": 39,
+      "kind": "段落",
+      "text": "継続利用を、初回利用と同じ重さで扱う。",
+      "no": 20
+    },
+    {
+      "line": 41,
+      "kind": "段落",
+      "text": "撤退条件に達した事業は止める。",
+      "no": 21
+    },
+    {
+      "line": 43,
+      "kind": "段落",
+      "text": "検証の終了日に、続行の判断をする。",
+      "no": 22
+    },
+    {
+      "line": 45,
+      "kind": "段落",
+      "text": "判断に足りない情報を具体的に示す。",
+      "no": 23
+    },
+    {
+      "line": 47,
+      "kind": "段落",
+      "text": "決定者と担当者を明らかにする。",
+      "no": 24
+    },
+    {
+      "line": 49,
+      "kind": "段落",
+      "text": "意見の違いには、根拠を添える。",
+      "no": 25
+    },
+    {
+      "line": 51,
+      "kind": "段落",
+      "text": "決定の理由を、後から読める形に残す。",
+      "no": 26
+    },
+    {
+      "line": 53,
+      "kind": "段落",
+      "text": "懸念は、対応できる時点で共有する。",
+      "no": 27
+    },
+    {
+      "line": 55,
+      "kind": "段落",
+      "text": "失敗の報告を、次の判断に使う。",
+      "no": 28
+    },
+    {
+      "line": 57,
+      "kind": "段落",
+      "text": "変更の影響を受ける人へ先に伝える。",
+      "no": 29
+    },
+    {
+      "line": 59,
+      "kind": "段落",
+      "text": "外部への依頼にも、完了条件を定める。",
+      "no": 30
+    },
+    {
+      "line": 61,
+      "kind": "段落",
+      "text": "成果と未確認の可能性を分けて報告する。",
+      "no": 31
+    },
+    {
+      "line": 63,
+      "kind": "段落",
+      "text": "役割の境界で止まった仕事に担当を置く。",
+      "no": 32
+    },
+    {
+      "line": 65,
+      "kind": "段落",
+      "text": "引き継げる手順を、作業とともに残す。",
+      "no": 33
+    },
+    {
+      "line": 67,
+      "kind": "段落",
+      "text": "顧客の業務が止まる影響を優先して扱う。",
+      "no": 34
+    },
+    {
+      "line": 69,
+      "kind": "段落",
+      "text": "品質を確かめる時間を計画に含める。",
+      "no": 35
+    },
+    {
+      "line": 71,
+      "kind": "段落",
+      "text": "無理の続く計画は、範囲か期限を見直す。",
+      "no": 36
+    },
+    {
+      "line": 73,
+      "kind": "段落",
+      "text": "学んだ事実を、次の検証へつなげる。",
+      "no": 37
+    },
+    {
+      "line": 75,
+      "kind": "段落",
+      "text": "小さな成果を、再現できる方法で育てる。",
+      "no": 38
+    },
+    {
+      "line": 77,
+      "kind": "段落",
+      "text": "事業の成長に合わせて、指針の有効性を見直す。",
+      "no": 39
+    }
+  ]
+}

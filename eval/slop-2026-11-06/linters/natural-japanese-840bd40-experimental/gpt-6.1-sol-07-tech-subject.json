@@ -1,0 +1,141 @@
+{
+  "file": "gpt-6.1-sol/07-tech-subject.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 23,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      3,
+      4,
+      4,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.09722034684781694,
+    "rhythm": {
+      "mora_mean": 42.21739130434783,
+      "mora_stdev": 10.366989927227127,
+      "burstiness": -0.605700792348503,
+      "length_autocorrelation_lag1": -0.13078746279737025
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+      "lead_pos_4gram_ratio": 0.17391304347826086
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 221,
+      "doc_char_count": 723,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 3, 4, 4, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.097（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=23, 平均文長=31.4字, 変動係数=0.240",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.606 (モーラ近似長 平均=42.2, 標準偏差=10.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 23,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# ログ基盤の移行で変わった調査の手順",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "旧ログ基盤の検索時間は、サービスの増加とともに延びていた。保存容量の上限も、調査できる期間を制限していた。特に月初の問い合わせ対応では、前月末の記録がすでに消えている場合があった。この制約が、ログ基盤を移行する直接の理由になった。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "移行計画は、保存先の変更だけでなく、調査に必要な項目の統一を含んだ。サービス名、実行環境、リクエスト識別子が共通項目となり、従来ばらばらだった項目名に対応表が用意された。既存の時刻は生成元のタイムゾーンを確認したうえで、検索時に比較できる形式へそろえられた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "二週間の並行送信が、新旧の差を明らかにした。総件数はおおむね一致していたが、長いエラーメッセージの一部が新基盤に届いていなかった。転送処理の上限が、設定より大きなログを切り捨てていた。件数の一致だけでは本文の欠落を検出できないことが、この比較で分かった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "修正後の確認には、長い本文や複数行の例外を含む検証用ログが使われた。新しい検索画面は、従来の検索式をそのまま受け付けない。そのため、よく使われる調査手順の一覧が、旧画面の操作と新画面の操作を対応づけた。保存済み検索も、担当するサービスごとに移された。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "切り替え条件には、受信の遅延、必要項目の欠落、代表的な検索の実行時間が含まれた。検索が速くても、記録が届くまでに時間がかかれば障害調査には使いにくい。並行運用の結果は、この三点を別々に示した。旧基盤への送信は、新基盤で実際の問い合わせ調査を終えるまで継続した。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "移行後の調査では、リクエスト識別子が複数サービスの記録を結びつけた。一方、本文の表記揺れは引き続き検索を難しくしている。今回の移行が整えたのは、記録を保存して取り出す部分である。次の改善対象には、各サービスが出力するログの内容が残っている。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6-luna/23-tech-metaphor.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 25,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.04,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      4,
+      5,
+      3,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.1649242250247064,
+    "rhythm": {
+      "mora_mean": 39,
+      "mora_stdev": 8.207313811473277,
+      "burstiness": -0.6522863451095763,
+      "length_autocorrelation_lag1": -0.021222071852588384
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.16
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 222,
+      "doc_char_count": 760,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=25, 平均文長=30.4字, 変動係数=0.208",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.652 (モーラ近似長 平均=39.0, 標準偏差=8.2)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 25,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# データベース移行という橋を渡る",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "データベース移行は、動いている町を別の地図へ移す仕事に似ている。建物にあたるテーブルを運ぶだけでは終わらない。道の名前、住民の記録、郵便の流れまで、新しい場所で同じように機能しなければならない。私たちは今回、長く使ってきたデータベースから新しい基盤へ移る橋を架けた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "最初に洗い出したのは、データの形と量だった。スキーマは町並みの設計図、制約やインデックスは交通規則にあたる。単純なコピーでは、見た目が移っても、問い合わせの道筋が変わる可能性がある。そこで、代表的なクエリを集め、移行先での実行計画を確認した。古い道が新しい地形に合うとは限らないからだ。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "本番データの複製には、二重書き込みを使った。旧環境を現役の町として保ちながら、新環境にも更新を届ける。差分を照合する仕組みは、両岸の郵便局をつなぐ伝書鳩のような役割を果たした。件数だけでなく、重要な値のハッシュや更新時刻も比べ、食い違いを早く見つけられるようにした。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "切り替え当日は、交通を止める時間を短くする必要があった。書き込みを一時的に止め、最後の差分を同期し、読み取り先を新環境へ切り替える。監視画面には、応答時間、エラー率、接続数を並べた。信号が青のままなら次の段階へ進み、赤が点けば橋を渡り切る前に戻る。ロールバック手順は、対岸へ戻るための退路として事前に確認していた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "移行後の数時間は、地図を片手に新しい町を歩くように、主要な機能を確かめた。予想外の遅いクエリが一つ見つかったが、インデックスの見直しで改善した。データは無事に渡り、利用者への影響も抑えられた。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "今回の経験から、移行の成否はコピーの完了だけでは測れないとわかった。差分を見張ること、切り替えの判断を共有すること、戻る道を整えておくこと。それらが揃って、ようやく橋は人とデータを安全に渡す。次の移行では、この橋の設計図をさらに早く描き始めたい。",
+      "no": 7
+    }
+  ]
+}

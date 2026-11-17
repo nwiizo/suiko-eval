@@ -1,0 +1,131 @@
+{
+  "file": "gpt-6.1-sol/20-tech-literary.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 27,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.037037037037037035,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      5,
+      5,
+      4,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.1111111111111111,
+    "rhythm": {
+      "mora_mean": 36.2962962962963,
+      "mora_stdev": 11.937537480460268,
+      "burstiness": -0.5050139478561269,
+      "length_autocorrelation_lag1": 0.0775394429151799
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2222222222222222
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 224,
+      "doc_char_count": 745,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=6, 各段落の文数=[4, 4, 5, 5, 4, 5]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.111（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.505 (モーラ近似長 平均=36.3, 標準偏差=11.9)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 27,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 午前二時、反映を待つ",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "午前二時の執務室では、空調の音が昼間より近く聞こえた。決済処理の更新を本番へ反映した直後だった。画面には成功の表示が出ていたが、私は席を立てなかった。五分ごとの集計が一度回るまで、今回の仕事にはまだ終わりが来ない。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "更新の目的は、決済先への送信が遅れたときの再試行処理を整理することだった。検証環境では正常系と失敗時の動作を確かめ、直前には二人で差分も読んだ。それでも、本番の待ち行列が増え始めたとき、最初に出た言葉は「なぜ」だった。答えを持たないまま、同じグラフを何度も見直した。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "再試行の間隔を計算する設定が、古い値を参照していた。コードと設定の反映時刻にずれがあり、その間だけ想定より短い間隔で処理が繰り返されていた。監視担当が増加を知らせ、作業担当が更新を止めた。私は手順書に記した条件と実測値を照らし、直前の版へ戻す判断をした。戻したあと、待ち行列は減り始めた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "障害対応の記録には、感情を入れなかった。反映時刻、検知時刻、戻した時刻。確認できた事実を順に置いた。しかし翌朝、その時刻を読み返すと、間にあった数分の長さがよみがえった。利用者からは見えない場所で、私たちは利用者の支払いを待たせていた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "ふりかえりでは、設定とコードを同時に反映できるという思い込みを扱った。検証環境では両方がそろった状態しか試していなかった。そこで、片方だけが新しい状態でも処理を続けられる変更に直し、設定の切り替え前後を含む検証を加えた。反映後の確認項目にも、待ち行列の件数と再試行回数を明記した。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "深夜の作業を支えていたのは、注意深さだけだった。その細さを、あの夜に知った。次の反映では手順を日中に試し、立ち会う人を決め、確認を終える時刻まで予定に入れた。窓の外が明るくなったとき、ようやく端末を閉じた。次は、この明るさを待たずに帰れる仕事にしたいと思った。",
+      "no": 7
+    }
+  ]
+}

@@ -10,31 +10,32 @@ use serde::Deserialize;
 use suiko::lint::{self, Span};
 use suiko::morphology::Morphology;
 
+use super::external::{self, ExternalLint, Located};
 use super::support::{read, read_toml, utf8};
 use super::{EvaluationError, rate_part};
 
 #[derive(Deserialize)]
 #[serde(deny_unknown_fields)]
-struct SpanSet {
+pub(super) struct SpanSet {
     schema_version: u32,
     generated: String,
     annotator: String,
     #[serde(default)]
     note: String,
-    document: Vec<SpanDocument>,
+    pub(super) document: Vec<SpanDocument>,
 }
 
 #[derive(Deserialize)]
 #[serde(deny_unknown_fields)]
-struct SpanDocument {
-    id: String,
+pub(super) struct SpanDocument {
+    pub(super) id: String,
     /// 注釈ファイルからの相対パス。
-    path: String,
+    pub(super) path: String,
     model: String,
-    style: String,
+    pub(super) style: String,
     /// suikoに渡すジャンル（essay・tech・business）。
     #[serde(default)]
-    genre: Option<String>,
+    pub(super) genre: Option<String>,
     #[serde(default)]
     span: Vec<AnnotatedSpan>,
 }
@@ -108,7 +109,7 @@ struct StyleCount {
     findings: usize,
 }
 
-fn line_starts(body: &str) -> Vec<usize> {
+pub(super) fn line_starts(body: &str) -> Vec<usize> {
     std::iter::once(0)
         .chain(body.match_indices('\n').map(|(index, _)| index + 1))
         .collect()
@@ -133,8 +134,17 @@ fn locate(id: &str, body: &str, text: &str) -> Result<Range<usize>, EvaluationEr
     }
 }
 
-fn overlaps(left: &Range<usize>, right: &Range<usize>) -> bool {
+pub(super) fn overlaps(left: &Range<usize>, right: &Range<usize>) -> bool {
     left.start < right.end && right.start < left.end
+}
+
+/// 範囲を、始まりの行の先頭から終わりの行の次の行の先頭まで広げる。
+/// 列を返さないツールと比べるため、注釈と指摘の両方を行単位で照合するときに使う。
+fn widen_to_lines(starts: &[usize], len: usize, range: &Range<usize>) -> Range<usize> {
+    let line_of = |offset: usize| starts.partition_point(|start| *start <= offset) - 1;
+    let first = line_of(range.start);
+    let last = line_of(range.end.saturating_sub(1).max(range.start));
+    starts[first]..starts.get(last + 1).copied().unwrap_or(len)
 }
 
 fn tally_lines(output: &mut String, label: &str, tallies: &BTreeMap<String, Tally>) {
@@ -156,6 +166,16 @@ pub struct MeaningSource {
     pub command: Vec<String>,
 }
 
+/// 照合する決定的な指摘の出どころ。
+pub enum Linter {
+    /// 隣の作業ツリーのsuikoのlint。
+    Suiko,
+    /// 他のツールのlintの出力。
+    External(ExternalLint),
+    /// lintの指摘を使わず、LLMの指摘だけを測る。
+    Off,
+}
+
 pub struct SpansOptions {
     pub experimental: bool,
     /// 集計から外す規則。「〜は、」の読点のように、注釈と偶然重なるだけで
@@ -163,9 +183,12 @@ pub struct SpansOptions {
     pub ignore: Vec<String>,
     /// 文書idの正規表現。規則の調整に使った文書と評価用の文書を分けて測るために使う。
     pub documents: Option<String>,
-    /// falseならlintの指摘を使わず、LLMの指摘だけを測る。
-    pub lint: bool,
+    pub linter: Linter,
     pub meaning: Option<MeaningSource>,
+    /// 注釈と指摘を行単位に広げて照合する。行しか返さないツールと同じ粒度で比べるために使う。
+    pub lines: bool,
+    /// 読解負荷の指摘（suikoの`analyze_reading_load`、natural-japaneseの`reading_load`）も数える。
+    pub reading_load: bool,
 }
 
 fn meaning_response(
@@ -197,10 +220,8 @@ fn meaning_response(
     Ok(raw)
 }
 
-pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationError> {
-    let experimental = options.experimental;
-    let ignore = options.ignore.as_slice();
-    let documents = options.documents.as_deref();
+/// 注釈ファイルを読み、文書idの正規表現に合う文書だけを残す。
+pub(super) fn load_set(path: &Path, documents: Option<&str>) -> Result<SpanSet, EvaluationError> {
     let mut set: SpanSet = read_toml(path)?;
     if set.schema_version != 1 {
         return Err(EvaluationError::Invalid(
@@ -214,6 +235,30 @@ pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationEr
         set.document
             .retain(|document| filter.is_match(&document.id));
     }
+    Ok(set)
+}
+
+/// suikoの指摘を、規則名と本文上の範囲にする。
+pub(super) fn suiko_located(starts: &[usize], finding: lint::Finding) -> Located {
+    let range = finding
+        .span
+        .as_ref()
+        .and_then(|span| absolute(starts, span));
+    (finding.category, range.map(|range| vec![range]))
+}
+
+pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationError> {
+    let experimental = options.experimental;
+    let ignore = options.ignore.as_slice();
+    let documents = options.documents.as_deref();
+    let set = load_set(path, documents)?;
+    if experimental
+        && matches!(&options.linter, Linter::External(lint) if lint.tool == external::ExternalTool::Yomiyasu)
+    {
+        return Err(EvaluationError::Invalid(
+            "yomiyasuには実験的な規則の指定がないため、--experimentalは使えません".to_owned(),
+        ));
+    }
     let base = path.parent().unwrap_or_else(|| Path::new("."));
     let morphology = Morphology::new()?;
 
@@ -225,16 +270,42 @@ pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationEr
     let mut styles = BTreeMap::<String, StyleCount>::new();
     let (mut spanned, mut overlapping, mut unspanned, mut rejected, mut accepted) = (0, 0, 0, 0, 0);
     let mut discarded = 0;
+    let mut whole_line = 0;
     let mut unparsed = Vec::new();
     let mut details = String::new();
 
     for document in &set.document {
         let file = base.join(&document.path);
         let body = utf8(&file, read(&file)?)?;
-        let mut all = if options.lint {
-            lint::analyze(&body, &morphology, document.genre.as_deref(), experimental)?.findings
-        } else {
-            Vec::new()
+        let starts = line_starts(&body);
+        let suiko_located = |finding| suiko_located(&starts, finding);
+        let mut all = match &options.linter {
+            Linter::Suiko => {
+                let genre = document.genre.as_deref();
+                let mut findings = lint::analyze(&body, &morphology, genre, experimental)?.findings;
+                if options.reading_load {
+                    findings
+                        .extend(lint::analyze_reading_load(&body, &morphology, genre)?.findings);
+                }
+                findings.into_iter().map(suiko_located).collect()
+            }
+            Linter::External(lint) => {
+                let found = lint.findings(
+                    &external::Document {
+                        id: &document.id,
+                        base,
+                        path: Path::new(&document.path),
+                        genre: document.genre.as_deref(),
+                        body: &body,
+                        starts: &starts,
+                    },
+                    experimental,
+                    options.reading_load,
+                )?;
+                whole_line += found.whole_line;
+                found.findings
+            }
+            Linter::Off => Vec::new(),
         };
         if let Some(source) = &options.meaning {
             let raw = meaning_response(source, &document.id, &body)?;
@@ -242,28 +313,34 @@ pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationEr
             match suiko::meaning::findings(&body, &raw) {
                 Ok(report) => {
                     discarded += report.discarded.len();
-                    all.extend(report.findings);
+                    all.extend(report.findings.into_iter().map(suiko_located));
                 }
                 Err(_) => unparsed.push(document.id.clone()),
             }
         }
-        let starts = line_starts(&body);
+        let widen = |range: Range<usize>| {
+            if options.lines {
+                widen_to_lines(&starts, body.len(), &range)
+            } else {
+                range
+            }
+        };
         let kept = all
-            .iter()
-            .filter(|finding| !ignore.contains(&finding.category))
+            .into_iter()
+            .filter(|(category, _)| !ignore.contains(category))
             .collect::<Vec<_>>();
+        let kept_count = kept.len();
         let findings = kept
-            .iter()
-            .filter_map(|finding| {
-                let range = absolute(&starts, finding.span.as_ref()?)?;
-                Some((finding.category.as_str(), range))
+            .into_iter()
+            .filter_map(|(category, ranges)| {
+                Some((category, ranges?.into_iter().map(widen).collect::<Vec<_>>()))
             })
             .collect::<Vec<_>>();
-        unspanned += kept.len() - findings.len();
+        unspanned += kept_count - findings.len();
 
         let mut annotated = Vec::new();
         for span in &document.span {
-            let range = locate(&document.id, &body, &span.text)?;
+            let range = widen(locate(&document.id, &body, &span.text)?);
             match span.review {
                 Review::Rejected => rejected += 1,
                 Review::Accepted => {
@@ -278,12 +355,15 @@ pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationEr
         style.documents += 1;
         style.chars += body.chars().count();
         style.spans += annotated.len();
-        style.findings += kept.len();
+        style.findings += kept_count;
 
-        for (category, range) in &findings {
-            let count = categories.entry((*category).to_owned()).or_default();
+        let touches = |ranges: &[Range<usize>], span: &Range<usize>| {
+            ranges.iter().any(|range| overlaps(range, span))
+        };
+        for (category, ranges) in &findings {
+            let count = categories.entry(category.clone()).or_default();
             count.findings += 1;
-            if annotated.iter().any(|(_, span)| overlaps(span, range)) {
+            if annotated.iter().any(|(_, span)| touches(ranges, span)) {
                 count.overlapping += 1;
                 overlapping += 1;
             }
@@ -292,8 +372,8 @@ pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationEr
         for (span, range) in &annotated {
             let mut hits = findings
                 .iter()
-                .filter(|(_, finding)| overlaps(finding, range))
-                .map(|(category, _)| *category)
+                .filter(|(_, ranges)| touches(ranges, range))
+                .map(|(category, _)| category.as_str())
                 .collect::<Vec<_>>();
             hits.sort_unstable();
             hits.dedup();
@@ -346,8 +426,20 @@ pub fn spans(path: &Path, options: &SpansOptions) -> Result<String, EvaluationEr
     if let Some(pattern) = documents {
         output.push_str(&format!("documents_filter={pattern}\n"));
     }
-    if !options.lint {
-        output.push_str("lint=off\n");
+    match &options.linter {
+        Linter::Suiko => {}
+        Linter::External(lint) => output.push_str(&format!(
+            "linter={} cache={} whole_line_findings={whole_line}\n",
+            lint.tool.as_str(),
+            lint.cache.display()
+        )),
+        Linter::Off => output.push_str("lint=off\n"),
+    }
+    if options.lines {
+        output.push_str("granularity=line（注釈と指摘を行全体に広げて照合）\n");
+    }
+    if options.reading_load {
+        output.push_str("reading_load=on\n");
     }
     if let Some(source) = &options.meaning {
         output.push_str(&format!(
@@ -442,5 +534,27 @@ mod tests {
         assert!(!overlaps(&range, &locate("d", body, "一行目").unwrap()));
         assert!(locate("d", body, "行目").is_err());
         assert!(locate("d", body, "三行目").is_err());
+    }
+
+    #[test]
+    fn line_granularity_widens_ranges_to_whole_lines() {
+        let body = "一行目\n二行目の文\n三行目";
+        let starts = line_starts(body);
+        let second = locate("d", body, "行目の").unwrap();
+        assert_eq!(
+            &body[widen_to_lines(&starts, body.len(), &second)],
+            "二行目の文\n"
+        );
+        let across = locate("d", body, "文\n三").unwrap();
+        assert_eq!(
+            &body[widen_to_lines(&starts, body.len(), &across)],
+            "二行目の文\n三行目"
+        );
+        // 隣り合う行は重ならない。
+        let first = widen_to_lines(&starts, body.len(), &locate("d", body, "一行").unwrap());
+        assert!(!overlaps(
+            &first,
+            &widen_to_lines(&starts, body.len(), &second)
+        ));
     }
 }

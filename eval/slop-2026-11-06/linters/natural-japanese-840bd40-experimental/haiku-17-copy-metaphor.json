@@ -1,0 +1,136 @@
+{
+  "file": "haiku/17-copy-metaphor.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 15,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.06666666666666667,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      3,
+      4,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.21081851067789195,
+    "rhythm": {
+      "mora_mean": 43.666666666666664,
+      "mora_stdev": 9.34998514556158,
+      "burstiness": -0.6472811908727508,
+      "length_autocorrelation_lag1": -0.08980749699032288
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.2
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 139,
+      "doc_char_count": 527,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 4,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=15, 平均文長=35.1字, 変動係数=0.210",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.647 (モーラ近似長 平均=43.7, 標準偏差=9.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 15,
+      "genre": "business",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 7,
+        "category": "double_negative",
+        "excerpt": "ず柔らかすぎず",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 手紙の続きを書くための一本",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "ペン先が紙に触れた瞬間、インクは雨粒が湖面に落ちるように、静かに広がります。新しい万年筆は、まるで眠っていた言葉を呼び起こす、小さな魔法の杖のような存在です。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "軸は深い漆黒の樹脂で仕上げ、手に取ると、ほどよい重みが指先に収まります。その重心は、書き手の呼吸に寄り添う振り子のように、長い文章を書いても手首を疲れさせません。キャップを外せば、金のペン先が朝の光を受けて、川面のようにきらりと揺れます。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "ペン先は、一本の糸で結ばれた職人の技そのものです。硬すぎず柔らかすぎず、紙の繊維に寄り添いながら、文字の線に確かな表情を与えます。細い線は小川のせせらぎのように軽やかに、太い線は大地を踏みしめる足音のように力強く。書くことが、まるで音楽を奏でるような心地よさに変わります。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "インクは、藍色の深い海を思わせる色合いです。紙に落ちると、時間をかけて乾き、やがて言葉は陽だまりに溶けるような柔らかな輝きを帯びます。大切な人への手紙も、日記の一行も、この一本の筆記具が、確かな記憶の標本として残してくれます。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "机の上に置くだけで、部屋の空気が少し引き締まります。書斎の片隅で眠っていた言葉たちが、目を覚まして並び始めるような感覚。新しい一本との出会いは、白い紙を、物語の入り口へと変えてくれるのです。",
+      "no": 6
+    }
+  ]
+}

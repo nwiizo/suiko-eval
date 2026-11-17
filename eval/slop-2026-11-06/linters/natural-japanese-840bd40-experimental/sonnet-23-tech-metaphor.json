@@ -1,0 +1,148 @@
+{
+  "file": "sonnet/23-tech-metaphor.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1,
+      "forbidden_phrase": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 28,
+    "nominal_ending_count": 3,
+    "nominal_ending_ratio": 0.10714285714285714,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      3,
+      4,
+      4,
+      5,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.1336306209562122,
+    "rhythm": {
+      "mora_mean": 30.464285714285715,
+      "mora_stdev": 15.062920753713506,
+      "burstiness": -0.3382892594430921,
+      "length_autocorrelation_lag1": 0.12644412221871842
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.23076923076923078
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 191,
+      "doc_char_count": 693,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=7, 各段落の文数=[4, 3, 4, 4, 5, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.134（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.338 (モーラ近似長 平均=30.5, 標準偏差=15.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 15,
+      "category": "forbidden_phrase",
+      "excerpt": "見る。けれど、本当に大切なのは、渡っている人が揺れ",
+      "severity": "warn",
+      "detail": "AI の書いた文章によく出る言い回し「大切なのは」",
+      "related_lines": null,
+      "hint": "多くは削っても意味が変わらない。削ると前後がつながらないときだけ、元の文書の内容で言い換える。固有名詞や引用の一部なら残す"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 28,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# データベース移行のふりかえり",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "データベースの移行は、走っている列車の車輪を取り替える作業に似ている。止められない。遅らせられない。しかも乗客は、何が起きているか知らない。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "今回、私たちは五年使ってきたMySQLから、PostgreSQLへの移行を行った。テーブルは約二百、データ量は二テラバイト弱。サービスは二十四時間動いており、停止できるのは長くても十五分だった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "最初に取り組んだのは、地図づくりである。古い街の地図には、書かれていない裏道がたくさんある。スキーマ定義の外側で、アプリケーションのコードが暗黙に期待している挙動、たとえば文字列の大文字小文字の扱いや、日付の丸め方を洗い出した。この棚卸しだけで三週間かかったが、あとから振り返れば、ここがいちばん効いた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "次に、新旧のデータベースを並走させた。双子の川を並べて流し、同じ雨を降らせて、水位の差を見比べるようなものだ。書き込みを二重に流し、読み出し結果を比較する。差分が出るたびに、小さな石を拾い上げるように原因を潰した。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "移行当日、切り替えは十一分で終わった。針の穴に糸を通すような緊張感はあったものの、手順書は静かに進んだ。ただ、翌朝、一部の集計クエリが遅いことに気づいた。実行計画の癖が違い、統計情報の更新が追いついていなかったのである。索引を足して、半日で収まった。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "学んだことは三つある。暗黙の前提を先に見つけること。並走期間を惜しまないこと。切り戻しの道を、最後まで塞がないこと。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "橋を架け替えるとき、人は新しい橋の美しさばかりを見る。けれど、本当に大切なのは、渡っている人が揺れを感じないことだ。今回のチームは、それをやり遂げたと思っている。次に誰かが同じ川を渡るとき、この記録が足元の板になれば嬉しい。",
+      "no": 8
+    }
+  ]
+}

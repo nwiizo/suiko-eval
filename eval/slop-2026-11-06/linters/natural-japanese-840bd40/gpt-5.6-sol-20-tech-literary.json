@@ -1,0 +1,121 @@
+{
+  "file": "gpt-5.6-sol/20-tech-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": false,
+    "total_sentences": 27,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      5,
+      5,
+      3,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.1697250257391052,
+    "rhythm": {
+      "mora_mean": 35.18518518518518,
+      "mora_stdev": 14.777452887916622,
+      "burstiness": -0.4084598628961386,
+      "length_autocorrelation_lag1": -0.059153783922573665
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.14814814814814814
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 218,
+      "doc_char_count": 732,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.408 (モーラ近似長 平均=35.2, 標準偏差=14.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 27,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 深夜のデプロイを振り返る",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "午前零時を過ぎると、オフィスは別の建物になる。昼間の会話は壁の奥へ退き、空調の低い音とキーボードの打鍵だけが残る。窓の向こうでは、終電を逃れた車の灯が、遠い川のように流れていた。その夜、私たちは決済基盤の新しいバージョンを本番へ送り出した。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "準備は一週間前から始まっていた。手順書を更新し、ロールバックを試し、監視項目を確かめた。変更は小さく分け、段階的にトラフィックを移す設計にした。それでも本番を前にすると、確認済みの文字列まで急に頼りなく見える。チェックリストの一行一行を、足場を踏むように読み上げた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "零時二十分、デプロイを開始した。最初のインスタンスは正常に立ち上がった。エラー率も応答時間も静かだった。だが、半数へ展開したところで、古いクライアントからの決済だけが断続的に失敗し始めた。グラフに現れた細い赤線は、暗い部屋に入った亀裂のようだった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "原因は、互換性のために残していた変換処理だった。新しいデータ形式には対応していたが、特定の空文字を欠損値として扱う条件が抜けていた。私たちは展開を止め、切り戻した。午前一時八分、エラー率は元に戻った。大きな障害にはならなかったが、張り詰めていた空気がほどけるまでには、もう少し時間が必要だった。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "振り返れば、監視と段階展開は正しく働いた。一方で、互換性テストは代表例に寄りかかり、実際の入力の揺らぎを十分に含んでいなかった。翌日、匿名化した本番相当のデータから境界値を抽出する検証を追加し、移行期間中の旧形式を契約テストに組み込んだ。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "夜明け前、退館すると空が薄く青んでいた。デプロイは成功だけで終わる仕事ではない。止める判断も、戻す手順も、次の失敗を小さくする記録も、その一部である。あの赤線は消えた。しかし、私たちが見落としていた暗がりを、今も静かに照らしている。",
+      "no": 7
+    }
+  ]
+}

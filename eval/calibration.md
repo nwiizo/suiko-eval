@@ -802,3 +802,20 @@ suiko v0.4.2の公開前に、2026-11-06の修正（受け身の主語の除外�
 - 短い人間の文書でも`low_burstiness`が6/16に当たった。降格候補の判断を支える結果だが、規則は変えていない。
 - 推敲の前後48組の`diff`で、宛名の誤検知（見出しの「…仕様」）が1件あり、suikoで直した。
 - `negation_changed`の警告28件は、すべて意味を保った言い換えだった。2026-11-07に文末の述語の向きで絞り、6件になった（既存の評価集合の出力は変わらない）。
+
+## 規則の族の標本（2026-11-15、suiko v0.4.3）
+
+suikoの規則の族（W2〜W5）で新設・拡張した8規則に、ラベル付き標本85件を足した（`repeated_sentence_ending`・`negated_contrast`・`short_topic_comma`・`short_subject_comma`は新しいディレクトリ、`short_object_comma`・`abstract_metaphor`・`vague_sensory_term`・`technical_jargon_metaphor`は番号101以降）。仕様（docs/rule-families.md）から書いた合成の作例で、suikoのテストの例は使っていない。規則はこの標本で調整していない。
+
+| 規則 | 正例 | 反例の誤検知 | 外れた例 |
+| --- | --- | --- | --- |
+| repeated_sentence_ending | 5/5 | 0/6 | — |
+| negated_contrast | 5/5 | 0/6 | — |
+| short_topic_comma | 5/5 | 0/7 | — |
+| short_subject_comma | 5/5 | 0/6 | — |
+| short_object_comma | 10/10 | 0/15 | — |
+| abstract_metaphor | 14/14 | 1/22 | 反例「棚に置かれた真鍮の道具は羅針盤だ。」（航海の語のない実物の羅針盤を述語にした文） |
+| vague_sensory_term | 10/10 | 0/15 | — |
+| technical_jargon_metaphor | 16/16 | 0/19 | — |
+
+期待の誤りを2件直した。読点の正例として書いた「しかし、新しい規程は、」「新しい担当者が、」は、仕様で対象外の形容詞を含む句だったため、評価の後にsilentへ変え、同じ型の正例（「本年度の規程は、」「総務部の担当者が、」）を1件ずつ足した。規則は変えていない。既存の標本は、仕様を15字に広げた読点の1件（`short-object-comma-silent-001`「入力ファイルを、」、silent→fire）と、新しい規則が包む`repeated-sentence-mode-fire-001`（文末を「である」から「だった」へ）を直した。manifest SHA-256先頭は`4ddfcfa7f9de`（標本を足す前は`242e644db600`）。

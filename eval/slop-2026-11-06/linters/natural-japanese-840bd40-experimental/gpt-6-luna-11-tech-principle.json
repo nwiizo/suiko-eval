@@ -1,0 +1,174 @@
+{
+  "file": "gpt-6-luna/11-tech-principle.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "tech",
+    "experimental": true,
+    "total_sentences": 20,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.12247448713915891,
+    "rhythm": {
+      "mora_mean": 33.2,
+      "mora_stdev": 10.675204916066015,
+      "burstiness": -0.5133832452070433,
+      "length_autocorrelation_lag1": -0.28517992454747154
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.25
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 157,
+      "doc_char_count": 495,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 14,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 2,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=7, 各段落の文数=[2, 3, 3, 3, 3, 3, 3]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.122（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.513 (モーラ近似長 平均=33.2, 標準偏差=10.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 20,
+      "genre": "tech",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# コードレビューの心得",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "コードレビューは、変更を安全に届け、チームの理解を揃えるために行う。次の原則を守る。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "見出し",
+      "text": "## 変更の目的を確認する",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "差分を読む前に、何を解決する変更かを把握する。目的が不明なら、実装の好みを議論する前に背景を確認する。要求された振る舞いと変更内容が対応しているかを確かめる。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "見出し",
+      "text": "## 重要なリスクから見る",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "データ消失、権限の過剰付与、互換性の破壊、失敗時の復旧困難を優先して確認する。命名や整形の指摘で重大な問題を埋もれさせない。影響範囲と発生条件を示し、修正の必要性を説明する。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "見出し",
+      "text": "## 事実と好みを分ける",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "不具合、仕様との不一致、保守上のリスクを具体的に示す。単なる好みは必須の修正として扱わない。代案を提案する場合は、読みやすさや安全性がどう改善するかを述べる。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "見出し",
+      "text": "## 差分の範囲を尊重する",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "レビューでは、依頼された変更に関係する箇所を中心に見る。周辺の改善案は別の作業として提案する。指摘を増やすために変更範囲を広げない。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "見出し",
+      "text": "## 質問は明確に書く",
+      "no": 11
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "前提が読み取れない場合は、断定ではなく質問にする。どの行のどの振る舞いについて、何を確認したいのかを示す。書き手が意図を説明できる余地を残す。",
+      "no": 12
+    },
+    {
+      "line": 25,
+      "kind": "見出し",
+      "text": "## 修正後も目的を検証する",
+      "no": 13
+    },
+    {
+      "line": 27,
+      "kind": "段落",
+      "text": "修正された指摘は、差分と必要な確認方法を見て解消を判断する。コードが変わっただけで完了としない。レビューの目的は、指摘を数えることではなく、変更を安心して届けられる状態にすることだ。",
+      "no": 14
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "file": "sonnet/22-business-principle.md",
+  "stats": {
+    "total_findings": 0,
+    "by_category": {},
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 0,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 0,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [],
+    "paragraph_sentence_count_cv": null,
+    "rhythm": {},
+    "ngram": {
+      "lead_pos_4gram_top": null,
+      "lead_pos_4gram_ratio": null
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 0,
+      "doc_char_count": 0,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 30,
+      "non_blank_line_count": 39,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 0,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 0,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新規事業チームの行動指針",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "見出し",
+      "text": "## 顧客",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "箇条書き",
+      "text": "- 顧客の課題から始める。",
+      "no": 3
+    },
+    {
+      "line": 6,
+      "kind": "箇条書き",
+      "text": "- 顧客の言葉をそのまま記録する。",
+      "no": 4
+    },
+    {
+      "line": 7,
+      "kind": "箇条書き",
+      "text": "- 会う前に仮説を立てる。会ったら仮説を疑う。",
+      "no": 5
+    },
+    {
+      "line": 8,
+      "kind": "箇条書き",
+      "text": "- 声の大きさではなく、困りごとの深さで優先する。",
+      "no": 6
+    },
+    {
+      "line": 10,
+      "kind": "見出し",
+      "text": "## 検証",
+      "no": 7
+    },
+    {
+      "line": 12,
+      "kind": "箇条書き",
+      "text": "- 作る前に、確かめる。",
+      "no": 8
+    },
+    {
+      "line": 13,
+      "kind": "箇条書き",
+      "text": "- 小さく試し、早く捨てる。",
+      "no": 9
+    },
+    {
+      "line": 14,
+      "kind": "箇条書き",
+      "text": "- 数字で判断し、数字の限界も知る。",
+      "no": 10
+    },
+    {
+      "line": 15,
+      "kind": "箇条書き",
+      "text": "- 検証の問いは、実施前に書き出す。",
+      "no": 11
+    },
+    {
+      "line": 17,
+      "kind": "見出し",
+      "text": "## 速度",
+      "no": 12
+    },
+    {
+      "line": 19,
+      "kind": "箇条書き",
+      "text": "- 決めるのは早く、直すのはもっと早く。",
+      "no": 13
+    },
+    {
+      "line": 20,
+      "kind": "箇条書き",
+      "text": "- 完成度より、学習の速さを選ぶ。",
+      "no": 14
+    },
+    {
+      "line": 21,
+      "kind": "箇条書き",
+      "text": "- 迷ったら、可逆な選択肢を取る。",
+      "no": 15
+    },
+    {
+      "line": 22,
+      "kind": "箇条書き",
+      "text": "- 週に一度は、顧客に何かを見せる。",
+      "no": 16
+    },
+    {
+      "line": 24,
+      "kind": "見出し",
+      "text": "## 透明性",
+      "no": 17
+    },
+    {
+      "line": 26,
+      "kind": "箇条書き",
+      "text": "- 悪い知らせほど、早く共有する。",
+      "no": 18
+    },
+    {
+      "line": 27,
+      "kind": "箇条書き",
+      "text": "- 判断の理由を、文章で残す。",
+      "no": 19
+    },
+    {
+      "line": 28,
+      "kind": "箇条書き",
+      "text": "- 失敗は、チームの資産にする。",
+      "no": 20
+    },
+    {
+      "line": 29,
+      "kind": "箇条書き",
+      "text": "- 知っていることは、聞かれる前に渡す。",
+      "no": 21
+    },
+    {
+      "line": 31,
+      "kind": "見出し",
+      "text": "## 協働",
+      "no": 22
+    },
+    {
+      "line": 33,
+      "kind": "箇条書き",
+      "text": "- 肩書きではなく、提案で動く。",
+      "no": 23
+    },
+    {
+      "line": 34,
+      "kind": "箇条書き",
+      "text": "- 反対意見は、歓迎する。",
+      "no": 24
+    },
+    {
+      "line": 35,
+      "kind": "箇条書き",
+      "text": "- 決まったことには、全員でコミットする。",
+      "no": 25
+    },
+    {
+      "line": 36,
+      "kind": "箇条書き",
+      "text": "- 他の部署を、顧客として扱う。",
+      "no": 26
+    },
+    {
+      "line": 38,
+      "kind": "見出し",
+      "text": "## 責任",
+      "no": 27
+    },
+    {
+      "line": 40,
+      "kind": "箇条書き",
+      "text": "- 自分の担当を、最後までやり切る。",
+      "no": 28
+    },
+    {
+      "line": 41,
+      "kind": "箇条書き",
+      "text": "- 撤退の基準を、始める前に決める。",
+      "no": 29
+    },
+    {
+      "line": 42,
+      "kind": "箇条書き",
+      "text": "- 投資した時間と予算に、答えを出す。",
+      "no": 30
+    },
+    {
+      "line": 43,
+      "kind": "箇条書き",
+      "text": "- 続ける理由と、やめる理由を、同じ重さで語る。",
+      "no": 31
+    },
+    {
+      "line": 45,
+      "kind": "見出し",
+      "text": "## 学び",
+      "no": 32
+    },
+    {
+      "line": 47,
+      "kind": "箇条書き",
+      "text": "- 毎週、学んだことを一つ書く。",
+      "no": 33
+    },
+    {
+      "line": 48,
+      "kind": "箇条書き",
+      "text": "- 事実と解釈を、分けて記す。",
+      "no": 34
+    },
+    {
+      "line": 49,
+      "kind": "箇条書き",
+      "text": "- 成功の理由も、疑う。",
+      "no": 35
+    },
+    {
+      "line": 51,
+      "kind": "見出し",
+      "text": "## 姿勢",
+      "no": 36
+    },
+    {
+      "line": 53,
+      "kind": "箇条書き",
+      "text": "- 小さな事業から、大きな信頼を築く。",
+      "no": 37
+    },
+    {
+      "line": 54,
+      "kind": "箇条書き",
+      "text": "- 不確実さを、面白がる。",
+      "no": 38
+    },
+    {
+      "line": 55,
+      "kind": "箇条書き",
+      "text": "- 迷ったら、顧客に戻る。",
+      "no": 39
+    }
+  ]
+}

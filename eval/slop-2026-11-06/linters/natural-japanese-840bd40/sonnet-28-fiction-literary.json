@@ -1,0 +1,161 @@
+{
+  "file": "sonnet/28-fiction-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 29,
+    "nominal_ending_count": 2,
+    "nominal_ending_ratio": 0.06896551724137931,
+    "total_paragraphs": 10,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      4,
+      1,
+      2,
+      4,
+      4,
+      3,
+      2,
+      2,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.42091571088736907,
+    "rhythm": {
+      "mora_mean": 24.20689655172414,
+      "mora_stdev": 11.576966758789888,
+      "burstiness": -0.352950425820102,
+      "length_autocorrelation_lag1": 0.4680692063974893
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.25925925925925924
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 162,
+      "doc_char_count": 565,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 13,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 2,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.353 (モーラ近似長 平均=24.2, 標準偏差=11.6)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 29,
+      "genre": "essay",
+      "by_category": {
+        "kanji_run": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 3,
+        "category": "kanji_run",
+        "excerpt": "全校児童十一名",
+        "severity": "info",
+        "detail": "漢字が7字連続（目安6字）。語の切れ目が読み取りにくい疑い",
+        "related_lines": null,
+        "hint": "ひらがなを交えて開く（「再送抑制機能」→「再送を止める機能」）。固有名詞はそのままでよい"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 閉校する小学校",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "三月の終わり、校庭の桜はまだ固い蕾のままであった。全校児童十一名の小さな学校は、この春を限りに、百四十年の歴史に幕を下ろす。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "教頭の田所は、最後の職員会議のあと、ひとり廊下を歩いた。床板は幾世代の上履きに磨かれて、鈍い飴色の艶を帯びている。教室の戸を開けると、黒板の隅に、卒業生たちの落書きが薄く残っていた。消しても消しても、白墨の痕は木目に沈んで、消えることがなかった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "「先生、まだいたの」",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "振り向くと、六年生の健太が、ランドセルを背負って立っていた。もう下校の時刻はとうに過ぎている。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "「忘れ物か」\n「うん。あのね、校庭の隅に埋めたんだ。去年、タイムカプセル」",
+      "no": 6
+    },
+    {
+      "line": 14,
+      "kind": "段落",
+      "text": "二人は夕暮れの校庭へ出た。鉄棒は錆びて、ブランコの鎖が風にかすかに鳴った。健太は花壇の脇にしゃがみ、小さな缶を掘り出した。土の匂いが、冷たく立ちのぼった。",
+      "no": 7
+    },
+    {
+      "line": 16,
+      "kind": "段落",
+      "text": "「中、何が入ってるんだ」\n「十年後の自分への手紙。でも、この学校がなくなるなら、もう開けられない気がして」",
+      "no": 8
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "田所は答えに窮した。やがて、ゆっくりと言った。",
+      "no": 9
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "「学校はなくなっても、お前が覚えている限り、ここは在る。開けるのは、お前の好きなときでいい」",
+      "no": 10
+    },
+    {
+      "line": 23,
+      "kind": "段落",
+      "text": "健太は黙って頷き、缶を胸に抱いた。西の空が茜から藍へ移ろうとしていた。田所は、誰もいない校舎の窓に、ひとつだけ灯りがともっているのを見た。それは、自分が消し忘れた職員室の灯であった。彼はそれを、そのままにしておくことにした。",
+      "no": 11
+    }
+  ]
+}

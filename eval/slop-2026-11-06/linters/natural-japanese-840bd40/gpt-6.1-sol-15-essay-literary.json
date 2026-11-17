@@ -1,0 +1,133 @@
+{
+  "file": "gpt-6.1-sol/15-essay-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 31,
+    "nominal_ending_count": 1,
+    "nominal_ending_ratio": 0.03225806451612903,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      4,
+      7,
+      6,
+      5,
+      5
+    ],
+    "paragraph_sentence_count_cv": 0.20655239475589834,
+    "rhythm": {
+      "mora_mean": 29.70967741935484,
+      "mora_stdev": 12.04345237285522,
+      "burstiness": -0.42311139630532874,
+      "length_autocorrelation_lag1": -0.15770005946080892
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3225806451612903
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 234,
+      "doc_char_count": 753,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.423 (モーラ近似長 平均=29.7, 標準偏差=12.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 31,
+      "genre": "essay",
+      "by_category": {
+        "double_negative": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 7,
+        "category": "double_negative",
+        "excerpt": "ないのかは聞かなかっ",
+        "severity": "info",
+        "detail": "否定が二重に掛かっている疑い",
+        "related_lines": null,
+        "hint": "肯定の形に直すなら、真偽が反転していないかを必ず確かめる（「招かないとは言えない」は「招くことがある」）。控えめに言うことが意図なら触らない"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 柱時計の沈黙",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "実家の柱時計は、十一時十七分を指したまま止まっている。帰省するたびに見上げるが、いつからその時刻なのか、家族の誰も正確には覚えていない。父は、部品があれば直るらしい、と一度言った。それから何年かが過ぎ、時計は直る見込みを含んだまま、居間の柱に掛かっている。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "子どものころ、あの音は家のどこにいても聞こえた。風呂の湯に耳を沈めていても、十時を打つ鈍い響きだけは届いた。宿題をしている夕方には、振り子の音が妙に大きかった。早く遊びに出たい私と、夕飯の支度をする母と、まだ帰らない父とが、それぞれ別の速さで同じ音を聞いていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "父がねじを巻く姿を覚えている。日曜日の朝、新聞を畳んで立ち上がり、小さな鍵を差し込む。私は下からその手元を見ていた。途中で指を離すとどうなるのか、尋ねたことがある。父は鍵を握ったまま、よくない、と答えた。何によくないのかは聞かなかった。父の仕事には、説明されなくても見ていればよいことがあると思っていた。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "いま父は、椅子から立つ前に肘掛けを探る。時計に手を伸ばすところを見なくなって久しい。母は新しい電波時計を台所に置いた。時間を知るのに困ることはない。それでも古い時計を外そうとは誰も言わない。文字盤の下にある硝子を拭くとき、母は動いていたころと同じように、左手で木の箱をそっと支える。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "先日、帰りの電車を調べながら、私は無意識に柱時計を見た。十一時十七分。役に立たないと知っているはずの目が、まだあそこへ時刻を尋ねに行く。そのことが少しおかしく、少し心細かった。時計が止まったあとにも、私の内側では、あの家の時間が動き続けている。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "父に修理の話をしかけて、やめた。次に来たとき、二人で店を探してもよい。ただその日は、向かいの椅子に座ってお茶を飲んだ。父が湯飲みを置く小さな音がした。振り子の動かない午後に、その音は思っていたよりも、はっきりと聞こえた。",
+      "no": 7
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "file": "gpt-6.1-sol/30-business-subject.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      5,
+      5,
+      4,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.11134044285378081,
+    "rhythm": {
+      "mora_mean": 44.59090909090909,
+      "mora_stdev": 9.65146757992177,
+      "burstiness": -0.6441355201490682,
+      "length_autocorrelation_lag1": -0.16676750060531118
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.22727272727272727
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 206,
+      "doc_char_count": 699,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[4, 5, 5, 4, 4]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.111（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=22, 平均文長=31.8字, 変動係数=0.209",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.644 (モーラ近似長 平均=44.6, 標準偏差=9.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 22,
+      "genre": "business",
+      "by_category": {
+        "kanji_run": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 3,
+        "category": "kanji_run",
+        "excerpt": "本中期経営計画",
+        "severity": "info",
+        "detail": "漢字が7字連続（目安6字）。語の切れ目が読み取りにくい疑い",
+        "related_lines": null,
+        "hint": "ひらがなを交えて開く（「再送抑制機能」→「再送を止める機能」）。固有名詞はそのままでよい"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 中期経営計画が定める三年間の優先順位",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "本中期経営計画は、今後三年間の投資と業務改善の優先順位を定めます。計画の中心には、既存顧客への提供価値の向上、継続的な収益の確保、業務基盤の整備という三つの課題があります。売上の拡大だけでは、事業の持続性を十分に示せません。顧客の継続利用と、適正な利益を伴う成長が、各施策の判断基準になります。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "既存事業の改善は、一年目の取り組みの中心です。問い合わせや解約理由の記録が、改善すべき顧客体験を明らかにします。部門ごとに分散した情報の集約が、重複した対応を減らします。重点顧客層の定義は、営業活動と開発投資の対象をそろえます。新規施策の採用には、顧客の課題、期待する成果、必要な費用を記載した提案が必要です。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "二年目以降の投資は、一年目の検証結果を出発点とします。継続率や粗利の改善が確認できた施策には、追加投資の余地が生まれます。一方、成果の根拠が乏しい施策には、対象や方法の変更が必要です。すでに使った費用は、継続を正当化する理由にはなりません。残る期間の見通しが、継続、縮小、終了の判断を支えます。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "進捗管理には、売上、粗利、顧客継続率、主要業務の所要時間を用います。各指標の定義と集計元の統一が、部門間の比較を可能にします。月次の確認は異常の早期発見を担い、四半期ごとのレビューは資源配分の見直しを担います。目標値の変更には、当初の前提、実績との差、変更後の見通しを残す記録が伴います。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "部門計画は、この優先順位を担当者と期限のある施策に具体化します。複数部門にまたがる課題には、意思決定の責任者を置く必要があります。計画の実効性は、資料の詳しさだけでは高まりません。日々の案件選定と予算配分への反映が、三年間の方針を実際の成果へ結びつけます。",
+      "no": 6
+    }
+  ]
+}

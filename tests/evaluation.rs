@@ -342,7 +342,8 @@ fn labeled_reports_detection_and_fpr_per_category() {
         .args(["labeled", "eval/corpus.toml"])
         .assert()
         .success()
-        .stdout(predicate::str::contains("samples: total=428 categories=40"))
+        // 2026-11-15: 規則の族（suiko docs/rule-families.md）で新設・拡張した8規則の標本85件を足した。
+        .stdout(predicate::str::contains("samples: total=513 categories=44"))
         .stdout(predicate::str::contains("ci=wilson95 low_n<5"))
         .stdout(predicate::str::contains("corpus: sha256="))
         .stdout(predicate::str::contains(
@@ -352,13 +353,28 @@ fn labeled_reports_detection_and_fpr_per_category() {
             "category=low_lexical_diversity_ttr\tfire=1/1 detection=1.000 ci95=0.207-1.000 low_n\tsilent_fired=1/2 fpr=0.500 ci95=0.095-0.905 low_n",
         ))
         .stdout(predicate::str::contains(
-            "category=abstract_metaphor\tfire=9/9 detection=1.000 ci95=0.701-1.000\tsilent_fired=0/17 fpr=0.000 ci95=0.000-0.184",
+            "category=abstract_metaphor\tfire=14/14 detection=1.000 ci95=0.785-1.000\tsilent_fired=1/22 fpr=0.045 ci95=0.008-0.218",
         ))
         .stdout(predicate::str::contains(
-            "category=technical_jargon_metaphor\tfire=11/11 detection=1.000 ci95=0.741-1.000\tsilent_fired=0/14 fpr=0.000 ci95=0.000-0.215",
+            "category=technical_jargon_metaphor\tfire=16/16 detection=1.000 ci95=0.806-1.000\tsilent_fired=0/19 fpr=0.000 ci95=0.000-0.168",
         ))
         .stdout(predicate::str::contains(
-            "category=vague_sensory_term\tfire=5/5 detection=1.000 ci95=0.566-1.000\tsilent_fired=0/10 fpr=0.000 ci95=0.000-0.278",
+            "category=vague_sensory_term\tfire=10/10 detection=1.000 ci95=0.722-1.000\tsilent_fired=0/15 fpr=0.000 ci95=0.000-0.204",
+        ))
+        .stdout(predicate::str::contains(
+            "category=repeated_sentence_ending\tfire=5/5 detection=1.000 ci95=0.566-1.000\tsilent_fired=0/6",
+        ))
+        .stdout(predicate::str::contains(
+            "category=negated_contrast\tfire=5/5 detection=1.000 ci95=0.566-1.000\tsilent_fired=0/6",
+        ))
+        .stdout(predicate::str::contains(
+            "category=short_topic_comma\tfire=5/5 detection=1.000 ci95=0.566-1.000\tsilent_fired=0/7",
+        ))
+        .stdout(predicate::str::contains(
+            "category=short_subject_comma\tfire=5/5 detection=1.000 ci95=0.566-1.000\tsilent_fired=0/6",
+        ))
+        .stdout(predicate::str::contains(
+            "category=short_object_comma\tfire=10/10 detection=1.000 ci95=0.722-1.000\tsilent_fired=0/15",
         ))
         .stdout(predicate::str::contains(
             "category=copy_fragment\tfire=5/5 detection=1.000 ci95=0.566-1.000\tsilent_fired=0/10 fpr=0.000 ci95=0.000-0.278",
@@ -380,10 +396,12 @@ fn labeled_reports_detection_and_fpr_per_category() {
         .stdout(predicate::str::contains(
             "category=calque_phrase\tfire=6/6 detection=1.000 ci95=0.610-1.000\tsilent_fired=0/6",
         ))
-        .stdout(predicate::str::contains("mismatches: 3"))
+        // 2026-11-15の標本で外れた1件（航海の語のない実物の羅針盤を述語にした文）を加える。
+        .stdout(predicate::str::contains("mismatches: 4"))
         .stdout(predicate::str::contains("mismatch id=thin-evaluation-fire-004"))
         .stdout(predicate::str::contains("mismatch id=compressed-relation-fire-001"))
-        .stdout(predicate::str::contains("mismatch id=low-ttr-silent-002"));
+        .stdout(predicate::str::contains("mismatch id=low-ttr-silent-002"))
+        .stdout(predicate::str::contains("mismatch id=abstract-metaphor-silent-104"));
 }
 
 #[test]
@@ -591,7 +609,7 @@ fn quality_gates_each_rule_by_human_noise_and_fixtures() {
         .stderr(predicate::str::contains("max-human-fire-upper"));
 }
 
-// 2026-11-06の生成文書と注釈（slop-2026-11-06/README.md）。読点の2規則を外した検出と、
+// 2026-11-06の生成文書と注釈（slop-2026-11-06/README.md）。読点の規則（v0.4.3から主語の読点を加えた3規則）を外した検出と、
 // 当たった規則を明細に出すことを固定する。規則を変えたら値を測り直してREADMEも更新する。
 #[test]
 fn spans_reports_detection_with_and_without_incidental_rules() {
@@ -602,7 +620,8 @@ fn spans_reports_detection_with_and_without_incidental_rules() {
         .stdout(predicate::str::contains(
             "mode=default spans=50 accepted=0 unreviewed=50",
         ))
-        .stdout(predicate::str::contains("overall\tdetected=8/50"))
+        // v0.4.3の主語の読点（short_subject_comma）が「祭りの夢が、」で偶然重なり、8件から9件になった。
+        .stdout(predicate::str::contains("overall\tdetected=9/50"))
         .stdout(predicate::str::contains(
             "hit\tsonnet-10-business-motto\tover_compression\t主題と述語の不一致\tshort_topic_comma\t雑談は、仕事だ",
         ));
@@ -612,12 +631,12 @@ fn spans_reports_detection_with_and_without_incidental_rules() {
             "eval/slop-2026-11-06/annotations.toml",
             "--experimental",
             "--ignore",
-            "short_topic_comma,short_object_comma",
+            "short_topic_comma,short_object_comma,short_subject_comma",
         ])
         .assert()
         .success()
         .stdout(predicate::str::contains(
-            "ignored_categories=short_topic_comma,short_object_comma",
+            "ignored_categories=short_topic_comma,short_object_comma,short_subject_comma",
         ))
         .stdout(predicate::str::contains("overall\tdetected=12/50"))
         .stdout(predicate::str::contains(
@@ -630,7 +649,7 @@ fn spans_reports_detection_with_and_without_incidental_rules() {
             "eval/slop-2026-11-06/annotations.toml",
             "--documents=-(2[5-9]|3[0-6])-",
             "--ignore",
-            "short_topic_comma,short_object_comma",
+            "short_topic_comma,short_object_comma,short_subject_comma",
         ])
         .assert()
         .success()
@@ -639,6 +658,255 @@ fn spans_reports_detection_with_and_without_incidental_rules() {
             "documents_filter=-(2[5-9]|3[0-6])-",
         ))
         .stdout(predicate::str::contains("overall\tdetected=0/7"));
+}
+
+// natural-japanese・yomiyasuのlintの出力を保存したキャッシュだけで照合する（スクリプトは実行しない）。
+// 値は eval/competitive-review-2026-11-15.md と合わせる。
+#[test]
+fn spans_measure_other_linters_from_cached_outputs() {
+    let incidental =
+        "--ignore=short_topic_comma,short_object_comma,short_subject_comma,pause_comma";
+    for (linter, cache, experimental, detected) in [
+        (
+            "natural-japanese",
+            "eval/slop-2026-11-06/linters/natural-japanese-840bd40",
+            false,
+            "overall\tdetected=0/50",
+        ),
+        (
+            "natural-japanese",
+            "eval/slop-2026-11-06/linters/natural-japanese-840bd40-experimental",
+            true,
+            "overall\tdetected=4/50",
+        ),
+        (
+            "yomiyasu",
+            "eval/slop-2026-11-06/linters/yomiyasu-3.0.0",
+            false,
+            "overall\tdetected=3/50",
+        ),
+    ] {
+        let mut command = eval_command();
+        command.args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            incidental,
+            "--reading-load",
+            "--linter",
+            linter,
+            "--linter-cache",
+            cache,
+        ]);
+        if experimental {
+            command.arg("--experimental");
+        }
+        command
+            .assert()
+            .success()
+            .stdout(predicate::str::contains(format!("linter={linter} ")))
+            .stdout(predicate::str::contains("reading_load=on"))
+            .stdout(predicate::str::contains(detected));
+    }
+    // suikoも読解負荷を足して比べられる。読解負荷の指摘は注釈と重ならない。
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            incidental,
+            "--reading-load",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("overall\tdetected=4/50"));
+    // 列を返さないツールと同じ粒度にするため、行単位でも照合できる。
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            incidental,
+            "--lines",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("granularity=line"))
+        // v0.4.3の文末の連続・否定対比が、1行1段落の同じ行に付いて10件から11件になった（行単位の甘い照合）。
+        .stdout(predicate::str::contains("overall\tdetected=11/50"));
+}
+
+#[test]
+fn spans_reject_inconsistent_linter_options() {
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--linter",
+            "yomiyasu",
+        ])
+        .assert()
+        .failure()
+        .stderr(predicate::str::contains("--linter-cache"));
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--experimental",
+            "--linter",
+            "yomiyasu",
+            "--linter-cache",
+            "eval/slop-2026-11-06/linters/yomiyasu-3.0.0",
+        ])
+        .assert()
+        .failure()
+        .stderr(predicate::str::contains("--experimental"));
+    // 実験的な規則なしで取った出力を、--experimentalの照合に使わない。
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--experimental",
+            "--linter",
+            "natural-japanese",
+            "--linter-cache",
+            "eval/slop-2026-11-06/linters/natural-japanese-840bd40",
+        ])
+        .assert()
+        .failure()
+        .stderr(predicate::str::contains("experimental=false"));
+    // キャッシュにない文書は、スクリプトがなければ実行せずに止まる。
+    let empty = tempdir().expect("temporary directory");
+    eval_command()
+        .args([
+            "spans",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--linter",
+            "yomiyasu",
+            "--linter-cache",
+        ])
+        .arg(empty.path())
+        .assert()
+        .failure()
+        .stderr(predicate::str::contains("--linter-script"));
+}
+
+// 他のツールの指摘のうち、suikoの指摘と同じ箇所に当たるものを規則ごとに数える。
+#[test]
+fn coverage_counts_other_linter_findings_that_suiko_also_points_to() {
+    eval_command()
+        .args([
+            "coverage",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--linter",
+            "yomiyasu",
+            "--linter-cache",
+            "eval/slop-2026-11-06/linters/yomiyasu-3.0.0",
+            "--show",
+            "metaphor_verb,calque",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains("documents=180 chars=123698"))
+        // v0.4.3（2026-11-15）の文末の連続・「土台」「羅針盤」・「効く」で、同じ箇所を指す数が変わった。
+        .stdout(predicate::str::contains(
+            "category=sentence_end_repetition\t17\t37\t37\t0\t37\t37\trepeated_sentence_ending:37",
+        ))
+        .stdout(predicate::str::contains(
+            "category=slop_vocabulary\t13\t13\t13\t0\t8\t8\tabstract_metaphor:8",
+        ))
+        .stdout(predicate::str::contains(
+            "category=metaphor_verb\t2\t2\t2\t2\t2\t2\ttechnical_jargon_metaphor:2",
+        ))
+        // 小説・随筆の実物の「玄関」は指さない。
+        .stdout(predicate::str::contains(
+            "uncovered\tgpt-6-luna-06-fiction-literary\tcalque\t玄関",
+        ));
+    eval_command()
+        .args([
+            "coverage",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--experimental",
+            "--linter",
+            "natural-japanese",
+            "--linter-cache",
+            "eval/slop-2026-11-06/linters/natural-japanese-840bd40-experimental",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "category=no_chain\t14\t15\t15\t0\t15\t15\tno_chain:15,elaborate_simile:1",
+        ))
+        .stdout(predicate::str::contains(
+            "category=wago_nominalization\t3\t3\t3\t0\t0\t0\t-",
+        ));
+}
+
+// 人の文書は調整用（dev）と評価用（holdout）に分けて比べられ、suikoの指摘を文脈つきで読める。
+// 他のツールの出力は、指摘のない形式2の出力を一時ディレクトリに置いて代える。
+#[test]
+fn coverage_splits_human_documents_and_lists_suiko_findings() {
+    let cache = tempdir().expect("temporary directory");
+    let manifest = fs::read_to_string("eval/corpus.toml").expect("read corpus.toml");
+    let mut human = 0;
+    for block in manifest.split("[[document]]").skip(1) {
+        if !block.contains("label = \"human\"") {
+            continue;
+        }
+        human += 1;
+        let id = block
+            .lines()
+            .find_map(|line| line.strip_prefix("id = \""))
+            .and_then(|rest| rest.strip_suffix('"'))
+            .expect("document id");
+        fs::write(
+            cache.path().join(format!("{id}.json")),
+            r#"{"format":"yomiyasu-lint","format_version":2,"context":{"doc_type":"essay"},"findings":[]}"#,
+        )
+        .expect("write cached output");
+    }
+    let holdout = manifest
+        .split("[[document]]")
+        .filter(|block| {
+            block.contains("label = \"human\"") && block.contains("split = \"holdout\"")
+        })
+        .count();
+    for (split, documents) in [("dev", human - holdout), ("holdout", holdout)] {
+        eval_command()
+            .args(["coverage", "eval/corpus.toml", "--human", "--split", split])
+            .args(["--linter", "yomiyasu", "--linter-cache"])
+            .arg(cache.path())
+            .assert()
+            .success()
+            .stdout(predicate::str::contains(format!(
+                "split={split} documents={documents} "
+            )));
+    }
+    eval_command()
+        .args(["coverage", "eval/slop-2026-11-06/annotations.toml"])
+        .args(["--split", "dev", "--linter", "yomiyasu", "--linter-cache"])
+        .arg("eval/slop-2026-11-06/linters/yomiyasu-3.0.0")
+        .assert()
+        .failure()
+        .stderr(predicate::str::contains("--human"));
+    eval_command()
+        .args([
+            "coverage",
+            "eval/slop-2026-11-06/annotations.toml",
+            "--linter",
+            "yomiyasu",
+            "--linter-cache",
+            "eval/slop-2026-11-06/linters/yomiyasu-3.0.0",
+            "--documents=^sonnet-08-business-subject$",
+            "--show-suiko",
+            "repeated_sentence_ending",
+        ])
+        .assert()
+        .success()
+        .stdout(predicate::str::contains(
+            "## suiko（実験的な規則込み）の指摘（repeated_sentence_ending）",
+        ))
+        .stdout(predicate::str::contains(
+            "suiko\tsonnet-08-business-subject\trepeated_sentence_ending\tsentence_end_repetition\t",
+        ))
+        .stdout(predicate::str::contains("見直し【ます】。"));
 }
 
 // suiko meaning（LLMによる確認）の返答を保存したキャッシュだけで照合を再実行する。LLMは呼ばない。

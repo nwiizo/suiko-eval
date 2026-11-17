@@ -1,0 +1,160 @@
+{
+  "file": "haiku/04-fiction-metaphor.md",
+  "stats": {
+    "total_findings": 3,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_sentence_variance": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 25,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.13856406460551018,
+    "rhythm": {
+      "mora_mean": 35.64,
+      "mora_stdev": 8.849316357775892,
+      "burstiness": -0.6021824077218396,
+      "length_autocorrelation_lag1": 0.056261967437493544
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.36
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 204,
+      "doc_char_count": 716,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 7,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=7, 各段落の文数=[3, 3, 4, 4, 4, 4, 3]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.139（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_sentence_variance",
+      "excerpt": "文数=25, 平均文長=28.6字, 変動係数=0.233",
+      "severity": "warn",
+      "detail": "文の長さのばらつきが小さい（変動係数が閾値0.25未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.602 (モーラ近似長 平均=35.6, 標準偏差=8.8)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 25,
+      "genre": "essay",
+      "by_category": {
+        "no_chain": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 15,
+        "category": "no_chain",
+        "excerpt": "の変わる前の港の",
+        "severity": "info",
+        "detail": "格助詞「の」が3つ以上続いている。係り受けが分かりにくい疑い",
+        "related_lines": null,
+        "hint": "どこかを動詞に戻す（「上限の設定の検討」→「上限をどう設定するか検討する」）"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 閉店間際の古本屋",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "夕方六時を過ぎると、古本屋の店内は夜の入り口に立たされたような匂いに包まれる。紙は長い年月を吸い込んで、少しずつ琥珀色に染まっている。背表紙の文字は、棚の奥で眠る古い街の地図のように、色褪せながらも行き先を示している。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "店主の佐伯は、レジ横の椅子に腰かけ、閉店の準備を一つずつ片づけていた。ガラス窓の外では、街灯が遠慮がちに灯り始め、その光が文庫本の山に淡い影を落とす。店の中は、まるで大きな貝殻の内側のように静かだった。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "そこへ、一人の若い女が入ってきた。手にはくたびれた紙袋を抱え、雨粒を含んだ髪が肩にまとわりついている。彼女は入口の近くで立ち止まり、店の空気を確かめるように大きく息を吸った。その仕草は、まるで久しぶりに実家の戸を開けた人のようだった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "「もう閉めるところでして」と佐伯が言うと、女は小さく頷いた。だが、紙袋を差し出す手は、すぐには引っ込まなかった。中からは、ところどころ角の擦り切れた詩集が覗いている。表紙には、誰かの名前が鉛筆で書き込まれていた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "佐伯は老眼鏡を指で押し上げ、その詩集を両手で受け取った。ページをめくると、折り目の多い紙の上に、驚くほど丁寧な字が並んでいる。読み手と書き手の間に、言葉が静かな橋を架けていた。その橋を見つめるうちに、佐伯の胸の奥で、閉じかけていた扉がかすかに軋んだ。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "結局、詩集は買い取られることになった。女は代金を受け取ると、深く頭を下げて出ていった。外の雨は、いつの間にか止んでいる。店の中には、棚の一冊一冊が、夜を待つ書き手の寝息のように並んでいた。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "佐伯は照明のスイッチに手をかけ、最後にもう一度、店内を見渡した。閉店間際の古本屋は、日付の変わる前の港のようでもあった。どの本も、いつかまた誰かの手に渡る日を、静かに待っている。",
+      "no": 8
+    }
+  ]
+}

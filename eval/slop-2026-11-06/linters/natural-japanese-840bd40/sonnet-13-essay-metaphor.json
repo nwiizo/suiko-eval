@@ -1,0 +1,128 @@
+{
+  "file": "sonnet/13-essay-metaphor.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 22,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      3,
+      4,
+      5,
+      3,
+      3,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.3149183286488868,
+    "rhythm": {
+      "mora_mean": 38.45454545454545,
+      "mora_stdev": 15.275432660818698,
+      "burstiness": -0.43140000436923054,
+      "length_autocorrelation_lag1": -0.2528968068212305
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.3181818181818182
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 203,
+      "doc_char_count": 694,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.431 (モーラ近似長 平均=38.5, 標準偏差=15.3)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 22,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 雨の日の図書館",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "雨の日の図書館は、大きな貝殻の内側に似ている。外では空がバケツをひっくり返したように降っているのに、一歩入ると音が丸く削られて、遠い海鳴りのような静けさだけが残る。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "先週の木曜日、傘の先から水を滴らせたまま、私は市立図書館の自動ドアをくぐった。特に借りたい本があったわけではない。ただ、駅までの道で雨脚が強くなり、雨宿りの口実が欲しかったのだ。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "閲覧室の窓ガラスには、雨粒が細い川になって流れていた。その向こうで街の灯りが滲み、水彩画の絵の具が紙の上で溶けていくように見える。机に向かう人たちは、みな小さな島に流れ着いた漂流者のようだった。それぞれの島に一冊の本と一つのスタンドがあり、島と島のあいだを、ページをめくる乾いた音だけが渡っていく。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "私は書架のあいだを歩いた。背表紙の列は、季節の終わりに並んだ枯れ木の林のようで、指先でなぞるとかすかな埃の匂いが立つ。その匂いは、祖父の書斎の引き出しを開けたときのものと同じだった。紙は時間を吸い込む。古い本ほど、長い雨を何度も耐えてきた屋根のように、深い色をしている。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "気づけば、手にしていたのは子どものころに読んだ童話集だった。表紙の角は丸くすり減り、貸出票には知らない名前がいくつも重なっている。誰かの手から手へ渡るうちに、この本は小さな舟になったのかもしれない。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "雨はいつまでも止まなかった。それでも、閉館を告げる放送が流れるころには、胸の奥に溜まっていた濁りが静かに底へ沈んでいた。借りた童話集を鞄に入れて外へ出ると、傘を打つ雨の音は、さっきより少しだけやさしく聞こえた。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "雨の日の図書館は、街がひととき貸してくれる、屋根のついた海だと思う。次に空が曇りはじめたら、また舟を探しに行こう。",
+      "no": 8
+    }
+  ]
+}

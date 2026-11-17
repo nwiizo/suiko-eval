@@ -2,6 +2,8 @@
 //! ここでは文書単位の校正プロキシ(report/sweep/length-analysis)、
 //! 正解ラベル付きサンプル評価(labeled)と規則ごとの品質表(quality)を実装する。
 
+mod coverage;
+mod external;
 mod feedback;
 mod fetch;
 mod manifest;
@@ -23,10 +25,12 @@ use manifest::{
     Corpus, Expectation, ExternalStats, Genre, Label, Split, load_corpus, load_external_documents,
 };
 
+pub use coverage::{CoverageDocuments, CoverageOptions, coverage};
+pub use external::{ExternalLint, ExternalTool};
 pub use feedback::feedback;
 pub use fetch::fetch_corpus;
 pub use quality::{DEFAULT_MAX_HUMAN_FIRE_UPPER, quality};
-pub use spans::{MeaningSource, SpansOptions, spans};
+pub use spans::{Linter, MeaningSource, SpansOptions, spans};
 
 /// これ未満の分母は率を性能値として扱わず、low_nを付けて参考値に落とす。
 const MIN_SAMPLES: usize = 5;

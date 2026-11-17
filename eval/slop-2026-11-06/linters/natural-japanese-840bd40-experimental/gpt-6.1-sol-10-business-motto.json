@@ -1,0 +1,149 @@
+{
+  "file": "gpt-6.1-sol/10-business-motto.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": true,
+    "total_sentences": 28,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 10,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      1,
+      5,
+      1,
+      4,
+      1,
+      5,
+      1,
+      4,
+      3
+    ],
+    "paragraph_sentence_count_cv": 0.5714285714285715,
+    "rhythm": {
+      "mora_mean": 33.5,
+      "mora_stdev": 14.363893224729448,
+      "burstiness": -0.39980255441033896,
+      "length_autocorrelation_lag1": -0.12150515765550644
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.17857142857142858
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 218,
+      "doc_char_count": 727,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 11,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 6,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.400 (モーラ近似長 平均=33.5, 標準偏差=14.4)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 28,
+      "genre": "business",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 離れて働くチームの約束",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "リモートワークでは、誰が何をしているかが自然には伝わらない。だからといって、報告のための会議を増やし続けると、仕事に集中できる時間が減ってしまう。チームに必要なのは、互いの動きを細かく追う仕組みより、仕事を引き継ぎ、判断を進めるための情報である。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "決まったことは、残す。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "口頭や通話で相談した内容も、決定事項と理由を共有の場所へ書く。担当者、期限、未決定の点が分かれば、その場にいなかった人も次の行動を選べる。記録は長くなくてよい。ただし、結論だけでは、後から前提が変わったときに判断し直せない。なぜ決めたかを一文添える。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "急ぎ方を、決めておく。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "すべての連絡に即答を求めると、受け手は作業を何度も中断する。通常の相談は翌営業日まで、当日中の判断が必要なら期限を明記するなど、目安を共有する。緊急時には別の連絡手段を使う。送る側が急ぎだと思っているだけでは、相手にはその事情まで伝わらない。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "会議には、決めるものを持つ。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "開催前に論点と必要な資料を置く。報告だけなら文章で済むこともある。一方、認識が大きくずれている相談は、短い通話のほうが早い。文章か会議かを固定せず、仕事が進む方法を選ぶ。会議の最後には、誰が何をするかを確認し、その場で記録する。",
+      "no": 8
+    },
+    {
+      "line": 17,
+      "kind": "段落",
+      "text": "困る前にも、声をかける。",
+      "no": 9
+    },
+    {
+      "line": 19,
+      "kind": "段落",
+      "text": "雑談や短い面談には、業務報告に出てこない不便を知る役割がある。参加を強制する必要はないが、相談の入口は複数あったほうがよい。特に新しく加わった人には、質問先と最初の仕事を具体的に伝える。自由に聞いてよいという言葉だけでは、誰に何を聞けるかは分からない。",
+      "no": 10
+    },
+    {
+      "line": 21,
+      "kind": "段落",
+      "text": "チーム運営の状態は、オンライン表示の長さでは測れない。判断が滞っていないか、休んだ人の仕事を引き継げるか、負担が一人に集まっていないかを見る。離れていても仕事が続くことを、日々の約束で支えていく。",
+      "no": 11
+    }
+  ]
+}

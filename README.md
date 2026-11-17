@@ -10,9 +10,11 @@ suikoの作業ツリーを隣に置いてビルドする（`Cargo.toml`の`suiko
 cargo +1.97 run --locked -- quality eval/corpus.toml --external   # 規則ごとの品質表と扱いの判定
 cargo +1.97 run --locked -- report eval/corpus.toml --external --experimental
 cargo +1.97 run --locked -- labeled eval/corpus.toml
-cargo +1.97 run --locked -- spans eval/slop-2026-11-06/annotations.toml --experimental --ignore short_topic_comma,short_object_comma
 cargo +1.97 run --locked -- report eval/yomiyasu-2026-11-06/raw.toml --experimental  # 外部の評価集合（本文は upstream/ へ取得。手順は同じフォルダの README）
 # natural-japanese（coji/natural-japanese）との比較は eval/natural-japanese-2026-11-13/README.md
+cargo +1.97 run --locked -- spans eval/slop-2026-11-06/annotations.toml --experimental --ignore short_topic_comma,short_object_comma,short_subject_comma
+cargo +1.97 run --locked -- spans eval/slop-2026-11-06/annotations.toml --linter yomiyasu --linter-cache eval/slop-2026-11-06/linters/yomiyasu-3.0.0
+cargo +1.97 run --locked -- coverage eval/corpus.toml --human --external --linter yomiyasu --linter-cache "$TMPDIR/yomiyasu-human" --linter-script <yomiyasu>/scripts/yomiyasu_lint.py
 cargo +1.97 run --locked -- fetch eval/sources.toml                # 著作権のある外部文書を取得し、lockと照合する
 ```
 
@@ -21,7 +23,8 @@ cargo +1.97 run --locked -- fetch eval/sources.toml                # 著作権�
 | `quality` | 規則ごとに人間文書での発火率とラベル付き標本の結果をまとめ、keep・降格候補・昇格候補・標本不足を返す |
 | `report` | カテゴリ別の文書発火率とfinding件数（人間・AI、ジャンル別） |
 | `labeled` | ラベル付き標本の検出率と誤検知率 |
-| `spans` | 生成文書に付けたスロップの注釈（意味破綻型・過剰圧縮型）と、指摘の本文範囲の重なり。`--ignore`で偶然重なるだけの規則を外し、`--documents`で調整用と評価用を分け、`--meaning-cache`と`--`の後のコマンドで`suiko meaning`（LLMによる確認）の指摘も測る |
+| `spans` | 生成文書に付けたスロップの注釈（意味破綻型・過剰圧縮型）と、指摘の本文範囲の重なり。`--ignore`で偶然重なるだけの規則を外し、`--documents`で調整用と評価用を分け、`--meaning-cache`と`--`の後のコマンドで`suiko meaning`（LLMによる確認）の指摘も測る。`--linter natural-japanese|yomiyasu`でsuikoの代わりに他のツールのlintの出力（`--linter-cache`、なければ`--linter-script`を実行）を照合し、`--lines`で行単位、`--reading-load`で読解負荷込みに揃える |
+| `coverage` | 他のツールの指摘のうちsuikoの指摘と同じ箇所に当たるものと、その逆を規則ごとに数える。既定は注釈ファイルの文書、`--human`で`corpus.toml`の人間文書。`--show`でsuikoが指せなかった指摘の本文を出す。`--split dev|holdout`で人間文書を調整用と評価用に分け、`--show-suiko`でsuikoの指摘を前後の文脈と同じ箇所の他のツールの規則つきで出す（人間文書の出力は本文を含むためコミットしない） |
 | `sweep` / `calibrate` | 閾値候補の比較と、人間文書の誤検知上限を制約にした探索（devのみ） |
 | `length-analysis` / `vocab` | 文書長別の件数、禁止語・誇張語彙の出現実測 |
 | `feedback` | 推敲判断（採用・維持・保留・未確認・対応不能）の集計 |

@@ -71,14 +71,63 @@ enum Command {
         #[arg(long)]
         documents: Option<String>,
         /// lintの指摘を使わず、LLMの指摘（suiko meaning）だけを測る
-        #[arg(long)]
+        #[arg(long, conflicts_with = "linter")]
         no_lint: bool,
+        /// suikoの代わりに照合する他のツールのlint。出力は--linter-cacheに文書idごとに保存する
+        #[arg(long, value_enum)]
+        linter: Option<evaluation::ExternalTool>,
+        /// 他のツールのlintの出力（<文書id>.json）を保存・再利用するディレクトリ
+        #[arg(long, requires = "linter")]
+        linter_cache: Option<PathBuf>,
+        /// 他のツールのlintのスクリプト。キャッシュにない文書だけ実行する
+        #[arg(long, requires = "linter")]
+        linter_script: Option<PathBuf>,
+        /// 注釈と指摘を行単位に広げて照合する（行しか返さないツールと同じ粒度で比べる）
+        #[arg(long)]
+        lines: bool,
+        /// 読解負荷の指摘（suikoとnatural-japaneseの両方）も数える
+        #[arg(long)]
+        reading_load: bool,
         /// suiko meaningの返答を文書idごとに保存・再利用するディレクトリ
         #[arg(long)]
         meaning_cache: Option<PathBuf>,
         /// suiko meaningに渡すLLMのコマンド（`--` の後に指定）。キャッシュにない文書だけ実行する
         #[arg(last = true, value_name = "COMMAND")]
         meaning_command: Vec<String>,
+    },
+    /// 他のツールの指摘のうちsuikoの指摘と同じ箇所に当たるものと、その逆を規則ごとに数える
+    Coverage {
+        /// 文書の一覧。既定はspansと同じ注釈ファイル（注釈そのものは使わない）、--humanならcorpus.toml
+        documents_file: PathBuf,
+        /// documents_fileをcorpus.tomlとして読み、人間の文書で比べる
+        #[arg(long)]
+        human: bool,
+        /// --humanのとき、sources.tomlの外部取得文書(ローカル、lock一致分)も含める
+        #[arg(long, requires = "human")]
+        external: bool,
+        #[arg(long, value_enum)]
+        linter: evaluation::ExternalTool,
+        /// 他のツールのlintの出力（<文書id>.json）を保存・再利用するディレクトリ
+        #[arg(long)]
+        linter_cache: PathBuf,
+        /// 他のツールのlintのスクリプト。キャッシュにない文書だけ実行する
+        #[arg(long)]
+        linter_script: Option<PathBuf>,
+        /// 他のツールを実験的な規則込みで実行した出力を使う（natural-japaneseだけ）
+        #[arg(long)]
+        experimental: bool,
+        /// 文書idの正規表現
+        #[arg(long)]
+        documents: Option<String>,
+        /// suikoの指摘と重ならなかった指摘の本文を出す規則（カンマ区切り）
+        #[arg(long, value_delimiter = ',')]
+        show: Vec<String>,
+        /// suikoの指摘を前後の文脈つきで出す規則（カンマ区切り）。人の文書の出力はコミットしない
+        #[arg(long, value_delimiter = ',')]
+        show_suiko: Vec<String>,
+        /// --humanのとき、調整用（dev）か評価用（holdout）の文書だけで比べる
+        #[arg(long, value_enum, requires = "human")]
+        split: Option<SplitFilter>,
     },
     /// 規則ごとの品質表と、既定・実験の扱いの判定（降格候補・昇格候補・正例不足）を出す
     Quality {
@@ -155,6 +204,11 @@ fn execute(cli: Cli) -> Result<String, evaluation::EvaluationError> {
             ignore,
             documents,
             no_lint,
+            linter,
+            linter_cache,
+            linter_script,
+            lines,
+            reading_load,
             meaning_cache,
             meaning_command,
         } => {
@@ -168,17 +222,67 @@ fn execute(cli: Cli) -> Result<String, evaluation::EvaluationError> {
                     "--no-lintには--meaning-cacheか`--`の後のコマンドが必要です".to_owned(),
                 ));
             }
+            let linter = match (linter, linter_cache) {
+                (Some(tool), Some(cache)) => {
+                    evaluation::Linter::External(evaluation::ExternalLint {
+                        tool,
+                        cache,
+                        script: linter_script,
+                    })
+                }
+                (Some(_), None) => {
+                    return Err(evaluation::EvaluationError::Invalid(
+                        "--linterには出力を保存する--linter-cacheが必要です".to_owned(),
+                    ));
+                }
+                (None, _) if no_lint => evaluation::Linter::Off,
+                (None, _) => evaluation::Linter::Suiko,
+            };
             evaluation::spans(
                 &annotations,
                 &evaluation::SpansOptions {
                     experimental,
                     ignore,
                     documents,
-                    lint: !no_lint,
+                    linter,
                     meaning,
+                    lines,
+                    reading_load,
                 },
             )
         }
+        Command::Coverage {
+            documents_file,
+            human,
+            external,
+            linter,
+            linter_cache,
+            linter_script,
+            experimental,
+            documents,
+            show,
+            show_suiko,
+            split,
+        } => evaluation::coverage(&evaluation::CoverageOptions {
+            documents: if human {
+                evaluation::CoverageDocuments::Human {
+                    manifest: documents_file,
+                    external,
+                    split,
+                }
+            } else {
+                evaluation::CoverageDocuments::Annotations(documents_file)
+            },
+            external: evaluation::ExternalLint {
+                tool: linter,
+                cache: linter_cache,
+                script: linter_script,
+            },
+            experimental,
+            filter: documents,
+            show,
+            show_suiko,
+        }),
         Command::Quality {
             manifest,
             external,

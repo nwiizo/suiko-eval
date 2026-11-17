@@ -1,0 +1,121 @@
+{
+  "file": "haiku/27-essay-literary.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": true,
+    "total_sentences": 25,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 6,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      3,
+      3,
+      6,
+      4,
+      5,
+      4
+    ],
+    "paragraph_sentence_count_cv": 0.25612496949731395,
+    "rhythm": {
+      "mora_mean": 29.12,
+      "mora_stdev": 11.060994530330444,
+      "burstiness": -0.44944147552240893,
+      "length_autocorrelation_lag1": -0.0997229635329585
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.36
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 172,
+      "doc_char_count": 588,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 7,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.449 (モーラ近似長 平均=29.1, 標準偏差=11.1)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 25,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 父の書斎",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "父が亡くなって三か月が過ぎた。書斎の扉を開けるのは、まだ少しだけ勇気がいる。ドアの蝶番がきしむ音は、長く閉ざされていた時間の、かすかな咳払いのように響いた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "部屋の空気は、紙と革と煙草の匂いを、ゆっくり混ぜ合わせた古い酒のようだった。窓際の机には、読みかけの本が伏せられている。背表紙の折れ目は、父がどの頁で手を止め、どんな思案をしていたのかを、無言で語っていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "書架には、背の褪せた全集が並んでいる。どれも一度は手に取られ、何度も指の跡を残してきた本だ。私はその中の一冊を抜き取る。頁の隅には、鉛筆の細い書き込みがあった。「ここは違う」。短い言葉は、父が誰かに向けた批評ではなく、おそらく自分自身への問いだったのだろう。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "父は、言葉を急がない人だった。食卓で話すときも、一語ずつ石を積むように言葉を選んだ。その積み重ねが、いつの間にか家族の間に静かな屋根を作っていた。雨の日も風の日も、その屋根の下にいれば安心できた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "机の引き出しを開けると、古い万年筆と、角のすり減った便箋が出てきた。便箋の上には、書きかけの一行がある。「明日、息子に話すべきことは、」。そこで文は途切れていた。続きを埋める言葉を、私はまだ持っていない。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "窓から差し込む冬の光が、埃の粒を金色に照らしている。その粒ひとつひとつが、父の残した時間の断片のように思えた。私は本を元の場所に戻し、扉をそっと閉じる。きしむ音は、もう咳払いではなく、返事のように聞こえた。",
+      "no": 7
+    }
+  ]
+}

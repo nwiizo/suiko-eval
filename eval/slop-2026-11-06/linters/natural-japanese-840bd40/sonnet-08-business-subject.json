@@ -1,0 +1,140 @@
+{
+  "file": "sonnet/08-business-subject.md",
+  "stats": {
+    "total_findings": 1,
+    "by_category": {
+      "low_burstiness": 1
+    },
+    "genre": "business",
+    "experimental": false,
+    "total_sentences": 23,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 7,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      2,
+      4,
+      6,
+      3,
+      3,
+      3,
+      2
+    ],
+    "paragraph_sentence_count_cv": 0.3888813873912678,
+    "rhythm": {
+      "mora_mean": 34.21739130434783,
+      "mora_stdev": 12.03963209657147,
+      "burstiness": -0.4794463105755224,
+      "length_autocorrelation_lag1": -0.193008111012491
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.391304347826087
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 173,
+      "doc_char_count": 596,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 8,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 3,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.479 (モーラ近似長 平均=34.2, 標準偏差=12.0)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 1,
+      "sentences": 23,
+      "genre": "business",
+      "by_category": {
+        "translationese_morph": 1
+      }
+    },
+    "findings": [
+      {
+        "line": 5,
+        "category": "translationese_morph",
+        "excerpt": "、あとから振り返ることができ",
+        "severity": "info",
+        "detail": "「〜することができる」型の言い回し",
+        "related_lines": null,
+        "hint": "「〜することができる」は「〜できる」か、動詞の可能形にする"
+      }
+    ]
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 新しい評価制度の導入について",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "来月から、新しい評価制度が始まります。この制度の目的は、一人ひとりの仕事の成果を、これまでより具体的に見えるようにすることです。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "従来の評価は、年に一度の面談に集中していました。そのため、半年前の出来事が評価に反映されにくく、記憶の濃淡が結果を左右する場面がありました。新制度では、評価の記録を四半期ごとに残します。記録は、本人と上長が同じ画面で確認でき、あとから振り返ることができます。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "評価の軸は三つに整理しました。成果、行動、成長です。成果の項目は、期初に設定した目標への到達度を示します。行動の項目は、チームへの貢献や周囲との協力の様子を扱います。成長の項目は、新しい技術や役割に挑戦した度合いを表します。三つの軸は、等しい重みで扱います。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "面談の仕組みも変わります。四半期ごとの面談は、評価を伝える場ではなく、次の三か月の動き方を話し合う場です。面談の記録は、評価の根拠として残りますが、その場で点数が決まることはありません。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "評価の結果は、昇給と賞与に反映されます。ただし、反映の計算式は、制度が一巡する来年度末までは暫定の扱いとします。運用を通じて見えた問題があれば、見直します。",
+      "no": 6
+    },
+    {
+      "line": 13,
+      "kind": "段落",
+      "text": "制度の説明会は、来週から三回開催します。参加は任意ですが、上長の方には出席をお願いします。質問は、人事部の専用窓口で随時受け付けています。",
+      "no": 7
+    },
+    {
+      "line": 15,
+      "kind": "段落",
+      "text": "新しい制度が定着するかどうかは、日々の記録の積み重ねにかかっています。まずは、今期の目標の設定から始めてください。",
+      "no": 8
+    }
+  ]
+}

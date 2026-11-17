@@ -1,0 +1,124 @@
+{
+  "file": "gpt-6-luna/36-essay-motto.md",
+  "stats": {
+    "total_findings": 2,
+    "by_category": {
+      "uniform_paragraph_structure": 1,
+      "low_burstiness": 1
+    },
+    "genre": "essay",
+    "experimental": false,
+    "total_sentences": 28,
+    "nominal_ending_count": 0,
+    "nominal_ending_ratio": 0.0,
+    "total_paragraphs": 5,
+    "paragraph_lead_conjunction_count": 0,
+    "paragraph_lead_conjunction_ratio": 0.0,
+    "paragraph_sentence_counts": [
+      4,
+      6,
+      6,
+      6,
+      6
+    ],
+    "paragraph_sentence_count_cv": 0.14285714285714288,
+    "rhythm": {
+      "mora_mean": 28,
+      "mora_stdev": 8.67673407946298,
+      "burstiness": -0.5268535055131045,
+      "length_autocorrelation_lag1": 0.36967608066139657
+    },
+    "ngram": {
+      "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+      "lead_pos_4gram_ratio": 0.17857142857142858
+    },
+    "lexical_diversity": {
+      "ttr": null,
+      "mtld": null,
+      "content_token_count": 194,
+      "doc_char_count": 616,
+      "skipped_too_short": true
+    },
+    "structural": {
+      "bold_span_count": 0,
+      "bold_per_1000_chars": 0.0,
+      "bullet_line_count": 0,
+      "non_blank_line_count": 6,
+      "boilerplate_heading_count": 0,
+      "numbered_phase_hit_count": 0,
+      "emoji_symbol_count": 0,
+      "emoji_symbol_per_1000_chars": 0.0
+    },
+    "low_specificity": {
+      "paragraphs_evaluated": 5,
+      "paragraphs_fired": 0
+    }
+  },
+  "findings": [
+    {
+      "line": 1,
+      "category": "uniform_paragraph_structure",
+      "excerpt": "段落数=5, 各段落の文数=[4, 6, 6, 6, 6]",
+      "severity": "info",
+      "detail": "段落あたり文数の変動係数=0.143（閾値0.15未満）。どの段落もほぼ同じ文数=定型段落（例: 3文段落の量産）の疑い",
+      "related_lines": null,
+      "hint": "段落の長さを内容の重さに合わせる。重要な段落は長く、軽い段落は短くてよい"
+    },
+    {
+      "line": 3,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.527 (モーラ近似長 平均=28.0, 標準偏差=8.7)",
+      "severity": "warn",
+      "detail": "文の長短の差が小さい（burstiness が閾値-0.3未満）。文の長さがそろいすぎている疑い",
+      "related_lines": null,
+      "hint": "新しく書くときは、内容のまとまりに合わせて文を分けたりつないだりする。既存の文書を直すときは、これだけを理由に文を変えない。リズムのためだけに短い文を差し込まない"
+    }
+  ],
+  "reading_load": {
+    "stats": {
+      "total": 0,
+      "sentences": 28,
+      "genre": "essay",
+      "by_category": {}
+    },
+    "findings": []
+  },
+  "paragraphs": [
+    {
+      "line": 1,
+      "kind": "見出し",
+      "text": "# 冬に読んだ本のこと",
+      "no": 1
+    },
+    {
+      "line": 3,
+      "kind": "段落",
+      "text": "冬の午後は、窓辺の光が短い。私は毛布を膝にかけ、古本屋で見つけた一冊を開いた。紙は少し黄ばみ、ページの端には誰かが折った小さな印が残っている。知らない人の読書の跡が、遠い席から届いた手紙のように思えた。",
+      "no": 2
+    },
+    {
+      "line": 5,
+      "kind": "段落",
+      "text": "本の中では、旅を続ける人が何度も道に迷っていた。目的地へ急ぐより、立ち止まって景色を見ることを覚えていく。読み進めるうち、私は自分の予定表を思い出した。埋めることを先に考え、余白を忘れていた。ページを閉じると、暖房の音だけが部屋に残った。外では雪が降り始め、街の輪郭をやわらかくしていた。",
+      "no": 3
+    },
+    {
+      "line": 7,
+      "kind": "段落",
+      "text": "本は、遠くへ行くための窓になる。開けば知らない町の風が吹く。閉じれば、今いる場所の静けさが戻る。どちらも同じ読書の中にある。私は印のついたページを探し、前の読者がなぜそこを選んだのか考えた。答えは見つからなかったが、誰かと同じ一文の前で立ち止まった事実が、少しうれしかった。",
+      "no": 4
+    },
+    {
+      "line": 9,
+      "kind": "段落",
+      "text": "読み終えた夜、私は本を机に置いた。結末は物語を閉じたが、心の中には問いが残った。問いを急いで片づけなくていい。わからないまま眠る夜もある。翌朝、窓の外の雪は積もっていた。足跡のない道は、まだ何も決めていない白さをしていた。",
+      "no": 5
+    },
+    {
+      "line": 11,
+      "kind": "段落",
+      "text": "冬に読んだ本のことを、私は春になっても思い出す。寒さの中で手にした言葉は、季節が変わっても消えない。ページをめくる時間は、急がない練習だ。ひとつの物語が、いつもの景色に別の名前を与える。だから私は、読み終えた本を棚へ戻す前に、少しだけ窓を開ける。外の空気を入れて、物語の続きを暮らしの中へ迎えるために。",
+      "no": 6
+    }
+  ]
+}
